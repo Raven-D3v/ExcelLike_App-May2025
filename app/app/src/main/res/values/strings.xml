@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RawMixApp</string>
+    <string name="Shale">Shale</string>
+    <string name="limestone">Limestone</string>
+    <string name="shale">Shale</string>
+    <string name="iron_ore">Iron Ore</string>
+    <string name="sio">SiO₂</string>
+    <string name="al_o">Al₂O₃</string>
+    <string name="_3_materials_lsf_amp_am"><![CDATA[3 MATERIALS (LSF & AM)]]></string>
+    <string name="recipe_lsf_and_am">RECIPE (LSF AND AM)</string>
+    <string name="_3_materials_lsf_amp_sm"><![CDATA[3 MATERIALS (LSF & SM)]]></string>
+    <string name="_4_materials_lsf_sm_amp_am"><![CDATA[4 MATERIALS (LSF, SM & AM)]]></string>
+</resources>

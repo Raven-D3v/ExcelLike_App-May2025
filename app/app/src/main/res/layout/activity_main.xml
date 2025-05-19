@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btn_page1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_materials_lsf_amp_am"
+            android:background="#E0FFE0"
+            android:textColor="#008000" />
+
+        <Button
+            android:id="@+id/btn_page2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recipe_lsf_and_am"
+            android:background="#DDDDDD"
+            android:textColor="#000000"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btn_page3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_materials_lsf_amp_sm"
+            android:background="#8B4513"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btn_page4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECIPE (LSF AND SM)"
+            android:background="#A0522D"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btn_page5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_4_materials_lsf_sm_amp_am"
+            android:background="#FFA500"
+            android:textColor="#000000"
+            android:layout_marginStart="8dp" />
+
+        <!-- Add buttons 6–8 as needed -->
+
+    </LinearLayout>
+</ScrollView>

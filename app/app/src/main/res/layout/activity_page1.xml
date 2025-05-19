@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="horizontal">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:shrinkColumns="none"
+                android:padding="8dp">
+
+                <!-- Header Row 1: Section Titles -->
+                <TableRow>
+                    <TextView
+                        android:text="Condition\n(M/A)"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_span="1"
+                        android:padding="8dp"
+                        style="@style/HeaderCell" />
+
+                    <TextView
+                        android:text="TOTAL"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_span="1"
+                        android:padding="8dp"
+                        style="@style/HeaderCell" />
+
+                    <TextView
+                        android:text="Material Setting"
+                        android:layout_span="3"
+                        style="@style/HeaderCell"/>
+
+                    <TextView
+                        android:text="XRF Analysis"
+                        android:layout_span="12"
+                        style="@style/HeaderCell"/>
+
+                    <TextView
+                        android:text="RATIOS"
+                        android:layout_span="4"
+                        style="@style/HeaderCell"/>
+                </TableRow>
+
+                <!-- Header Row 2 -->
+                <TableRow>
+                    <TextView android:text="" style="@style/HeaderCell"/>
+                    <TextView android:text="" style="@style/HeaderCell"/>
+                    <TextView android:text="@string/limestone" style="@style/HeaderCell"/>
+                    <TextView android:text="@string/shale" style="@style/HeaderCell"/>
+                    <TextView android:text="@string/iron_ore" style="@style/HeaderCell"/>
+                    <TextView android:text="@string/sio" style="@style/HeaderCell"/>
+                    <TextView android:text="@string/al_o" style="@style/HeaderCell"/>
+                    <TextView android:text="Fe₂O₃" style="@style/HeaderCell"/>
+                    <TextView android:text="CaO" style="@style/HeaderCell"/>
+                    <TextView android:text="MgO" style="@style/HeaderCell"/>
+                    <TextView android:text="Na₂O" style="@style/HeaderCell"/>
+                    <TextView android:text="K₂O" style="@style/HeaderCell"/>
+                    <TextView android:text="SO₃" style="@style/HeaderCell"/>
+                    <TextView android:text="Cl" style="@style/HeaderCell"/>
+                    <TextView android:text="LOI" style="@style/HeaderCell"/>
+                    <TextView android:text="TOTAL" style="@style/HeaderCell"/>
+                    <TextView android:text="LSF" style="@style/HeaderCell"/>
+                    <TextView android:text="HM" style="@style/HeaderCell"/>
+                    <TextView android:text="SM" style="@style/HeaderCell"/>
+                    <TextView android:text="AM" style="@style/HeaderCell"/>
+                </TableRow>
+
+                <!-- Sample Editable Row 1 -->
+                <TableRow>
+                    <EditText android:hint="MANUAL" style="@style/CellInput"/>
+                    <EditText android:hint="100" style="@style/CellInput"/>
+                    <EditText android:hint="80.0" style="@style/CellInput"/>
+                    <EditText android:hint="15.0" style="@style/CellInput"/>
+                    <EditText android:hint="5.0" style="@style/CellInput"/>
+                    <EditText android:hint="13.0" style="@style/CellInput"/>
+                    <EditText android:hint="3.4" style="@style/CellInput"/>
+                    <EditText android:hint="2.1" style="@style/CellInput"/>
+                    <EditText android:hint="41.0" style="@style/CellInput"/>
+                    <EditText android:hint="0.6" style="@style/CellInput"/>
+                    <EditText android:hint="0.2" style="@style/CellInput"/>
+                    <EditText android:hint="0.2" style="@style/CellInput"/>
+                    <EditText android:hint="0.0" style="@style/CellInput"/>
+                    <EditText android:hint="0.0" style="@style/CellInput"/>
+                    <EditText android:hint="38.6" style="@style/CellInput"/>
+                    <EditText android:hint="98.1" style="@style/CellInput"/>
+                    <EditText android:hint="95.3" style="@style/CellInput"/>
+                    <EditText android:hint="2.1" style="@style/CellInput"/>
+                    <EditText android:hint="2.5" style="@style/CellInput"/>
+                    <EditText android:hint="1.6" style="@style/CellInput"/>
+                </TableRow>
+
+                <!-- Corrected Editable Row 2 -->
+                <TableRow>
+                    <EditText android:hint="MANUAL/AUTOMATIC" style="@style/CellInput"/>
+                    <EditText android:hint="100" style="@style/CellInput"/>
+                    <EditText android:hint="80.0" style="@style/CellInput"/>
+                    <EditText android:hint="15.0" style="@style/CellInput"/>
+                    <EditText android:hint="5.0" style="@style/CellInput"/>
+                    <EditText android:hint="13.0" style="@style/CellInput"/>
+                    <EditText android:hint="3.4" style="@style/CellInput"/>
+                    <EditText android:hint="2.1" style="@style/CellInput"/>
+                    <EditText android:hint="41.0" style="@style/CellInput"/>
+                    <EditText android:hint="0.6" style="@style/CellInput"/>
+                    <EditText android:hint="0.2" style="@style/CellInput"/>
+                    <EditText android:hint="0.2" style="@style/CellInput"/>
+                    <EditText android:hint="0.0" style="@style/CellInput"/>
+                    <EditText android:hint="0.0" style="@style/CellInput"/>
+                    <EditText android:hint="38.6" style="@style/CellInput"/>
+                    <EditText android:hint="98.1" style="@style/CellInput"/>
+                    <EditText android:hint="95.3" style="@style/CellInput"/>
+                    <EditText android:hint="2.1" style="@style/CellInput"/>
+                    <EditText android:hint="2.5" style="@style/CellInput"/>
+                    <EditText android:hint="1.6" style="@style/CellInput"/>
+                </TableRow>
+
+
+            </TableLayout>
+
+        </ScrollView>
+    </HorizontalScrollView>
+</LinearLayout>
