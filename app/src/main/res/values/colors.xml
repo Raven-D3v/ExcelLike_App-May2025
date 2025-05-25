@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary_dark">#E0E0E0</color>
+    <color name="accent">#8B4513</color>
+
+    <!-- Card Colors -->
+    <color name="card_green">#E0FFE0</color>
+    <color name="card_gray">#DDDDDD</color>
+    <color name="card_brown">#8B4513</color>
+    <color name="card_light_brown">#A0522D</color>
+    <color name="card_orange">#FFA500</color>
 </resources>

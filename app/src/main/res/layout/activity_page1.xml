@@ -1,416 +1,1843 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:scrollbars="horizontal">
+        android:fillViewport="true">
 
         <ScrollView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scrollbars="vertical">
+            android:layout_height="wrap_content">
 
             <TableLayout
                 android:id="@+id/tableLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:stretchColumns="*"
-                android:shrinkColumns="none"
-                android:padding="8dp">
+                android:padding="8dp"
+                android:stretchColumns="*">
 
-                <!-- Header Row 1: Section Titles -->
-                <TableRow>
+                <!-- Top Table Section -->
+                <TableRow android:background="#D3D3D3">
+
                     <TextView
-                        android:text="Condition\n(M/A)"
-                        android:gravity="center"
-                        android:layout_height="match_parent"
+                        style="@style/HeaderCell"
                         android:layout_width="wrap_content"
-                        android:layout_span="1"
+                        android:layout_height="wrap_content"
                         android:padding="8dp"
-                        style="@style/HeaderCell" />
+                        android:text="CONDITION" />
 
                     <TextView
-                        android:text="TOTAL"
-                        android:gravity="center"
-                        android:layout_height="match_parent"
+                        style="@style/HeaderCell"
                         android:layout_width="wrap_content"
-                        android:layout_span="1"
+                        android:layout_height="wrap_content"
                         android:padding="8dp"
-                        style="@style/HeaderCell" />
+                        android:text="" />
 
                     <TextView
-                        android:text="Material Setting"
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_span="3"
-                        style="@style/HeaderCell"/>
+                        android:padding="8dp"
+                        android:text="Material Setting" />
 
                     <TextView
-                        android:text="XRF Analysis"
-                        android:layout_span="12"
-                        style="@style/HeaderCell"/>
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="9"
+                        android:padding="8dp"
+                        android:text="XRF ANALYSIS" />
+                </TableRow>
+
+                <!-- Header Row -->
+                <TableRow android:background="#D3D3D3" android:layout_marginBottom="8dp">
 
                     <TextView
-                        android:text="RATIOS"
-                        android:layout_span="4"
-                        style="@style/HeaderCell"/>
-                </TableRow>
+                        style="@style/HeaderCell"
+                        android:text="(M/A)" />
 
-                <!-- Header Row 2 -->
-                <TableRow>
-                    <TextView android:text="" style="@style/HeaderCell"/>
-                    <TextView android:text="" style="@style/HeaderCell"/>
-                    <TextView android:text="@string/limestone" style="@style/CellLimestone"/>
-                    <TextView android:text="@string/shale" style="@style/CellShale"/>
-                    <TextView android:text="@string/iron_ore" style="@style/CellIron"/>
-                    <TextView android:text="@string/sio" style="@style/HeaderCell"/>
-                    <TextView android:text="@string/al_o" style="@style/HeaderCell"/>
-                    <TextView android:text="Fe₂O₃" style="@style/HeaderCell"/>
-                    <TextView android:text="CaO" style="@style/HeaderCell"/>
-                    <TextView android:text="MgO" style="@style/HeaderCell"/>
-                    <TextView android:text="Na₂O" style="@style/HeaderCell"/>
-                    <TextView android:text="K₂O" style="@style/HeaderCell"/>
-                    <TextView android:text="SO₃" style="@style/HeaderCell"/>
-                    <TextView android:text="Cl" style="@style/HeaderCell"/>
-                    <TextView android:text="LOI" style="@style/HeaderCell"/>
-                    <TextView android:text="TOTAL" style="@style/HeaderCell"/>
-                    <TextView android:text="LSF" style="@style/HeaderCell"/>
-                    <TextView android:text="HM" style="@style/HeaderCell"/>
-                    <TextView android:text="SM" style="@style/HeaderCell"/>
-                    <TextView android:text="AM" style="@style/HeaderCell"/>
-                </TableRow>
-
-                <!-- Sample Editable Row 1 -->
-                <TableRow>
-                    <EditText android:hint="MANUAL" style="@style/CellInput"/>
-                    <EditText android:hint="100" style="@style/CellInput"/>
-                    <EditText android:hint="80.0" style="@style/CellInput"/>
-                    <EditText android:hint="15.0" style="@style/CellInput"/>
-                    <EditText android:hint="5.0" style="@style/CellInput"/>
-                    <EditText android:hint="13.0" style="@style/CellInput"/>
-                    <EditText android:hint="3.4" style="@style/CellInput"/>
-                    <EditText android:hint="2.1" style="@style/CellInput"/>
-                    <EditText android:hint="41.0" style="@style/CellInput"/>
-                    <EditText android:hint="0.6" style="@style/CellInput"/>
-                    <EditText android:hint="0.2" style="@style/CellInput"/>
-                    <EditText android:hint="0.2" style="@style/CellInput"/>
-                    <EditText android:hint="0.0" style="@style/CellInput"/>
-                    <EditText android:hint="0.0" style="@style/CellInput"/>
-                    <EditText android:hint="38.6" style="@style/CellInput"/>
-                    <EditText android:hint="98.1" style="@style/CellInput"/>
-                    <EditText android:hint="95.3" style="@style/CellInput"/>
-                    <EditText android:hint="2.1" style="@style/CellInput"/>
-                    <EditText android:hint="2.5" style="@style/CellInput"/>
-                    <EditText android:hint="1.6" style="@style/CellInput"/>
-                </TableRow>
-
-                <!-- Corrected Editable Row 2 -->
-                <TableRow>
-                    <EditText android:hint="MANUAL/AUTOMATIC" style="@style/CellInput"/>
-                    <EditText android:hint="100" style="@style/CellInput"/>
-                    <EditText android:hint="80.0" style="@style/CellInput"/>
-                    <EditText android:hint="15.0" style="@style/CellInput"/>
-                    <EditText android:hint="5.0" style="@style/CellInput"/>
-                    <EditText android:hint="13.0" style="@style/CellInput"/>
-                    <EditText android:hint="3.4" style="@style/CellInput"/>
-                    <EditText android:hint="2.1" style="@style/CellInput"/>
-                    <EditText android:hint="41.0" style="@style/CellInput"/>
-                    <EditText android:hint="0.6" style="@style/CellInput"/>
-                    <EditText android:hint="0.2" style="@style/CellInput"/>
-                    <EditText android:hint="0.2" style="@style/CellInput"/>
-                    <EditText android:hint="0.0" style="@style/CellInput"/>
-                    <EditText android:hint="0.0" style="@style/CellInput"/>
-                    <EditText android:hint="38.6" style="@style/CellInput"/>
-                    <EditText android:hint="98.1" style="@style/CellInput"/>
-                    <EditText android:hint="95.3" style="@style/CellInput"/>
-                    <EditText android:hint="2.1" style="@style/CellInput"/>
-                    <EditText android:hint="2.5" style="@style/CellInput"/>
-                    <EditText android:hint="1.6" style="@style/CellInput"/>
-                </TableRow>
-
-
-                <TableRow>
-                    <EditText android:hint="MANUAL/AUTOMATIC" style="@style/CellInput"/>
-                    <EditText android:hint="100" style="@style/CellInput"/>
-                    <EditText android:hint="80.0" style="@style/CellInput"/>
-                    <EditText android:hint="15.0" style="@style/CellInput"/>
-                    <EditText android:hint="5.0" style="@style/CellInput"/>
-                    <EditText android:hint="13.0" style="@style/CellInput"/>
-                    <EditText android:hint="3.4" style="@style/CellInput"/>
-                    <EditText android:hint="2.1" style="@style/CellInput"/>
-                    <EditText android:hint="41.0" style="@style/CellInput"/>
-                    <EditText android:hint="0.6" style="@style/CellInput"/>
-                    <EditText android:hint="0.2" style="@style/CellInput"/>
-                    <EditText android:hint="0.2" style="@style/CellInput"/>
-                    <EditText android:hint="0.0" style="@style/CellInput"/>
-                    <EditText android:hint="0.0" style="@style/CellInput"/>
-                    <EditText android:hint="38.6" style="@style/CellInput"/>
-                    <EditText android:hint="98.1" style="@style/CellInput"/>
-                    <EditText android:hint="95.3" style="@style/CellInput"/>
-                    <EditText android:hint="2.1" style="@style/CellInput"/>
-                    <EditText android:hint="2.5" style="@style/CellInput"/>
-                    <EditText android:hint="1.6" style="@style/CellInput"/>
-                </TableRow>
-
-                <TableRow>
-                    <EditText android:hint="MANUAL/AUTOMATIC" style="@style/CellInput"/>
-                    <EditText android:hint="100" style="@style/CellInput"/>
-                    <EditText android:hint="80.0" style="@style/CellInput"/>
-                    <EditText android:hint="15.0" style="@style/CellInput"/>
-                    <EditText android:hint="5.0" style="@style/CellInput"/>
-                    <EditText android:hint="13.0" style="@style/CellInput"/>
-                    <EditText android:hint="3.4" style="@style/CellInput"/>
-                    <EditText android:hint="2.1" style="@style/CellInput"/>
-                    <EditText android:hint="41.0" style="@style/CellInput"/>
-                    <EditText android:hint="0.6" style="@style/CellInput"/>
-                    <EditText android:hint="0.2" style="@style/CellInput"/>
-                    <EditText android:hint="0.2" style="@style/CellInput"/>
-                    <EditText android:hint="0.0" style="@style/CellInput"/>
-                    <EditText android:hint="0.0" style="@style/CellInput"/>
-                    <EditText android:hint="38.6" style="@style/CellInput"/>
-                    <EditText android:hint="98.1" style="@style/CellInput"/>
-                    <EditText android:hint="95.3" style="@style/CellInput"/>
-                    <EditText android:hint="2.1" style="@style/CellInput"/>
-                    <EditText android:hint="2.5" style="@style/CellInput"/>
-                    <EditText android:hint="1.6" style="@style/CellInput"/>
-                </TableRow>
-
-                <TableRow>
-                    <EditText android:hint="MANUAL/AUTOMATIC" style="@style/CellInput"/>
-                    <EditText android:hint="100" style="@style/CellInput"/>
-                    <EditText android:hint="80.0" style="@style/CellInput"/>
-                    <EditText android:hint="15.0" style="@style/CellInput"/>
-                    <EditText android:hint="5.0" style="@style/CellInput"/>
-                    <EditText android:hint="13.0" style="@style/CellInput"/>
-                    <EditText android:hint="3.4" style="@style/CellInput"/>
-                    <EditText android:hint="2.1" style="@style/CellInput"/>
-                    <EditText android:hint="41.0" style="@style/CellInput"/>
-                    <EditText android:hint="0.6" style="@style/CellInput"/>
-                    <EditText android:hint="0.2" style="@style/CellInput"/>
-                    <EditText android:hint="0.2" style="@style/CellInput"/>
-                    <EditText android:hint="0.0" style="@style/CellInput"/>
-                    <EditText android:hint="0.0" style="@style/CellInput"/>
-                    <EditText android:hint="38.6" style="@style/CellInput"/>
-                    <EditText android:hint="98.1" style="@style/CellInput"/>
-                    <EditText android:hint="95.3" style="@style/CellInput"/>
-                    <EditText android:hint="2.1" style="@style/CellInput"/>
-                    <EditText android:hint="2.5" style="@style/CellInput"/>
-                    <EditText android:hint="1.6" style="@style/CellInput"/>
-                </TableRow>
-
-                <!-- Target Box Row -->
-                <!-- Target Box Row Matching Excel Design -->
-                <TableRow android:background="#F5F5F5" android:padding="8dp">
-
-                    <!-- LSF -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginEnd="16dp">
-                        <TextView
-                            android:text="LSF"
-                            android:textStyle="bold"
-                            android:textSize="14sp"
-                            android:gravity="center_horizontal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                        <EditText
-                            android:hint="98.0"
-                            android:inputType="numberDecimal"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            style="@style/CellInput" />
-                    </LinearLayout>
-
-                    <!-- AM -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginEnd="16dp">
-                        <TextView
-                            android:text="@string/am"
-                            android:textStyle="bold"
-                            android:textSize="14sp"
-                            android:gravity="center_horizontal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                        <EditText
-                            android:hint="1.6"
-                            android:inputType="numberDecimal"
-                            android:layout_width="80dp"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            style="@style/CellInput" />
-                    </LinearLayout>
-
-                    <!-- % Ash Absorbed -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginEnd="16dp">
-                        <TextView
-                            android:text="% Ash Absorbed"
-                            android:textStyle="bold"
-                            android:textSize="14sp"
-                            android:gravity="center_horizontal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                        <EditText
-                            android:hint="0.0"
-                            android:inputType="numberDecimal"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            style="@style/CellInput" />
-                    </LinearLayout>
-
-                    <!-- Rawmix Type -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-                        <TextView
-                            android:text="Rawmix Type"
-                            android:textStyle="bold"
-                            android:textSize="14sp"
-                            android:gravity="center_horizontal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
-                        <EditText
-                            android:hint="Type A"
-                            android:inputType="text"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            style="@style/CellInput" />
-                    </LinearLayout>
-                </TableRow>
-
-                <!-- Section Header -->
-                <TableRow>
                     <TextView
-                        android:layout_span="10"
+                        style="@style/HeaderCell"
+                        android:text="TOTAL" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E26B0A"
+                        android:padding="8dp"
+                        android:text="Limestone"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#D2B48C"
+                        android:padding="8dp"
+                        android:text="Shale"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#808080"
+                        android:padding="8dp"
+                        android:text="Iron Ore"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="SiO2" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Al2O3" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Fe2O3" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="CaO" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="MgO" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Na2O" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="K2O" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="SO3" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="C1" />
+                </TableRow>
+
+                <!-- Data Rows with Switch Controls -->
+                <TableRow android:layout_marginBottom="8dp">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#D3D3D3"
+                        android:background="#FFFFFF"
                         android:gravity="center"
-                        android:padding="10dp"
-                        android:text="Target Rawmeal Composition"
-                        android:textStyle="bold"
-                        android:textSize="16sp" />
-                </TableRow>
+                        android:orientation="vertical"
+                        android:padding="8dp">
 
-                <!-- Row 1 -->
-                <TableRow>
-                    <TextView android:text="SiO₂" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
-                    <TextView android:text="Al₂O₃" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
-                    <TextView android:text="Fe₂O₃" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
-                    <TextView android:text="CaO" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
-                    <TextView android:text="MgO" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="MANUAL"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:id="@+id/tvTotal"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="#FFFFFF"
+                        android:text="@string/_100_0" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:id="@+id/etLimestone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E26B0A"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:padding="8dp"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#CCFFFFFF" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:id="@+id/etShale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#D2B48C"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:padding="8dp"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#CCFFFFFF" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:id="@+id/etIron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#808080"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:padding="8dp"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#CCFFFFFF" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
                 </TableRow>
 
                 <!-- Row 2 -->
                 <TableRow>
+
+                    <LinearLayout
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="MANUAL"
+                                android:textSize="10sp" />
+
+                            <Switch
+                                android:id="@+id/switch_row2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:thumbTint="#FF6B35"
+                                android:trackTint="#E0E0E0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="AUTO"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
                     <TextView
-                        android:layout_span="10"
-                        android:layout_width="match_parent"
+                        style="@style/CellInput"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="#FFFFFF"
+                        android:text="@string/_100_0" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="#E26B0A"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="81.8"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#D2B48C"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="15.0"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#808080"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="5.0"
+                        android:textColor="#FFFFFF" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+                </TableRow>
+
+                <!-- Row 3 -->
+                <TableRow>
+
+                    <LinearLayout
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="MANUAL"
+                                android:textSize="10sp" />
+
+                            <Switch
+                                android:id="@+id/switch_row3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:thumbTint="#FF6B35"
+                                android:trackTint="#E0E0E0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="AUTO"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="#FFFFFF"
+                        android:text="@string/_100_0" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E26B0A"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="81.8"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#D2B48C"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="15.0"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#808080"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="5.0"
+                        android:textColor="#FFFFFF" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+                </TableRow>
+
+                <!-- Row 4 -->
+                <TableRow>
+
+                    <LinearLayout
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="MANUAL"
+                                android:textSize="10sp" />
+
+                            <Switch
+                                android:id="@+id/switch_row4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:thumbTint="#FF6B35"
+                                android:trackTint="#E0E0E0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="AUTO"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:background="#FFFFFF"
+                        android:text="@string/_100_0" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E26B0A"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="81.8"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#D2B48C"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="13.2"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#808080"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="5.0"
+                        android:textColor="#FFFFFF" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+                </TableRow>
+
+                <!-- Row 5 -->
+                <TableRow>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="MANUAL"
+                                android:textSize="10sp" />
+
+                            <Switch
+                                android:id="@+id/switch_row5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:thumbTint="#FF6B35"
+                                android:trackTint="#E0E0E0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:text="AUTO"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:background="#FFFFFF"
+                        android:text="@string/_100_0" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E26B0A"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="81.8"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#D2B48C"
+                        android:padding="8dp"
+                        android:text="13.2"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#808080"
+                        android:padding="8dp"
+                        android:text="5.0"
+                        android:textColor="#FFFFFF" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:background="#FFFFFF"
+                        android:padding="8dp" />
+                </TableRow>
+
+                <!-- RATIOS Section Header -->
+                <TableRow>
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_width="700dp"
+                        android:layout_span="4"
                         android:background="#D3D3D3"
                         android:gravity="center"
-                        android:padding="10dp"
-                        android:text="Target Rawmeal Composition"
-                        android:textStyle="bold"
-                        android:textSize="16sp" />
-                </TableRow>
-                <TableRow>
-                    <TextView android:text="SiO₂" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
-                    <TextView android:text="Al₂O₃" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
-                    <TextView android:text="Fe₂O₃" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
-                    <TextView android:text="CaO" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
-                    <TextView android:text="MgO" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
+                        android:text="RATIOS"
+                        android:textStyle="bold" />
                 </TableRow>
 
-                <!-- Row 3 (Clinker) -->
+                <!-- RATIOS Sub-headers -->
                 <TableRow>
+
                     <TextView
-                        android:layout_span="10"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/HeaderCell"
+                        android:text="LOI" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="TOTAL" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:background="#000000"
+                        android:text="LSF"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/HeaderCell"
                         android:background="#D3D3D3"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="Target Rawmeal Composition"
-                        android:textStyle="bold"
-                        android:textSize="16sp" />
+                        android:text="HM" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:background="#D3D3D3"
+                        android:text="SM" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:background="#000000"
+                        android:text="AM"
+                        android:textColor="#FFFFFF" />
                 </TableRow>
+
+                <!-- Values Row 1 -->
                 <TableRow>
-                    <TextView android:text="C₃S" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
-                    <TextView android:text="C₂S" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
-                    <TextView android:text="C₄AF" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
-                    <TextView android:text="C₃A" style="@style/LabelCell"/>
-                    <EditText android:hint="%" style="@style/InputCell"/>
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="35.66" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="100.61" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="95.99" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="2.19" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#F2F2F2"
+                        android:text="2.51" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="1.57" />
                 </TableRow>
 
-                <!-- Summary Section -->
-                    <!-- Header Row -->
-                    <TableRow android:background="#D3D3D3">
-                        <TextView android:text="Ltr. Wt." style="@style/LabelCell"/>
-                        <TextView android:text="FCAO" style="@style/LabelCell"/>
-                        <TextView android:text="Cond" style="@style/LabelCell"/>
-                        <TextView android:text="DOC" style="@style/LabelCell"/>
-                        <TextView android:text="KF LOI" style="@style/LabelCell"/>
-                        <TextView android:text="C₃S net" style="@style/LabelCell"/>
-                        <TextView android:text="C₂S" style="@style/LabelCell"/>
-                        <TextView android:text="C₃A" style="@style/LabelCell"/>
-                        <TextView android:text="C₄AF" style="@style/LabelCell"/>
-                        <TextView android:text="Alk/Sul Ratio" style="@style/LabelCell"/>
-                        <TextView android:text="Tot Alkali" style="@style/LabelCell"/>
-                        <TextView android:text="LP @ 1450°C" style="@style/LabelCell"/>
-                        <TextView android:text="Coating Index" style="@style/LabelCell"/>
-                        <TextView android:text="%SO₃" style="@style/LabelCell"/>
-                        <TextView android:text="LOI" style="@style/LabelCell"/>
-                    </TableRow>
+                <!-- Values Row 2 -->
+                <TableRow>
 
-                    <!-- Input Row -->
-                    <TableRow>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                        <EditText android:hint="" style="@style/InputCell"/>
-                    </TableRow>
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="34.44" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="97.05" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:text="93.97" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_height="match_parent"
+                        android:background="#EEECE1"
+                        android:text="2.14" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_height="match_parent"
+                        android:background="#F2F2F2"
+                        android:text="2.56" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="1.45" />
+                </TableRow>
+
+                <!-- Values Row 3 -->
+                <TableRow>
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="35.66" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="100.61" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="95.99" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="2.19" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#F2F2F2"
+                        android:text="2.51" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="1.57" />
+                </TableRow>
+
+                <!-- Values Row 4 -->
+                <TableRow>
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="35.66" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="100.61" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="95.99" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="2.19" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#F2F2F2"
+                        android:text="2.51" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="1.57" />
+                </TableRow>
+
+                <!-- Target Rawmeal Composition Section -->
+                <TableRow android:background="#F5F5F5">
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_span="15"
+                        android:background="#FABF8F"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Target Rawmeal Composition"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Target Rawmeal Values -->
+                <TableRow>
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="SiO2" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="Al2O3" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="Fe2O3" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="CaO" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="MgO" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="Na2O" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="K2O" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="SO3" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="Cl" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="LOI" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="TOTAL" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:background="#000000"
+                        android:text="LSF"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="HM" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="SM" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:background="#000000"
+                        android:text="AM"
+                        android:textColor="#FFFFFF" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="35.66" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="100.61" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="2.19" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="2.19" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="2.19" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="2.19" />
+                </TableRow>
+
+                <!-- Coal Ash Composition Section -->
+                <TableRow android:background="#F5F5F5">
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_span="15"
+                        android:background="#948A54"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Coal Ash Composition"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#C4BD97"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="98.87" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="2.19" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="2.19" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="2.19" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="2.19" />
+                </TableRow>
+
+                <!-- Potential Clinker Composition Section -->
+                <TableRow android:background="#F5F5F5">
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_span="15"
+                        android:background="#808080"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Potential Clinker Composition"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Main Headers Row -->
+                <TableRow>
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="SiO2" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="Al2O3" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="Fe2O3" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="CaO" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="MgO" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="Na2O" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="K2O" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="SO3" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="C1" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="TOTAL" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:background="#000000"
+                        android:text="LSF"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="HM" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="SM" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:background="#000000"
+                        android:textColor="#FFFFFF"
+                        android:text="AM" />
+                </TableRow>
+
+                <!-- Main Values Row -->
+                <TableRow>
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="100.60" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="22.35" />
+                </TableRow>
+
+                <!-- Second Headers Row -->
+                <TableRow android:background="#D3D3D3">
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_span="4"
+                        android:gravity="center"
+                        android:text="MINERALS" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="Hotmeal" />
+                </TableRow>
+
+                <!-- Minerals Sub-Headers Row -->
+                <TableRow>
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="Ltr. Wt." />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="FCaO" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="Cond" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="DOC" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="KF LOI" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="C3S net" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="C2S" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="C3A" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="C4AF" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="Alk/Sul Ratio" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="Tot Alkali" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="LP @ 1450C" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="COATING INDEX" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="%SO3" />
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="LOI" />
+                </TableRow>
+
+                <!-- Second Values Row -->
+                <TableRow>
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="reducing" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:text="96.17" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="22.35" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:background="#EEECE1"
+                        android:text="22.35" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+
+                    <EditText
+                        style="@style/CellInput"
+                        android:background="#FFFFFF"
+                        android:hint="0.00" />
+                </TableRow>
+
+                <!-- TARGET Section -->
+                <TableRow>
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:layout_span="5"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="TARGET"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- Target Values -->
+                <TableRow>
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="LSF" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_span="3"
+                        android:background="#FFFFFF"
+                        android:text="95.99" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:text="AM" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_span="3"
+                        android:background="#FFFFFF"
+                        android:text="1.57" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:background="#948A54"
+                        android:text="% Ash Absorbed"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_span="3"
+                        android:background="#C4BD97"
+                        android:text="2.10%"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/HeaderCell"
+                        android:background="#808080"
+                        android:text="RAWMIX TYPE:"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        style="@style/CellInput"
+                        android:layout_span="3"
+                        android:background="#D3D3D3"
+                        android:text="OPC" />
+                </TableRow>
             </TableLayout>
         </ScrollView>
     </HorizontalScrollView>

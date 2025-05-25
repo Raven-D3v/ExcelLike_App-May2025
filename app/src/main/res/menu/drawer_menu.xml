@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group_lsf_am"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_materials_lsf_am"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="3 Materials LSF &amp; AM"
+            android:iconTint="#008000" />
+
+        <item
+            android:id="@+id/nav_recipe_lsf_am"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Recipe LSF and AM"
+            android:iconTint="#000000" />
+    </group>
+
+    <group
+        android:id="@+id/group_lsf_sm"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_materials_lsf_sm"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="3 Materials LSF &amp; SM"
+            android:iconTint="#8B4513" />
+
+        <item
+            android:id="@+id/nav_recipe_lsf_sm"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Recipe LSF and SM"
+            android:iconTint="#A0522D" />
+    </group>
+
+    <group
+        android:id="@+id/group_combined"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_materials_lsf_sm_am"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="4 Materials LSF, SM &amp; AM"
+            android:iconTint="#FFA500" />
+    </group>
+
+    <group
+        android:id="@+id/group_fuel"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_fuel_kiln"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Fuel &amp; Kiln Feed to Clinker Ratio"
+            android:iconTint="#4169E1" />
+    </group>
+</menu>
