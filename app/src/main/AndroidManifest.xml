@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/levels_icons_created_by_good_ware_flaticon"
+        android:label="RawMiXPERT"
+        android:roundIcon="@drawable/levels_icons_created_by_good_ware_flaticon"
         android:supportsRtl="true"
         android:theme="@style/Theme.RawMixApp"
         tools:targetApi="31">
@@ -23,6 +23,8 @@
         </activity>
 
         <activity android:name=".Page1Activity"/>
+        <activity android:name=".Page2Activity"/>
+        <activity android:name=".Page10Activity"/>
     </application>
 
 </manifest>

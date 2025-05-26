@@ -3,9 +3,9 @@ package com.example.rawmixapp
 import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import com.google.android.material.card.MaterialCardView
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,11 +33,12 @@ class MainActivity : AppCompatActivity() {
             R.id.btn_page4 to Page4Activity::class.java,  // Recipe LSF and SM
             R.id.btn_page5 to Page5Activity::class.java,  // 4 Materials LSF, SM & AM
               // Fuel & Kiln Feed to Clinker Ratio
+            R.id.btn_page10 to Page10Activity::class.java  // Previous Information Data List
         )
 
         // Set click listeners for each card
         cardIds.forEach { (cardId, activityClass) ->
-            findViewById<MaterialCardView>(cardId).setOnClickListener {
+            findViewById<LinearLayout>(cardId).setOnClickListener {
                 startActivity(Intent(this, activityClass))
             }
         }

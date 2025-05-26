@@ -15,4 +15,9 @@
     <string name="_100_0">100</string>
     <string name="fuel_and_kiln_feed">Fuel And Kiln Feed</string>
     <string name="recipe_lsf_and_sm">Recipe LSF And SM</string>
+    <string name="recipe_lsf_sm_amp_am">Recipe (LSF, SM &amp; AM)</string>
+    <string name="fuel_and_clinker_factor">Fuel &amp; Clinker Factor</string>
+    <string name="raw_mix_design">Raw Mix Design</string>
+    <string name="graph">Graph</string>
+    <string name="previous_information_data_list">Previous Information Data List</string>
 </resources>
