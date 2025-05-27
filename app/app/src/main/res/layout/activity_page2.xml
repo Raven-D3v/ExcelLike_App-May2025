@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page2Activity">
+
+    <LinearLayout
+        android:background="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Main Table in ScrollView (Original Layout) -->
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:padding="@dimen/padding_default">
+
+                <!-- Header Row 1 -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView
+                        style="@style/HeaderText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:layout_span="2"
+                        android:text="@string/materials_header" />
+                </TableRow>
+
+                <!-- Header Row 2 -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Left container: TARGET -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingStart="@dimen/padding_small"
+                        android:paddingEnd="@dimen/padding_small">
+
+                        <TextView
+                            style="@style/TargetLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/target" />
+                    </LinearLayout>
+
+
+                    <!-- Right container: Labels and EditTexts -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical|start"
+                        android:padding="@dimen/padding_small">
+
+                        <!-- Row 1: LSF -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/LabelLSF"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="end"
+                                android:text="@string/lime_saturation_factor"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:maxLines="1" />
+
+
+                            <EditText
+                                style="@style/StyledEditText"
+                                android:id="@+id/lsf_value"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textColorHint="#9E9E9E"
+                                android:hint="0.0"
+                                android:minEms="4" />
+                        </LinearLayout>
+
+                        <!-- Row 2: Alumina Modulus -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="@dimen/padding_small"
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/LabelAM"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="end"
+                                android:text="@string/alumina_modulus"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:maxLines="1" />
+
+                            <EditText
+                                style="@style/StyledEditText"
+                                android:id="@+id/am_value"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:hint="0.0"
+                                android:textColorHint="#9E9E9E"
+                                android:minEms="3" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- Mix % Header -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView
+                        style="@style/MixHeaderText"
+                        android:text="Mix %" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView style="@style/MixColumnText" android:text="Lime Stone" />
+                            <TextView style="@style/MixColumnText" android:text="Shale" />
+                            <TextView style="@style/MixColumnText" android:text="Iron Ore" />
+                            <TextView style="@style/MixColumnText" android:text="Raw Meal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/editTextMixLimeStone"
+                                style="@style/MixEditText"
+                                android:hint="0.0" />
+
+                            <EditText
+                                android:id="@+id/editTextMixShale"
+                                style="@style/MixEditText"
+                                android:hint="0.0" />
+
+                            <EditText
+                                android:id="@+id/editTextMixIronOre"
+                                style="@style/MixEditText"
+                                android:hint="0.0" />
+
+                            <TextView
+                                android:id="@+id/editTextMixRawMeal"
+                                style="@style/MixColumnText"
+                                android:text="0.0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+
+                <!-- Chemical Components -->
+
+                <!-- SiO2 -->
+                <include layout="@layout/activity_page2chemrow"
+                    android:id="@+id/row_sio2"/>
+
+                <!-- Al2O3 -->
+                <include layout="@layout/activity_page2chemrow"
+                    android:id="@+id/row_al2o3"/>
+
+                <!-- Fe2O3 -->
+                <include layout="@layout/activity_page2chemrow"
+                    android:id="@+id/row_fe2o3"/>
+
+                <!-- CaO -->
+                <include layout="@layout/activity_page2chemrow"
+                    android:id="@+id/row_cao"/>
+
+                <!-- MgO -->
+                <include layout="@layout/activity_page2chemrow"
+                    android:id="@+id/row_mgo"/>
+
+                <!-- Na2O -->
+                <include layout="@layout/activity_page2chemrow"
+                    android:id="@+id/row_na2o"/>
+
+                <!-- K2O -->
+                <include layout="@layout/activity_page2chemrow"
+                    android:id="@+id/row_k2o"/>
+
+                <!-- SO3 -->
+                <include layout="@layout/activity_page2chemrow"
+                    android:id="@+id/row_so3"/>
+
+                <!-- Cl -->
+                <include layout="@layout/activity_page2chemrow"
+                    android:id="@+id/row_cl"/>
+
+                <!-- LOI -->
+                <include layout="@layout/activity_page2chemrow"
+                    android:id="@+id/row_loi"/>
+
+                <!-- Total Row -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+
+                    <TextView
+                        android:text="TOTAL"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/total_limestone"
+                        style="@style/TableRowTextCommon"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_shale"
+                        style="@style/TableRowTextCommon"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_iron_ore"
+                        style="@style/TableRowTextCommon"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_raw_meal"
+                        style="@style/TableRowTextCommon"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <!-- LSF Row -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView
+                        android:text="LSF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/lsf_limestone"
+                        style="@style/TableRowTextCommon" />
+
+                    <TextView
+                        android:id="@+id/lsf_shale"
+                        style="@style/TableRowTextCommon" />
+
+                    <TextView
+                        android:id="@+id/lsf_iron"
+                        style="@style/TableRowTextCommon" />
+
+                    <TextView
+                        android:id="@+id/lsf_rawmeal"
+                        style="@style/TableRowTextCommon" />
+                </TableRow>
+
+                <!-- SM Row -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView
+                        android:text="SM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/sm_limestone"
+                        style="@style/TableRowTextCommon" />
+
+                    <TextView
+                        android:id="@+id/sm_shale"
+                        style="@style/TableRowTextCommon" />
+
+                    <TextView
+                        android:id="@+id/sm_iron"
+                        style="@style/TableRowTextCommon" />
+
+                    <TextView
+                        android:id="@+id/sm_rawmeal"
+                        style="@style/TableRowTextCommon" />
+                </TableRow>
+
+                <!-- AM Row -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView
+                        android:text="AM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/am_limestone"
+                        style="@style/TableRowTextCommon" />
+
+                    <TextView
+                        android:id="@+id/am_shale"
+                        style="@style/TableRowTextCommon" />
+
+                    <TextView
+                        android:id="@+id/am_iron"
+                        style="@style/TableRowTextCommon" />
+
+                    <TextView
+                        android:id="@+id/am_rawmeal"
+                        style="@style/TableRowTextCommon" />
+                </TableRow>
+
+                <!-- RAW MATERIAL PERCENTAGE (Dry Basis) Header -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView
+                        android:id="@+id/textView"
+                        style="@style/MixHeaderText"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:text="RAW MATERIAL PERCENTAGE (Dry Basis)" />
+                </TableRow>
+
+                <!-- Material Rows -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView
+                        style="@style/MixColumnText"
+                        android:text="LIMESTONE" />
+                    <TextView
+                        android:id="@+id/rmpLimestone"
+                        style="@style/MixColumnText"
+                        android:text="0.0" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView
+                        style="@style/MixColumnText"
+                        android:text="SHALE" />
+                    <TextView
+                        android:id="@+id/rmpShale"
+                        style="@style/MixColumnText"
+                        android:text="0.0" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView
+                        style="@style/MixColumnText"
+                        android:text="IRON ORE" />
+                    <TextView
+                        android:id="@+id/rmpIron"
+                        style="@style/MixColumnText"
+                        android:text="0.0" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView
+                        style="@style/MixColumnText"
+                        android:text="TOTAL" />
+                    <TextView
+                        android:id="@+id/rmpTotal"
+                        style="@style/MixColumnText"
+                        android:text="0.0" />
+                </TableRow>
+
+                <!-- MATERIAL PERCENTAGE (WEIGH FEEDER) Header -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView
+                        android:id="@+id/textView10"
+                        style="@style/MixHeaderText"
+                        android:layout_span="4"
+                        android:gravity="center"
+                        android:text="Material Percentage (WEIGH FEEDER)" />
+                </TableRow>
+
+                <!-- Column Labels -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView style="@style/MixColumnText" android:text="Mix" />
+                    <TextView style="@style/MixColumnText" android:text="Wet Basis" />
+                    <TextView style="@style/MixColumnText" android:text="Dry Basis" />
+                    <TextView style="@style/MixColumnText" android:text="H2O %" />
+                </TableRow>
+
+                <!-- Limestone Row -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView style="@style/MixColumnText" android:text="Limestone" />
+                    <TextView
+                        android:id="@+id/mplimewet"
+                        style="@style/TableRowTextCommon" />
+                    <EditText
+                        android:id="@+id/mplimedry"
+                        style="@style/MixEditText"
+                         />
+                    <EditText
+                        android:id="@+id/mplimeh2o"
+                        style="@style/MixEditText" />
+                </TableRow>
+
+                <!-- Shale Row -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView style="@style/MixColumnText" android:text="Shale" />
+                    <TextView
+                        android:id="@+id/mpshalewet"
+                        style="@style/TableRowTextCommon" />
+                    <EditText
+                        android:id="@+id/mpshaledry"
+                        style="@style/MixEditText"
+                         />
+                    <EditText
+                        android:id="@+id/mpshaleh2o"
+                        style="@style/MixEditText" />
+                </TableRow>
+
+                <!-- Iron Ore Row -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView style="@style/MixColumnText" android:text="Iron Ore" />
+                    <TextView
+                        android:id="@+id/mpironwet"
+                        style="@style/TableRowTextCommon" />
+                    <EditText
+                        android:id="@+id/mpirondry"
+                        style="@style/MixEditText"
+                         />
+                    <EditText
+                        android:id="@+id/mpironh2o"
+                        style="@style/MixEditText" />
+                </TableRow>
+
+                <!-- Total Row -->
+                <TableRow
+                    style="@style/UniversalTableRowStyle">
+                    <TextView style="@style/MixColumnText" android:text="Total" />
+                    <TextView
+                        android:id="@+id/mptotalwet"
+                        style="@style/TableRowTextCommon" />
+                    <TextView
+                        android:id="@+id/mptotaldry"
+                        style="@style/TableRowTextCommon" />
+                    <TextView
+                        android:id="@+id/mptotalh2o"
+                        style="@style/TableRowTextCommon" />
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+
+        <!-- Cofficient Table -->
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:padding="@dimen/padding_default">
+
+                <!-- Coefficient TABLE HEADER -->
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView
+                        style="@style/HeaderText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="COEFFICIENTS FOR MIX CALCULATION" />
+                </TableRow>
+
+                <!-- Coefficient A Row -->
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A" />
+                    <TextView
+                        android:id="@+id/coefficientA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <!-- Coefficient B to L and Delta Rows -->
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView android:text="B" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/coefficientB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                </TableRow>
+
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView android:text="C" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/coefficientC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                </TableRow>
+
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView android:text="D" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/coefficientD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                </TableRow>
+
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView android:text="E" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/coefficientE" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                </TableRow>
+
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView android:text="F" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/coefficientF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                </TableRow>
+
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView android:text="G" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/coefficientG" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                </TableRow>
+
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView android:text="H" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/coefficientH" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                </TableRow>
+
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView android:text="I" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/coefficientI" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                </TableRow>
+
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView android:text="J" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/coefficientJ" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                </TableRow>
+
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView android:text="K" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/coefficientK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                </TableRow>
+
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView android:text="L" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/coefficientL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                </TableRow>
+
+                <TableRow style="@style/UniversalTableRowStyle">
+                    <TextView android:text="Delta" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/coefficientDelta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                </TableRow>
+
+                <!-- Optional: Wet Info -->
+                <TableRow>
+                    <LinearLayout android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wet Basis" />
+                        <TextView
+                            android:id="@+id/wetbasis1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"/>
+                        <TextView
+                            android:id="@+id/wetbasis2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"/>
+                        <TextView
+                            android:id="@+id/wetbasis3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"/>
+                        <TextView
+                            android:id="@+id/wetbasis4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"/>
+                        <TextView
+                            android:id="@+id/wetbasis5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.0"/>
+                    </LinearLayout>
+                </TableRow>
+
+
+
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</HorizontalScrollView>

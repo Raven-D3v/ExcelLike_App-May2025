@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/colors.xml -->
+<resources>
+    <color name="target_yellow">#FFFF00</color>
+    <color name="label_lsf_blue">#00BFFF</color>
+    <color name="label_am_red">#FF0000</color>
+</resources>

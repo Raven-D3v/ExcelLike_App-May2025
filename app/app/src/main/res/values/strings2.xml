@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="materials_header">3 MATERIALS - LSF AND SM</string>
+    <string name="target">TARGET</string>
+    <string name="lime_saturation_factor">LIME SATURATION FACTOR</string>
+    <string name="alumina_modulus">ALUMINA MODULUS</string>
+</resources>
