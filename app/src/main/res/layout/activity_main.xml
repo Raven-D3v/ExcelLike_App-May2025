@@ -12,15 +12,6 @@
         android:layout_height="wrap_content"
         android:background="@color/card_gray">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="#EEECE1"
-            android:theme="@style/ThemeOverlay.AppCompat.Light"
-            app:titleTextColor="@color/black"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <!-- Main content area -->
@@ -68,7 +59,8 @@
                     android:text="@string/_3_materials_lsf_amp_am"
                     android:textAlignment="center"
                     android:textColor="#000000"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
                     android:layout_marginTop="4dp" />
             </LinearLayout>
 
@@ -99,7 +91,8 @@
                     android:text="@string/recipe_lsf_and_am"
                     android:textAlignment="center"
                     android:textColor="#000000"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
                     android:layout_marginTop="4dp" />
             </LinearLayout>
 
@@ -130,7 +123,8 @@
                     android:text="@string/_3_materials_lsf_amp_sm"
                     android:textAlignment="center"
                     android:textColor="#000000"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
                     android:layout_marginTop="4dp" />
             </LinearLayout>
 
@@ -161,141 +155,18 @@
                     android:text="@string/recipe_lsf_and_sm"
                     android:textAlignment="center"
                     android:textColor="#000000"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
                     android:layout_marginTop="4dp" />
             </LinearLayout>
 
-            <!-- Row 1, Column 5: 4 Materials (LSF, SM & AM) -->
-            <LinearLayout
-                android:id="@+id/btn_page5"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:layout_column="4"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:clickable="true"
-                android:focusable="true">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/filter_icons_created_by_freepik_flaticon"
-                    android:background="@android:color/transparent"
-                    android:contentDescription="4 Materials (LSF, SM &amp; AM) icon" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/_4_materials_lsf_sm_amp_am"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="12sp"
-                    android:layout_marginTop="4dp" />
-            </LinearLayout>
-
-            <!-- Row 2, Column 1: Recipe (LSF, SM & AM) -->
-            <LinearLayout
-                android:id="@+id/btn_page6"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:clickable="true"
-                android:focusable="true">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/control_system_icons_created_by_uniconlabs_flaticon"
-                    android:background="@android:color/transparent"
-                    android:contentDescription="Recipe LSF SM &amp; AM icon" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/recipe_lsf_sm_amp_am"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="12sp"
-                    android:layout_marginTop="4dp" />
-            </LinearLayout>
-
-            <!-- Row 2, Column 2: Fuel & Clinker Factor -->
-            <LinearLayout
-                android:id="@+id/btn_page7"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_column="1"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:clickable="true"
-                android:focusable="true">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/fuel_and_clinker_factor"
-                    android:background="@android:color/transparent"
-                    android:contentDescription="Fuel and Clinker Factor icon" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fuel_and_clinker_factor"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="12sp"
-                    android:layout_marginTop="4dp" />
-            </LinearLayout>
-
-            <!-- Row 2, Column 3: Raw Mix Design -->
-            <LinearLayout
-                android:id="@+id/btn_page8"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_column="2"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:clickable="true"
-                android:focusable="true">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/control_room_icons_created_by_freepik_flaticon"
-                    android:background="@android:color/transparent"
-                    android:contentDescription="Raw Mix Design icon" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/raw_mix_design"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="12sp"
-                    android:layout_marginTop="4dp" />
-            </LinearLayout>
-
-            <!-- Row 2, Column 4: Graph -->
+            <!-- Row 1, Column 5: Graph -->
             <LinearLayout
                 android:id="@+id/btn_page9"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_column="3"
+                android:layout_row="0"
+                android:layout_column="4"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:orientation="vertical"
@@ -316,7 +187,136 @@
                     android:text="@string/graph"
                     android:textAlignment="center"
                     android:textColor="#000000"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Row 2, Column 1: 4 Materials (LSF, SM & AM) -->
+            <LinearLayout
+                android:id="@+id/btn_page5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/filter_icons_created_by_freepik_flaticon"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="4 Materials (LSF, SM &amp; AM) icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_4_materials_lsf_sm_amp_am"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Row 2, Column 2: Recipe (LSF, SM & AM) -->
+            <LinearLayout
+                android:id="@+id/btn_page6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/control_system_icons_created_by_uniconlabs_flaticon"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Recipe LSF SM &amp; AM icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recipe_lsf_sm_amp_am"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Row 2, Column 3: Fuel & Clinker Factor -->
+            <LinearLayout
+                android:id="@+id/btn_page7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fuel_and_clinker_factor"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Fuel and Clinker Factor icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fuel_and_clinker_factor"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Row 2, Column 4: Raw Mix Design -->
+            <LinearLayout
+                android:id="@+id/btn_page8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/control_room_icons_created_by_freepik_flaticon"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Raw Mix Design icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/raw_mix_design"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
                     android:layout_marginTop="4dp" />
             </LinearLayout>
 
@@ -347,7 +347,8 @@
                     android:text="@string/previous_information_data_list"
                     android:textAlignment="center"
                     android:textColor="#000000"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
                     android:layout_marginTop="4dp" />
             </LinearLayout>
 

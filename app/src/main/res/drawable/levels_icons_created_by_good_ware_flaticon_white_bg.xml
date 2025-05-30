@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- White background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="8dp" />
+            <size android:width="108dp" android:height="108dp" />
+        </shape>
+    </item>
+    <!-- Original icon with proper scaling -->
+    <item
+        android:drawable="@drawable/levels_icons_created_by_good_ware_flaticon_black"
+        android:gravity="center"
+        android:width="90dp"
+        android:height="90dp" />
+</layer-list> 

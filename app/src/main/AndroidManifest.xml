@@ -6,15 +6,16 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/levels_icons_created_by_good_ware_flaticon"
+        android:icon="@drawable/levels_icons_created_by_good_ware_flaticon_white_bg"
         android:label="RawMiXPERT"
-        android:roundIcon="@drawable/levels_icons_created_by_good_ware_flaticon"
+        android:roundIcon="@drawable/levels_icons_created_by_good_ware_flaticon_white_bg"
         android:supportsRtl="true"
         android:theme="@style/Theme.RawMixApp"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,9 +23,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Page1Activity"/>
-        <activity android:name=".Page2Activity"/>
-        <activity android:name=".Page10Activity"/>
+        <activity android:name=".Page1Activity" android:screenOrientation="landscape"/>
+        <activity android:name=".Page2Activity" android:screenOrientation="landscape"/>
+        <activity android:name=".Page3Activity" android:screenOrientation="landscape"/>
+        <activity android:name=".Page4Activity" android:screenOrientation="landscape"/>
+        <activity android:name=".Page5Activity" android:screenOrientation="landscape"/>
+        <activity android:name=".Page6Activity" android:screenOrientation="landscape"/>
+        <activity android:name=".Page7Activity" android:screenOrientation="landscape"/>
+        <activity android:name=".Page8Activity" android:screenOrientation="landscape"/>
+        <activity android:name=".Page9Activity" android:screenOrientation="landscape"/>
+        <activity android:name=".Page10Activity" android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

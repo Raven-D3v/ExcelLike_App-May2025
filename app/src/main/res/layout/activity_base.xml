@@ -45,6 +45,25 @@
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <!-- Navigation Drawer -->
-    <com.google.android.material.navigation.NavigationView        android:id="@+id/nav_view"        android:layout_width="wrap_content"        android:layout_height="match_parent"        android:layout_gravity="start"        android:fitsSystemWindows="true"        android:background="@color/white"        app:itemIconTint="@color/nav_item_color"        app:itemTextColor="@color/nav_item_color"        app:itemBackground="@color/nav_item_background"        app:headerLayout="@layout/nav_header"        app:menu="@menu/drawer_menu" />
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:itemIconTint="@null"
+        app:itemTextColor="@color/nav_item_color"
+        app:itemBackground="@drawable/nav_item_background"
+        app:itemIconPadding="16dp"
+        app:itemHorizontalPadding="16dp"
+        app:itemIconSize="32dp"
+        app:itemTextAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        app:elevation="8dp" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

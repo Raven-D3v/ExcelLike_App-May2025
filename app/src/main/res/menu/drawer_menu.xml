@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_home" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+    </group>
+
     <group
         android:id="@+id/group_lsf_am"
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_materials_lsf_am"
-            android:icon="@android:drawable/ic_menu_edit"
-            android:title="3 Materials LSF &amp; AM"
-            android:iconTint="#008000" />
+            android:icon="@drawable/panel_icons_created_by_arafat_uddin_flaticon"
+            android:title="3 Materials LSF &amp; AM" />
 
         <item
             android:id="@+id/nav_recipe_lsf_am"
-            android:icon="@android:drawable/ic_menu_agenda"
-            android:title="Recipe LSF and AM"
-            android:iconTint="#000000" />
+            android:icon="@drawable/capability_icons_created_by_uniconlabs_flaticon"
+            android:title="Recipe LSF &amp; AM" />
     </group>
 
     <group
@@ -21,15 +26,13 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_materials_lsf_sm"
-            android:icon="@android:drawable/ic_menu_edit"
-            android:title="3 Materials LSF &amp; SM"
-            android:iconTint="#8B4513" />
+            android:icon="@drawable/parameters_icons_created_by_iconic_panda_flaticon"
+            android:title="3 Materials LSF &amp; SM" />
 
         <item
             android:id="@+id/nav_recipe_lsf_sm"
-            android:icon="@android:drawable/ic_menu_agenda"
-            android:title="Recipe LSF and SM"
-            android:iconTint="#A0522D" />
+            android:icon="@drawable/customization_icons_created_by_dewi_sari_flaticon"
+            android:title="Recipe LSF &amp; SM" />
     </group>
 
     <group
@@ -37,18 +40,33 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_materials_lsf_sm_am"
-            android:icon="@android:drawable/ic_menu_edit"
-            android:title="4 Materials LSF, SM &amp; AM"
-            android:iconTint="#FFA500" />
+            android:icon="@drawable/filter_icons_created_by_freepik_flaticon"
+            android:title="4 Materials LSF, SM &amp; AM" />
+
+        <item
+            android:id="@+id/nav_recipe_lsf_sm_am"
+            android:icon="@drawable/control_system_icons_created_by_uniconlabs_flaticon"
+            android:title="Recipe LSF, SM &amp; AM" />
     </group>
 
     <group
-        android:id="@+id/group_fuel"
+        android:id="@+id/nav_fuel_and_clinker_factor"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_fuel_kiln"
-            android:icon="@android:drawable/ic_menu_manage"
-            android:title="Fuel &amp; Kiln Feed to Clinker Ratio"
-            android:iconTint="#4169E1" />
+            android:id="@+id/nav_fuel_and_clinker_factor"
+            android:icon="@drawable/fuel_and_clinker_factor"
+            android:title="Fuel &amp; Clinker Factor" />
+        <item
+            android:id="@+id/nav_raw_mix_design"
+            android:icon="@drawable/control_room_icons_created_by_freepik_flaticon"
+            android:title="Raw Mix Design" />
+        <item
+            android:id="@+id/nav_graph"
+            android:icon="@drawable/line_graph_icons_created_by_srip_flaticon"
+            android:title="Graph" />
+        <item
+            android:id="@+id/nav_previous_information_data_list"
+            android:icon="@drawable/folder_icons_created_by_freepik_flaticon"
+            android:title="Previous Information Data List" />
     </group>
 </menu>
