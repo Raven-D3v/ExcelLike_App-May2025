@@ -534,28 +534,28 @@ class Page1Activity : BaseActivity() {
             // Auto mode calculations
             values["et_H46"] = (values["et_H45"] ?: 0.0) + (values["et_N52"] ?: 0.0) - (values["et_N45"] ?: 0.0)
             values["et_J46"] = (values["et_J45"] ?: 0.0) + (values["et_M52"] ?: 0.0) - (values["et_M45"] ?: 0.0)
-            values["et_I46"] = 100.0 - (values["et_H46"] ?: 0.0) - (values["et_J46"] ?: 0.0)
+            values["et_I46"] = 00.0 - (values["et_H46"] ?: 0.0) - (values["et_J46"] ?: 0.0)
         }
         // Row 3
         if (!switch_row3.isChecked) {
             // Auto mode calculations
             values["et_H47"] = (values["et_H46"] ?: 0.0) + (values["et_N52"] ?: 0.0) - (values["et_N46"] ?: 0.0)
             values["et_J47"] = (values["et_J46"] ?: 0.0) + (values["et_M52"] ?: 0.0) - (values["et_M46"] ?: 0.0)
-            values["et_I47"] = 100.0 - (values["et_H47"] ?: 0.0) - (values["et_J47"] ?: 0.0)
+            values["et_I47"] = 00.0 - (values["et_H47"] ?: 0.0) - (values["et_J47"] ?: 0.0)
         }
         // Row 4
         if (!switch_row4.isChecked) {
             // Auto mode calculations
             values["et_H48"] = (values["et_H47"] ?: 0.0) + (values["et_N52"] ?: 0.0) - (values["et_N47"] ?: 0.0)
             values["et_J48"] = (values["et_J47"] ?: 0.0) + (values["et_M52"] ?: 0.0) - (values["et_M47"] ?: 0.0)
-            values["et_I48"] = 100.0 - (values["et_H48"] ?: 0.0) - (values["et_J48"] ?: 0.0)
+            values["et_I48"] = 00.0 - (values["et_H48"] ?: 0.0) - (values["et_J48"] ?: 0.0)
         }
         // Row 5
         if (!switch_row5.isChecked) {
             // Auto mode calculations
             values["et_H49"] = (values["et_H48"] ?: 0.0) + (values["et_N52"] ?: 0.0) - (values["et_N48"] ?: 0.0)
             values["et_J49"] = (values["et_J48"] ?: 0.0) + (values["et_M52"] ?: 0.0) - (values["et_M48"] ?: 0.0)
-            values["et_I49"] = 100.0 - (values["et_H49"] ?: 0.0) - (values["et_J49"] ?: 0.0)
+            values["et_I49"] = 00.0 - (values["et_H49"] ?: 0.0) - (values["et_J49"] ?: 0.0)
         }
 
         // --- TOTAL1 (G45-G49) ---

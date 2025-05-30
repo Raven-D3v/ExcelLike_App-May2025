@@ -6,7 +6,7 @@
     android:paddingEnd="40dp"
     android:textSize="16sp"
     android:textColor="#222222"
-    android:background="#FFFFFF"
+    android:background="#EEECE1"
     android:singleLine="true"
     android:ellipsize="end"
     android:gravity="center_vertical" /> 
