@@ -150,6 +150,19 @@ class Page2Activity : BaseActivity() {
         setupButtons()
         calculateAll() // Initial calculation
 
+        // Collapsible section logic for coefficients table
+        val btnToggleCoefficients = findViewById<Button>(R.id.btn_toggle_coefficients)
+        val layoutCoefficientsTable = findViewById<LinearLayout>(R.id.layout_coefficients_table)
+        btnToggleCoefficients.setOnClickListener {
+            if (layoutCoefficientsTable.visibility == LinearLayout.VISIBLE) {
+                layoutCoefficientsTable.visibility = LinearLayout.GONE
+                btnToggleCoefficients.text = "Show Coefficients Table"
+            } else {
+                layoutCoefficientsTable.visibility = LinearLayout.VISIBLE
+                btnToggleCoefficients.text = "Hide Coefficients Table"
+            }
+        }
+
         // Check if we're loading saved data
         val savedDataId = intent.getLongExtra("saved_data_id", -1)
         if (savedDataId != -1L) {
