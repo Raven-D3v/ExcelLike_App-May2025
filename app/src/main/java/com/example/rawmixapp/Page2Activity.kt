@@ -117,6 +117,28 @@ class Page2Activity : BaseActivity() {
     private lateinit var tvWfDryTotal: TextView // W37
     private lateinit var tvWfH2oTotal: TextView // Y37
 
+    // Coefficients for Mix Calculation Table - Outputs (TextView)
+    private lateinit var tvCoeffA: TextView // AB12
+    private lateinit var tvCoeffB: TextView // AB13
+    private lateinit var tvCoeffC: TextView // AB14
+    private lateinit var tvCoeffD: TextView // AB15
+    private lateinit var tvCoeffE: TextView // AB16
+    private lateinit var tvCoeffF: TextView // AB17
+    private lateinit var tvCoeffG: TextView // AB18
+    private lateinit var tvCoeffH: TextView // AB19
+    private lateinit var tvCoeffI: TextView // AB20
+    private lateinit var tvCoeffJ: TextView // AB21
+    private lateinit var tvCoeffK: TextView // AB22
+    private lateinit var tvCoeffL: TextView // AB23
+    private lateinit var tvCoeffDelta: TextView // AB24
+
+    // Wet Basis Column - Outputs (TextView)
+    private lateinit var tvDelta1: TextView // AA26
+    private lateinit var tvDelta2: TextView // AA27
+    private lateinit var tvDelta3: TextView // AA28
+    private lateinit var tvDelta4: TextView // AA29
+    private lateinit var tvDelta5: TextView // AA30
+
     private val textWatcher = object : TextWatcher {
         override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
         override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
@@ -275,6 +297,28 @@ class Page2Activity : BaseActivity() {
         tvWfWetTotal = findViewById(R.id.tv_wf_wet_total)
         tvWfDryTotal = findViewById(R.id.tv_wf_dry_total)
         tvWfH2oTotal = findViewById(R.id.tv_wf_h2o_total)
+
+        // Coefficients for Mix Calculation Table - Outputs
+        tvCoeffA = findViewById(R.id.tv_coeff_a)
+        tvCoeffB = findViewById(R.id.tv_coeff_b)
+        tvCoeffC = findViewById(R.id.tv_coeff_c)
+        tvCoeffD = findViewById(R.id.tv_coeff_d)
+        tvCoeffE = findViewById(R.id.tv_coeff_e)
+        tvCoeffF = findViewById(R.id.tv_coeff_f)
+        tvCoeffG = findViewById(R.id.tv_coeff_g)
+        tvCoeffH = findViewById(R.id.tv_coeff_h)
+        tvCoeffI = findViewById(R.id.tv_coeff_i)
+        tvCoeffJ = findViewById(R.id.tv_coeff_j)
+        tvCoeffK = findViewById(R.id.tv_coeff_k)
+        tvCoeffL = findViewById(R.id.tv_coeff_l)
+        tvCoeffDelta = findViewById(R.id.tv_coeff_delta)
+
+        // Wet Basis Column - Outputs
+        tvDelta1 = findViewById(R.id.et_delta_1)
+        tvDelta2 = findViewById(R.id.et_delta_2)
+        tvDelta3 = findViewById(R.id.et_delta_3)
+        tvDelta4 = findViewById(R.id.et_delta_4)
+        tvDelta5 = findViewById(R.id.et_delta_5)
 
         // Create list of all input EditTexts
         allInputEditTexts = listOf(
@@ -645,6 +689,28 @@ class Page2Activity : BaseActivity() {
 
         // H2O Column (Totals)
         setTextViewValue(tvWfH2oTotal, y37_h2o_total)
+
+        // Coefficients for Mix Calculation Table
+        setTextViewValue(tvCoeffA, ab12_cfm_a)
+        setTextViewValue(tvCoeffB, ab13_cfm_b)
+        setTextViewValue(tvCoeffC, ab14_cfm_c)
+        setTextViewValue(tvCoeffD, cfm_d_coeff_for_rmp)
+        setTextViewValue(tvCoeffE, ab16_cfm_e)
+        setTextViewValue(tvCoeffF, ab17_cfm_f)
+        setTextViewValue(tvCoeffG, ab18_cfm_g)
+        setTextViewValue(tvCoeffH, 0.0) // Not used in calculations
+        setTextViewValue(tvCoeffI, ab20_cfm_i)
+        setTextViewValue(tvCoeffJ, ab21_cfm_j)
+        setTextViewValue(tvCoeffK, ab22_cfm_k)
+        setTextViewValue(tvCoeffL, 0.0) // Not used in calculations
+        setTextViewValue(tvCoeffDelta, ab24_cfm_delta)
+
+        // Wet Basis Column
+        setTextViewValue(tvDelta1, aa26)
+        setTextViewValue(tvDelta2, aa27)
+        setTextViewValue(tvDelta3, aa28)
+        setTextViewValue(tvDelta4, aa29)
+        setTextViewValue(tvDelta5, aa30)
     }
 
     override fun onBackPressed() {

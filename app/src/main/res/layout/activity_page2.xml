@@ -1556,7 +1556,7 @@
                     android:background="#FFFF00"
                     android:layout_marginTop="8dp" />
 
-                <!-- Wet Basis table -->
+                <!-- Wet Basis column -->
                 <TableLayout
                     android:gravity="center_vertical|center_horizontal"
                     android:layout_width="match_parent"
@@ -1564,23 +1564,23 @@
                     android:stretchColumns="1"
                     android:background="#FFFF00">
                     <TableRow android:background="@drawable/collasible_border" android:gravity="center_vertical|center_horizontal">
-                        <!-- cfm-wet-basis-row1 (AA26) -->
+                        <!-- cfm-wet-basis-column 1 (AA26) -->
                         <TextView android:id="@+id/et_delta_1" android:text="0.00" android:textColor="#333300" android:background="#FFFF00" />
                     </TableRow>
                     <TableRow android:background="@drawable/collasible_border" android:gravity="center_vertical|center_horizontal">
-                        <!-- cfm-wet-basis-row2 (AA27) -->
+                        <!-- cfm-wet-basis-column 2 (AA27) -->
                         <TextView android:id="@+id/et_delta_2" android:text="0.00" android:textColor="#333300" android:background="#FFFF00" />
                     </TableRow>
                     <TableRow android:background="@drawable/collasible_border" android:gravity="center_vertical|center_horizontal">
-                        <!-- cfm-wet-basis-row3 (AA28) -->
+                        <!-- cfm-wet-basis-column 3 (AA28) -->
                         <TextView android:id="@+id/et_delta_3" android:text="0.00" android:textColor="#333300" android:background="#FFFF00" />
                     </TableRow>
                     <TableRow android:background="@drawable/collasible_border" android:gravity="center_vertical|center_horizontal">
-                        <!-- cfm-wet-basis-row4 (AA29) -->
+                        <!-- cfm-wet-basis-column 4 (AA29) -->
                         <TextView android:id="@+id/et_delta_4" android:text="0.00" android:textColor="#333300"  android:background="#FFFF00" />
                     </TableRow>
                     <TableRow android:background="@drawable/collasible_border" android:gravity="center_vertical|center_horizontal">
-                        <!-- cfm-wet-basis-row5 (AA30) -->
+                        <!-- cfm-wet-basis-column 5 (AA30) -->
                         <TextView android:id="@+id/et_delta_5" android:text="0.00" android:textColor="#333300" android:background="#FFFF00" />
                     </TableRow>
                 </TableLayout>
