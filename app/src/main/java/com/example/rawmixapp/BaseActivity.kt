@@ -78,6 +78,15 @@ abstract class BaseActivity : AppCompatActivity(), NavigationView.OnNavigationIt
 
         var intent: Intent? = null
         when (item.itemId) {
+            R.id.nav_logout -> {
+                // Clear all activities and go back to login
+                intent = Intent(this, LoginActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+                finish()
+                drawerLayout.closeDrawer(GravityCompat.START)
+                return true
+            }
             R.id.nav_home -> {
                 if (this !is MainActivity) {
                     intent = Intent(this, MainActivity::class.java)

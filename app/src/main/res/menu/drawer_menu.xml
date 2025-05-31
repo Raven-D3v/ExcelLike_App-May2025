@@ -69,4 +69,13 @@
             android:icon="@drawable/folder_icons_created_by_freepik_flaticon"
             android:title="Previous Information Data List" />
     </group>
+
+    <group
+        android:id="@+id/group_logout"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
 </menu>
