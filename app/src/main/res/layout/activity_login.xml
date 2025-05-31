@@ -1,124 +1,142 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ramixpert_bg">
 
-    <!-- Centered login row overlaying the logo -->
-    <LinearLayout
-        android:id="@+id/login_row"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="270dp"
-        android:layout_alignParentTop="true"
-        android:background="@android:color/transparent">
+    <!-- 🔝 Contact Info Top Left -->
 
-        <EditText
-            android:id="@+id/username"
-            android:layout_width="120dp"
-            android:layout_height="35dp"
-            android:hint="Username"
-            android:background="@drawable/section_border"
-            android:padding="11dp"
-            android:textColor="#FFF"
-            android:textColorHint="#CCC"
-            android:textSize="13sp"
-            android:layout_marginEnd="12dp" />
-
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="120dp"
-            android:layout_height="35dp"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:background="@drawable/section_border"
-            android:padding="11dp"
-            android:textColor="#FFF"
-            android:textColorHint="#CCC"
-            android:textSize="13sp"
-            android:layout_marginEnd="12dp" />
-
-        <Button
-            android:id="@+id/login"
-            android:layout_width="90dp"
-            android:layout_height="35dp"
-            android:text="Login"
-            android:background="@drawable/section_border"
-            android:textColor="#FFF"
-            android:textSize="11sp" />
-    </LinearLayout>
-
-    <!-- Contact Info Row at Bottom Left -->
+    <!-- ⬇️ Login Form at Bottom Center -->
     <LinearLayout
         android:id="@+id/contact_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginBottom="5dp">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <!-- Name -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="22dp"
                 android:layout_height="22dp"
-                android:src="@drawable/icon1"
-                android:contentDescription="Name Icon"/>
+                android:contentDescription="Name Icon"
+                android:src="@drawable/icon1" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:text="Franco Bacalando Ortiz"
                 android:textColor="#CCC"
-                android:textSize="10sp"
-                android:layout_marginStart="8dp"/>
+                android:textSize="12sp" />
         </LinearLayout>
 
+        <!-- Email -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
             android:gravity="center_vertical"
-            android:layout_marginTop="2dp">
+            android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="22dp"
                 android:layout_height="22dp"
-                android:src="@drawable/icon2"
-                android:contentDescription="Email Icon"/>
+                android:contentDescription="Email Icon"
+                android:src="@drawable/icon2" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:text="franco.bacalando.ortiz@gmail.com"
                 android:textColor="#CCC"
-                android:textSize="10sp"
-                android:layout_marginStart="8dp"/>
+                android:textSize="12sp" />
         </LinearLayout>
 
+        <!-- LinkedIn -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
             android:gravity="center_vertical"
-            android:layout_marginTop="2dp">
+            android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="22dp"
                 android:layout_height="22dp"
-                android:src="@drawable/icon3"
-                android:contentDescription="LinkedIn Icon"/>
+                android:contentDescription="LinkedIn Icon"
+                android:src="@drawable/icon3" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:text="/francobacalandoortiz"
                 android:textColor="#CCC"
-                android:textSize="10sp"
-                android:layout_marginStart="8dp"/>
+                android:textSize="12sp" />
         </LinearLayout>
     </LinearLayout>
 
-</RelativeLayout> 
+    <LinearLayout
+        android:id="@+id/login_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/section_border"
+            android:hint="Username"
+            android:padding="10dp"
+            android:textColor="#FFF"
+            android:textColorHint="#CCC"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/section_border"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#FFF"
+            android:textColorHint="#CCC"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/section_border"
+            android:text="Login"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
