@@ -50,7 +50,7 @@
     </group>
 
     <group
-        android:id="@+id/nav_fuel_and_clinker_factor"
+        android:id="@+id/group_other_menu"
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_fuel_and_clinker_factor"
