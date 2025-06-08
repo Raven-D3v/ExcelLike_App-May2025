@@ -1467,14 +1467,14 @@
                 android:orientation="vertical"
                 android:layout_marginTop="16dp">
 
-                <Button
+                <!--- Button Show Coefficients Table
                     android:id="@+id/btn_toggle_coefficients"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Show Coefficients Table"
                     android:backgroundTint="#D3D300"
                     android:textColor="#000000"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal" -->
 
                 <LinearLayout
                     android:id="@+id/layout_coefficients_table"
