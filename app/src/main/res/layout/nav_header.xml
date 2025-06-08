@@ -5,31 +5,31 @@
     android:background="@drawable/nav_header_background"
     android:gravity="bottom"
     android:orientation="vertical"
-    android:padding="24dp"
+    android:padding="10dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <ImageView
-        android:layout_width="84dp"
-        android:layout_height="84dp"
-        android:contentDescription="@string/app_name"
-        android:src="@drawable/levels_icons_created_by_good_ware_flaticon_black"
-        android:layout_marginBottom="16dp"/>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/levels_icons_created_by_good_ware_flaticon_black" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
+        android:gravity="center"
+        android:text="By: Franco Bacalando Ortiz"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:layout_marginBottom="8dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="By Franco Ortiz"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-        android:textColor="@color/black"
-        android:alpha="0.8"/>
 
 </LinearLayout>
