@@ -41,7 +41,7 @@
         <item name="android:gravity">center</item>
     </style>
     <style name="HeaderCell">
-        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_width">50dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">6dp</item>
         <item name="android:textSize">14sp</item>
@@ -95,11 +95,13 @@
     </style>
 <!-- Base style for new table headers -->
     <style name="NewTableHeaderBase">
-        <item name="android:padding">5dp</item>
+        <item name="android:padding">2dp</item>
         <item name="android:gravity">center</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">11sp</item>
+        <item name="android:textSize">10sp</item>
         <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
     </style>
 
     <style name="NewTableHeader" parent="NewTableHeaderBase">
@@ -126,10 +128,11 @@
 
     <!-- Base style for new table data cells -->
     <style name="NewTableCellBase">
-        <item name="android:padding">5dp</item>
+        <item name="android:padding">2dp</item>
         <item name="android:gravity">center</item>
-        <item name="android:textSize">11sp</item>
+        <item name="android:textSize">10sp</item>
         <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:maxLines">1</item>
     </style>
 
     <style name="NewTableEditText" parent="NewTableCellBase">
@@ -137,27 +140,32 @@
         <item name="android:textColor">#000000</item>
         <item name="android:inputType">numberDecimal</item>
         <item name="android:layout_marginEnd">1dp</item>
+        <item name="android:singleLine">true</item>
     </style>
 
     <style name="NewTableTextView" parent="NewTableCellBase">
         <item name="android:background">#F5F5F5</item>
         <item name="android:textColor">#000000</item>
         <item name="android:layout_marginEnd">1dp</item>
+        <item name="android:ellipsize">end</item>
     </style>
 
     <style name="NewTableTextViewNoMargin" parent="NewTableCellBase">
         <item name="android:background">#F5F5F5</item>
         <item name="android:textColor">#000000</item>
+        <item name="android:ellipsize">end</item>
     </style>
 
     <style name="NewTableTextViewWhite" parent="NewTableCellBase">
         <item name="android:background">#FFFFFF</item>
         <item name="android:textColor">#000000</item>
         <item name="android:layout_marginEnd">1dp</item>
+        <item name="android:ellipsize">end</item>
     </style>
 
     <style name="NewTableTextViewWhiteNoMargin" parent="NewTableCellBase">
         <item name="android:background">#FFFFFF</item>
         <item name="android:textColor">#000000</item>
+        <item name="android:ellipsize">end</item>
     </style>
 </resources>
