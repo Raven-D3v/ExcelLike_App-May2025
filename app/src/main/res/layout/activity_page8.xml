@@ -1,13 +1,2503 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
+    android:fillViewport="true"
+    android:background="#000000"> <!-- Black background for the page -->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Page 8"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
-</LinearLayout>
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Section 2: Mix % Table -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:layout_marginBottom="16dp">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1,2,3,4,5,6,7,8">
+
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:background="@drawable/white_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:layout_marginEnd="2dp"
+                        android:text="RAW MIX DESIGN  (RM to CKR conversion)"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <!-- Header Row -->
+                    <TableRow>
+
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_border_cell"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="MIX %"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border_cell"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="IRON ORE"
+                            android:textColor="#C4BD97"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border_cell"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="SHALE"
+                            android:textColor="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border_cell"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="SAND"
+                            android:textColor="#E26B0A"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border_cell"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="LIMESTONE"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border_cell"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="COAL ASH"
+                            android:textColor="#76933C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border_cell"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="RAWMEAL"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border_cell"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="CKR-ASH FREE"
+                            android:textColor="#FF0000"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border_cell"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="CKR w/ ASH"
+                            android:textColor="#FFFF00"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="SiO2"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#C4BD97"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#E26B0A"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#76933C"
+                            android:textColorHint="#76933C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/light_shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/tint_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Al2O3"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#C4BD97"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#E26B0A"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#76933C"
+                            android:textColorHint="#76933C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/light_shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/tint_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Fe2O3"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#C4BD97"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#E26B0A"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#76933C"
+                            android:textColorHint="#76933C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/light_shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/tint_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="CaO"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#C4BD97"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#E26B0A"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#76933C"
+                            android:textColorHint="#76933C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/light_shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/tint_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="MgO"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#C4BD97"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#E26B0A"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#76933C"
+                            android:textColorHint="#76933C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="K2O"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#C4BD97"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#E26B0A"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#76933C"
+                            android:textColorHint="#76933C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Na2O"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#C4BD97"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#E26B0A"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#76933C"
+                            android:textColorHint="#76933C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="SO3"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#C4BD97"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#E26B0A"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#76933C"
+                            android:textColorHint="#76933C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="Cl"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#C4BD97"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#E26B0A"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_height="match_parent"
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#76933C"
+                            android:textColorHint="#76933C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="L.O.I."
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#C4BD97"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#E26B0A"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#76933C"
+                            android:textColorHint="#76933C"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#FABF8F"
+                            android:textColorHint="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="H2O %"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/blue_shade_border"                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/blue_shade_border"                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/blue_shade_border"                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/blue_shade_border"                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#95B3D7"
+                            android:textColorHint="#95B3D7"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:background="@drawable/shade_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:textColor="#95B3D7"
+                            android:textColorHint="#95B3D7"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="TOTAL"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="LSF"
+                            android:textColor="#FFFF00"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FF0000"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFF00"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="SM"
+                            android:textColor="#FFFF00"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FF0000"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFF00"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="AM"
+                            android:textColor="#FFFF00"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FABF8F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FF0000"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/white_border"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFF00"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:baselineAligned="false">
+
+            <TableLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1,2"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:background="@drawable/shade_border"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Material Percentage (WEIGH FEEDER)"
+                    android:textColor="#00B050"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TableRow>
+
+                <TextView
+                    android:background="@drawable/shade_border"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="MIX %"
+                    android:textColor="#00B050"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Dry Basis"
+                        android:textColor="#FF0000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Wet Basis"
+                        android:textColor="#00B0F0"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/limestone_shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="LIMESTONE"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/shale_shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="SHALE"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#974706"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#974706"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/sand_shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="SAND"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#E26B0A"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#E26B0A"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/iron_shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="IRON ORE"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="TOTAL"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TextView
+                    android:background="@drawable/white_border_cell"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="TARGET"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp" />
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:layout_span="2"
+                        android:padding="6dp"
+                        android:text="LSF"
+                        android:textColor="#0070C0"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:layout_span="2"
+                        android:padding="6dp"
+                        android:text="SM"
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:layout_span="2"
+                        android:padding="6dp"
+                        android:text="AM"
+                        android:textColor="#FF0000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1,2"
+                android:layout_marginEnd="20dp" >
+
+                <TextView
+                    android:background="@drawable/white_border_cell"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Control Range"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="CKR analysis"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:layout_width="50dp"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Min"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:layout_width="50dp"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Max"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="C3Sgross"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="C3Snet"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="C2S"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="C3A"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="C4AF"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Total Alkali"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="LP @ 1450 C "
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Coating Index"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Activity Index"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Burn Factor"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Burn Index"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="FCaO Result"
+                        android:textColor="#FFFF00"
+                        android:layout_span="2"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="0,1,2">
+
+                <TableRow>
+                <TextView
+                    android:background="@drawable/white_border_cell"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:layout_span="2"
+                    android:text="CLINKER ANALYSIS"
+                    android:textColor="#FFFF00"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Remarks"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="C3Sgross"
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="C3Snet"
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="C2S"
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="C3A"
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="C4AF"
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Total Alkali"
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Liquid Phase @ 1450 C"
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Coating Index"
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Activity Index"
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Burn Factor"
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Burn Index"
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Hotmeal SO3"
+                        android:textColor="#E26B0A"
+                        android:layout_span="2"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#E26B0A"
+                        android:textColorHint="#E26B0A"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:background="@drawable/white_border_cell"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="% Ash Absorbed"
+                        android:layout_span="2"
+                        android:textColor="#76933C"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:background="@drawable/shade_border"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="#76933C"
+                        android:textColorHint="#76933C"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+                <!-- Button Container -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="#000000">
+
+                    <Button
+                        android:id="@+id/btn_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="Save"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#4CAF50" />
+
+                    <Button
+                        android:id="@+id/btn_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clear Table"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#F44336" />
+                </LinearLayout>
+            </LinearLayout>
+    </HorizontalScrollView>
+
+</ScrollView>
