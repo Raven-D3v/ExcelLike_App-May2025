@@ -31,7 +31,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.7"
                     android:background="@drawable/orange_border_cell"
-                    android:backgroundTint="#D3D3D3"
+                    android:backgroundTint="#000000"
                     android:gravity="center"
                     android:padding="6dp"
                     android:text="TARGET"
@@ -60,7 +60,8 @@
                             android:padding="6dp"
                             android:text="LIME SATURATION FACTOR"
                             android:textColor="#0070C0"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
 
                         <!-- Lsf -->
                         <EditText
@@ -93,7 +94,8 @@
                             android:padding="6dp"
                             android:text="ALUMINA MODULUS"
                             android:textColor="#FF0000"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
 
                         <!-- alumina modulus -->
                         <EditText
@@ -128,8 +130,8 @@
                 <!-- Header Row -->
                 <TableRow>
                     <TextView
-                        android:background="@drawable/orange_border_cell"
-                        android:backgroundTint="#D3D3D3"
+                        android:background="@drawable/cell_border_darkgray"
+                        android:backgroundTint="#000000"
                         android:gravity="center"
                         android:padding="6dp"
                         android:text=""
@@ -137,7 +139,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:background="@drawable/orange_border_cell"
+                        android:background="@drawable/diamond_border"
                         android:backgroundTint="#D3D3D3"
                         android:gravity="center"
                         android:padding="6dp"
@@ -147,7 +149,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:background="@drawable/orange_border_cell"
+                        android:background="@drawable/diamond_border"
                         android:backgroundTint="#D3D3D3"
                         android:gravity="center"
                         android:padding="6dp"
@@ -157,7 +159,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:background="@drawable/orange_border_cell"
+                        android:background="@drawable/diamond_border"
                         android:backgroundTint="#D3D3D3"
                         android:gravity="center"
                         android:padding="6dp"
@@ -167,7 +169,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:background="@drawable/orange_border_cell"
+                        android:background="@drawable/diamond_border"
                         android:backgroundTint="#D3D3D3"
                         android:gravity="center"
                         android:padding="6dp"

@@ -1,13 +1,1679 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
+    android:fillViewport="true"
+    android:background="#000000"> <!-- Black background for the page -->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Page 6"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
-</LinearLayout>
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Section 1: Target Values -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="16dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/orange_border_cell"
+                    android:backgroundTint="#000000"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="TARGET"
+                    android:textColor="#FFFF00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.3"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="LIME SATURATION FACTOR"
+                            android:textColor="#0070C0"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <!-- Lsf -->
+                        <EditText
+                            android:id="@+id/et_lsf_target"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!-- SILICA MODULUS -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="SILICA MODULUS"
+                            android:textColor="#FFFF00"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/et_sm_target"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="ALUMINA MODULUS"
+                            android:textColor="#FF0000"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <!-- alumina modulus -->
+                        <EditText
+                            android:id="@+id/et_am_target"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Section 2: Mix % Table -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:layout_marginBottom="16dp">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1,2,3,4">
+
+                    <!-- Header Row -->
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/cell_border_darkgray"
+                            android:backgroundTint="#000000"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text=""
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/diamond_border"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="LIMESTONE"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/diamond_border"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="SHALE"
+                            android:textColor="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/diamond_border"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="IRON ORE"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/diamond_border"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="RAWMEAL"
+                            android:textColor="#FCD5B4"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="MIX %"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <!-- ls-column 1 (U12) -->
+                        <EditText
+                            android:id="@+id/et_mix_limestone"
+                            android:background="#A6A6A6"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 1 (V12) -->
+                        <EditText
+                            android:id="@+id/et_mix_shale"
+                            android:background="#A6A6A6"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 1 (W12) -->
+                        <EditText
+                            android:id="@+id/et_mix_ironore"
+                            android:background="#A6A6A6"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 1 (X12) -->
+                        <TextView
+                            android:id="@+id/tv_mix_rawmeal"
+                            android:background="#A6A6A6"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FCD5B4"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="SiO2"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- ls-column 2 (U13) -->
+                        <EditText
+                            android:id="@+id/et_sio2_limestone"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 2 (V13) -->
+                        <EditText
+                            android:id="@+id/et_sio2_shale"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 2 (W13) -->
+                        <EditText
+                            android:id="@+id/et_sio2_ironore"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 2 (X13) -->
+                        <TextView
+                            android:id="@+id/tv_sio2_rawmeal"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FCD5B4"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="Al2O3"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- ls-column 3 (U14) -->
+                        <EditText
+                            android:id="@+id/et_al2o3_limestone"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 3 (V14) -->
+                        <EditText
+                            android:id="@+id/et_al2o3_shale"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 3 (W14) -->
+                        <EditText
+                            android:id="@+id/et_al2o3_ironore"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 3 (X14) -->
+                        <TextView
+                            android:id="@+id/tv_al2o3_rawmeal"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FCD5B4"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="Fe2O3"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- ls-column 4 (U15) -->
+                        <EditText
+                            android:id="@+id/et_fe2o3_limestone"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 4 (V15) -->
+                        <EditText
+                            android:id="@+id/et_fe2o3_shale"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 4 (W15) -->
+                        <EditText
+                            android:id="@+id/et_fe2o3_ironore"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 4 (X15) -->
+                        <TextView
+                            android:id="@+id/tv_fe2o3_rawmeal"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FCD5B4"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="CaO"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- ls-column 5 (U16) -->
+                        <EditText
+                            android:id="@+id/et_cao_limestone"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 5 (V16) -->
+                        <EditText
+                            android:id="@+id/et_cao_shale"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 5 (W16) -->
+                        <EditText
+                            android:id="@+id/et_cao_ironore"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 5 (X16) -->
+                        <TextView
+                            android:id="@+id/tv_cao_rawmeal"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FCD5B4"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="MgO"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- ls-column 6 (U17) -->
+                        <EditText
+                            android:id="@+id/et_mgo_limestone"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 6 (V17) -->
+                        <EditText
+                            android:id="@+id/et_mgo_shale"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 6 (W17) -->
+                        <EditText
+                            android:id="@+id/et_mgo_ironore"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 6 (X17) -->
+                        <TextView
+                            android:id="@+id/tv_mgo_rawmeal"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FCD5B4"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="Na2O"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- ls-column 7 (U18) -->
+                        <EditText
+                            android:id="@+id/et_na2o_limestone"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 7 (V18) -->
+                        <EditText
+                            android:id="@+id/et_na2o_shale"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 7 (W18) -->
+                        <EditText
+                            android:id="@+id/et_na2o_ironore"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 7 (X18) -->
+                        <TextView
+                            android:id="@+id/tv_na2o_rawmeal"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FCD5B4"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="K2O"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- ls-column 8 (U19) -->
+                        <EditText
+                            android:id="@+id/et_k2o_limestone"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 8 (V19) -->
+                        <EditText
+                            android:id="@+id/et_k2o_shale"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 8 (W19) -->
+                        <EditText
+                            android:id="@+id/et_k2o_ironore"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 8 (X19) -->
+                        <TextView
+                            android:id="@+id/tv_k2o_rawmeal"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FCD5B4"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="SO3"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- ls-column 9 (U20) -->
+                        <EditText
+                            android:id="@+id/et_so3_limestone"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 9 (V20) -->
+                        <EditText
+                            android:id="@+id/et_so3_shale"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 9 (W20) -->
+                        <EditText
+                            android:id="@+id/et_so3_ironore"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 9 (X20) -->
+                        <TextView
+                            android:id="@+id/tv_so3_rawmeal"
+                            android:text="0.00"
+                            android:padding="6dp"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="#FCD5B4"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="Cl"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- ls-column 10 (U21) -->
+                        <EditText
+                            android:id="@+id/et_cl_limestone"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 10 (V21) -->
+                        <EditText
+                            android:id="@+id/et_cl_shale"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 10 (W21) -->
+                        <EditText
+                            android:id="@+id/et_cl_ironore"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 10 (X21) -->
+                        <TextView
+                            android:id="@+id/tv_cl_rawmeal"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FCD5B4"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <!-- LOI Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="LOI"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- ls-column 11 (U22) -->
+                        <EditText
+                            android:id="@+id/et_loi_limestone"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 11 (V22) -->
+                        <EditText
+                            android:id="@+id/et_loi_shale"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 11 (W22) -->
+                        <EditText
+                            android:id="@+id/et_loi_ironore"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 11 (X22) -->
+                        <TextView
+                            android:id="@+id/tv_loi_rawmeal"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FCD5B4"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <!-- TOTAL Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="TOTAL"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <!-- ls-column 12 (U23) -->
+                        <TextView
+                            android:id="@+id/tv_total_limestone"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 12 (V23) -->
+                        <TextView
+                            android:id="@+id/tv_total_shale"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 12 (W23) -->
+                        <TextView
+                            android:id="@+id/tv_total_ironore"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 12 (X23) -->
+                        <TextView
+                            android:id="@+id/tv_total_rawmeal"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <!-- LSF Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="LSF"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <!-- ls-column 13 (U24) -->
+                        <TextView
+                            android:id="@+id/tv_lsf_limestone"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 13 (V24) -->
+                        <TextView
+                            android:id="@+id/tv_lsf_shale"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 13 (W24) -->
+                        <TextView
+                            android:id="@+id/tv_lsf_ironore"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 13 (X24) -->
+                        <TextView
+                            android:id="@+id/tv_lsf_rawmeal"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <!-- SM Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="SM"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <!-- ls-column 14 (U25) -->
+                        <TextView
+                            android:id="@+id/tv_sm_limestone"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 14 (V25) -->
+                        <TextView
+                            android:id="@+id/tv_sm_shale"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 14 (W25) -->
+                        <TextView
+                            android:id="@+id/tv_sm_ironore"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 14 (X25) -->
+                        <TextView
+                            android:id="@+id/tv_sm_rawmeal"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <!-- AM Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="AM"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <!-- ls-column 15 (U26) -->
+                        <TextView
+                            android:id="@+id/tv_am_limestone"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- s-column 15 (V26) -->
+                        <TextView
+                            android:id="@+id/tv_am_shale"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 15 (W26) -->
+                        <TextView
+                            android:id="@+id/tv_am_ironore"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 15 (X26) -->
+                        <TextView
+                            android:id="@+id/tv_am_rawmeal"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <!-- Section 3: Raw Material Percentage (Dry Basis) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#000000"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="RAW MATERIAL PERCENTAGE (DRY BASIS)"
+                android:textColor="#00B050"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:layout_marginBottom="16dp">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <!-- Limestone Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/limestone_border"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="LIMESTONE"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+                        <!-- rmp-limestone (W28) -->
+                        <TextView
+                            android:id="@+id/tv_dry_limestone"
+                            android:layout_weight="1"
+                            android:background="@drawable/limestone_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <!-- Shale Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/shale_border"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="SHALE"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- rmp-shale (W29) -->
+                        <TextView
+                            android:id="@+id/tv_dry_shale"
+                            android:layout_weight="1"
+                            android:background="@drawable/shale_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <!-- Iron Ore Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="IRON ORE"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- rmp-iron-ore (W30) -->
+                        <TextView
+                            android:id="@+id/tv_dry_ironore"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <!-- Total Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_border"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="TOTAL"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <!-- rmp-total (W31) -->
+                        <TextView
+                            android:id="@+id/tv_dry_total"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <!-- Section 4: Material Percentage (Weigh Feeder) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/cell_border_gray"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="MATERIAL PERCENTAGE (WEIGH FEEDER)"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1,2,3">
+
+                    <!-- Header Row -->
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="MIX"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="WET BASIS"
+                            android:textColor="#0070C0"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="DRY BASIS"
+                            android:textColor="#FF0000"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/cell_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="H2O%"
+                            android:textColor="#00B0F0"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <!-- Limestone Row -->
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="LIMESTONE"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <!-- wet-basis-limestone (U34) -->
+                        <TextView
+                            android:id="@+id/tv_wf_wet_limestone"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- dry-basis-limestone (W34) -->
+                        <EditText
+                            android:id="@+id/et_wf_dry_limestone"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- h2o-limestone (Y34) -->
+                        <EditText
+                            android:id="@+id/et_wf_h2o_limestone"
+                            android:background="@drawable/h2o_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <!-- Shale Row -->
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="SHALE"
+                            android:textColor="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <!-- wet-basis-shale (U35) -->
+                        <TextView
+                            android:id="@+id/tv_wf_wet_shale"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#974706"
+                            android:textSize="12sp" />
+
+                        <!-- dry-basis-shale (W35) -->
+                        <EditText
+                            android:id="@+id/et_wf_dry_shale"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- h2o-shale (Y35) -->
+                        <EditText
+                            android:id="@+id/et_wf_h2o_shale"
+                            android:background="@drawable/h2o_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <!-- Iron Ore Row -->
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="IRON ORE"
+                            android:textColor="#494529"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <!-- wet-basis-iron-ore (U36) -->
+                        <TextView
+                            android:id="@+id/tv_wf_wet_ironore"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#494529"
+                            android:textSize="12sp" />
+
+                        <!-- dry-basis-iron-ore (W36) -->
+                        <EditText
+                            android:id="@+id/et_wf_dry_ironore"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#494529"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- h2o-iron-ore (Y36) -->
+                        <EditText
+                            android:id="@+id/et_wf_h2o_ironore"
+                            android:background="@drawable/h2o_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="TOTAL"
+                            android:padding="6dp"
+                            android:gravity="start|center_vertical"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"/>
+
+                        <!-- wet-basis-total (U37) -->
+                        <TextView
+                            android:id="@+id/tv_wf_wet_total"
+                            android:text="0.00"
+                            android:padding="6dp"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"/>
+
+                        <!-- dry-basis-total (W37) -->
+                        <TextView
+                            android:id="@+id/tv_wf_dry_total"
+                            android:text="0.00"
+                            android:padding="6dp"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"/>
+
+                        <!-- h2o-total (Y37) -->
+                        <TextView
+                            android:id="@+id/tv_wf_h2o_total"
+                            android:text="0.00"
+                            android:padding="6dp"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"/>
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <!-- Collapsible Section: Coefficients for Mix Calculation -->
+            <LinearLayout
+                android:id="@+id/layout_coefficients_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <!--- Button Show Coefficients Table
+                    android:id="@+id/btn_toggle_coefficients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Coefficients Table"
+                    android:backgroundTint="#D3D300"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_horizontal" -->
+
+                <LinearLayout
+                    android:id="@+id/layout_coefficients_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="#FFFF00"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="COEFFICIENTS FOR MIX CALCULATION"
+                        android:textColor="#333300"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/collasible_border" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="1,2"
+                        android:layout_span="1"
+                        android:background="#FFFF00">
+                        <!-- Coefficient Rows -->
+                        <TableRow android:background="#FFFF00" android:gravity="center_vertical|center_horizontal">
+                            <TextView android:text="A" android:textColor="#333300" android:padding="4dp" android:background="@drawable/collasible_border" android:gravity="center" />
+                            <!-- cfm-a (AB12) -->
+                            <TextView android:id="@+id/tv_coeff_a" android:text="0.00" android:textColor="#333300" android:background="@drawable/collasible_border" android:gravity="center" android:padding="4dp" />
+                        </TableRow>
+                        <TableRow android:background="#FFFF00" android:gravity="center_vertical|center_horizontal">
+                            <TextView android:text="B" android:textColor="#333300" android:padding="4dp" android:background="@drawable/collasible_border" android:gravity="center" />
+                            <!-- cfm-b (AB13) -->
+                            <TextView android:id="@+id/tv_coeff_b" android:text="0.00" android:textColor="#333300" android:background="@drawable/collasible_border" android:gravity="center" android:padding="4dp" />
+                        </TableRow>
+                        <TableRow android:background="#FFFF00" android:gravity="center_vertical|center_horizontal">
+                            <TextView android:text="C" android:textColor="#333300" android:padding="4dp" android:background="@drawable/collasible_border" android:gravity="center" />
+                            <!-- cfm-c (AB14) -->
+                            <TextView android:id="@+id/tv_coeff_c" android:text="0.00" android:textColor="#333300" android:background="@drawable/collasible_border" android:gravity="center" android:padding="4dp" />
+                        </TableRow>
+                        <TableRow android:background="#FFFF00" android:gravity="center_vertical|center_horizontal">
+                            <TextView android:text="D" android:textColor="#333300" android:padding="4dp" android:background="@drawable/collasible_border" android:gravity="center" />
+                            <!-- cfm-d (AB15) -->
+                            <TextView android:id="@+id/tv_coeff_d" android:text="0.00" android:textColor="#333300" android:background="@drawable/collasible_border" android:gravity="center" android:padding="4dp" />
+                        </TableRow>
+                        <TableRow android:background="#FFFF00" android:gravity="center_vertical|center_horizontal">
+                            <TextView android:text="E" android:textColor="#333300" android:padding="4dp" android:background="@drawable/collasible_border" android:gravity="center" />
+                            <!-- cfm-e (AB16) -->
+                            <TextView android:id="@+id/tv_coeff_e" android:text="0.00" android:textColor="#333300" android:background="@drawable/collasible_border" android:gravity="center" android:padding="4dp" />
+                        </TableRow>
+                        <TableRow android:background="#FFFF00" android:gravity="center_vertical|center_horizontal">
+                            <TextView android:text="F" android:textColor="#333300" android:padding="4dp" android:background="@drawable/collasible_border" android:gravity="center" />
+                            <!-- cfm-f (AB17) -->
+                            <TextView android:id="@+id/tv_coeff_f" android:text="0.00" android:textColor="#333300" android:background="@drawable/collasible_border" android:gravity="center" android:padding="4dp" />
+                        </TableRow>
+                        <TableRow android:background="#FFFF00" android:gravity="center_vertical|center_horizontal">
+                            <TextView android:text="G" android:textColor="#333300" android:padding="4dp" android:background="@drawable/collasible_border" android:gravity="center" />
+                            <!-- cfm-g (AB18) -->
+                            <TextView android:id="@+id/tv_coeff_g" android:text="0.00" android:textColor="#333300" android:background="@drawable/collasible_border" android:gravity="center" android:padding="4dp" />
+                        </TableRow>
+                        <TableRow android:background="#FFFF00" android:gravity="center_vertical|center_horizontal">
+                            <TextView android:text="H" android:textColor="#333300" android:padding="4dp" android:background="@drawable/collasible_border" android:gravity="center" />
+                            <!-- cfm-h (AB19) -->
+                            <TextView android:id="@+id/tv_coeff_h" android:text="0.00" android:textColor="#333300" android:background="@drawable/collasible_border" android:gravity="center" android:padding="4dp" />
+                        </TableRow>
+                        <TableRow android:background="#FFFF00" android:gravity="center_vertical|center_horizontal">
+                            <TextView android:text="I" android:textColor="#333300" android:padding="4dp" android:background="@drawable/collasible_border" android:gravity="center" />
+                            <!-- cfm-i (AB20) -->
+                            <TextView android:id="@+id/tv_coeff_i" android:text="0.00" android:textColor="#333300" android:background="@drawable/collasible_border" android:gravity="center" android:padding="4dp" />
+                        </TableRow>
+                        <TableRow android:background="#FFFF00" android:gravity="center_vertical|center_horizontal">
+                            <TextView android:text="J" android:textColor="#333300" android:padding="4dp" android:background="@drawable/collasible_border" android:gravity="center" />
+                            <!-- cfm-j (AB21) -->
+                            <TextView android:id="@+id/tv_coeff_j" android:text="0.00" android:textColor="#333300" android:background="@drawable/collasible_border" android:gravity="center" android:padding="4dp" />
+                        </TableRow>
+                        <TableRow android:background="#FFFF00" android:gravity="center_vertical|center_horizontal">
+                            <TextView android:text="K" android:textColor="#333300" android:padding="4dp" android:background="@drawable/collasible_border" android:gravity="center" />
+                            <!-- cfm-k (AB22) -->
+                            <TextView android:id="@+id/tv_coeff_k" android:text="0.00" android:textColor="#333300" android:background="@drawable/collasible_border" android:gravity="center" android:padding="4dp" />
+                        </TableRow>
+                        <TableRow android:background="#FFFF00" android:gravity="center_vertical|center_horizontal">
+                            <TextView android:text="L" android:textColor="#333300" android:padding="4dp" android:background="@drawable/collasible_border" android:gravity="center" />
+                            <!-- cfm-l (AB23) -->
+                            <TextView android:id="@+id/tv_coeff_l" android:text="0.00" android:textColor="#333300" android:background="@drawable/collasible_border" android:gravity="center" android:padding="4dp" />
+                        </TableRow>
+                        <TableRow android:background="#FFFF00" android:gravity="center_vertical|center_horizontal">
+                            <TextView android:text="DELTA" android:textColor="#333300" android:padding="4dp" android:background="@drawable/collasible_border" android:gravity="center" />
+                            <!-- cfm-delta (AB24) -->
+                            <TextView android:id="@+id/tv_coeff_delta" android:text="0.00" android:textColor="#333300" android:background="@drawable/collasible_border" android:gravity="center" android:padding="4dp" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="WET BASIS"
+                        android:textColor="#333300"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="#FFFF00"
+                        android:layout_marginTop="8dp" />
+
+                    <!-- Wet Basis column -->
+                    <TableLayout
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="1"
+                        android:background="#FFFF00">
+                        <TableRow android:background="@drawable/collasible_border" android:gravity="center_vertical|center_horizontal">
+                            <!-- cfm-wet-basis-column 1 (AA26) -->
+                            <TextView android:id="@+id/et_delta_1" android:text="0.00" android:textColor="#333300" android:background="#FFFF00" />
+                        </TableRow>
+                        <TableRow android:background="@drawable/collasible_border" android:gravity="center_vertical|center_horizontal">
+                            <!-- cfm-wet-basis-column 2 (AA27) -->
+                            <TextView android:id="@+id/et_delta_2" android:text="0.00" android:textColor="#333300" android:background="#FFFF00" />
+                        </TableRow>
+                        <TableRow android:background="@drawable/collasible_border" android:gravity="center_vertical|center_horizontal">
+                            <!-- cfm-wet-basis-column 3 (AA28) -->
+                            <TextView android:id="@+id/et_delta_3" android:text="0.00" android:textColor="#333300" android:background="#FFFF00" />
+                        </TableRow>
+                        <TableRow android:background="@drawable/collasible_border" android:gravity="center_vertical|center_horizontal">
+                            <!-- cfm-wet-basis-column 4 (AA29) -->
+                            <TextView android:id="@+id/et_delta_4" android:text="0.00" android:textColor="#333300"  android:background="#FFFF00" />
+                        </TableRow>
+                        <TableRow android:background="@drawable/collasible_border" android:gravity="center_vertical|center_horizontal">
+                            <!-- cfm-wet-basis-column 5 (AA30) -->
+                            <TextView android:id="@+id/et_delta_5" android:text="0.00" android:textColor="#333300" android:background="#FFFF00" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+                <!-- Button Container -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="#000000">
+
+                    <Button
+                        android:id="@+id/btn_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="Save"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#4CAF50" />
+
+                    <Button
+                        android:id="@+id/btn_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clear Table"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#F44336" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</ScrollView>
