@@ -158,7 +158,7 @@
                 <TableLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:stretchColumns="1,2,3,4">
+                    android:stretchColumns="1,2,3,4,5">
 
                     <!-- Header Row -->
                     <TableRow>
@@ -188,6 +188,16 @@
                             android:padding="6dp"
                             android:text="SHALE"
                             android:textColor="#974706"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:background="@drawable/diamond_border"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="SAND"
+                            android:textColor="#FFA500"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -249,6 +259,18 @@
 
                         <!-- io-column 1 (W12) -->
                         <EditText
+                            android:id="@+id/et_mix_sand"
+                            android:background="#A6A6A6"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFA500"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 1 (X12) -->
+                        <EditText
                             android:id="@+id/et_mix_ironore"
                             android:background="#A6A6A6"
                             android:gravity="center"
@@ -301,6 +323,18 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 2 (W13) -->
+                        <EditText
+                            android:id="@+id/et_sio2_sand"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFA500"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
@@ -363,6 +397,18 @@
 
                         <!-- io-column 3 (W14) -->
                         <EditText
+                            android:id="@+id/et_al2o3_sand"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFA500"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 3 (W14) -->
+                        <EditText
                             android:id="@+id/et_al2o3_ironore"
                             android:background="@drawable/iron_ore_border"
                             android:gravity="center"
@@ -415,6 +461,18 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 4 (W15) -->
+                        <EditText
+                            android:id="@+id/et_fe2o3_sand"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFA500"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
@@ -477,6 +535,18 @@
 
                         <!-- io-column 5 (W16) -->
                         <EditText
+                            android:id="@+id/et_cao_sand"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFA500"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 5 (W16) -->
+                        <EditText
                             android:id="@+id/et_cao_ironore"
                             android:background="@drawable/iron_ore_border"
                             android:gravity="center"
@@ -531,6 +601,19 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 6 (W17) -->
+                        <EditText
+                            android:id="@+id/et_mgo_sand"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFA500"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
@@ -597,6 +680,19 @@
 
                         <!-- io-column 7 (W18) -->
                         <EditText
+                            android:id="@+id/et_na2o_sand"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFA500"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 7 (W18) -->
+                        <EditText
                             android:id="@+id/et_na2o_ironore"
                             android:background="@drawable/orange_border_cell"
                             android:backgroundTint="#D3D3D3"
@@ -653,6 +749,19 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 8 (W19) -->
+                        <EditText
+                            android:id="@+id/et_k2o_sand"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFA500"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
@@ -719,6 +828,19 @@
 
                         <!-- io-column 9 (W20) -->
                         <EditText
+                            android:id="@+id/et_so3_sand"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFA500"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 9 (W20) -->
+                        <EditText
                             android:id="@+id/et_so3_ironore"
                             android:background="@drawable/orange_border_cell"
                             android:backgroundTint="#D3D3D3"
@@ -778,6 +900,20 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 10 (W21) -->
+                        <EditText
+                            android:id="@+id/et_cl_sand"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFA500"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
@@ -850,8 +986,21 @@
 
                         <!-- io-column 11 (W22) -->
                         <EditText
-                            android:id="@+id/et_loi_ironore"
+                            android:id="@+id/et_loi_sand"
                             android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFA500"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 11 (W22) -->
+                        <EditText
+                            android:id="@+id/et_loi_ironore"
                             android:background="@drawable/orange_border_cell"
                             android:backgroundTint="#D3D3D3"
                             android:gravity="center"
@@ -914,6 +1063,18 @@
 
                         <!-- io-column 12 (W23) -->
                         <TextView
+                            android:id="@+id/tv_total_sand"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFA500"
+                            android:textSize="12sp" />
+
+                        <!-- rm-column 12 (X23) -->
+                        <TextView
                             android:id="@+id/tv_total_ironore"
                             android:layout_weight="1"
                             android:background="@drawable/orange_border_cell"
@@ -970,6 +1131,17 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 13 (W24) -->
+                        <TextView
+                            android:id="@+id/tv_lsf_sand"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFA500"
                             android:textSize="12sp" />
 
                         <!-- io-column 13 (W24) -->
@@ -1034,6 +1206,18 @@
 
                         <!-- io-column 14 (W25) -->
                         <TextView
+                            android:id="@+id/tv_sm_sand"
+                            android:layout_weight="1"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFA500"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 14 (W25) -->
+                        <TextView
                             android:id="@+id/tv_sm_ironore"
                             android:layout_weight="1"
                             android:background="@drawable/orange_border_cell"
@@ -1089,6 +1273,17 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                        <!-- io-column 15 (W26) -->
+                        <TextView
+                            android:id="@+id/tv_am_sand"
+                            android:layout_weight="1"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFA500"
                             android:textSize="12sp" />
 
                         <!-- io-column 15 (W26) -->
@@ -1184,6 +1379,29 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <!-- Sand Row -->
+                    <TableRow>
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/sand_border"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="SAND"
+                            android:textColor="#FFA500"
+                            android:textSize="12sp" />
+
+                        <!-- rmp-sand (W29.5) -->
+                        <TextView
+                            android:id="@+id/tv_dry_sand"
+                            android:layout_weight="1"
+                            android:background="@drawable/sand_border"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFA500"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -1395,6 +1613,54 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <!-- Sand Row -->
+                    <TableRow>
+                        <TextView
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="start|center_vertical"
+                            android:padding="6dp"
+                            android:text="SAND"
+                            android:textColor="#FFA500"
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
+
+                        <!-- wet-basis-sand (U35.5) -->
+                        <TextView
+                            android:id="@+id/tv_wf_wet_sand"
+                            android:background="@drawable/orange_border_cell"
+                            android:backgroundTint="#D3D3D3"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="0.00"
+                            android:textColor="#FFA500"
+                            android:textSize="12sp" />
+
+                        <!-- dry-basis-sand (W35.5) -->
+                        <EditText
+                            android:id="@+id/et_wf_dry_sand"
+                            android:background="@drawable/iron_ore_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#FFA500"
+                            android:textColorHint="#D2B48C"
+                            android:textSize="12sp" />
+
+                        <!-- h2o-sand (Y35.5) -->
+                        <EditText
+                            android:id="@+id/et_wf_h2o_sand"
+                            android:background="@drawable/h2o_border"
+                            android:gravity="center"
+                            android:hint="0.00"
+                            android:inputType="numberDecimal"
+                            android:padding="6dp"
+                            android:textColor="#00B0F0"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp" />
                     </TableRow>
