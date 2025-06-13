@@ -63,7 +63,7 @@
                             android:textSize="12sp"
                             android:textStyle="bold"/>
 
-                        <!-- Lsf -->
+                        <!-- ls-factor (I8) -->
                         <EditText
                             android:id="@+id/et_lsf_target"
                             android:layout_width="0dp"
@@ -97,7 +97,7 @@
                             android:textSize="12sp"
                             android:textStyle="bold"/>
 
-                        <!-- alumina modulus -->
+                        <!-- silica-mod (I9) -->
                         <EditText
                             android:id="@+id/et_am_target"
                             android:layout_width="0dp"
@@ -190,7 +190,7 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
-                        <!-- ls-column 1 (U12) -->
+                        <!-- mix-lst (F11) -->
                         <EditText
                             android:id="@+id/et_mix_limestone"
                             android:background="#A6A6A6"
@@ -202,7 +202,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- s-column 1 (V12) -->
+                        <!-- mix-shale (G11) -->
                         <EditText
                             android:id="@+id/et_mix_shale"
                             android:background="#A6A6A6"
@@ -214,7 +214,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- io-column 1 (W12) -->
+                        <!-- mix-iron (H11) -->
                         <EditText
                             android:id="@+id/et_mix_ironore"
                             android:background="#A6A6A6"
@@ -226,7 +226,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 1 (X12) -->
+                        <!-- mix-rawmeal (H11) -->
                         <TextView
                             android:id="@+id/tv_mix_rawmeal"
                             android:background="#A6A6A6"
@@ -247,7 +247,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- ls-column 2 (U13) -->
+                        <!-- SiO2-lst (F12) -->
                         <EditText
                             android:id="@+id/et_sio2_limestone"
                             android:background="@drawable/iron_ore_border"
@@ -259,7 +259,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- s-column 2 (V13) -->
+                        <!-- SiO2-shale (G12) -->
                         <EditText
                             android:id="@+id/et_sio2_shale"
                             android:background="@drawable/iron_ore_border"
@@ -271,7 +271,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- io-column 2 (W13) -->
+                        <!-- SiO2-iron (H12) -->
                         <EditText
                             android:id="@+id/et_sio2_ironore"
                             android:background="@drawable/iron_ore_border"
@@ -283,7 +283,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 2 (X13) -->
+                        <!-- SiO2-rawmeal (H12) -->
                         <TextView
                             android:id="@+id/tv_sio2_rawmeal"
                             android:background="@drawable/iron_ore_border"
@@ -304,7 +304,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- ls-column 3 (U14) -->
+                        <!-- Al2O3-lst (F13) -->
                         <EditText
                             android:id="@+id/et_al2o3_limestone"
                             android:background="@drawable/iron_ore_border"
@@ -316,7 +316,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- s-column 3 (V14) -->
+                        <!-- Al2O3-shale (G13) -->
                         <EditText
                             android:id="@+id/et_al2o3_shale"
                             android:background="@drawable/iron_ore_border"
@@ -328,7 +328,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- io-column 3 (W14) -->
+                        <!-- Al2O3-iron (H13) -->
                         <EditText
                             android:id="@+id/et_al2o3_ironore"
                             android:background="@drawable/iron_ore_border"
@@ -340,7 +340,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 3 (X14) -->
+                        <!-- Al2O3-rawmeal (H13) -->
                         <TextView
                             android:id="@+id/tv_al2o3_rawmeal"
                             android:background="@drawable/iron_ore_border"
@@ -361,7 +361,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- ls-column 4 (U15) -->
+                        <!-- Fe2O3-lst (F14) -->
                         <EditText
                             android:id="@+id/et_fe2o3_limestone"
                             android:background="@drawable/iron_ore_border"
@@ -373,7 +373,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- s-column 4 (V15) -->
+                        <!-- Fe2O3-shale (G14) -->
                         <EditText
                             android:id="@+id/et_fe2o3_shale"
                             android:background="@drawable/iron_ore_border"
@@ -385,7 +385,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- io-column 4 (W15) -->
+                        <!-- Fe2O3-iron (H14) -->
                         <EditText
                             android:id="@+id/et_fe2o3_ironore"
                             android:background="@drawable/iron_ore_border"
@@ -397,7 +397,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 4 (X15) -->
+                        <!-- Fe2O3-rawmeal (H14) -->
                         <TextView
                             android:id="@+id/tv_fe2o3_rawmeal"
                             android:background="@drawable/iron_ore_border"
@@ -418,7 +418,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- ls-column 5 (U16) -->
+                        <!-- CaO-lst (F15) -->
                         <EditText
                             android:id="@+id/et_cao_limestone"
                             android:background="@drawable/iron_ore_border"
@@ -430,7 +430,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- s-column 5 (V16) -->
+                        <!-- CaO-shale (G15) -->
                         <EditText
                             android:id="@+id/et_cao_shale"
                             android:background="@drawable/iron_ore_border"
@@ -442,7 +442,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- io-column 5 (W16) -->
+                        <!-- CaO-iron (H15) -->
                         <EditText
                             android:id="@+id/et_cao_ironore"
                             android:background="@drawable/iron_ore_border"
@@ -454,7 +454,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 5 (X16) -->
+                        <!-- CaO-rawmeal (H15) -->
                         <TextView
                             android:id="@+id/tv_cao_rawmeal"
                             android:background="@drawable/iron_ore_border"
@@ -475,7 +475,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- ls-column 6 (U17) -->
+                        <!-- MgO-lst (F16) -->
                         <EditText
                             android:id="@+id/et_mgo_limestone"
                             android:background="@drawable/orange_border_cell"
@@ -488,7 +488,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- s-column 6 (V17) -->
+                        <!-- MgO-shale (G16) -->
                         <EditText
                             android:id="@+id/et_mgo_shale"
                             android:background="@drawable/orange_border_cell"
@@ -501,7 +501,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- io-column 6 (W17) -->
+                        <!-- MgO-iron (H16) -->
                         <EditText
                             android:id="@+id/et_mgo_ironore"
                             android:background="@drawable/orange_border_cell"
@@ -514,7 +514,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 6 (X17) -->
+                        <!-- MgO-rawmeal (H16) -->
                         <TextView
                             android:id="@+id/tv_mgo_rawmeal"
                             android:background="@drawable/orange_border_cell"
@@ -536,7 +536,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- ls-column 7 (U18) -->
+                        <!-- Na2O-lst (F17) -->
                         <EditText
                             android:id="@+id/et_na2o_limestone"
                             android:background="@drawable/orange_border_cell"
@@ -549,7 +549,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- s-column 7 (V18) -->
+                        <!-- Na2O-shale (G17) -->
                         <EditText
                             android:id="@+id/et_na2o_shale"
                             android:background="@drawable/orange_border_cell"
@@ -562,7 +562,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- io-column 7 (W18) -->
+                        <!-- Na2O-iron (H17) -->
                         <EditText
                             android:id="@+id/et_na2o_ironore"
                             android:background="@drawable/orange_border_cell"
@@ -575,7 +575,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 7 (X18) -->
+                        <!-- Na2O-rawmeal (H17) -->
                         <TextView
                             android:id="@+id/tv_na2o_rawmeal"
                             android:background="@drawable/orange_border_cell"
@@ -597,7 +597,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- ls-column 8 (U19) -->
+                        <!-- K2O-lst (F18) -->
                         <EditText
                             android:id="@+id/et_k2o_limestone"
                             android:background="@drawable/orange_border_cell"
@@ -610,7 +610,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- s-column 8 (V19) -->
+                        <!-- K2O-shale (G18) -->
                         <EditText
                             android:id="@+id/et_k2o_shale"
                             android:background="@drawable/orange_border_cell"
@@ -623,7 +623,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- io-column 8 (W19) -->
+                        <!-- K2O-iron (H18) -->
                         <EditText
                             android:id="@+id/et_k2o_ironore"
                             android:background="@drawable/orange_border_cell"
@@ -636,7 +636,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 8 (X19) -->
+                        <!-- K2O-rawmeal (H18) -->
                         <TextView
                             android:id="@+id/tv_k2o_rawmeal"
                             android:background="@drawable/orange_border_cell"
@@ -658,7 +658,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- ls-column 9 (U20) -->
+                        <!-- SO3-lst (F19) -->
                         <EditText
                             android:id="@+id/et_so3_limestone"
                             android:background="@drawable/orange_border_cell"
@@ -671,7 +671,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- s-column 9 (V20) -->
+                        <!-- SO3-shale (G19) -->
                         <EditText
                             android:id="@+id/et_so3_shale"
                             android:background="@drawable/orange_border_cell"
@@ -684,7 +684,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- io-column 9 (W20) -->
+                        <!-- SO3-iron (H19) -->
                         <EditText
                             android:id="@+id/et_so3_ironore"
                             android:background="@drawable/orange_border_cell"
@@ -697,7 +697,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 9 (X20) -->
+                        <!-- SO3-rawmeal (H19) -->
                         <TextView
                             android:id="@+id/tv_so3_rawmeal"
                             android:text="0.00"
@@ -720,7 +720,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- ls-column 10 (U21) -->
+                        <!-- Cl-lst (F20) -->
                         <EditText
                             android:id="@+id/et_cl_limestone"
                             android:layout_weight="1"
@@ -734,7 +734,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- s-column 10 (V21) -->
+                        <!-- Cl-shale (G20) -->
                         <EditText
                             android:id="@+id/et_cl_shale"
                             android:layout_weight="1"
@@ -748,7 +748,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- io-column 10 (W21) -->
+                        <!-- Cl-iron (H20) -->
                         <EditText
                             android:id="@+id/et_cl_ironore"
                             android:layout_weight="1"
@@ -762,7 +762,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 10 (X21) -->
+                        <!-- Cl-rawmeal (H20) -->
                         <TextView
                             android:id="@+id/tv_cl_rawmeal"
                             android:layout_weight="1"
@@ -787,7 +787,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- ls-column 11 (U22) -->
+                        <!-- LOI-lst (F21) -->
                         <EditText
                             android:id="@+id/et_loi_limestone"
                             android:layout_weight="1"
@@ -801,7 +801,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- s-column 11 (V22) -->
+                        <!-- LOI-shale (G21) -->
                         <EditText
                             android:id="@+id/et_loi_shale"
                             android:layout_weight="1"
@@ -815,7 +815,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- io-column 11 (W22) -->
+                        <!-- LOI-iron (H21) -->
                         <EditText
                             android:id="@+id/et_loi_ironore"
                             android:layout_weight="1"
@@ -829,7 +829,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 11 (X22) -->
+                        <!-- LOI-rawmeal (H21) -->
                         <TextView
                             android:id="@+id/tv_loi_rawmeal"
                             android:layout_weight="1"
@@ -855,7 +855,7 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
-                        <!-- ls-column 12 (U23) -->
+                        <!-- TOTAL-lst (F22) -->
                         <TextView
                             android:id="@+id/tv_total_limestone"
                             android:layout_weight="1"
@@ -867,7 +867,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- s-column 12 (V23) -->
+                        <!-- TOTAL-shale (G22) -->
                         <TextView
                             android:id="@+id/tv_total_shale"
                             android:layout_weight="1"
@@ -879,7 +879,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- io-column 12 (W23) -->
+                        <!-- TOTAL-iron (H22) -->
                         <TextView
                             android:id="@+id/tv_total_ironore"
                             android:layout_weight="1"
@@ -891,7 +891,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 12 (X23) -->
+                        <!-- TOTAL-rawmeal (H22) -->
                         <TextView
                             android:id="@+id/tv_total_rawmeal"
                             android:layout_weight="1"
@@ -917,7 +917,7 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
-                        <!-- ls-column 13 (U24) -->
+                        <!-- LSF-lst (F23) -->
                         <TextView
                             android:id="@+id/tv_lsf_limestone"
                             android:layout_weight="1"
@@ -928,7 +928,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- s-column 13 (V24) -->
+                        <!-- LSF-shale (G23) -->
                         <TextView
                             android:id="@+id/tv_lsf_shale"
                             android:layout_weight="1"
@@ -939,7 +939,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- io-column 13 (W24) -->
+                        <!-- LSF-iron (H23) -->
                         <TextView
                             android:id="@+id/tv_lsf_ironore"
                             android:layout_weight="1"
@@ -950,7 +950,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 13 (X24) -->
+                        <!-- LSF-rawmeal (H23) -->
                         <TextView
                             android:id="@+id/tv_lsf_rawmeal"
                             android:layout_weight="1"
@@ -975,7 +975,7 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
-                        <!-- ls-column 14 (U25) -->
+                        <!-- SM-lst (F24) -->
                         <TextView
                             android:id="@+id/tv_sm_limestone"
                             android:layout_weight="1"
@@ -987,7 +987,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- s-column 14 (V25) -->
+                        <!-- SM-shale (G24) -->
                         <TextView
                             android:id="@+id/tv_sm_shale"
                             android:layout_weight="1"
@@ -999,7 +999,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- io-column 14 (W25) -->
+                        <!-- SM-iron (H24) -->
                         <TextView
                             android:id="@+id/tv_sm_ironore"
                             android:layout_weight="1"
@@ -1011,7 +1011,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 14 (X25) -->
+                        <!-- SM-rawmeal (H24) -->
                         <TextView
                             android:id="@+id/tv_sm_rawmeal"
                             android:layout_weight="1"
@@ -1036,7 +1036,7 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
-                        <!-- ls-column 15 (U26) -->
+                        <!-- AM-lst (F25) -->
                         <TextView
                             android:id="@+id/tv_am_limestone"
                             android:layout_weight="1"
@@ -1047,7 +1047,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- s-column 15 (V26) -->
+                        <!-- AM-shale (G25) -->
                         <TextView
                             android:id="@+id/tv_am_shale"
                             android:layout_weight="1"
@@ -1058,7 +1058,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- io-column 15 (W26) -->
+                        <!-- AM-iron (H25) -->
                         <TextView
                             android:id="@+id/tv_am_ironore"
                             android:layout_weight="1"
@@ -1069,7 +1069,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- rm-column 15 (X26) -->
+                        <!-- AM-rawmeal (H25) -->
                         <TextView
                             android:id="@+id/tv_am_rawmeal"
                             android:layout_weight="1"
@@ -1119,7 +1119,7 @@
                             android:textColor="#000000"
                             android:textSize="12sp" />
 
-                        <!-- rmp-limestone (W28) -->
+                        <!-- rmp-limestone (H27) -->
                         <TextView
                             android:id="@+id/tv_dry_limestone"
                             android:layout_weight="1"
@@ -1142,7 +1142,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- rmp-shale (W29) -->
+                        <!-- rmp-shale (H28) -->
                         <TextView
                             android:id="@+id/tv_dry_shale"
                             android:layout_weight="1"
@@ -1165,7 +1165,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- rmp-iron-ore (W30) -->
+                        <!-- rmp-iron (H29) -->
                         <TextView
                             android:id="@+id/tv_dry_ironore"
                             android:layout_weight="1"
@@ -1189,7 +1189,7 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
-                        <!-- rmp-total (W31) -->
+                        <!-- rmp-total (H30) -->
                         <TextView
                             android:id="@+id/tv_dry_total"
                             android:layout_weight="1"
@@ -1282,7 +1282,7 @@
                             android:textSize="12sp"
                             android:textStyle="bold"/>
 
-                        <!-- wet-basis-limestone (U34) -->
+                        <!-- wet-basis-column1 (F33) -->
                         <TextView
                             android:id="@+id/tv_wf_wet_limestone"
                             android:background="@drawable/orange_border_cell"
@@ -1293,7 +1293,7 @@
                             android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
-                        <!-- dry-basis-limestone (W34) -->
+                        <!-- dry-basis-column1 (H33) -->
                         <EditText
                             android:id="@+id/et_wf_dry_limestone"
                             android:background="@drawable/iron_ore_border"
@@ -1305,7 +1305,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- h2o-limestone (Y34) -->
+                        <!-- h2o-basis-column1 (J33) -->
                         <EditText
                             android:id="@+id/et_wf_h2o_limestone"
                             android:background="@drawable/h2o_border"
@@ -1330,7 +1330,7 @@
                             android:textSize="12sp"
                             android:textStyle="bold"/>
 
-                        <!-- wet-basis-shale (U35) -->
+                        <!-- wet-basis-column2 (F34) -->
                         <TextView
                             android:id="@+id/tv_wf_wet_shale"
                             android:background="@drawable/orange_border_cell"
@@ -1341,7 +1341,7 @@
                             android:textColor="#974706"
                             android:textSize="12sp" />
 
-                        <!-- dry-basis-shale (W35) -->
+                        <!-- dry-basis-column2 (H34) -->
                         <EditText
                             android:id="@+id/et_wf_dry_shale"
                             android:background="@drawable/iron_ore_border"
@@ -1353,7 +1353,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- h2o-shale (Y35) -->
+                        <!-- h2o-basis-column2 (J34) -->
                         <EditText
                             android:id="@+id/et_wf_h2o_shale"
                             android:background="@drawable/h2o_border"
@@ -1378,7 +1378,7 @@
                             android:textSize="12sp"
                             android:textStyle="bold"/>
 
-                        <!-- wet-basis-iron-ore (U36) -->
+                        <!-- wet-basis-column3 (F35) -->
                         <TextView
                             android:id="@+id/tv_wf_wet_ironore"
                             android:background="@drawable/orange_border_cell"
@@ -1389,7 +1389,7 @@
                             android:textColor="#494529"
                             android:textSize="12sp" />
 
-                        <!-- dry-basis-iron-ore (W36) -->
+                        <!-- dry-basis-column3 (H35) -->
                         <EditText
                             android:id="@+id/et_wf_dry_ironore"
                             android:background="@drawable/iron_ore_border"
@@ -1401,7 +1401,7 @@
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp" />
 
-                        <!-- h2o-iron-ore (Y36) -->
+                        <!-- h2o-basis-column3 (J35) -->
                         <EditText
                             android:id="@+id/et_wf_h2o_ironore"
                             android:background="@drawable/h2o_border"
@@ -1425,7 +1425,7 @@
                             android:background="@drawable/orange_border_cell"
                             android:backgroundTint="#D3D3D3"/>
 
-                        <!-- wet-basis-total (U37) -->
+                        <!-- wet-basis-column4 (F36) -->
                         <TextView
                             android:id="@+id/tv_wf_wet_total"
                             android:text="0.00"
@@ -1437,7 +1437,7 @@
                             android:background="@drawable/orange_border_cell"
                             android:backgroundTint="#D3D3D3"/>
 
-                        <!-- dry-basis-total (W37) -->
+                        <!-- dry-basis-column4 (H36) -->
                         <TextView
                             android:id="@+id/tv_wf_dry_total"
                             android:text="0.00"
@@ -1449,7 +1449,7 @@
                             android:background="@drawable/orange_border_cell"
                             android:backgroundTint="#D3D3D3"/>
 
-                        <!-- h2o-total (Y37) -->
+                        <!-- h2o-basis-column4 (J36) -->
                         <TextView
                             android:id="@+id/tv_wf_h2o_total"
                             android:text="0.00"

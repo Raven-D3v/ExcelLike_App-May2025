@@ -331,6 +331,9 @@ class Page2Activity : BaseActivity() {
             etMgoLimestone, etMgoShale, etMgoIronOre,
             etNa2oLimestone, etNa2oShale, etNa2oIronOre,
             etK2oLimestone, etK2oShale, etK2oIronOre,
+            etSo3Limestone, etSo3Shale, etSo3IronOre,
+            etClLimestone, etClShale, etClIronOre,
+            etLoiLimestone, etLoiShale, etLoiIronOre,
             etWfDryLimestone, etWfDryShale, etWfDryIronOre,
             etWfH2oLimestone, etWfH2oShale, etWfH2oIronOre
         )
