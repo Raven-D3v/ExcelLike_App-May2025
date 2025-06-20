@@ -136,7 +136,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SiO2-iron (P12) -->
                         <EditText
+                            android:id="@+id/sio2_iron_p12"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -147,7 +149,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SiO2-shale (Q12) -->
                         <EditText
+                            android:id="@+id/sio2_shale_q12"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -158,18 +162,22 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SiO2-sand (R12) -->
                         <EditText
+                            android:id="@+id/sio2_sand_r12"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#000000"
+                            android:textColor="#E26B0A"
                             android:textColorHint="#E26B0A"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SiO2-limestone (S12) -->
                         <EditText
+                            android:id="@+id/sio2_limestone_s12"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -180,7 +188,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SiO2-coal-ash (T12) -->
                         <EditText
+                            android:id="@+id/sio2_coal_ash_t12"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -191,25 +201,34 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SiO2-rawmeal (U12) -->
                         <TextView
+                            android:id="@+id/sio2_rawmeal_u12"
                             android:background="@drawable/light_shade_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FABF8F"
                             android:textStyle="bold" />
 
+                        <!-- SiO2-ckrashfree (V12) -->
                         <TextView
+                            android:id="@+id/sio2_ckrashfree_v12"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FF0000"
                             android:textStyle="bold" />
 
+                        <!-- SiO2-ckwithash (W12) -->
                         <TextView
+                            android:id="@+id/sio2_ckwithash_w12"
                             android:background="@drawable/tint_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FFFF00"
                             android:textStyle="bold" />
                     </TableRow>
 
@@ -223,7 +242,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Al2O3-iron (P13) -->
                         <EditText
+                            android:id="@+id/al2o3_iron_p13"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -234,7 +255,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Al2O3-shale (Q13) -->
                         <EditText
+                            android:id="@+id/al2o3_shale_q13"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -245,18 +268,22 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Al2O3-sand (R13) -->
                         <EditText
+                            android:id="@+id/al2o3_sand_r13"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#000000"
+                            android:textColor="#E26B0A"
                             android:textColorHint="#E26B0A"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Al2O3-limestone (S13) -->
                         <EditText
+                            android:id="@+id/al2o3_limestone_s13"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -267,7 +294,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Al2O3-coal-ash (T13) -->
                         <EditText
+                            android:id="@+id/al2o3_coal_ash_t13"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -278,25 +307,34 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Al2O3-rawmeal (U13) -->
                         <TextView
+                            android:id="@+id/al2o3_rawmeal_u13"
                             android:background="@drawable/light_shade_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FABF8F"
                             android:textStyle="bold" />
 
+                        <!-- Al2O3-ckrashfree (V13) -->
                         <TextView
+                            android:id="@+id/al2o3_ckrashfree_v13"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FF0000"
                             android:textStyle="bold" />
 
+                        <!-- Al2O3-ckwithash (W13) -->
                         <TextView
+                            android:id="@+id/al2o3_ckwithash_w13"
                             android:background="@drawable/tint_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FFFF00"
                             android:textStyle="bold" />
                     </TableRow>
 
@@ -310,7 +348,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Fe2O3-iron (P14) -->
                         <EditText
+                            android:id="@+id/fe2o3_iron_p14"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -321,7 +361,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Fe2O3-shale (Q14) -->
                         <EditText
+                            android:id="@+id/fe2o3_shale_q14"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -332,18 +374,22 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Fe2O3-sand (R14) -->
                         <EditText
+                            android:id="@+id/fe2o3_sand_r14"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#000000"
+                            android:textColor="#E26B0A"
                             android:textColorHint="#E26B0A"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Fe2O3-limestone (S14) -->
                         <EditText
+                            android:id="@+id/fe2o3_limestone_s14"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -354,7 +400,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Fe2O3-coal-ash (T14) -->
                         <EditText
+                            android:id="@+id/fe2o3_coal_ash_t14"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -365,25 +413,34 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Fe2O3-rawmeal (U14) -->
                         <TextView
+                            android:id="@+id/fe2o3_rawmeal_u14"
                             android:background="@drawable/light_shade_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FABF8F"
                             android:textStyle="bold" />
 
+                        <!-- Fe2O3-ckrashfree (V14) -->
                         <TextView
+                            android:id="@+id/fe2o3_ckrashfree_v14"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FF0000"
                             android:textStyle="bold" />
 
+                        <!-- Fe2O3-ckwithash (W14) -->
                         <TextView
+                            android:id="@+id/fe2o3_ckwithash_w14"
                             android:background="@drawable/tint_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FFFF00"
                             android:textStyle="bold" />
                     </TableRow>
 
@@ -397,7 +454,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- CaO-iron (P15) -->
                         <EditText
+                            android:id="@+id/cao_iron_p15"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -408,7 +467,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- CaO-shale (Q15) -->
                         <EditText
+                            android:id="@+id/cao_shale_q15"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -419,18 +480,22 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- CaO-sand (R15) -->
                         <EditText
+                            android:id="@+id/cao_sand_r15"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#000000"
+                            android:textColor="#E26B0A"
                             android:textColorHint="#E26B0A"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- CaO-limestone (S15) -->
                         <EditText
+                            android:id="@+id/cao_limestone_s15"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -441,7 +506,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- CaO-coal-ash (T15) -->
                         <EditText
+                            android:id="@+id/cao_coal_ash_t15"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -452,25 +519,34 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- CaO-rawmeal (U15) -->
                         <TextView
+                            android:id="@+id/cao_rawmeal_u15"
                             android:background="@drawable/light_shade_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FABF8F"
                             android:textStyle="bold" />
 
+                        <!-- CaO-ckrashfree (V15) -->
                         <TextView
+                            android:id="@+id/cao_ckrashfree_v15"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FF0000"
                             android:textStyle="bold" />
 
+                        <!-- CaO-ckwithash (W15) -->
                         <TextView
+                            android:id="@+id/cao_ckwithash_w15"
                             android:background="@drawable/tint_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FFFF00"
                             android:textStyle="bold" />
                     </TableRow>
 
@@ -484,7 +560,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- MgO-iron (P16) -->
                         <EditText
+                            android:id="@+id/mgo_iron_p16"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -495,7 +573,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- MgO-shale (Q16) -->
                         <EditText
+                            android:id="@+id/mgo_shale_q16"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -506,18 +586,22 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- MgO-sand (R16) -->
                         <EditText
+                            android:id="@+id/mgo_sand_r16"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#000000"
+                            android:textColor="#E26B0A"
                             android:textColorHint="#E26B0A"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- MgO-limestone (S16) -->
                         <EditText
+                            android:id="@+id/mgo_limestone_s16"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -528,7 +612,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- MgO-coal-ash (T16) -->
                         <EditText
+                            android:id="@+id/mgo_coal_ash_t16"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -539,25 +625,34 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- MgO-rawmeal (U16) -->
                         <TextView
+                            android:id="@+id/mgo_rawmeal_u16"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FABF8F"
                             android:textStyle="bold" />
 
+                        <!-- MgO-ckrashfree (V16) -->
                         <TextView
+                            android:id="@+id/mgo_ckrashfree_v16"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FF0000"
                             android:textStyle="bold" />
 
+                        <!-- MgO-ckwithash (W16) -->
                         <TextView
+                            android:id="@+id/mgo_ckwithash_w16"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FFFF00"
                             android:textStyle="bold" />
                     </TableRow>
 
@@ -571,7 +666,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- K2O-iron (P17) -->
                         <EditText
+                            android:id="@+id/k2o_iron_p17"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -582,7 +679,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- K2O-shale (Q17) -->
                         <EditText
+                            android:id="@+id/k2o_shale_q17"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -593,18 +692,23 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- K2O-sand (R17) -->
                         <EditText
+                            android:id="@+id/k2o_sand_r17"
+                            android:layout_height="match_parent"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#000000"
+                            android:textColor="#E26B0A"
                             android:textColorHint="#E26B0A"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- K2O-limestone (S17) -->
                         <EditText
+                            android:id="@+id/k2o_limestone_s17"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -615,7 +719,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- K2O-coal-ash (T17) -->
                         <EditText
+                            android:id="@+id/k2o_coal_ash_t17"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -626,25 +732,34 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- K2O-rawmeal (U17) -->
                         <TextView
+                            android:id="@+id/k2o_rawmeal_u17"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FABF8F"
                             android:textStyle="bold" />
 
+                        <!-- K2O-ckrashfree (V17) -->
                         <TextView
+                            android:id="@+id/k2o_ckrashfree_v17"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FF0000"
                             android:textStyle="bold" />
 
+                        <!-- K2O-ckwithash (W17) -->
                         <TextView
+                            android:id="@+id/k2o_ckwithash_w17"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FFFF00"
                             android:textStyle="bold" />
                     </TableRow>
 
@@ -658,7 +773,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Na2O-iron (P18) -->
                         <EditText
+                            android:id="@+id/na2o_iron_p18"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -669,7 +786,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Na2O-shale (Q18) -->
                         <EditText
+                            android:id="@+id/na2o_shale_q18"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -680,18 +799,22 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Na2O-sand (R18) -->
                         <EditText
+                            android:id="@+id/na2o_sand_r18"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#000000"
+                            android:textColor="#E26B0A"
                             android:textColorHint="#E26B0A"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Na2O-limestone (S18) -->
                         <EditText
+                            android:id="@+id/na2o_limestone_s18"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -702,7 +825,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Na2O-coal-ash (T18) -->
                         <EditText
+                            android:id="@+id/na2o_coal_ash_t18"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -713,25 +838,34 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Na2O-rawmeal (U18) -->
                         <TextView
+                            android:id="@+id/na2o_rawmeal_u18"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FABF8F"
                             android:textStyle="bold" />
 
+                        <!-- Na2O-ckrashfree (V18) -->
                         <TextView
+                            android:id="@+id/na2o_ckrashfree_v18"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FF0000"
                             android:textStyle="bold" />
 
+                        <!-- Na2O-ckwithash (W18) -->
                         <TextView
+                            android:id="@+id/na2o_ckwithash_w18"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FFFF00"
                             android:textStyle="bold" />
                     </TableRow>
 
@@ -745,7 +879,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SO3-iron (P19) -->
                         <EditText
+                            android:id="@+id/so3_iron_p19"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -756,7 +892,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SO3-shale (Q19) -->
                         <EditText
+                            android:id="@+id/so3_shale_q19"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -767,18 +905,22 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SO3-sand (R19) -->
                         <EditText
+                            android:id="@+id/so3_sand_r19"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#000000"
+                            android:textColor="#E26B0A"
                             android:textColorHint="#E26B0A"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SO3-limestone (S19) -->
                         <EditText
+                            android:id="@+id/so3_limestone_s19"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -789,7 +931,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SO3-coal-ash (T19) -->
                         <EditText
+                            android:id="@+id/so3_coal_ash_t19"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -800,25 +944,34 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SO3-rawmeal (U19) -->
                         <TextView
+                            android:id="@+id/so3_rawmeal_u19"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FABF8F"
                             android:textStyle="bold" />
 
+                        <!-- SO3-ckrashfree (V19) -->
                         <TextView
+                            android:id="@+id/so3_ckrashfree_v19"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FF0000"
                             android:textStyle="bold" />
 
+                        <!-- SO3-ckwithash (W19) -->
                         <TextView
+                            android:id="@+id/so3_ckwithash_w19"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FFFF00"
                             android:textStyle="bold" />
                     </TableRow>
 
@@ -832,7 +985,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Cl-iron (P20) -->
                         <EditText
+                            android:id="@+id/cl_iron_p20"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -843,7 +998,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Cl-shale (Q20) -->
                         <EditText
+                            android:id="@+id/cl_shale_q20"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -854,18 +1011,22 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Cl-sand (R20) -->
                         <EditText
+                            android:id="@+id/cl_sand_r20"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#000000"
+                            android:textColor="#E26B0A"
                             android:textColorHint="#E26B0A"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Cl-limestone (S20) -->
                         <EditText
+                            android:id="@+id/cl_limestone_s20"
                             android:layout_height="match_parent"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
@@ -877,7 +1038,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Cl-coal-ash (T20) -->
                         <EditText
+                            android:id="@+id/cl_coal_ash_t20"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -888,25 +1051,35 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- Cl-rawmeal (U20) -->
                         <TextView
+                            android:id="@+id/cl_rawmeal_u20"
+                            android:layout_height="match_parent"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FABF8F"
                             android:textStyle="bold" />
 
+                        <!-- Cl-ckrashfree (V20) -->
                         <TextView
+                            android:id="@+id/cl_ckrashfree_v20"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FF0000"
                             android:textStyle="bold" />
 
+                        <!-- Cl-ckwithash (W20) -->
                         <TextView
+                            android:id="@+id/cl_ckwithash_w20"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:textColor="#FFFF00"
                             android:textStyle="bold" />
                     </TableRow>
 
@@ -920,7 +1093,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- L.O.I.-iron (P21) -->
                         <EditText
+                            android:id="@+id/loi_iron_p21"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -931,7 +1106,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- L.O.I.-shale (Q21) -->
                         <EditText
+                            android:id="@+id/loi_shale_q21"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
@@ -942,18 +1119,22 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- L.O.I.-sand (R21) -->
                         <EditText
+                            android:id="@+id/loi_sand_r21"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#000000"
+                            android:textColor="#E26B0A"
                             android:textColorHint="#E26B0A"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- L.O.I.-limestone (S21) -->
                         <EditText
+                            android:id="@+id/loi_limestone_s21"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -964,7 +1145,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- L.O.I.-coal-ash (T21) -->
                         <EditText
+                            android:id="@+id/loi_coal_ash_t21"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -975,7 +1158,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- L.O.I.-rawmeal (U21) -->
                         <EditText
+                            android:id="@+id/loi_rawmeal_u21"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -997,7 +1182,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- H2O %-iron (P22) -->
                         <EditText
+                            android:id="@+id/h2o_iron_p22"
                             android:background="@drawable/blue_shade_border"                            android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
@@ -1007,7 +1194,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- H2O %-shale (Q22) -->
                         <EditText
+                            android:id="@+id/h2o_shale_q22"
                             android:background="@drawable/blue_shade_border"                            android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
@@ -1017,7 +1206,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- H2O %-sand (R22) -->
                         <EditText
+                            android:id="@+id/h2o_sand_r22"
                             android:background="@drawable/blue_shade_border"                            android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
@@ -1027,7 +1218,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- H2O %-limestone (S22) -->
                         <EditText
+                            android:id="@+id/h2o_limestone_s22"
                             android:background="@drawable/blue_shade_border"                            android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
@@ -1037,7 +1230,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- H2O %-coal-ash (T22) -->
                         <EditText
+                            android:id="@+id/h2o_coal_ash_t22"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -1048,7 +1243,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- H2O %-rawmeal (U22) -->
                         <EditText
+                            android:id="@+id/h2o_rawmeal_u22"
                             android:background="@drawable/shade_border"
                             android:gravity="center"
                             android:padding="6dp"
@@ -1070,7 +1267,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- TOTAL-iron (P23) -->
                         <TextView
+                            android:id="@+id/total_iron_p23"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1079,7 +1278,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- TOTAL-shale (Q23) -->
                         <TextView
+                            android:id="@+id/total_shale_q23"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1088,7 +1289,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- TOTAL-sand (R23) -->
                         <TextView
+                            android:id="@+id/total_sand_r23"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1097,7 +1300,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- TOTAL-limestone (S23) -->
                         <TextView
+                            android:id="@+id/total_limestone_s23"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1106,7 +1311,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- TOTAL-coal-ash (T23) -->
                         <TextView
+                            android:id="@+id/total_coal_ash_t23"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1115,7 +1322,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- TOTAL-rawmeal (U23) -->
                         <TextView
+                            android:id="@+id/total_rawmeal_u23"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1124,7 +1333,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- TOTAL-ckrashfree (V23) -->
                         <TextView
+                            android:id="@+id/total_ckrashfree_v23"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1133,7 +1344,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- TOTAL-ckwithash (W23) -->
                         <TextView
+                            android:id="@+id/total_ckwithash_w23"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1153,7 +1366,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- LSF-iron (P24) -->
                         <TextView
+                            android:id="@+id/lsf_iron_p24"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1162,7 +1377,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- LSF-shale (Q24) -->
                         <TextView
+                            android:id="@+id/lsf_shale_q24"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1171,7 +1388,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- LSF-sand (R24) -->
                         <TextView
+                            android:id="@+id/lsf_sand_r24"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1180,7 +1399,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- LSF-limestone (S24) -->
                         <TextView
+                            android:id="@+id/lsf_limestone_s24"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1189,7 +1410,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- LSF-coal-ash (T24) -->
                         <TextView
+                            android:id="@+id/lsf_coal_ash_t24"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1198,7 +1421,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- LSF-rawmeal (U24) -->
                         <TextView
+                            android:id="@+id/lsf_rawmeal_u24"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1207,7 +1432,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- LSF-ckrashfree (V24) -->
                         <TextView
+                            android:id="@+id/lsf_ckrashfree_v24"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1216,7 +1443,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- LSF-ckwithash (W24) -->
                         <TextView
+                            android:id="@+id/lsf_ckwithash_w24"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1236,7 +1465,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SM-iron (P25) -->
                         <TextView
+                            android:id="@+id/sm_iron_p25"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1245,7 +1476,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SM-shale (Q25) -->
                         <TextView
+                            android:id="@+id/sm_shale_q25"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1254,7 +1487,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SM-sand (R25) -->
                         <TextView
+                            android:id="@+id/sm_sand_r25"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1263,7 +1498,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SM-limestone (S25) -->
                         <TextView
+                            android:id="@+id/sm_limestone_s25"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1272,7 +1509,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SM-coal-ash (T25) -->
                         <TextView
+                            android:id="@+id/sm_coal_ash_t25"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1281,7 +1520,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SM-rawmeal (U25) -->
                         <TextView
+                            android:id="@+id/sm_rawmeal_u25"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1290,7 +1531,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SM-ckrashfree (V25) -->
                         <TextView
+                            android:id="@+id/sm_ckrashfree_v25"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1299,7 +1542,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- SM-ckwithash (W25) -->
                         <TextView
+                            android:id="@+id/sm_ckwithash_w25"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1319,7 +1564,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- AM-iron (P26) -->
                         <TextView
+                            android:id="@+id/am_iron_p26"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1328,7 +1575,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- AM-shale (Q26) -->
                         <TextView
+                            android:id="@+id/am_shale_q26"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1337,7 +1586,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- AM-sand (R26) -->
                         <TextView
+                            android:id="@+id/am_sand_r26"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1346,7 +1597,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- AM-limestone (S26) -->
                         <TextView
+                            android:id="@+id/am_limestone_s26"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1355,7 +1608,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- AM-coal-ash (T26) -->
                         <TextView
+                            android:id="@+id/am_coal_ash_t26"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1364,7 +1619,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- AM-rawmeal (U26) -->
                         <TextView
+                            android:id="@+id/am_rawmeal_u26"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1373,7 +1630,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- AM-ckrashfree (V26) -->
                         <TextView
+                            android:id="@+id/am_ckrashfree_v26"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1382,7 +1641,9 @@
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
+                        <!-- AM-ckwithash (W26) -->
                         <TextView
+                            android:id="@+id/am_ckwithash_w26"
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:inputType="numberDecimal"
@@ -1455,7 +1716,10 @@
                         android:textColor="#000000"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- lst-dry-basis (P29) -->
                     <TextView
+                        android:id="@+id/lst_dry_basis_p29"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1463,7 +1727,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- lst-wet-basis (Q29) -->
                     <TextView
+                        android:id="@+id/lst_wet_basis_q29"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1483,7 +1750,10 @@
                         android:textColor="#000000"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- shale-dry-basis (P30) -->
                     <TextView
+                        android:id="@+id/shale_dry_basis_p30"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1491,7 +1761,10 @@
                         android:textColor="#974706"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- shale-wet-basis (Q30) -->
                     <TextView
+                        android:id="@+id/shale_wet_basis_q30"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1512,7 +1785,9 @@
                         android:textSize="12sp"
                         android:textStyle="bold" />
 
+                    <!-- sand-dry-basis (P31) -->
                     <TextView
+                        android:id="@+id/sand_dry_basis_p31"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1520,7 +1795,10 @@
                         android:textColor="#E26B0A"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- sand-wet-basis (Q31) -->
                     <TextView
+                        android:id="@+id/sand_wet_basis_q31"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1541,7 +1819,9 @@
                         android:textSize="12sp"
                         android:textStyle="bold" />
 
+                    <!-- iron-dry-basis (P32) -->
                     <TextView
+                        android:id="@+id/iron_dry_basis_p32"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1549,7 +1829,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- iron-wet-basis (Q32) -->
                     <TextView
+                        android:id="@+id/iron_wet_basis_q32"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1570,7 +1853,9 @@
                         android:textSize="12sp"
                         android:textStyle="bold" />
 
+                    <!-- total-dry-basis (P33) -->
                     <TextView
+                        android:id="@+id/total_dry_basis_p33"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1578,7 +1863,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- total-wet-basis (Q33) -->
                     <TextView
+                        android:id="@+id/total_wet_basis_q33"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1609,7 +1897,10 @@
                         android:textColor="#0070C0"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- lsf-target (P38) -->
                     <EditText
+                        android:id="@+id/lsf_target_p38"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1632,7 +1923,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- sm-target (P39) -->
                     <EditText
+                        android:id="@+id/sm_target_p39"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1655,7 +1949,10 @@
                         android:textColor="#FF0000"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- am-target (P40) -->
                     <EditText
+                        android:id="@+id/am_target_p40"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1725,7 +2022,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- min-column1 (S29) -->
                     <EditText
+                        android:id="@+id/min_column1_s29"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1735,7 +2035,10 @@
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- max-column1 (T29) -->
                     <EditText
+                        android:id="@+id/max_column1_t29"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1757,7 +2060,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- min-column2 (S30) -->
                     <EditText
+                        android:id="@+id/min_column2_s30"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1767,7 +2073,10 @@
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- max-column2 (T30) -->
                     <EditText
+                        android:id="@+id/max_column2_t30"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1789,7 +2098,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- min-column3 (S31) -->
                     <EditText
+                        android:id="@+id/min_column3_s31"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1799,7 +2111,10 @@
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- max-column3 (T31) -->
                     <EditText
+                        android:id="@+id/max_column3_t31"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1821,7 +2136,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- min-column4 (S32) -->
                     <EditText
+                        android:id="@+id/min_column4_s32"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1831,7 +2149,10 @@
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- max-column4 (T32) -->
                     <EditText
+                        android:id="@+id/max_column4_t32"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1853,7 +2174,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- min-column5 (S33) -->
                     <EditText
+                        android:id="@+id/min_column5_s33"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1863,7 +2187,10 @@
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- max-column5 (T33) -->
                     <EditText
+                        android:id="@+id/max_column5_t33"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1885,7 +2212,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- min-column6 (S34) -->
                     <EditText
+                        android:id="@+id/min_column6_s34"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1895,7 +2225,10 @@
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- max-column6 (T34) -->
                     <EditText
+                        android:id="@+id/max_column6_t34"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1917,7 +2250,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- min-column7 (S35) -->
                     <EditText
+                        android:id="@+id/min_column7_s35"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1927,7 +2263,10 @@
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- max-column7 (T35) -->
                     <EditText
+                        android:id="@+id/max_column7_t35"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1949,7 +2288,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- min-column8 (S36) -->
                     <EditText
+                        android:id="@+id/min_column8_s36"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1959,7 +2301,10 @@
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- max-column8 (T36) -->
                     <EditText
+                        android:id="@+id/max_column8_t36"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1981,7 +2326,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- min-column9 (S37) -->
                     <EditText
+                        android:id="@+id/min_column9_s37"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -1991,7 +2339,10 @@
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- max-column9 (T37) -->
                     <EditText
+                        android:id="@+id/max_column9_t37"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2013,7 +2364,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- min-column10 (S38) -->
                     <EditText
+                        android:id="@+id/min_column10_s38"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2023,7 +2377,10 @@
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- max-column10 (T38) -->
                     <EditText
+                        android:id="@+id/max_column10_t38"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2045,7 +2402,10 @@
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- min-column11 (S39) -->
                     <EditText
+                        android:id="@+id/min_column11_s39"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2055,7 +2415,10 @@
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- max-column11 (T39) -->
                     <EditText
+                        android:id="@+id/max_column11_t39"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2078,13 +2441,16 @@
                         android:layout_span="2"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- FCaO Result (T40) -->
                     <EditText
+                        android:id="@+id/fcao_result_t40"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
                         android:hint="0.00"
                         android:inputType="numberDecimal"
-                        android:textColor="#FFFFFF"
+                        android:textColor="#FFFF00"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
                         android:textStyle="bold" />
@@ -2127,7 +2493,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- clinker-column1 (V28) -->
                     <TextView
+                        android:id="@+id/clinker_column1_v28"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2135,7 +2504,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- remarks-column1 (W28) -->
                     <TextView
+                        android:id="@+id/remarks_column1_w28"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2154,7 +2526,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- clinker-column2 (V29) -->
                     <TextView
+                        android:id="@+id/clinker_column2_v29"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2162,7 +2537,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- remarks-column2 (W29) -->
                     <TextView
+                        android:id="@+id/remarks_column2_w29"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2181,7 +2559,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- clinker-column3 (V30) -->
                     <TextView
+                        android:id="@+id/clinker_column3_v30"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2189,7 +2570,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- remarks-column3 (W30) -->
                     <TextView
+                        android:id="@+id/remarks_column3_w30"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2208,7 +2592,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- clinker-column4 (V31) -->
                     <TextView
+                        android:id="@+id/clinker_column4_v31"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2216,7 +2603,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- remarks-column4 (W31) -->
                     <TextView
+                        android:id="@+id/remarks_column4_w31"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2235,7 +2625,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- clinker-column5 (V32) -->
                     <TextView
+                        android:id="@+id/clinker_column5_v32"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2243,7 +2636,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- remarks-column5 (W32) -->
                     <TextView
+                        android:id="@+id/remarks_column5_w32"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2262,7 +2658,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- clinker-column6 (V33) -->
                     <TextView
+                        android:id="@+id/clinker_column6_v33"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2270,7 +2669,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- remarks-column6 (W33) -->
                     <TextView
+                        android:id="@+id/remarks_column6_w33"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2289,7 +2691,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- clinker-column7 (V34) -->
                     <TextView
+                        android:id="@+id/clinker_column7_v34"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2297,7 +2702,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- remarks-column7 (W34) -->
                     <TextView
+                        android:id="@+id/remarks_column7_w34"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2316,7 +2724,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- clinker-column8 (V35) -->
                     <TextView
+                        android:id="@+id/clinker_column8_v35"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2324,7 +2735,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- remarks-column8 (W35) -->
                     <TextView
+                        android:id="@+id/remarks_column8_w35"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2343,7 +2757,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- clinker-column9 (V36) -->
                     <TextView
+                        android:id="@+id/clinker_column9_v36"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2351,7 +2768,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- remarks-column9 (W36) -->
                     <TextView
+                        android:id="@+id/remarks_column9_w36"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2370,7 +2790,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- clinker-column10 (V37) -->
                     <TextView
+                        android:id="@+id/clinker_column10_v37"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2378,7 +2801,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- remarks-column10 (W37) -->
                     <TextView
+                        android:id="@+id/remarks_column10_w37"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2397,7 +2823,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- clinker-column11 (V38) -->
                     <TextView
+                        android:id="@+id/clinker_column11_v38"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2405,7 +2834,10 @@
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- remarks-column11 (W38) -->
                     <TextView
+                        android:id="@+id/remarks_column11_w38"
                         android:background="@drawable/white_border_cell"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2425,7 +2857,10 @@
                         android:layout_span="2"
                         android:textSize="12sp"
                         android:textStyle="bold" />
+
+                    <!-- Hotmeal SO3 (W39) -->
                     <EditText
+                        android:id="@+id/hotmeal_so3_w39"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2448,7 +2883,9 @@
                         android:textSize="12sp"
                         android:textStyle="bold" />
 
+                    <!-- % Ash Absorbed (W40) -->
                     <EditText
+                        android:id="@+id/ash_absorbed_w40"
                         android:background="@drawable/shade_border"
                         android:gravity="center"
                         android:padding="6dp"
@@ -2464,12 +2901,6 @@
             </TableLayout>
 
         </LinearLayout>
-
-
-
-
-
-
 
                 <!-- Button Container -->
                 <LinearLayout
