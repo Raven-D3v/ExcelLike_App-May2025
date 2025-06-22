@@ -5,6 +5,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
+import androidx.core.widget.addTextChangedListener
 import com.example.rawmixapp.db.SavedDataDbHelper
 import org.json.JSONObject
 import java.util.*
@@ -168,6 +169,48 @@ class Page2Activity : BaseActivity() {
         btnClear = findViewById(R.id.btn_clear)
 
         initializeViews()
+
+        // Cache oxide values for Page3
+        etSio2Limestone.addTextChangedListener {
+            Page2DataCache.sio2Limestone = it.toString().toDoubleOrNull() ?: 0.0
+        }
+        etSio2Shale.addTextChangedListener {
+            Page2DataCache.sio2Shale = it.toString().toDoubleOrNull() ?: 0.0
+        }
+        etSio2IronOre.addTextChangedListener {
+            Page2DataCache.sio2IronOre = it.toString().toDoubleOrNull() ?: 0.0
+        }
+
+        etAl2o3Limestone.addTextChangedListener {
+            Page2DataCache.al2o3Limestone = it.toString().toDoubleOrNull() ?: 0.0
+        }
+        etAl2o3Shale.addTextChangedListener {
+            Page2DataCache.al2o3Shale = it.toString().toDoubleOrNull() ?: 0.0
+        }
+        etAl2o3IronOre.addTextChangedListener {
+            Page2DataCache.al2o3IronOre = it.toString().toDoubleOrNull() ?: 0.0
+        }
+
+        etFe2o3Limestone.addTextChangedListener {
+            Page2DataCache.fe2o3Limestone = it.toString().toDoubleOrNull() ?: 0.0
+        }
+        etFe2o3Shale.addTextChangedListener {
+            Page2DataCache.fe2o3Shale = it.toString().toDoubleOrNull() ?: 0.0
+        }
+        etFe2o3IronOre.addTextChangedListener {
+            Page2DataCache.fe2o3IronOre = it.toString().toDoubleOrNull() ?: 0.0
+        }
+
+        etCaoLimestone.addTextChangedListener {
+            Page2DataCache.caoLimestone = it.toString().toDoubleOrNull() ?: 0.0
+        }
+        etCaoShale.addTextChangedListener {
+            Page2DataCache.caoShale = it.toString().toDoubleOrNull() ?: 0.0
+        }
+        etCaoIronOre.addTextChangedListener {
+            Page2DataCache.caoIronOre = it.toString().toDoubleOrNull() ?: 0.0
+        }
+
         setupTextWatchers()
         setupButtons()
         calculateAll() // Initial calculation
@@ -425,10 +468,14 @@ class Page2Activity : BaseActivity() {
     private fun clearAllData() {
         // Clear all EditTexts
         allInputEditTexts.forEach { it.setText("") }
-        
+
+        // Clear cached values
+        Page2DataCache.clearCache()
+
         // Recalculate and update UI
         calculateAll()
         Toast.makeText(this, "All data cleared", Toast.LENGTH_SHORT).show()
+
     }
 
     private fun loadSavedData(savedDataId: Long) {
@@ -474,13 +521,20 @@ class Page2Activity : BaseActivity() {
         return editText.text.toString().toDoubleOrNull() ?: 0.0
     }
 
-    private fun setTextViewValue(textView: TextView, value: Double, defaultOnError: String = "0.00") {
+    private fun setTextViewValue(
+        textView: TextView,
+        value: Double,
+        defaultOnError: String = "0.00",
+        decimalPlaces: Int = 2
+    ) {
         if (value.isInfinite() || value.isNaN()) {
-            textView.text = defaultOnError // Or "Error"
+            textView.text = defaultOnError
         } else {
-            textView.text = String.format(Locale.US, "%.2f", value)
+            val format = "%.${decimalPlaces}f"
+            textView.text = String.format(Locale.US, format, value)
         }
     }
+
 
     private fun calculateAll() {
         // --- Read Inputs ---
@@ -639,6 +693,18 @@ class Page2Activity : BaseActivity() {
         val w37_dry_total = w34_dry_ls + w35_dry_sh + w36_dry_io
 
 
+        // Cache Rawmeal Oxide Values for Page1 or later use
+        Page2DataCache.sio2Rawmeal = x13
+        Page2DataCache.al2o3Rawmeal = x14
+        Page2DataCache.fe2o3Rawmeal = x15
+        Page2DataCache.caoRawmeal = x16
+        Page2DataCache.mgoRawmeal = x17
+        Page2DataCache.na2oRawmeal = x18
+        Page2DataCache.k2oRawmeal = x19
+        Page2DataCache.so3Rawmeal = x20
+        Page2DataCache.clRawmeal = x21
+        Page2DataCache.loiRawmeal = x22
+
         // --- Update UI ---
         // Limestone Column
         setTextViewValue(tvTotalLimestone, u23)
@@ -676,22 +742,22 @@ class Page2Activity : BaseActivity() {
         setTextViewValue(tvAmRawmeal, x26)
 
         // Raw Material Percentage Table
-        setTextViewValue(tvDryLimestone, w28_rmp_limestone)
-        setTextViewValue(tvDryShale, w29_rmp_shale)
-        setTextViewValue(tvDryIronOre, w30_rmp_iron_ore)
-        setTextViewValue(tvDryTotal, w31_rmp_total)
+        setTextViewValue(tvDryLimestone, w28_rmp_limestone, decimalPlaces = 1)
+        setTextViewValue(tvDryShale, w29_rmp_shale, decimalPlaces = 1)
+        setTextViewValue(tvDryIronOre, w30_rmp_iron_ore, decimalPlaces = 1)
+        setTextViewValue(tvDryTotal, w31_rmp_total, decimalPlaces = 1)
 
         // Wet Basis Column
-        setTextViewValue(tvWfWetLimestone, u34_wet_ls)
-        setTextViewValue(tvWfWetShale, u35_wet_sh)
-        setTextViewValue(tvWfWetIronOre, u36_wet_io)
-        setTextViewValue(tvWfWetTotal, u37_wet_total)
+        setTextViewValue(tvWfWetLimestone, u34_wet_ls, decimalPlaces = 1)
+        setTextViewValue(tvWfWetShale, u35_wet_sh, decimalPlaces = 1)
+        setTextViewValue(tvWfWetIronOre, u36_wet_io, decimalPlaces = 1)
+        setTextViewValue(tvWfWetTotal, u37_wet_total, decimalPlaces = 1)
 
         // Dry Basis Column (Totals)
         setTextViewValue(tvWfDryTotal, w37_dry_total)
 
         // H2O Column (Totals)
-        setTextViewValue(tvWfH2oTotal, y37_h2o_total)
+        setTextViewValue(tvWfH2oTotal, y37_h2o_total, decimalPlaces=1)
 
         // Coefficients for Mix Calculation Table
         setTextViewValue(tvCoeffA, ab12_cfm_a)
