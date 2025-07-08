@@ -2298,15 +2298,16 @@
                                         android:hint="0.00" />
 
                                     <!-- trc-LOI (T52) -->
-                                    <TextView
-                                        style="@style/NewTableTextView"
-                                        android:id="@+id/tv_T52"
+                                    <EditText
+                                        style="@style/NewTableEditText"
+                                        android:id="@+id/et_T52"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:minHeight="28dp"
                                         android:padding="2dp"
-                                        android:textSize="9sp" />
+                                        android:textSize="9sp"
+                                        android:hint="0.00" />
 
                                     <!-- trc-TOTAL (U52) -->
                                     <TextView

@@ -5,6 +5,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
+import androidx.core.widget.addTextChangedListener
 import com.example.rawmixapp.db.SavedDataDbHelper
 import org.json.JSONObject
 import java.util.*
@@ -64,7 +65,7 @@ class Page7Activity : BaseActivity() {
     private lateinit var tvClinkerProductionTph: TextView // J27
     private lateinit var tvClinkerFactor: TextView // J28
     private lateinit var etKilnFeedTph2: EditText // J30
-    private lateinit var tvClinkerFactor2: TextView // J31
+    private lateinit var etClinkerFactor2: EditText // J31
     private lateinit var tvClinkerProductionTph2: TextView // J32
     private lateinit var tvTphIdeal: TextView // J33
     private lateinit var tvCmh: TextView // J34
@@ -74,7 +75,7 @@ class Page7Activity : BaseActivity() {
     private lateinit var btnClear: Button
 
     private lateinit var allInputEditTexts: List<EditText>
-    
+
     // Add tracking variables
     private var isDataModified = false
     private var currentSavedDataId: Long = -1L
@@ -99,6 +100,7 @@ class Page7Activity : BaseActivity() {
         btnClear = findViewById(R.id.btn_clear)
 
         initializeViews()
+        page7Cache()
         setupTextWatchers()
         setupButtons()
         calculateAll() // Initial calculation
@@ -164,7 +166,7 @@ class Page7Activity : BaseActivity() {
         tvClinkerProductionTph = findViewById(R.id.tv_clinker_production_tph) // J27
         tvClinkerFactor = findViewById(R.id.tv_clinker_factor) // J28
         etKilnFeedTph2 = findViewById(R.id.et_kiln_feed_tph_2) // J30
-        tvClinkerFactor2 = findViewById(R.id.tv_clinker_factor_2) // J31
+        etClinkerFactor2 = findViewById(R.id.et_clinker_factor_2) // J31
         tvClinkerProductionTph2 = findViewById(R.id.tv_clinker_production_tph_2) // J32
         tvTphIdeal = findViewById(R.id.tv_tph_ideal) // J33
         tvCmh = findViewById(R.id.tv_cmh) // J34
@@ -181,12 +183,12 @@ class Page7Activity : BaseActivity() {
             etAshContent, etFuelTph, etKilnFeedTph,
             etKilnFeedLoi, etKilnFeedH2o,
             etDustLossToSilo, etDustLossToSiloLoi,
-            etKilnFeedTph2
+            etKilnFeedTph2,etClinkerFactor2
         )
     }
 
     private fun setupTextWatchers() {
-        allInputEditTexts.forEach { 
+        allInputEditTexts.forEach {
             it.addTextChangedListener(object : TextWatcher {
                 override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
                 override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
@@ -219,12 +221,30 @@ class Page7Activity : BaseActivity() {
     }
 
     private fun setTextViewValue(textView: TextView, value: Double, defaultOnError: String = "0.00") {
+        val idName = try {
+            textView.resources.getResourceEntryName(textView.id)
+        } catch (e: Exception) {
+            ""
+        }
+
         if (value.isInfinite() || value.isNaN()) {
             textView.text = defaultOnError
         } else {
-            textView.text = String.format(Locale.US, "%.2f", value)
+            val formattedValue = when (idName) {
+                "tv_kg_fuel_per_kg_clinker", "tv_clinker_factor", "tv_clinker_factor_2" ->
+                    String.format(Locale.US, "%.3f", value)
+                "tv_clinker_production_tph", "tv_clinker_production_tph_2" ->
+                    String.format(Locale.US, "%.1f", value)
+                else ->
+                    String.format(Locale.US, "%.2f", value)
+            }
+
+            textView.text = formattedValue
         }
     }
+
+
+
 
     private fun calculateAll() {
         // 1ST LVM ROW
@@ -281,9 +301,9 @@ class Page7Activity : BaseActivity() {
         val j26 = getDoubleValue(etDustLossToSiloLoi)
         val j27 = j22 * (1 - j23/100) * (1 - j24/100) * (1 - j25/100) + (j21 * j20/100)
         val j28 = if (j27 == 0.0) 0.0 else j22 / j27
-        
+
         val j30 = getDoubleValue(etKilnFeedTph2)
-        val j31 = j28 // Clinker factor is the same as j28
+        val j31 = getDoubleValue(etClinkerFactor2) // Clinker factor is the same as j28
         val j32 = if (j31 == 0.0) 0.0 else (j30 / j31)
         val j33 = j32 * j17
         val j34 = if (j18 == 0.0) 0.0 else j33 / j18
@@ -302,7 +322,6 @@ class Page7Activity : BaseActivity() {
         setTextViewValue(tvAshAbsorbed, j19)
         setTextViewValue(tvClinkerProductionTph, j27)
         setTextViewValue(tvClinkerFactor, j28)
-        setTextViewValue(tvClinkerFactor2, j31)
         setTextViewValue(tvClinkerProductionTph2, j32)
         setTextViewValue(tvTphIdeal, j33)
         setTextViewValue(tvCmh, j34)
@@ -313,14 +332,14 @@ class Page7Activity : BaseActivity() {
             // Create a dialog for naming the save
             val dialogView = layoutInflater.inflate(R.layout.dialog_save_name, null)
             val etSaveName = dialogView.findViewById<EditText>(R.id.et_save_name)
-            
+
             AlertDialog.Builder(this)
                 .setTitle("Save Data")
                 .setView(dialogView)
                 .setPositiveButton("Save") { _, _ ->
                     val saveName = etSaveName.text.toString().trim()
                     val data = JSONObject()
-                    
+
                     // Save all EditText values
                     allInputEditTexts.forEach { editText ->
                         val idName = resources.getResourceEntryName(editText.id)
@@ -353,7 +372,7 @@ class Page7Activity : BaseActivity() {
     private fun clearAllData() {
         // Clear all EditTexts
         allInputEditTexts.forEach { it.setText("") }
-        
+
         // Recalculate and update UI
         calculateAll()
         Toast.makeText(this, "All data cleared", Toast.LENGTH_SHORT).show()
@@ -366,7 +385,7 @@ class Page7Activity : BaseActivity() {
                 currentSavedDataId = savedDataId
                 originalDataJson = entry.data // Store original data for comparison
                 val data = JSONObject(entry.data)
-                
+
                 // Temporarily remove listeners
                 allInputEditTexts.forEach { it.removeTextChangedListener(textWatcher) }
 
@@ -423,7 +442,7 @@ class Page7Activity : BaseActivity() {
     private fun updateSavedData() {
         try {
             val data = JSONObject()
-            
+
             // Save all EditText values
             allInputEditTexts.forEach { editText ->
                 val idName = resources.getResourceEntryName(editText.id)
@@ -437,6 +456,55 @@ class Page7Activity : BaseActivity() {
         } catch (e: Exception) {
             Toast.makeText(this, "Error updating data: ${e.message}", Toast.LENGTH_LONG).show()
             e.printStackTrace()
+        }
+    }
+
+    private fun page7Cache() {
+        val fields = listOf(
+            // 1st LVM and HVM Row
+            Triple(etLvm1Row1, { Page7DataCache.Lvm1Row1 }, { v: Double -> Page7DataCache.Lvm1Row1 = v }),
+            Triple(etLvm1Row2, { Page7DataCache.Lvm1Row2 }, { v: Double -> Page7DataCache.Lvm1Row2 = v }),
+            Triple(etHvm1Row1, { Page7DataCache.Hvm1Row1 }, { v: Double -> Page7DataCache.Hvm1Row1 = v }),
+            Triple(etHvm1Row2, { Page7DataCache.Hvm1Row2 }, { v: Double -> Page7DataCache.Hvm1Row2 = v }),
+
+            // 2nd LVM and HVM Row
+            Triple(etLvm2Row1, { Page7DataCache.Lvm2Row1 }, { v: Double -> Page7DataCache.Lvm2Row1 = v }),
+            Triple(etLvm2Row2, { Page7DataCache.Lvm2Row2 }, { v: Double -> Page7DataCache.Lvm2Row2 = v }),
+            Triple(etHvm2Row1, { Page7DataCache.Hvm2Row1 }, { v: Double -> Page7DataCache.Hvm2Row1 = v }),
+            Triple(etHvm2Row2, { Page7DataCache.Hvm2Row2 }, { v: Double -> Page7DataCache.Hvm2Row2 = v }),
+
+            // 3rd LVM and HVM Row
+            Triple(etLvm3Row1, { Page7DataCache.Lvm3Row1 }, { v: Double -> Page7DataCache.Lvm3Row1 = v }),
+            Triple(etLvm3Row2, { Page7DataCache.Lvm3Row2 }, { v: Double -> Page7DataCache.Lvm3Row2 = v }),
+            Triple(etHvm3Row1, { Page7DataCache.Hvm3Row1 }, { v: Double -> Page7DataCache.Hvm3Row1 = v }),
+            Triple(etHvm3Row2, { Page7DataCache.Hvm3Row2 }, { v: Double -> Page7DataCache.Hvm3Row2 = v }),
+
+            // Other inputs
+            Triple(etSpecificHeat, { Page7DataCache.SpecificHeat }, { v: Double -> Page7DataCache.SpecificHeat = v }),
+            Triple(etViscosity, { Page7DataCache.Viscosity }, { v: Double -> Page7DataCache.Viscosity = v }),
+            Triple(etDensity, { Page7DataCache.Density }, { v: Double -> Page7DataCache.Density = v }),
+            Triple(etAshContent, { Page7DataCache.AshContent }, { v: Double -> Page7DataCache.AshContent = v }),
+
+            Triple(etFuelTph, { Page7DataCache.FuelTph }, { v: Double -> Page7DataCache.FuelTph = v }),
+            Triple(etKilnFeedTph, { Page7DataCache.KilnFeedTph }, { v: Double -> Page7DataCache.KilnFeedTph = v }),
+            Triple(etKilnFeedLoi, { Page7DataCache.KilnFeedLoi }, { v: Double -> Page7DataCache.KilnFeedLoi = v }),
+            Triple(etKilnFeedH2o, { Page7DataCache.KilnFeedH2o }, { v: Double -> Page7DataCache.KilnFeedH2o = v }),
+
+            Triple(etDustLossToSilo, { Page7DataCache.DustLossToSilo }, { v: Double -> Page7DataCache.DustLossToSilo = v }),
+            Triple(etDustLossToSiloLoi, { Page7DataCache.DustLossToSiloLoi }, { v: Double -> Page7DataCache.DustLossToSiloLoi = v }),
+            Triple(etKilnFeedTph2, { Page7DataCache.KilnFeedTph2 }, { v: Double -> Page7DataCache.KilnFeedTph2 = v }),
+            Triple(etClinkerFactor2, { Page7DataCache.ClinkerFactor2 }, { v: Double -> Page7DataCache.ClinkerFactor2 = v })
+        )
+
+        fields.forEach { (editText, getter, setter) ->
+            editText.setText(getter().takeIf { it != 0.0 }?.toString() ?: "")  // Don't show 0.0 by default
+            editText.addTextChangedListener(object : TextWatcher {
+                override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+                override fun afterTextChanged(s: Editable?) {
+                    setter(s.toString().toDoubleOrNull() ?: 0.0)
+                }
+            })
         }
     }
 }

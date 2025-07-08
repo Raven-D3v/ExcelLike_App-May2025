@@ -9,6 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import java.util.*
 import androidx.appcompat.app.AlertDialog
+import androidx.core.widget.addTextChangedListener
 import com.example.rawmixapp.db.SavedDataDbHelper
 import org.json.JSONObject
 
@@ -148,9 +149,9 @@ class Page8Activity : BaseActivity() {
         dbHelper = SavedDataDbHelper(this)
         // --- Initialize all views ---
         initializeViews()
+        Page8Cache()
         setupTextWatchers()
         calculateAll()
-
         findViewById<Button>(R.id.btn_clear).setOnClickListener { clearAllData() }
         findViewById<Button>(R.id.btn_save).setOnClickListener { saveCurrentData() }
 
@@ -329,10 +330,25 @@ class Page8Activity : BaseActivity() {
     }
 
     private fun setTextViewValue(textView: TextView, value: Double, defaultOnError: String = "0.00") {
+        val idName = try {
+            textView.resources.getResourceEntryName(textView.id)
+        } catch (e: Exception) {
+            ""
+        }
+
         if (value.isInfinite() || value.isNaN()) {
             textView.text = defaultOnError
         } else {
-            textView.text = String.format(Locale.US, "%.2f", value)
+            val formattedValue = when (idName) {
+                "lst_dry_basis_p29", "shale_dry_basis_p30","sand_dry_basis_p31","iron_dry_basis_p32","total_dry_basis_p33"
+                    ,"lst_wet_basis_q29","shale_wet_basis_q30","sand_wet_basis_q31","iron_wet_basis_q32","total_wet_basis_q33"->
+
+                    String.format(Locale.US, "%.1f", value)
+                else ->
+                    String.format(Locale.US, "%.2f", value)
+            }
+
+            textView.text = formattedValue
         }
     }
 
@@ -756,6 +772,115 @@ class Page8Activity : BaseActivity() {
         } catch (e: Exception) {
             Toast.makeText(this, "Error updating data: "+e.message, Toast.LENGTH_LONG).show()
             e.printStackTrace()
+        }
+    }
+    private fun Page8Cache() {
+        val fields = listOf(
+            // IronOre
+            Triple(etSiO2Iron, { Page8DataCache.SiO2Iron }, { v: Double -> Page8DataCache.SiO2Iron = v }),
+            Triple(etAl2O3Iron, { Page8DataCache.Al2O3Iron }, { v: Double -> Page8DataCache.Al2O3Iron = v }),
+            Triple(etFe2O3Iron, { Page8DataCache.Fe2O3Iron }, { v: Double -> Page8DataCache.Fe2O3Iron = v }),
+            Triple(etCaOIron, { Page8DataCache.CaOIron }, { v: Double -> Page8DataCache.CaOIron = v }),
+            Triple(etMgOIron, { Page8DataCache.MgOIron }, { v: Double -> Page8DataCache.MgOIron = v }),
+            Triple(etK2OIron, { Page8DataCache.K2OIron }, { v: Double -> Page8DataCache.K2OIron = v }),
+            Triple(etNa2OIron, { Page8DataCache.Na2OIron }, { v: Double -> Page8DataCache.Na2OIron = v }),
+            Triple(etSO3Iron, { Page8DataCache.SO3Iron }, { v: Double -> Page8DataCache.SO3Iron = v }),
+            Triple(etClIron, { Page8DataCache.ClIron }, { v: Double -> Page8DataCache.ClIron = v }),
+            Triple(etLoiIron, { Page8DataCache.LoiIron }, { v: Double -> Page8DataCache.LoiIron = v }),
+            Triple(etH2OIron, { Page8DataCache.H2OIron }, { v: Double -> Page8DataCache.H2OIron = v }),
+
+            // Shale
+            Triple(etSiO2Shale, { Page8DataCache.SiO2Shale }, { v: Double -> Page8DataCache.SiO2Shale = v }),
+            Triple(etAl2O3Shale, { Page8DataCache.Al2O3Shale }, { v: Double -> Page8DataCache.Al2O3Shale = v }),
+            Triple(etFe2O3Shale, { Page8DataCache.Fe2O3Shale }, { v: Double -> Page8DataCache.Fe2O3Shale = v }),
+            Triple(etCaOShale, { Page8DataCache.CaOShale }, { v: Double -> Page8DataCache.CaOShale = v }),
+            Triple(etMgOShale, { Page8DataCache.MgOShale }, { v: Double -> Page8DataCache.MgOShale = v }),
+            Triple(etK2OShale, { Page8DataCache.K2OShale }, { v: Double -> Page8DataCache.K2OShale = v }),
+            Triple(etNa2OShale, { Page8DataCache.Na2OShale }, { v: Double -> Page8DataCache.Na2OShale = v }),
+            Triple(etSO3Shale, { Page8DataCache.SO3Shale }, { v: Double -> Page8DataCache.SO3Shale = v }),
+            Triple(etClShale, { Page8DataCache.ClShale }, { v: Double -> Page8DataCache.ClShale = v }),
+            Triple(etLoiShale, { Page8DataCache.LoiShale }, { v: Double -> Page8DataCache.LoiShale = v }),
+            Triple(etH2OShale, { Page8DataCache.H2OShale }, { v: Double -> Page8DataCache.H2OShale = v }),
+
+            // Sand
+            Triple(etSiO2Sand, { Page8DataCache.SiO2Sand }, { v: Double -> Page8DataCache.SiO2Sand = v }),
+            Triple(etAl2O3Sand, { Page8DataCache.Al2O3Sand }, { v: Double -> Page8DataCache.Al2O3Sand = v }),
+            Triple(etFe2O3Sand, { Page8DataCache.Fe2O3Sand }, { v: Double -> Page8DataCache.Fe2O3Sand = v }),
+            Triple(etCaOSand, { Page8DataCache.CaOSand }, { v: Double -> Page8DataCache.CaOSand = v }),
+            Triple(etMgOSand, { Page8DataCache.MgOSand }, { v: Double -> Page8DataCache.MgOSand = v }),
+            Triple(etK2OSand, { Page8DataCache.K2OSand }, { v: Double -> Page8DataCache.K2OSand = v }),
+            Triple(etNa2OSand, { Page8DataCache.Na2OSand }, { v: Double -> Page8DataCache.Na2OSand = v }),
+            Triple(etSO3Sand, { Page8DataCache.SO3Sand }, { v: Double -> Page8DataCache.SO3Sand = v }),
+            Triple(etClSand, { Page8DataCache.ClSand }, { v: Double -> Page8DataCache.ClSand = v }),
+            Triple(etLoiSand, { Page8DataCache.LoiSand }, { v: Double -> Page8DataCache.LoiSand = v }),
+            Triple(etH2OSand, { Page8DataCache.H2OSand }, { v: Double -> Page8DataCache.H2OSand = v }),
+
+            // Limestone
+            Triple(etSiO2Limestone, { Page8DataCache.SiO2Limestone }, { v: Double -> Page8DataCache.SiO2Limestone = v }),
+            Triple(etAl2O3Limestone, { Page8DataCache.Al2O3Limestone }, { v: Double -> Page8DataCache.Al2O3Limestone = v }),
+            Triple(etFe2O3Limestone, { Page8DataCache.Fe2O3Limestone }, { v: Double -> Page8DataCache.Fe2O3Limestone = v }),
+            Triple(etCaOLimestone, { Page8DataCache.CaOLimestone }, { v: Double -> Page8DataCache.CaOLimestone = v }),
+            Triple(etMgOLimestone, { Page8DataCache.MgOLimestone }, { v: Double -> Page8DataCache.MgOLimestone = v }),
+            Triple(etK2OLimestone, { Page8DataCache.K2OLimestone }, { v: Double -> Page8DataCache.K2OLimestone = v }),
+            Triple(etNa2OLimestone, { Page8DataCache.Na2OLimestone }, { v: Double -> Page8DataCache.Na2OLimestone = v }),
+            Triple(etSO3Limestone, { Page8DataCache.SO3Limestone }, { v: Double -> Page8DataCache.SO3Limestone = v }),
+            Triple(etClLimestone, { Page8DataCache.ClLimestone }, { v: Double -> Page8DataCache.ClLimestone = v }),
+            Triple(etLoiLimestone, { Page8DataCache.LoiLimestone }, { v: Double -> Page8DataCache.LoiLimestone = v }),
+            Triple(etH2OLimestone, { Page8DataCache.H2OLimestone }, { v: Double -> Page8DataCache.H2OLimestone = v }),
+
+            // CoalAsh
+            Triple(etSiO2CoalAsh, { Page8DataCache.SiO2CoalAsh }, { v: Double -> Page8DataCache.SiO2CoalAsh = v }),
+            Triple(etAl2O3CoalAsh, { Page8DataCache.Al2O3CoalAsh }, { v: Double -> Page8DataCache.Al2O3CoalAsh = v }),
+            Triple(etFe2O3CoalAsh, { Page8DataCache.Fe2O3CoalAsh }, { v: Double -> Page8DataCache.Fe2O3CoalAsh = v }),
+            Triple(etCaOCoalAsh, { Page8DataCache.CaOCoalAsh }, { v: Double -> Page8DataCache.CaOCoalAsh = v }),
+            Triple(etMgOCoalAsh, { Page8DataCache.MgOCoalAsh }, { v: Double -> Page8DataCache.MgOCoalAsh = v }),
+            Triple(etK2OCoalAsh, { Page8DataCache.K2OCoalAsh }, { v: Double -> Page8DataCache.K2OCoalAsh = v }),
+            Triple(etNa2OCoalAsh, { Page8DataCache.Na2OCoalAsh }, { v: Double -> Page8DataCache.Na2OCoalAsh = v }),
+            Triple(etSO3CoalAsh, { Page8DataCache.SO3CoalAsh }, { v: Double -> Page8DataCache.SO3CoalAsh = v }),
+            Triple(etClCoalAsh, { Page8DataCache.ClCoalAsh }, { v: Double -> Page8DataCache.ClCoalAsh = v }),
+            Triple(etLoiCoalAsh, { Page8DataCache.LoiCoalAsh }, { v: Double -> Page8DataCache.LoiCoalAsh = v }),
+            Triple(etH2OCoalAsh, { Page8DataCache.H2OCoalAsh }, { v: Double -> Page8DataCache.H2OCoalAsh = v }),
+
+            // Other Inputs
+            Triple(etLoiRawmeal, { Page8DataCache.LoiRawmeal }, { v: Double -> Page8DataCache.LoiRawmeal = v }),
+            Triple(etH2ORawmeal, { Page8DataCache.H2ORawmeal }, { v: Double -> Page8DataCache.H2ORawmeal = v }),
+            Triple(etAshAbsorbed, { Page8DataCache.AshAbsorbed }, { v: Double -> Page8DataCache.AshAbsorbed = v }),
+            Triple(etHotmealSO3, { Page8DataCache.HotmealSO3 }, { v: Double -> Page8DataCache.HotmealSO3 = v }),
+            Triple(etFCaOResult, { Page8DataCache.FCaOResult }, { v: Double -> Page8DataCache.FCaOResult = v }),
+
+            // Targets
+            Triple(etLsfTarget, { Page8DataCache.LsfTarget }, { v: Double -> Page8DataCache.LsfTarget = v }),
+            Triple(etSmTarget, { Page8DataCache.SmTarget }, { v: Double -> Page8DataCache.SmTarget = v }),
+            Triple(etAmTarget, { Page8DataCache.AmTarget }, { v: Double -> Page8DataCache.AmTarget = v })
+        )
+
+        fields.forEach { (editText, getter, setter) ->
+            editText.setText(getter().takeIf { it != 0.0 }?.toString() ?: "")
+            editText.addTextChangedListener(object : TextWatcher {
+                override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+                override fun afterTextChanged(s: Editable?) {
+                    setter(s.toString().toDoubleOrNull() ?: 0.0)
+                }
+            })
+        }
+        // Min Columns
+        for (i in etMinColumns.indices) {
+            etMinColumns[i].setText(
+                Page8DataCache.minColumnValues[i].takeIf { it != 0.0 }?.toString() ?: ""
+            )
+            etMinColumns[i].addTextChangedListener {
+                Page8DataCache.minColumnValues[i] = it.toString().toDoubleOrNull() ?: 0.0
+            }
+        }
+        // Max Columns
+        for (i in etMaxColumns.indices) {
+            etMaxColumns[i].setText(
+                Page8DataCache.maxColumnValues[i].takeIf { it != 0.0 }?.toString() ?: ""
+            )
+            etMaxColumns[i].addTextChangedListener {
+                Page8DataCache.maxColumnValues[i] = it.toString().toDoubleOrNull() ?: 0.0
+            }
         }
     }
 }

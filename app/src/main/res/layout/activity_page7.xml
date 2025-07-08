@@ -801,15 +801,19 @@
                             android:textStyle="bold" />
 
                         <!-- 2nd-clinker-factor (J31) -->
-                        <TextView
-                            android:id="@+id/tv_clinker_factor_2"
+                        <EditText
+                            android:id="@+id/et_clinker_factor_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:background="@drawable/tint_border"
                             android:textColor="#FFFF00"
                             android:gravity="center"
-                            android:hint=""
+                            android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            />
+
                     </TableRow>
 
                     <TableRow>
