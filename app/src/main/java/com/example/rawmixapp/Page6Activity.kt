@@ -771,6 +771,18 @@ class Page6Activity : BaseActivity() {
         val amRawmeal = if (fe2o3Rawmeal != 0.0)
             al2o3Rawmeal / fe2o3Rawmeal else 0.0
 
+        // Raw Meal Caching
+        Page6DataCache.Sio2RawMeal = sio2Rawmeal
+        Page6DataCache.Al2o3RawMeal = al2o3Rawmeal
+        Page6DataCache.Fe2o3RawMeal = fe2o3Rawmeal
+        Page6DataCache.CaoRawMeal = caoRawmeal
+        Page6DataCache.MgoRawMeal = mgoRawmeal
+        Page6DataCache.Na2oRawMeal = na2oRawmeal
+        Page6DataCache.K2oRawMeal = k2oRawmeal
+        Page6DataCache.So3RawMeal = so3Rawmeal
+        Page6DataCache.ClRawMeal = clRawmeal
+        Page6DataCache.LoiRawMeal = loiRawmeal
+
         // --- Update UI ---
         // Mix % Table
         setTextViewValue(tvMixRawmeal, mixTotal)
@@ -847,6 +859,7 @@ class Page6Activity : BaseActivity() {
         setTextViewValue(tvDelta3, hiddenWet3)
         setTextViewValue(tvDelta4, hiddenWet4)
         setTextViewValue(tvDelta5, hiddenWet5)
+
     }
     private fun page6Cache() {
         val fields = listOf(
