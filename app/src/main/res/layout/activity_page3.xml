@@ -451,7 +451,7 @@
                         <!-- t1-column 1 (G45) -->
                         <TextView
                             android:text=""
-                            android:id="@+id/tv_G45"
+                            android:id="@+id/tv_G10"
                             android:minWidth="60dp"
                             android:minHeight="30dp"
                             android:padding="2dp"
@@ -466,7 +466,7 @@
 
                         <!-- ls-column 1 (H45) -->
                         <EditText
-                            android:id="@+id/et_H45"
+                            android:id="@+id/et_H10"
                             android:hint="0.00"
                             android:minWidth="60dp"
                             android:minHeight="30dp"
@@ -483,7 +483,7 @@
 
                         <!-- shale-column 1 (I45) -->
                         <EditText
-                            android:id="@+id/et_I45"
+                            android:id="@+id/et_I10"
                             android:hint="0.00"
                             android:minWidth="60dp"
                             android:minHeight="30dp"
@@ -501,7 +501,7 @@
 
                         <!-- io-column 1 (J45) -->
                         <EditText
-                            android:id="@+id/et_J45"
+                            android:id="@+id/et_J10"
                             android:hint="0.00"
                             android:minWidth="60dp"
                             android:minHeight="30dp"
@@ -518,7 +518,7 @@
 
                         <!-- SiO2-column 1 (K45) -->
                         <EditText
-                            android:id="@+id/et_K45"
+                            android:id="@+id/et_K10"
                             android:hint="0.00"
                             android:minWidth="60dp"
                             android:minHeight="30dp"
@@ -536,7 +536,7 @@
 
                         <!-- Al2O3-column 1 (L45) -->
                         <EditText
-                            android:id="@+id/et_L45"
+                            android:id="@+id/et_L10"
                             android:hint="0.00"
                             android:minWidth="60dp"
                             android:minHeight="30dp"
@@ -554,7 +554,7 @@
 
                         <!-- Fe2O3-column 1 (M45) -->
                         <EditText
-                            android:id="@+id/et_M45"
+                            android:id="@+id/et_M10"
                             android:hint="0.00"
                             android:minWidth="60dp"
                             android:minHeight="30dp"
@@ -572,7 +572,7 @@
 
                         <!-- CaO-column 1 (N45) -->
                         <EditText
-                            android:id="@+id/et_N45"
+                            android:id="@+id/et_N10"
                             android:hint="0.00"
                             android:minWidth="60dp"
                             android:minHeight="30dp"
@@ -590,7 +590,7 @@
 
                         <!-- MgO-column 1 (O45) -->
                         <EditText
-                            android:id="@+id/et_O45"
+                            android:id="@+id/et_O10"
                             android:hint="0.00"
                             android:minWidth="60dp"
                             android:minHeight="30dp"
@@ -608,7 +608,7 @@
 
                         <!-- Na2O-column 1 (P45) -->
                         <EditText
-                            android:id="@+id/et_P45"
+                            android:id="@+id/et_P10"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -624,7 +624,7 @@
 
                         <!-- K2O-column 1 (Q45) -->
                         <EditText
-                            android:id="@+id/et_Q45"
+                            android:id="@+id/et_Q10"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -640,7 +640,7 @@
 
                         <!-- SO3-column 1 (R45) -->
                         <EditText
-                            android:id="@+id/et_R45"
+                            android:id="@+id/et_R10"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -656,7 +656,7 @@
 
                         <!-- Cl-column 1 (S45) -->
                         <EditText
-                            android:id="@+id/et_S45"
+                            android:id="@+id/et_S10"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -672,7 +672,7 @@
 
                         <!-- column 1 (T45) -->
                         <TextView
-                            android:id="@+id/tv_T45"
+                            android:id="@+id/tv_T10"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
                             android:layout_height="match_parent"
@@ -687,7 +687,7 @@
 
                         <!-- t2-column 1 (U45) -->
                         <TextView
-                            android:id="@+id/tv_U45"
+                            android:id="@+id/tv_U10"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -702,7 +702,7 @@
 
                         <!-- lsf-column 1 (V45) -->
                         <TextView
-                            android:id="@+id/tv_V45"
+                            android:id="@+id/tv_V10"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -717,7 +717,7 @@
 
                         <!-- hm-column 1 (W45) -->
                         <TextView
-                            android:id="@+id/tv_W45"
+                            android:id="@+id/tv_W10"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -732,7 +732,7 @@
 
                         <!-- sm-column 1 (X45) -->
                         <TextView
-                            android:id="@+id/tv_X45"
+                            android:id="@+id/tv_X10"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -747,7 +747,7 @@
 
                         <!-- am-column 1 (Y45) -->
                         <TextView
-                            android:id="@+id/tv_Y45"
+                            android:id="@+id/tv_Y10"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -783,7 +783,7 @@
 
                         <!-- t1-column 2 (G46) -->
                         <TextView
-                            android:id="@+id/tv_G46"
+                            android:id="@+id/tv_G11"
                             android:layout_height="match_parent"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
@@ -798,7 +798,7 @@
 
                         <!-- ls-column 2 (H46) -->
                         <EditText
-                            android:id="@+id/et_H46"
+                            android:id="@+id/et_H11"
                             android:layout_height="match_parent"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
@@ -814,7 +814,7 @@
 
                         <!-- shale-column 2 (I46) -->
                         <EditText
-                            android:id="@+id/et_I46"
+                            android:id="@+id/et_I11"
                             android:text=""
                             android:minWidth="85dp"
                             android:minHeight="30dp"
@@ -831,7 +831,7 @@
 
                         <!-- io-column 2 (J46) -->
                         <EditText
-                            android:id="@+id/et_J46"
+                            android:id="@+id/et_J11"
                             android:text=""
                             android:minWidth="85dp"
                             android:minHeight="30dp"
@@ -848,7 +848,7 @@
 
                         <!-- SiO2-column 2 (K46) -->
                         <EditText
-                            android:id="@+id/et_K46"
+                            android:id="@+id/et_K11"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -864,7 +864,7 @@
 
                         <!-- Al2O3-column 2 (L46) -->
                         <EditText
-                            android:id="@+id/et_L46"
+                            android:id="@+id/et_L11"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -880,7 +880,7 @@
 
                         <!-- Fe2O3-column 2 (M46) -->
                         <EditText
-                            android:id="@+id/et_M46"
+                            android:id="@+id/et_M11"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -896,7 +896,7 @@
 
                         <!-- CaO-column 2 (N46) -->
                         <EditText
-                            android:id="@+id/et_N46"
+                            android:id="@+id/et_N11"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -912,7 +912,7 @@
 
                         <!-- MgO-column 2 (O46) -->
                         <EditText
-                            android:id="@+id/et_O46"
+                            android:id="@+id/et_O11"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -928,7 +928,7 @@
 
                         <!-- Na2O-column 2 (P46) -->
                         <EditText
-                            android:id="@+id/et_P46"
+                            android:id="@+id/et_P11"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -944,7 +944,7 @@
 
                         <!-- K2O-column 2 (Q46) -->
                         <EditText
-                            android:id="@+id/et_Q46"
+                            android:id="@+id/et_Q11"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -960,7 +960,7 @@
 
                         <!-- SO3-column 2 (R46) -->
                         <EditText
-                            android:id="@+id/et_R46"
+                            android:id="@+id/et_R11"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -976,7 +976,7 @@
 
                         <!-- Cl-column 2 (S46) -->
                         <EditText
-                            android:id="@+id/et_S46"
+                            android:id="@+id/et_S11"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -990,9 +990,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- column 2 (T46) -->
+                        <!-- column 2 (T11) -->
                         <TextView
-                            android:id="@+id/tv_T46"
+                            android:id="@+id/tv_T11"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
                             android:layout_height="match_parent"
@@ -1005,9 +1005,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- t2-column 2 (U46) -->
+                        <!-- t2-column 2 (U11) -->
                         <TextView
-                            android:id="@+id/tv_U46"
+                            android:id="@+id/tv_U11"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1020,9 +1020,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- lsf-column 2 (V46) -->
+                        <!-- lsf-column 2 (V11) -->
                         <TextView
-                            android:id="@+id/tv_V46"
+                            android:id="@+id/tv_V11"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1035,9 +1035,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- hm-column 2 (W46) -->
+                        <!-- hm-column 2 (W11) -->
                         <TextView
-                            android:id="@+id/tv_W46"
+                            android:id="@+id/tv_W11"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1050,9 +1050,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- sm-column 2 (X46) -->
+                        <!-- sm-column 2 (X11) -->
                         <TextView
-                            android:id="@+id/tv_X46"
+                            android:id="@+id/tv_X11"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1065,9 +1065,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- am-column 2 (Y46) -->
+                        <!-- am-column 2 (Y11) -->
                         <TextView
-                            android:id="@+id/tv_Y46"
+                            android:id="@+id/tv_Y11"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1100,9 +1100,9 @@
 
                         </LinearLayout>
 
-                        <!-- t1-column 3 (G47) -->
+                        <!-- t1-column 3 (G12) -->
                         <TextView
-                            android:id="@+id/tv_G47"
+                            android:id="@+id/tv_G12"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1115,9 +1115,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- ls-column 3 (H47) -->
+                        <!-- ls-column 3 (H12) -->
                         <EditText
-                            android:id="@+id/et_H47"
+                            android:id="@+id/et_H12"
                             android:text=""
                             android:minWidth="85dp"
                             android:minHeight="30dp"
@@ -1132,9 +1132,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- shale-column 3 (I47) -->
+                        <!-- shale-column 3 (I12) -->
                         <EditText
-                            android:id="@+id/et_I47"
+                            android:id="@+id/et_I12"
                             android:layout_height="match_parent"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
@@ -1148,9 +1148,9 @@
                             android:textColor="#FFFFFF"
                             android:textSize="11sp" />
 
-                        <!-- io-column 3 (J47) -->
+                        <!-- io-column 3 (J12) -->
                         <EditText
-                            android:id="@+id/et_J47"
+                            android:id="@+id/et_J12"
                             android:text=""
                             android:minWidth="85dp"
                             android:minHeight="30dp"
@@ -1165,9 +1165,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- SiO2-column 3 (K47) -->
+                        <!-- SiO2-column 3 (K12) -->
                         <EditText
-                            android:id="@+id/et_K47"
+                            android:id="@+id/et_K12"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1181,9 +1181,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- Al2O3-column 3 (L47) -->
+                        <!-- Al2O3-column 3 (L12) -->
                         <EditText
-                            android:id="@+id/et_L47"
+                            android:id="@+id/et_L12"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1197,9 +1197,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- Fe2O3-column 3 (M47) -->
+                        <!-- Fe2O3-column 3 (M12) -->
                         <EditText
-                            android:id="@+id/et_M47"
+                            android:id="@+id/et_M12"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1213,9 +1213,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- CaO-column 3 (N47) -->
+                        <!-- CaO-column 3 (N12) -->
                         <EditText
-                            android:id="@+id/et_N47"
+                            android:id="@+id/et_N12"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1229,9 +1229,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- MgO-column 3 (O47) -->
+                        <!-- MgO-column 3 (O12) -->
                         <EditText
-                            android:id="@+id/et_O47"
+                            android:id="@+id/et_O12"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1245,9 +1245,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- Na2O-column 3 (P47) -->
+                        <!-- Na2O-column 3 (P12) -->
                         <EditText
-                            android:id="@+id/et_P47"
+                            android:id="@+id/et_P12"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1261,9 +1261,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- K2O-column 3 (Q47) -->
+                        <!-- K2O-column 3 (Q12) -->
                         <EditText
-                            android:id="@+id/et_Q47"
+                            android:id="@+id/et_Q12"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1277,9 +1277,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- SO3-column 3 (R47) -->
+                        <!-- SO3-column 3 (R12) -->
                         <EditText
-                            android:id="@+id/et_R47"
+                            android:id="@+id/et_R12"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1293,9 +1293,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- Cl-column 3 (S47) -->
+                        <!-- Cl-column 3 (S12) -->
                         <EditText
-                            android:id="@+id/et_S47"
+                            android:id="@+id/et_S12"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:background="@drawable/limestone_border"
@@ -1310,9 +1310,9 @@
                             android:textSize="11sp"
                             tools:ignore="TouchTargetSizeCheck" />
 
-                        <!-- column 3 (T47) -->
+                        <!-- column 3 (T12) -->
                         <TextView
-                            android:id="@+id/tv_T47"
+                            android:id="@+id/tv_T12"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
                             android:layout_height="match_parent"
@@ -1325,9 +1325,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- t2-column 3 (U47) -->
+                        <!-- t2-column 3 (U12) -->
                         <TextView
-                            android:id="@+id/tv_U47"
+                            android:id="@+id/tv_U12"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1340,9 +1340,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- lsf-column 3 (V47) -->
+                        <!-- lsf-column 3 (V12) -->
                         <TextView
-                            android:id="@+id/tv_V47"
+                            android:id="@+id/tv_V12"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1355,9 +1355,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- hm-column 3 (W47) -->
+                        <!-- hm-column 3 (W12) -->
                         <TextView
-                            android:id="@+id/tv_W47"
+                            android:id="@+id/tv_W12"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1370,9 +1370,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- sm-column 3 (X47) -->
+                        <!-- sm-column 3 (X12) -->
                         <TextView
-                            android:id="@+id/tv_X47"
+                            android:id="@+id/tv_X12"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1385,9 +1385,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- am-column 3 (Y47) -->
+                        <!-- am-column 3 (Y12) -->
                         <TextView
-                            android:id="@+id/tv_Y47"
+                            android:id="@+id/tv_Y12"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1398,6 +1398,7 @@
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:layout_marginBottom="1dp" />
+
                     </TableRow>
 
                     <TableRow android:background="#000000">
@@ -1421,9 +1422,9 @@
 
                         </LinearLayout>
 
-                        <!-- t1-column 4 (G48) -->
+                        <!-- t1-column 4 (G13) -->
                         <TextView
-                            android:id="@+id/tv_G48"
+                            android:id="@+id/tv_G13"
                             android:text=""
                             android:layout_height="match_parent"
                             android:minWidth="75dp"
@@ -1436,9 +1437,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- ls-column 4 (H48) -->
+                        <!-- ls-column 4 (H13) -->
                         <EditText
-                            android:id="@+id/et_H48"
+                            android:id="@+id/et_H13"
                             android:text=""
                             android:minWidth="85dp"
                             android:minHeight="30dp"
@@ -1453,9 +1454,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- shale-column 4 (I48) -->
+                        <!-- shale-column 4 (I13) -->
                         <EditText
-                            android:id="@+id/et_I48"
+                            android:id="@+id/et_I13"
                             android:text=""
                             android:minWidth="85dp"
                             android:minHeight="30dp"
@@ -1470,9 +1471,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- io-column 4 (J48) -->
+                        <!-- io-column 4 (J13) -->
                         <EditText
-                            android:id="@+id/et_J48"
+                            android:id="@+id/et_J13"
                             android:text=""
                             android:minWidth="85dp"
                             android:minHeight="30dp"
@@ -1487,9 +1488,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- SiO2-column 4 (K48) -->
+                        <!-- SiO2-column 4 (K13) -->
                         <EditText
-                            android:id="@+id/et_K48"
+                            android:id="@+id/et_K13"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1503,9 +1504,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- Al2O3-column 4 (L48) -->
+                        <!-- Al2O3-column 4 (L13) -->
                         <EditText
-                            android:id="@+id/et_L48"
+                            android:id="@+id/et_L13"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1519,9 +1520,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- Fe2O3-column 4 (M48) -->
+                        <!-- Fe2O3-column 4 (M13) -->
                         <EditText
-                            android:id="@+id/et_M48"
+                            android:id="@+id/et_M13"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1535,9 +1536,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- CaO-column 4 (N48) -->
+                        <!-- CaO-column 4 (N13) -->
                         <EditText
-                            android:id="@+id/et_N48"
+                            android:id="@+id/et_N13"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1551,9 +1552,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- MgO-column 4 (O48) -->
+                        <!-- MgO-column 4 (O13) -->
                         <EditText
-                            android:id="@+id/et_O48"
+                            android:id="@+id/et_O13"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:background="@drawable/limestone_border"
@@ -1568,9 +1569,9 @@
                             android:textSize="11sp"
                             tools:ignore="TouchTargetSizeCheck" />
 
-                        <!-- Na2O-column 4 (P48) -->
+                        <!-- Na2O-column 4 (P13) -->
                         <EditText
-                            android:id="@+id/et_P48"
+                            android:id="@+id/et_P13"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1584,9 +1585,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- K2O-column 4 (Q48) -->
+                        <!-- K2O-column 4 (Q13) -->
                         <EditText
-                            android:id="@+id/et_Q48"
+                            android:id="@+id/et_Q13"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1600,9 +1601,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- SO3-column 4 (R48) -->
+                        <!-- SO3-column 4 (R13) -->
                         <EditText
-                            android:id="@+id/et_R48"
+                            android:id="@+id/et_R13"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1616,9 +1617,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- Cl-column 4 (S48) -->
+                        <!-- Cl-column 4 (S13) -->
                         <EditText
-                            android:id="@+id/et_S48"
+                            android:id="@+id/et_S13"
                             android:hint="0.00"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1632,9 +1633,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- column 4 (T48) -->
+                        <!-- column 4 (T13) -->
                         <TextView
-                            android:id="@+id/tv_T48"
+                            android:id="@+id/tv_T13"
                             android:minWidth="75dp"
                             android:minHeight="30dp"
                             android:layout_height="match_parent"
@@ -1647,9 +1648,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- t2-column 4 (U48) -->
+                        <!-- t2-column 4 (U13) -->
                         <TextView
-                            android:id="@+id/tv_U48"
+                            android:id="@+id/tv_U13"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1662,9 +1663,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- lsf-column 4 (V48) -->
+                        <!-- lsf-column 4 (V13) -->
                         <TextView
-                            android:id="@+id/tv_V48"
+                            android:id="@+id/tv_V13"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1677,9 +1678,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- hm-column 4 (W48) -->
+                        <!-- hm-column 4 (W13) -->
                         <TextView
-                            android:id="@+id/tv_W48"
+                            android:id="@+id/tv_W13"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1692,9 +1693,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- sm-column 4 (X48) -->
+                        <!-- sm-column 4 (X13) -->
                         <TextView
-                            android:id="@+id/tv_X48"
+                            android:id="@+id/tv_X13"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1707,9 +1708,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- am-column 4 (Y48) -->
+                        <!-- am-column 4 (Y13) -->
                         <TextView
-                            android:id="@+id/tv_Y48"
+                            android:id="@+id/tv_Y13"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1742,9 +1743,9 @@
 
                         </LinearLayout>
 
-                        <!-- t1-column 5 (G49) -->
+                        <!-- t1-column 5 (G14) -->
                         <TextView
-                            android:id="@+id/tv_G49"
+                            android:id="@+id/tv_G14"
                             android:text=""
                             android:minWidth="75dp"
                             android:minHeight="30dp"
@@ -1757,9 +1758,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- ls-column 5 (H49) -->
+                        <!-- ls-column 5 (H14) -->
                         <EditText
-                            android:id="@+id/et_H49"
+                            android:id="@+id/et_H14"
                             android:text=""
                             android:minWidth="85dp"
                             android:minHeight="30dp"
@@ -1774,9 +1775,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- shale-column 5 (I49) -->
+                        <!-- shale-column 5 (I14) -->
                         <EditText
-                            android:id="@+id/et_I49"
+                            android:id="@+id/et_I14"
                             android:text=""
                             android:minWidth="85dp"
                             android:minHeight="30dp"
@@ -1791,9 +1792,9 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
-                        <!-- io-column 5 (J49) -->
+                        <!-- io-column 5 (J14) -->
                         <EditText
-                            android:id="@+id/et_J49"
+                            android:id="@+id/et_J14"
                             android:text=""
                             android:minWidth="85dp"
                             android:minHeight="30dp"
@@ -1864,9 +1865,9 @@
                                 android:maxLines="1"
                                 android:ellipsize="end" />
 
-                            <!-- target-LSF (H52) -->
+                            <!-- target-LSF (H17) -->
                             <TextView
-                                android:id="@+id/tv_H52"
+                                android:id="@+id/tv_H17"
                                 android:layout_width="0dp"
                                 android:layout_height="32dp"
                                 android:layout_marginBottom="1dp"
@@ -1898,9 +1899,9 @@
                                 android:maxLines="1"
                                 android:ellipsize="end" />
 
-                            <!-- target-AM (H53) -->
+                            <!-- target-AM (H18) -->
                             <TextView
-                                android:id="@+id/tv_H53"
+                                android:id="@+id/tv_H18"
                                 android:layout_width="0dp"
                                 android:layout_height="32dp"
                                 android:layout_marginBottom="1dp"
@@ -1933,9 +1934,9 @@
                                 android:maxLines="1"
                                 android:ellipsize="end" />
 
-                            <!-- % Ash Absorbed (H54) -->
+                            <!-- % Ash Absorbed (H19) -->
                             <EditText
-                                android:id="@+id/et_H54"
+                                android:id="@+id/et_H19"
                                 android:layout_width="0dp"
                                 android:layout_height="32dp"
                                 android:layout_weight="1"
@@ -2193,7 +2194,7 @@
                                     <!-- trc-SiO2 (K52) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_K52"
+                                        android:id="@+id/et_K17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2202,10 +2203,10 @@
                                         android:textSize="9sp"
                                         android:hint="0.00" />
 
-                                    <!-- trc-Al2O3 (L52) -->
+                                    <!-- trc-Al2O3 (L17) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_L52"
+                                        android:id="@+id/et_L17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2214,10 +2215,10 @@
                                         android:textSize="9sp"
                                         android:hint="0.00" />
 
-                                    <!-- trc-Fe2O3 (M52) -->
+                                    <!-- trc-Fe2O3 (M17) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_M52"
+                                        android:id="@+id/et_M17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2226,10 +2227,10 @@
                                         android:textSize="9sp"
                                         android:hint="0.00" />
 
-                                    <!-- trc-CaO (N52) -->
+                                    <!-- trc-CaO (N17) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_N52"
+                                        android:id="@+id/et_N17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2238,10 +2239,10 @@
                                         android:textSize="9sp"
                                         android:hint="0.00" />
 
-                                    <!-- trc-MgO (O52) -->
+                                    <!-- trc-MgO (O17) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_O52"
+                                        android:id="@+id/et_O17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2250,10 +2251,10 @@
                                         android:textSize="9sp"
                                         android:hint="0.00" />
 
-                                    <!-- trc-Na2O (P52) -->
+                                    <!-- trc-Na2O (P17) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_P52"
+                                        android:id="@+id/et_P17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2262,10 +2263,10 @@
                                         android:textSize="9sp"
                                         android:hint="0.00" />
 
-                                    <!-- trc-K2O (Q52) -->
+                                    <!-- trc-K2O (Q17) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_Q52"
+                                        android:id="@+id/et_Q17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2274,10 +2275,10 @@
                                         android:textSize="9sp"
                                         android:hint="0.00" />
 
-                                    <!-- trc-SO3 (R52) -->
+                                    <!-- trc-SO3 (R17) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_R52"
+                                        android:id="@+id/et_R17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2286,10 +2287,10 @@
                                         android:textSize="9sp"
                                         android:hint="0.00" />
 
-                                    <!-- trc-Cl (S52) -->
+                                    <!-- trc-Cl (S17) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_S52"
+                                        android:id="@+id/et_S17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2298,21 +2299,21 @@
                                         android:textSize="9sp"
                                         android:hint="0.00" />
 
-                                    <!-- trc-LOI (T52) -->
+                                    <!-- trc-LOI (T17) -->
+                                    <EditText
+                                        style="@style/NewTableEditText"
+                                        android:id="@+id/et_T17"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:minWidth="0dp"
+                                        android:minHeight="28dp"
+                                        android:padding="2dp"
+                                        android:textSize="9sp"
+                                        android:hint="0.00" />
+                                    <!-- trc-TOTAL (U17) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_T52"
-                                        android:layout_width="0dp"
-                                        android:layout_weight="1"
-                                        android:minWidth="0dp"
-                                        android:minHeight="28dp"
-                                        android:padding="2dp"
-                                        android:textSize="9sp" />
-
-                                    <!-- trc-TOTAL (U52) -->
-                                    <TextView
-                                        style="@style/NewTableTextView"
-                                        android:id="@+id/tv_U52"
+                                        android:id="@+id/tv_U17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1.2"
                                         android:minWidth="0dp"
@@ -2320,10 +2321,10 @@
                                         android:padding="2dp"
                                         android:textSize="9sp" />
 
-                                    <!-- trc-LSF (V52) -->
+                                    <!-- trc-LSF (V17) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_V52"
+                                        android:id="@+id/tv_V17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2331,10 +2332,10 @@
                                         android:padding="2dp"
                                         android:textSize="9sp" />
 
-                                    <!-- trc-SM (W52) -->
+                                    <!-- trc-SM (W17) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_W52"
+                                        android:id="@+id/tv_W17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2342,10 +2343,10 @@
                                         android:padding="2dp"
                                         android:textSize="9sp" />
 
-                                    <!-- trc-SR (X52) -->
+                                    <!-- trc-SR (X17) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_X52"
+                                        android:id="@+id/tv_X17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2353,10 +2354,10 @@
                                         android:padding="2dp"
                                         android:textSize="9sp" />
 
-                                    <!-- trc-AM (Y52) -->
+                                    <!-- trc-AM (Y17) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_Y52"
+                                        android:id="@+id/tv_Y17"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2388,141 +2389,141 @@
                                     android:ellipsize="end" />
 
                                 <TableRow>
-                                    <!-- cac-SiO2 1 (K54) -->
+                                    <!-- cac-SiO2 1 (K19) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_K54"
+                                        android:id="@+id/et_K19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:hint="0.00" />
 
-                                    <!-- cac-Al2O3 2 (L54) -->
+                                    <!-- cac-Al2O3 2 (L19) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_L54"
+                                        android:id="@+id/et_L19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:hint="0.00" />
 
-                                    <!-- cac-Fe2O3 3 (M54) -->
+                                    <!-- cac-Fe2O3 3 (M19) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_M54"
+                                        android:id="@+id/et_M19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:hint="0.00" />
 
-                                    <!-- cac-CaO 4 (N54) -->
+                                    <!-- cac-CaO 4 (N19) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_N54"
+                                        android:id="@+id/et_N19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:hint="0.00" />
 
-                                    <!-- cac-MgO 5 (O54) -->
+                                    <!-- cac-MgO 5 (O19) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_O54"
+                                        android:id="@+id/et_O19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:hint="0.00" />
 
-                                    <!-- cac-Na2O 6 (P54) -->
+                                    <!-- cac-Na2O 6 (P19) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_P54"
+                                        android:id="@+id/et_P19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:hint="0.00" />
 
-                                    <!-- cac-K2O 7 (Q54) -->
+                                    <!-- cac-K2O 7 (Q19) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_Q54"
+                                        android:id="@+id/et_Q19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:hint="0.00" />
 
-                                    <!-- cac-SO3 8 (R54) -->
+                                    <!-- cac-SO3 8 (R19) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_R54"
+                                        android:id="@+id/et_R19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:hint="0.00"
                                         android:background="#C4BD97" />
 
-                                    <!-- cac-Cl 9 (S54) -->
+                                    <!-- cac-Cl 9 (S19) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_S54"
+                                        android:id="@+id/et_S19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:hint="0.00" />
 
-                                    <!-- cac-LOI 10 (T54) -->
+                                    <!-- cac-LOI 10 (T19) -->
                                     <EditText
                                         style="@style/NewTableEditText"
-                                        android:id="@+id/et_T54"
+                                        android:id="@+id/et_T19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:hint="0.00" />
 
-                                    <!-- cac-TOTAL 11 (U54) -->
+                                    <!-- cac-TOTAL 11 (U19) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_U54"
+                                        android:id="@+id/tv_U19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1.2"
                                         android:minWidth="0dp"
                                         android:text=""
                                         android:background="#EEECE1" />
 
-                                    <!-- cac-LSF 12 (V54) -->
+                                    <!-- cac-LSF 12 (V19) -->
                                     <TextView
                                         style="@style/NewTableTextViewWhite"
-                                        android:id="@+id/tv_V54"
+                                        android:id="@+id/tv_V19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:text=""
                                         android:background="#EEECE1" />
 
-                                    <!-- cac-HM 13 (W54) -->
+                                    <!-- cac-HM 13 (W19) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_W54"
+                                        android:id="@+id/tv_W19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:text=""
                                         android:background="#EEECE1" />
 
-                                    <!-- cac-SM 14 (X54) -->
+                                    <!-- cac-SM 14 (X19) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_X54"
+                                        android:id="@+id/tv_X19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:text=""
                                         android:background="#EEECE1" />
 
-                                    <!-- cac-AM 15 (Y54) -->
+                                    <!-- cac-AM 15 (Y19) -->
                                     <TextView
                                         style="@style/NewTableTextViewWhiteNoMargin"
-                                        android:id="@+id/tv_Y54"
+                                        android:id="@+id/tv_Y19"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2684,10 +2685,10 @@
                                 </TableRow>
 
                                 <TableRow>
-                                    <!-- pcc-row 1 (K57) -->
+                                    <!-- pcc-row 1 (K22) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_K57"
+                                        android:id="@+id/tv_K22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2695,10 +2696,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- pcc-row 2 (L57) -->
+                                    <!-- pcc-row 2 (L22) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_L57"
+                                        android:id="@+id/tv_L22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2706,10 +2707,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- pcc-row 3 (M57) -->
+                                    <!-- pcc-row 3 (M22) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_M57"
+                                        android:id="@+id/tv_M22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2717,10 +2718,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- pcc-row 4 (N57) -->
+                                    <!-- pcc-row 4 (N22) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_N57"
+                                        android:id="@+id/tv_N22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2728,10 +2729,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- pcc-row 5 (O57) -->
+                                    <!-- pcc-row 5 (O22) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_O57"
+                                        android:id="@+id/tv_O22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2739,10 +2740,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- pcc-row 6 (P57) -->
+                                    <!-- pcc-row 6 (P22) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_P57"
+                                        android:id="@+id/tv_P22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2750,10 +2751,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- pcc-row 7 (Q57) -->
+                                    <!-- pcc-row 7 (Q22) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_Q57"
+                                        android:id="@+id/tv_Q22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2761,10 +2762,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- pcc-row 8 (R57) -->
+                                    <!-- pcc-row 8 (R22) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_R57"
+                                        android:id="@+id/tv_R22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2772,10 +2773,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- pcc-row 9 (S57) -->
+                                    <!-- pcc-row 9 (S22) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_S57"
+                                        android:id="@+id/tv_S22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2783,10 +2784,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- pcc-row 10 (T57) -->
+                                    <!-- pcc-row 10 (T22) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_T57"
+                                        android:id="@+id/tv_T22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1.5"
                                         android:minWidth="0dp"
@@ -2795,10 +2796,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- pcc-row 11 (V57) -->
+                                    <!-- pcc-row 11 (V22) -->
                                     <TextView
                                         style="@style/NewTableTextViewWhite"
-                                        android:id="@+id/tv_V57"
+                                        android:id="@+id/tv_V22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2806,10 +2807,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- pcc-row 12 (W57) -->
+                                    <!-- pcc-row 12 (W22) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_W57"
+                                        android:id="@+id/tv_W22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2818,10 +2819,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- pcc-row 13 (X57) -->
+                                    <!-- pcc-row 13 (X22) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_X57"
+                                        android:id="@+id/tv_X22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -2830,10 +2831,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- pcc-row 14 (Y57) -->
+                                    <!-- pcc-row 14 (Y22) -->
                                     <TextView
                                         style="@style/NewTableTextViewWhiteNoMargin"
-                                        android:id="@+id/tv_Y57"
+                                        android:id="@+id/tv_Y22"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3041,10 +3042,10 @@
                                 </TableRow>
 
                                 <TableRow>
-                                    <!-- Lrt.wt. (K60) -->
+                                    <!-- Lrt.wt. (K25) -->
                                     <EditText
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/et_K60"
+                                        android:id="@+id/et_K25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3053,10 +3054,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- FCaO (L60) -->
+                                    <!-- FCaO (L25) -->
                                     <EditText
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/et_L60"
+                                        android:id="@+id/et_L25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3065,22 +3066,22 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- Burning Con (M60) -->
-                                    <EditText
-                                        style="@style/NewTableEditText"
-                                        android:id="@+id/et_M60"
+                                    <!-- Burning Con (M25) -->
+                                    <TextView
+                                        style="@style/NewTableTextView"
+                                        android:id="@+id/tv_M25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:hint="Cond."
-                                        android:inputType="text"
+                                        android:text=""
+                                        android:background="#EEECE1"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- DOC (N60) -->
+                                    <!-- DOC (N25) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_N60"
+                                        android:id="@+id/tv_N25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3088,10 +3089,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- KF LOI (O60) -->
+                                    <!-- KF LOI (O25) -->
                                     <EditText
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/et_O60"
+                                        android:id="@+id/et_O25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3100,10 +3101,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- C3S net (P60) -->
+                                    <!-- C3S net (P25) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_P60"
+                                        android:id="@+id/tv_P25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3112,10 +3113,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- C2S (Q60) -->
+                                    <!-- C2S (Q25) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_Q60"
+                                        android:id="@+id/tv_Q25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3124,10 +3125,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- C3A (R60) -->
+                                    <!-- C3A (R25) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_R60"
+                                        android:id="@+id/tv_R25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3136,10 +3137,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- C4AF (S60) -->
+                                    <!-- C4AF (S25) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_S60"
+                                        android:id="@+id/tv_S25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3148,10 +3149,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- Alkali/Sulphate Ratio (T60) -->
+                                    <!-- Alkali/Sulphate Ratio (T25) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_T60"
+                                        android:id="@+id/tv_T25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3160,10 +3161,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- Total Alkali (U60) -->
+                                    <!-- Total Alkali (U25) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_U60"
+                                        android:id="@+id/tv_U25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3172,10 +3173,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- LP @ 1450C (V60) -->
+                                    <!-- LP @ 1450C (V25) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_V60"
+                                        android:id="@+id/tv_V25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3184,10 +3185,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- COATING INDEX (W60) -->
+                                    <!-- COATING INDEX (W25) -->
                                     <TextView
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_W60"
+                                        android:id="@+id/tv_W25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3196,10 +3197,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- %SO3 (X60) -->
+                                    <!-- %SO3 (X25) -->
                                     <EditText
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/et_X60"
+                                        android:id="@+id/et_X25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
@@ -3208,10 +3209,10 @@
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
-                                    <!-- ht-LOI (Y60) -->
+                                    <!-- ht-LOI (Y25) -->
                                     <EditText
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/et_Y60"
+                                        android:id="@+id/et_Y25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"

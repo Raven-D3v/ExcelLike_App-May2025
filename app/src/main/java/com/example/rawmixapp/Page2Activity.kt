@@ -169,48 +169,7 @@ class Page2Activity : BaseActivity() {
         btnClear = findViewById(R.id.btn_clear)
 
         initializeViews()
-
-        // Cache oxide values for Page3
-        etSio2Limestone.addTextChangedListener {
-            Page2DataCache.sio2Limestone = it.toString().toDoubleOrNull() ?: 0.0
-        }
-        etSio2Shale.addTextChangedListener {
-            Page2DataCache.sio2Shale = it.toString().toDoubleOrNull() ?: 0.0
-        }
-        etSio2IronOre.addTextChangedListener {
-            Page2DataCache.sio2IronOre = it.toString().toDoubleOrNull() ?: 0.0
-        }
-
-        etAl2o3Limestone.addTextChangedListener {
-            Page2DataCache.al2o3Limestone = it.toString().toDoubleOrNull() ?: 0.0
-        }
-        etAl2o3Shale.addTextChangedListener {
-            Page2DataCache.al2o3Shale = it.toString().toDoubleOrNull() ?: 0.0
-        }
-        etAl2o3IronOre.addTextChangedListener {
-            Page2DataCache.al2o3IronOre = it.toString().toDoubleOrNull() ?: 0.0
-        }
-
-        etFe2o3Limestone.addTextChangedListener {
-            Page2DataCache.fe2o3Limestone = it.toString().toDoubleOrNull() ?: 0.0
-        }
-        etFe2o3Shale.addTextChangedListener {
-            Page2DataCache.fe2o3Shale = it.toString().toDoubleOrNull() ?: 0.0
-        }
-        etFe2o3IronOre.addTextChangedListener {
-            Page2DataCache.fe2o3IronOre = it.toString().toDoubleOrNull() ?: 0.0
-        }
-
-        etCaoLimestone.addTextChangedListener {
-            Page2DataCache.caoLimestone = it.toString().toDoubleOrNull() ?: 0.0
-        }
-        etCaoShale.addTextChangedListener {
-            Page2DataCache.caoShale = it.toString().toDoubleOrNull() ?: 0.0
-        }
-        etCaoIronOre.addTextChangedListener {
-            Page2DataCache.caoIronOre = it.toString().toDoubleOrNull() ?: 0.0
-        }
-
+        Page2Cache()
         setupTextWatchers()
         setupButtons()
         calculateAll() // Initial calculation
@@ -219,14 +178,14 @@ class Page2Activity : BaseActivity() {
         // val btnToggleCoefficients = findViewById<Button>(R.id.btn_toggle_coefficients)
         // val layoutCoefficientsTable = findViewById<LinearLayout>(R.id.layout_coefficients_table)
         // btnToggleCoefficients.setOnClickListener {
-            // if (layoutCoefficientsTable.visibility == LinearLayout.VISIBLE) {
-                // layoutCoefficientsTable.visibility = LinearLayout.GONE
-                // btnToggleCoefficients.text = "Show Coefficients Table"
-            // } else {
-            //    layoutCoefficientsTable.visibility = LinearLayout.VISIBLE
-             //   btnToggleCoefficients.text = "Hide Coefficients Table"
-           // }
-       // }
+        // if (layoutCoefficientsTable.visibility == LinearLayout.VISIBLE) {
+        // layoutCoefficientsTable.visibility = LinearLayout.GONE
+        // btnToggleCoefficients.text = "Show Coefficients Table"
+        // } else {
+        //    layoutCoefficientsTable.visibility = LinearLayout.VISIBLE
+        //   btnToggleCoefficients.text = "Hide Coefficients Table"
+        // }
+        // }
 
         // Check if we're loading saved data
         val savedDataId = intent.getLongExtra("saved_data_id", -1)
@@ -399,7 +358,7 @@ class Page2Activity : BaseActivity() {
             etWfDryLimestone, etWfDryShale, etWfDryIronOre,
             etWfH2oLimestone, etWfH2oShale, etWfH2oIronOre
         )
-        allEditTexts.forEach { 
+        allEditTexts.forEach {
             it.addTextChangedListener(object : TextWatcher {
                 override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
                 override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
@@ -428,14 +387,14 @@ class Page2Activity : BaseActivity() {
             // Create a dialog for naming the save
             val dialogView = layoutInflater.inflate(R.layout.dialog_save_name, null)
             val etSaveName = dialogView.findViewById<EditText>(R.id.et_save_name)
-            
+
             AlertDialog.Builder(this)
                 .setTitle("Save Data")
                 .setView(dialogView)
                 .setPositiveButton("Save") { _, _ ->
                     val saveName = etSaveName.text.toString().trim()
                     val data = JSONObject()
-                    
+
                     // Save all EditText values
                     allInputEditTexts.forEach { editText ->
                         val idName = resources.getResourceEntryName(editText.id)
@@ -469,9 +428,6 @@ class Page2Activity : BaseActivity() {
         // Clear all EditTexts
         allInputEditTexts.forEach { it.setText("") }
 
-        // Clear cached values
-        Page2DataCache.clearCache()
-
         // Recalculate and update UI
         calculateAll()
         Toast.makeText(this, "All data cleared", Toast.LENGTH_SHORT).show()
@@ -485,7 +441,7 @@ class Page2Activity : BaseActivity() {
                 currentSavedDataId = savedDataId
                 originalDataJson = entry.data // Store original data for comparison
                 val data = JSONObject(entry.data)
-                
+
                 // Temporarily remove listeners
                 allInputEditTexts.forEach { it.removeTextChangedListener(textWatcher) }
 
@@ -653,11 +609,11 @@ class Page2Activity : BaseActivity() {
         val ab22_cfm_k = targetLsf * (2.8 * w13 + 1.18 * w14 + 0.65 * w15) - 100 * w16
         // AB23_cfm_l not used in visible calculations
         val ab24_cfm_delta = (ab12_cfm_a * ab17_cfm_f * ab22_cfm_k) +
-                             (ab13_cfm_b * ab18_cfm_g * ab20_cfm_i) +
-                             (ab14_cfm_c * ab16_cfm_e * ab21_cfm_j) -
-                             (ab14_cfm_c * ab17_cfm_f * ab20_cfm_i) -
-                             (ab12_cfm_a * ab18_cfm_g * ab21_cfm_j) -
-                             (ab13_cfm_b * ab16_cfm_e * ab22_cfm_k)
+                (ab13_cfm_b * ab18_cfm_g * ab20_cfm_i) +
+                (ab14_cfm_c * ab16_cfm_e * ab21_cfm_j) -
+                (ab14_cfm_c * ab17_cfm_f * ab20_cfm_i) -
+                (ab12_cfm_a * ab18_cfm_g * ab21_cfm_j) -
+                (ab13_cfm_b * ab16_cfm_e * ab22_cfm_k)
 
         // RAW MATERIAL PERCENTAGE TABLE
         // Use cfm_d_coeff_for_rmp (100.0) for AB15 in these formulas, not targetLsf.
@@ -678,7 +634,7 @@ class Page2Activity : BaseActivity() {
 
         val aa28_denominator = 1 - (y36_h2o_io / 100.0)
         val aa28 = if (aa28_denominator == 0.0) 0.0 else w30_rmp_iron_ore / aa28_denominator
-        
+
         val aa29 = aa26 + aa27 + aa28
         val aa30 = if (aa29 == 0.0) 0.0 else w31_rmp_total / aa29
 
@@ -807,7 +763,7 @@ class Page2Activity : BaseActivity() {
     private fun updateSavedData() {
         try {
             val data = JSONObject()
-            
+
             // Save all EditText values
             allInputEditTexts.forEach { editText ->
                 val idName = resources.getResourceEntryName(editText.id)
@@ -823,4 +779,79 @@ class Page2Activity : BaseActivity() {
             e.printStackTrace()
         }
     }
+
+    private fun Page2Cache() {
+        val fields = listOf(
+            // Target Inputs
+            Triple(etLsfTarget, { Page2DataCache.lsfTarget }, { v: Double -> Page2DataCache.lsfTarget = v }),
+            Triple(etAmTarget, { Page2DataCache.amTarget }, { v: Double -> Page2DataCache.amTarget = v }),
+
+            // Mix Inputs
+            Triple(etMixLimestone, { Page2DataCache.mixLimestone }, { v: Double -> Page2DataCache.mixLimestone = v }),
+            Triple(etMixShale, { Page2DataCache.mixShale }, { v: Double -> Page2DataCache.mixShale = v }),
+            Triple(etMixIronOre, { Page2DataCache.mixIronOre }, { v: Double -> Page2DataCache.mixIronOre = v }),
+
+            // Oxide Inputs (Limestone, Shale, Iron Ore)
+            Triple(etSio2Limestone, { Page2DataCache.sio2Limestone }, { v: Double -> Page2DataCache.sio2Limestone = v }),
+            Triple(etSio2Shale, { Page2DataCache.sio2Shale }, { v: Double -> Page2DataCache.sio2Shale = v }),
+            Triple(etSio2IronOre, { Page2DataCache.sio2IronOre }, { v: Double -> Page2DataCache.sio2IronOre = v }),
+
+            Triple(etAl2o3Limestone, { Page2DataCache.al2o3Limestone }, { v: Double -> Page2DataCache.al2o3Limestone = v }),
+            Triple(etAl2o3Shale, { Page2DataCache.al2o3Shale }, { v: Double -> Page2DataCache.al2o3Shale = v }),
+            Triple(etAl2o3IronOre, { Page2DataCache.al2o3IronOre }, { v: Double -> Page2DataCache.al2o3IronOre = v }),
+
+            Triple(etFe2o3Limestone, { Page2DataCache.fe2o3Limestone }, { v: Double -> Page2DataCache.fe2o3Limestone = v }),
+            Triple(etFe2o3Shale, { Page2DataCache.fe2o3Shale }, { v: Double -> Page2DataCache.fe2o3Shale = v }),
+            Triple(etFe2o3IronOre, { Page2DataCache.fe2o3IronOre }, { v: Double -> Page2DataCache.fe2o3IronOre = v }),
+
+            Triple(etCaoLimestone, { Page2DataCache.caoLimestone }, { v: Double -> Page2DataCache.caoLimestone = v }),
+            Triple(etCaoShale, { Page2DataCache.caoShale }, { v: Double -> Page2DataCache.caoShale = v }),
+            Triple(etCaoIronOre, { Page2DataCache.caoIronOre }, { v: Double -> Page2DataCache.caoIronOre = v }),
+
+            Triple(etMgoLimestone, { Page2DataCache.mgoLimestone }, { v: Double -> Page2DataCache.mgoLimestone = v }),
+            Triple(etMgoShale, { Page2DataCache.mgoShale }, { v: Double -> Page2DataCache.mgoShale = v }),
+            Triple(etMgoIronOre, { Page2DataCache.mgoIronOre }, { v: Double -> Page2DataCache.mgoIronOre = v }),
+
+            Triple(etNa2oLimestone, { Page2DataCache.na2oLimestone }, { v: Double -> Page2DataCache.na2oLimestone = v }),
+            Triple(etNa2oShale, { Page2DataCache.na2oShale }, { v: Double -> Page2DataCache.na2oShale = v }),
+            Triple(etNa2oIronOre, { Page2DataCache.na2oIronOre }, { v: Double -> Page2DataCache.na2oIronOre = v }),
+
+            Triple(etK2oLimestone, { Page2DataCache.k2oLimestone }, { v: Double -> Page2DataCache.k2oLimestone = v }),
+            Triple(etK2oShale, { Page2DataCache.k2oShale }, { v: Double -> Page2DataCache.k2oShale = v }),
+            Triple(etK2oIronOre, { Page2DataCache.k2oIronOre }, { v: Double -> Page2DataCache.k2oIronOre = v }),
+
+            Triple(etSo3Limestone, { Page2DataCache.so3Limestone }, { v: Double -> Page2DataCache.so3Limestone = v }),
+            Triple(etSo3Shale, { Page2DataCache.so3Shale }, { v: Double -> Page2DataCache.so3Shale = v }),
+            Triple(etSo3IronOre, { Page2DataCache.so3IronOre }, { v: Double -> Page2DataCache.so3IronOre = v }),
+
+            Triple(etClLimestone, { Page2DataCache.clLimestone }, { v: Double -> Page2DataCache.clLimestone = v }),
+            Triple(etClShale, { Page2DataCache.clShale }, { v: Double -> Page2DataCache.clShale = v }),
+            Triple(etClIronOre, { Page2DataCache.clIronOre }, { v: Double -> Page2DataCache.clIronOre = v }),
+
+            Triple(etLoiLimestone, { Page2DataCache.loiLimestone }, { v: Double -> Page2DataCache.loiLimestone = v }),
+            Triple(etLoiShale, { Page2DataCache.loiShale }, { v: Double -> Page2DataCache.loiShale = v }),
+            Triple(etLoiIronOre, { Page2DataCache.loiIronOre }, { v: Double -> Page2DataCache.loiIronOre = v }),
+
+            // Weigh Feeder
+            Triple(etWfDryLimestone, { Page2DataCache.wfDryLimestone }, { v: Double -> Page2DataCache.wfDryLimestone = v }),
+            Triple(etWfDryShale, { Page2DataCache.wfDryShale }, { v: Double -> Page2DataCache.wfDryShale = v }),
+            Triple(etWfDryIronOre, { Page2DataCache.wfDryIronOre }, { v: Double -> Page2DataCache.wfDryIronOre = v }),
+
+            Triple(etWfH2oLimestone, { Page2DataCache.wfH2oLimestone }, { v: Double -> Page2DataCache.wfH2oLimestone = v }),
+            Triple(etWfH2oShale, { Page2DataCache.wfH2oShale }, { v: Double -> Page2DataCache.wfH2oShale = v }),
+            Triple(etWfH2oIronOre, { Page2DataCache.wfH2oIronOre }, { v: Double -> Page2DataCache.wfH2oIronOre = v })
+        )
+
+        fields.forEach { (editText, getter, setter) ->
+            editText.setText(getter().takeIf { it != 0.0 }?.toString() ?: "")
+            editText.addTextChangedListener(object : TextWatcher {
+                override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+                override fun afterTextChanged(s: Editable?) {
+                    setter(s.toString().toDoubleOrNull() ?: 0.0)
+                }
+            })
+        }
+    }
 }
+

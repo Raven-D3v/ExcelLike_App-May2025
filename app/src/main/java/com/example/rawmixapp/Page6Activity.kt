@@ -187,6 +187,7 @@ class Page6Activity : BaseActivity() {
         btnClear = findViewById(R.id.btn_clear)
 
         initializeViews()
+        page6Cache()
         setupTextWatchers()
         setupButtons()
         calculateAll() // Initial calculation
@@ -367,7 +368,7 @@ class Page6Activity : BaseActivity() {
     }
 
     private fun setupTextWatchers() {
-        allInputEditTexts.forEach { 
+        allInputEditTexts.forEach {
             it.addTextChangedListener(object : TextWatcher {
                 override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
                 override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
@@ -396,26 +397,43 @@ class Page6Activity : BaseActivity() {
     }
 
     private fun setTextViewValue(textView: TextView, value: Double, defaultOnError: String = "0.00") {
+        val idName = try {
+            textView.resources.getResourceEntryName(textView.id)
+        } catch (e: Exception) {
+            ""
+        }
+
         if (value.isInfinite() || value.isNaN()) {
             textView.text = defaultOnError
         } else {
-            textView.text = String.format(Locale.US, "%.2f", value)
+            val formattedValue = when (idName) {
+                // IDs with 1 decimal place formatting
+                "tv_dry_limestone", "tv_dry_shale", "tv_dry_sand", "tv_dry_ironore", "tv_dry_total",
+                "tv_wf_wet_limestone", "tv_wf_wet_shale", "tv_wf_wet_sand", "tv_wf_wet_ironore", "tv_wf_wet_total",
+                "tv_wf_dry_total", "tv_wf_h2o_total" ->
+                    String.format(Locale.US, "%.1f", value)
+                else ->
+                    String.format(Locale.US, "%.2f", value)
+            }
+
+            textView.text = formattedValue
         }
     }
+
 
     private fun saveCurrentData() {
         try {
             // Create a dialog for naming the save
             val dialogView = layoutInflater.inflate(R.layout.dialog_save_name, null)
             val etSaveName = dialogView.findViewById<EditText>(R.id.et_save_name)
-            
+
             AlertDialog.Builder(this)
                 .setTitle("Save Data")
                 .setView(dialogView)
                 .setPositiveButton("Save") { _, _ ->
                     val saveName = etSaveName.text.toString().trim()
                     val data = JSONObject()
-                    
+
                     // Save all EditText values
                     allInputEditTexts.forEach { editText ->
                         val idName = resources.getResourceEntryName(editText.id)
@@ -448,7 +466,7 @@ class Page6Activity : BaseActivity() {
     private fun clearAllData() {
         // Clear all EditTexts
         allInputEditTexts.forEach { it.setText("") }
-        
+
         // Recalculate and update UI
         calculateAll()
         Toast.makeText(this, "All data cleared", Toast.LENGTH_SHORT).show()
@@ -461,7 +479,7 @@ class Page6Activity : BaseActivity() {
                 currentSavedDataId = savedDataId
                 originalDataJson = entry.data // Store original data for comparison
                 val data = JSONObject(entry.data)
-                
+
                 // Temporarily remove listeners
                 allInputEditTexts.forEach { it.removeTextChangedListener(textWatcher) }
 
@@ -518,7 +536,7 @@ class Page6Activity : BaseActivity() {
     private fun updateSavedData() {
         try {
             val data = JSONObject()
-            
+
             // Save all EditText values
             allInputEditTexts.forEach { editText ->
                 val idName = resources.getResourceEntryName(editText.id)
@@ -668,9 +686,9 @@ class Page6Activity : BaseActivity() {
 
         // D (Q16) = Complete Matrix Determinant formula
         val delta = (g * m * s) + (h * n * q) + (i * l * r) - (i * m * q) - (g * n * r) - (h * l * s) -
-                   (f * m * s) - (f * n * q) - (f * l * r) + (f * m * q) + (f * n * r) + (f * l * s) +
-                   (k * h * s) + (k * i * q) + (k * g * r) - (k * i * r) - (k * g * s) - (k * h * q) -
-                   (p * h * n) - (p * i * l) - (p * g * m) + (p * i * m) + (p * g * n) + (p * h * l)
+                (f * m * s) - (f * n * q) - (f * l * r) + (f * m * q) + (f * n * r) + (f * l * s) +
+                (k * h * s) + (k * i * q) + (k * g * r) - (k * i * r) - (k * g * s) - (k * h * q) -
+                (p * h * n) - (p * i * l) - (p * g * m) + (p * i * m) + (p * g * n) + (p * h * l)
 
         // Calculate Raw Material Percentage values
         // rmp-limestone (H28) = Q12/Q16
@@ -723,7 +741,7 @@ class Page6Activity : BaseActivity() {
         val totalRawmeal = sio2Rawmeal + al2o3Rawmeal + fe2o3Rawmeal + caoRawmeal + mgoRawmeal + na2oRawmeal + k2oRawmeal + so3Rawmeal + clRawmeal + loiRawmeal
 
         // Calculate LSF for each material
-        val lsfLst = if (sio2Lst != 0.0 || al2o3Lst != 0.0 || fe2o3Lst != 0.0) 
+        val lsfLst = if (sio2Lst != 0.0 || al2o3Lst != 0.0 || fe2o3Lst != 0.0)
             100.0 * caoLst / (2.8 * sio2Lst + 1.18 * al2o3Lst + 0.65 * fe2o3Lst) else 0.0
         val lsfShale = if (sio2Shale != 0.0 || al2o3Shale != 0.0 || fe2o3Shale != 0.0)
             100.0 * caoShale / (2.8 * sio2Shale + 1.18 * al2o3Shale + 0.65 * fe2o3Shale) else 0.0
@@ -745,12 +763,12 @@ class Page6Activity : BaseActivity() {
         val amIron = if (fe2o3Iron != 0.0) al2o3Iron / fe2o3Iron else 0.0
 
         // Calculate LSF, SM, AM for Rawmeal
-        val lsfRawmeal = if ((sio2Rawmeal != 0.0 || al2o3Rawmeal != 0.0 || fe2o3Rawmeal != 0.0) && 
-                             (2.8 * sio2Rawmeal + 1.18 * al2o3Rawmeal + 0.65 * fe2o3Rawmeal) != 0.0)
+        val lsfRawmeal = if ((sio2Rawmeal != 0.0 || al2o3Rawmeal != 0.0 || fe2o3Rawmeal != 0.0) &&
+            (2.8 * sio2Rawmeal + 1.18 * al2o3Rawmeal + 0.65 * fe2o3Rawmeal) != 0.0)
             100.0 * caoRawmeal / (2.8 * sio2Rawmeal + 1.18 * al2o3Rawmeal + 0.65 * fe2o3Rawmeal) else 0.0
-        val smRawmeal = if ((al2o3Rawmeal + fe2o3Rawmeal) != 0.0) 
+        val smRawmeal = if ((al2o3Rawmeal + fe2o3Rawmeal) != 0.0)
             sio2Rawmeal / (al2o3Rawmeal + fe2o3Rawmeal) else 0.0
-        val amRawmeal = if (fe2o3Rawmeal != 0.0) 
+        val amRawmeal = if (fe2o3Rawmeal != 0.0)
             al2o3Rawmeal / fe2o3Rawmeal else 0.0
 
         // --- Update UI ---
@@ -829,5 +847,102 @@ class Page6Activity : BaseActivity() {
         setTextViewValue(tvDelta3, hiddenWet3)
         setTextViewValue(tvDelta4, hiddenWet4)
         setTextViewValue(tvDelta5, hiddenWet5)
+    }
+    private fun page6Cache() {
+        val fields = listOf(
+            // Target Inputs
+            Triple(etLsfTarget, { Page6DataCache.LsfTarget }, { v: Double -> Page6DataCache.LsfTarget = v }),
+            Triple(etSmTarget, { Page6DataCache.SmTarget }, { v: Double -> Page6DataCache.SmTarget = v }),
+            Triple(etAmTarget, { Page6DataCache.AmTarget }, { v: Double -> Page6DataCache.AmTarget = v }),
+
+            // Mix % Inputs
+            Triple(etMixLimestone, { Page6DataCache.MixLimestone }, { v: Double -> Page6DataCache.MixLimestone = v }),
+            Triple(etMixShale, { Page6DataCache.MixShale }, { v: Double -> Page6DataCache.MixShale = v }),
+            Triple(etMixSand, { Page6DataCache.MixSand }, { v: Double -> Page6DataCache.MixSand = v }),
+            Triple(etMixIronOre, { Page6DataCache.MixIronOre }, { v: Double -> Page6DataCache.MixIronOre = v }),
+
+            // SiO2
+            Triple(etSio2Limestone, { Page6DataCache.Sio2Limestone }, { v: Double -> Page6DataCache.Sio2Limestone = v }),
+            Triple(etSio2Shale, { Page6DataCache.Sio2Shale }, { v: Double -> Page6DataCache.Sio2Shale = v }),
+            Triple(etSio2Sand, { Page6DataCache.Sio2Sand }, { v: Double -> Page6DataCache.Sio2Sand = v }),
+            Triple(etSio2IronOre, { Page6DataCache.Sio2IronOre }, { v: Double -> Page6DataCache.Sio2IronOre = v }),
+
+            // Al2O3
+            Triple(etAl2o3Limestone, { Page6DataCache.Al2o3Limestone }, { v: Double -> Page6DataCache.Al2o3Limestone = v }),
+            Triple(etAl2o3Shale, { Page6DataCache.Al2o3Shale }, { v: Double -> Page6DataCache.Al2o3Shale = v }),
+            Triple(etAl2o3Sand, { Page6DataCache.Al2o3Sand }, { v: Double -> Page6DataCache.Al2o3Sand = v }),
+            Triple(etAl2o3IronOre, { Page6DataCache.Al2o3IronOre }, { v: Double -> Page6DataCache.Al2o3IronOre = v }),
+
+            // Fe2O3
+            Triple(etFe2o3Limestone, { Page6DataCache.Fe2o3Limestone }, { v: Double -> Page6DataCache.Fe2o3Limestone = v }),
+            Triple(etFe2o3Shale, { Page6DataCache.Fe2o3Shale }, { v: Double -> Page6DataCache.Fe2o3Shale = v }),
+            Triple(etFe2o3Sand, { Page6DataCache.Fe2o3Sand }, { v: Double -> Page6DataCache.Fe2o3Sand = v }),
+            Triple(etFe2o3IronOre, { Page6DataCache.Fe2o3IronOre }, { v: Double -> Page6DataCache.Fe2o3IronOre = v }),
+
+            // CaO
+            Triple(etCaoLimestone, { Page6DataCache.CaoLimestone }, { v: Double -> Page6DataCache.CaoLimestone = v }),
+            Triple(etCaoShale, { Page6DataCache.CaoShale }, { v: Double -> Page6DataCache.CaoShale = v }),
+            Triple(etCaoSand, { Page6DataCache.CaoSand }, { v: Double -> Page6DataCache.CaoSand = v }),
+            Triple(etCaoIronOre, { Page6DataCache.CaoIronOre }, { v: Double -> Page6DataCache.CaoIronOre = v }),
+
+            // MgO
+            Triple(etMgoLimestone, { Page6DataCache.MgoLimestone }, { v: Double -> Page6DataCache.MgoLimestone = v }),
+            Triple(etMgoShale, { Page6DataCache.MgoShale }, { v: Double -> Page6DataCache.MgoShale = v }),
+            Triple(etMgoSand, { Page6DataCache.MgoSand }, { v: Double -> Page6DataCache.MgoSand = v }),
+            Triple(etMgoIronOre, { Page6DataCache.MgoIronOre }, { v: Double -> Page6DataCache.MgoIronOre = v }),
+
+            // Na2O
+            Triple(etNa2oLimestone, { Page6DataCache.Na2oLimestone }, { v: Double -> Page6DataCache.Na2oLimestone = v }),
+            Triple(etNa2oShale, { Page6DataCache.Na2oShale }, { v: Double -> Page6DataCache.Na2oShale = v }),
+            Triple(etNa2oSand, { Page6DataCache.Na2oSand }, { v: Double -> Page6DataCache.Na2oSand = v }),
+            Triple(etNa2oIronOre, { Page6DataCache.Na2oIronOre }, { v: Double -> Page6DataCache.Na2oIronOre = v }),
+
+            // K2O
+            Triple(etK2oLimestone, { Page6DataCache.K2oLimestone }, { v: Double -> Page6DataCache.K2oLimestone = v }),
+            Triple(etK2oShale, { Page6DataCache.K2oShale }, { v: Double -> Page6DataCache.K2oShale = v }),
+            Triple(etK2oSand, { Page6DataCache.K2oSand }, { v: Double -> Page6DataCache.K2oSand = v }),
+            Triple(etK2oIronOre, { Page6DataCache.K2oIronOre }, { v: Double -> Page6DataCache.K2oIronOre = v }),
+
+            // SO3
+            Triple(etSo3Limestone, { Page6DataCache.So3Limestone }, { v: Double -> Page6DataCache.So3Limestone = v }),
+            Triple(etSo3Shale, { Page6DataCache.So3Shale }, { v: Double -> Page6DataCache.So3Shale = v }),
+            Triple(etSo3Sand, { Page6DataCache.So3Sand }, { v: Double -> Page6DataCache.So3Sand = v }),
+            Triple(etSo3IronOre, { Page6DataCache.So3IronOre }, { v: Double -> Page6DataCache.So3IronOre = v }),
+
+            // Cl
+            Triple(etClLimestone, { Page6DataCache.ClLimestone }, { v: Double -> Page6DataCache.ClLimestone = v }),
+            Triple(etClShale, { Page6DataCache.ClShale }, { v: Double -> Page6DataCache.ClShale = v }),
+            Triple(etClSand, { Page6DataCache.ClSand }, { v: Double -> Page6DataCache.ClSand = v }),
+            Triple(etClIronOre, { Page6DataCache.ClIronOre }, { v: Double -> Page6DataCache.ClIronOre = v }),
+
+            // LOI
+            Triple(etLoiLimestone, { Page6DataCache.LoiLimestone }, { v: Double -> Page6DataCache.LoiLimestone = v }),
+            Triple(etLoiShale, { Page6DataCache.LoiShale }, { v: Double -> Page6DataCache.LoiShale = v }),
+            Triple(etLoiSand, { Page6DataCache.LoiSand }, { v: Double -> Page6DataCache.LoiSand = v }),
+            Triple(etLoiIronOre, { Page6DataCache.LoiIronOre }, { v: Double -> Page6DataCache.LoiIronOre = v }),
+
+            // Weigh Feeder
+            Triple(etWfDryLimestone, { Page6DataCache.WfDryLimestone }, { v: Double -> Page6DataCache.WfDryLimestone = v }),
+            Triple(etWfDryShale, { Page6DataCache.WfDryShale }, { v: Double -> Page6DataCache.WfDryShale = v }),
+            Triple(etWfDrySand, { Page6DataCache.WfDrySand }, { v: Double -> Page6DataCache.WfDrySand = v }),
+            Triple(etWfDryIronOre, { Page6DataCache.WfDryIronOre }, { v: Double -> Page6DataCache.WfDryIronOre = v }),
+
+            Triple(etWfH2oLimestone, { Page6DataCache.WfH2oLimestone }, { v: Double -> Page6DataCache.WfH2oLimestone = v }),
+            Triple(etWfH2oShale, { Page6DataCache.WfH2oShale }, { v: Double -> Page6DataCache.WfH2oShale = v }),
+            Triple(etWfH2oSand, { Page6DataCache.WfH2oSand }, { v: Double -> Page6DataCache.WfH2oSand = v }),
+            Triple(etWfH2oIronOre, { Page6DataCache.WfH2oIronOre }, { v: Double -> Page6DataCache.WfH2oIronOre = v })
+        )
+
+        fields.forEach { (editText, getter, setter) ->
+            editText.setText(getter().takeIf { it != 0.0 }?.toString() ?: "")
+            editText.addTextChangedListener(object : TextWatcher {
+                override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+                override fun afterTextChanged(s: Editable?) {
+                    setter(s.toString().toDoubleOrNull() ?: 0.0)
+                }
+            })
+        }
+
     }
 }
