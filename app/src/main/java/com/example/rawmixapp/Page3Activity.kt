@@ -37,6 +37,8 @@ class Page3Activity : BaseActivity() {
     private var G34 = 0.0
     private var H34 = 0.0
 
+
+
     private lateinit var tableLayout: TableLayout
 
     //Declare Ui ELements
@@ -229,22 +231,24 @@ class Page3Activity : BaseActivity() {
         setActivityContent(R.layout.activity_page3) // Use BaseActivity's content frame
         // Add any specific Page3Activity initialization here
 
-        // Retrieve the values from Page2DataCache
-        F31 = Page2DataCache.sio2Limestone
-        G31 = Page2DataCache.sio2Shale
-        H31 = Page2DataCache.sio2IronOre
+        // Retrieve the values from Page4DataCache
+        F31 = Page4DataCache.SiO2Limestone
+        G31 = Page4DataCache.SiO2Shale
+        H31 = Page4DataCache.SiO2Ironore
 
-        F32 = Page2DataCache.al2o3Limestone
-        G32 = Page2DataCache.al2o3Shale
-        H32 = Page2DataCache.al2o3IronOre
+        F32 = Page4DataCache.Al2O3Limestone
+        G32 = Page4DataCache.Al2O3Shale
+        H32 = Page4DataCache.Al2O3Ironore
 
-        F33 = Page2DataCache.fe2o3Limestone
-        G33 = Page2DataCache.fe2o3Shale
-        H33 = Page2DataCache.fe2o3IronOre
+        F33 = Page4DataCache.Fe2O3Limestone
+        G33 = Page4DataCache.Fe2O3Shale
+        H33 = Page4DataCache.Fe2O3Ironore
 
-        F34 = Page2DataCache.caoLimestone
-        G34 = Page2DataCache.caoShale
-        H34 = Page2DataCache.caoIronOre
+        F34 = Page4DataCache.CaOLimestone
+        G34 = Page4DataCache.CaOShale
+        H34 = Page4DataCache.CaOIronore
+
+
 
         dbHelper = SavedDataDbHelper(this)
         btnSave = findViewById(R.id.btn_save)
@@ -297,6 +301,7 @@ class Page3Activity : BaseActivity() {
                 recalculateAndUpdate()
             }
         }
+        cachePage3Fields()
     }
 
 
@@ -405,13 +410,12 @@ class Page3Activity : BaseActivity() {
             switch.setOnCheckedChangeListener { _, isChecked ->
                 // Temporarily remove text watcher to prevent recursive updates
                 val editTexts = when (switch) {
-                    switch_row2 -> listOf(et_H11_PG3, et_I11_PG3, et_J11_PG3) + xrfRow2
-                    switch_row3 -> listOf(et_H12_PG3, et_I12_PG3, et_J12_PG3) + xrfRow3
-                    switch_row4 -> listOf(et_H13_PG3, et_I13_PG3, et_J13_PG3) + xrfRow4
+                    switch_row2 -> listOf(et_H11_PG3, et_I11_PG3, et_J11_PG3)
+                    switch_row3 -> listOf(et_H12_PG3, et_I12_PG3, et_J12_PG3)
+                    switch_row4 -> listOf(et_H13_PG3, et_I13_PG3, et_J13_PG3)
                     switch_row5 -> listOf(et_H14_PG3, et_I14_PG3, et_J14_PG3)
                     else -> emptyList()
                 }
-
 
                 // Remove text watchers before changing state
                 editTexts.forEach { it.removeTextChangedListener(mainTextWatcher) }
@@ -559,6 +563,42 @@ class Page3Activity : BaseActivity() {
             getDoubleInput(editText) // Let it auto-append _PG3
         }
 
+        // Retrieve the Values from Page4DataCache
+        val I13_PG3 = Page4DataCache.SiO2Rawmeal
+        val I14_PG3 = Page4DataCache.Al2O3Rawmeal
+        val I15_PG3 = Page4DataCache.Fe2O3Rawmeal
+        val I16_PG3 = Page4DataCache.CaORawmeal
+        val I17_PG3 = Page4DataCache.MgORawmeal
+        val I18_PG3 = Page4DataCache.Na2ORawmeal
+        val I19_PG3 = Page4DataCache.K2ORawmeal
+        val I20_PG3 = Page4DataCache.SO3Rawmeal
+        val I21_PG3 = Page4DataCache.ClRawmeal
+        val I22_PG3 = Page4DataCache.LoiRawmeal
+
+
+        // Validate if Page4DataCache has meaningful data
+        val isPage4DataValid = listOf(
+            I13_PG3, I14_PG3, I15_PG3, I16_PG3, I17_PG3,
+            I18_PG3, I19_PG3, I20_PG3, I21_PG3, I22_PG3
+        ).any { it != 0.0 }
+
+        val allTrcFieldsEmptyOrZero = listOf(
+            et_K17_PG3, et_L17_PG3, et_M17_PG3, et_N17_PG3, et_O17_PG3,
+            et_P17_PG3, et_Q17_PG3, et_R17_PG3, et_S17_PG3, et_T17_trc_LOI_PG3
+        ).all { it.text.isNullOrBlank() || it.text.toString().toDoubleOrNull() == 0.0 }
+
+        if (isPage4DataValid && allTrcFieldsEmptyOrZero) {
+            et_K17_PG3.setText(df.format(I13_PG3))
+            et_L17_PG3.setText(df.format(I14_PG3))
+            et_M17_PG3.setText(df.format(I15_PG3))
+            et_N17_PG3.setText(df.format(I16_PG3))
+            et_O17_PG3.setText(df.format(I17_PG3))
+            et_P17_PG3.setText(df.format(I18_PG3))
+            et_Q17_PG3.setText(df.format(I19_PG3))
+            et_R17_PG3.setText(df.format(I20_PG3))
+            et_S17_PG3.setText(df.format(I21_PG3))
+            et_T17_trc_LOI_PG3.setText(df.format(I22_PG3))
+        }
 
         // --- MATERIAL SETTING: LIMESTONE, SHALE, IRON ORE ---
         // Row 1: Always Manual
@@ -569,7 +609,7 @@ class Page3Activity : BaseActivity() {
         // For auto mode (switch.isChecked = false), calculate values
 
         //Material Setting
-
+        // === ROW 2 ===
         //Column Green 1
         //Error Row
         val K29 = (values["et_K17_PG3"] ?: 0.0) - (values["et_K10_PG3"] ?: 0.0)
@@ -597,6 +637,11 @@ class Page3Activity : BaseActivity() {
         values["H11"] = H11
 
 
+        // === ROW 3 ===
+        // Use actual source values from Row 2 depending on manual/auto
+        val I11_actual = if (switch_row2.isChecked) values["et_I11_PG3"] ?: 0.0 else I11
+        val J11_actual = if (switch_row2.isChecked) values["et_J11_PG3"] ?: 0.0 else J11
+        val H11_actual = if (switch_row2.isChecked) values["et_H11_PG3"] ?: 0.0 else H11
         //Column Light Blue 2
         //Error Row
         val O29 = (values["et_K17_PG3"] ?: 0.0) - (values["et_K11_PG3"] ?: 0.0)
@@ -607,9 +652,9 @@ class Page3Activity : BaseActivity() {
         val Q30 = if (H33 != 0.0) (Q29 / H33) * 100 else 0.0
         val R30 = if (F34 != 0.0) (R29 / F34) * 100 else 0.0
         //Unnormalized RoW
-        val O31 = O30 + (values["I11"]?:0.0)
-        val Q31 = Q30 + (values["J11"]?:0.0)
-        val R31 = R30 + (values["H11"]?:0.0)
+        val O31 = O30 + I11_actual
+        val Q31 = Q30 + J11_actual
+        val R31 = R30 + H11_actual
         //Condition if Row
         val O32 = if (O31 < 0) 0.0 else O31
         val Q32 = if (Q31 < 0) 0.0 else Q31
@@ -623,6 +668,11 @@ class Page3Activity : BaseActivity() {
         values["J12"] = J12
         values["H12"] = H12
 
+        // === ROW 4 ===
+        // Use actual source values from Row 3 depending on manual/auto
+        val I12_actual = if (switch_row3.isChecked) values["et_I12_PG3"] ?: 0.0 else I12
+        val J12_actual = if (switch_row3.isChecked) values["et_J12_PG3"] ?: 0.0 else J12
+        val H12_actual = if (switch_row3.isChecked) values["et_H12_PG3"] ?: 0.0 else H12
         //Column Gray 3
         //Error Row
         val S29 = (values["et_K17_PG3"] ?: 0.0) - (values["et_K12_PG3"] ?: 0.0)
@@ -633,9 +683,9 @@ class Page3Activity : BaseActivity() {
         val U30 = if (H33 != 0.0) (U29 / H33) * 100 else 0.0
         val V30 = if (F34 != 0.0) (V29 / F34) * 100 else 0.0
         //Unnormalized RoW
-        val S31 = S30 + (values["I12"]?:0.0)
-        val U31 = U30 + (values["J12"]?:0.0)
-        val V31 = V30 + (values["H12"]?:0.0)
+        val S31 = S30 + I12_actual
+        val U31 = U30 + J12_actual
+        val V31 = V30 + H12_actual
         //Condition if Row
         val S32 = if (S31 < 0) 0.0 else S31
         val U32 = if (U31 < 0) 0.0 else U31
@@ -649,6 +699,11 @@ class Page3Activity : BaseActivity() {
         values["J13"] = J13
         values["H13"] = H13
 
+        // === ROW 5 ===
+        // Use actual source values from Row 4 depending on manual/auto
+        val I13_actual = if (switch_row4.isChecked) values["et_I13_PG3"] ?: 0.0 else I13
+        val J13_actual = if (switch_row4.isChecked) values["et_J13_PG3"] ?: 0.0 else J13
+        val H13_actual = if (switch_row4.isChecked) values["et_H13_PG3"] ?: 0.0 else H13
         //Column Light Orange 4
         val W29 = (values["et_K17_PG3"] ?: 0.0) - (values["et_K13_PG3"] ?: 0.0)
         val Y29 = (values["et_M17_PG3"] ?: 0.0) - (values["et_M13_PG3"] ?: 0.0)
@@ -658,9 +713,9 @@ class Page3Activity : BaseActivity() {
         val Y30 = if (H33 != 0.0) (Y29 / H33) * 100 else 0.0
         val Z30 = if (F34 != 0.0) (Z29 / F34) * 100 else 0.0
         //Unnormalized RoW
-        val W31 = W30 + (values["I13"]?:0.0)
-        val Y31 = Y30 + (values["J13"]?:0.0)
-        val Z31 = Z30 + (values["H13"]?:0.0)
+        val W31 = W30 + I13_actual
+        val Y31 = Y30 + J13_actual
+        val Z31 = Z30 + H13_actual
         //Condition if Row
         val W32 = if (W31 < 0) 0.0 else W31
         val Y32 = if (Y31 < 0) 0.0 else Y31
@@ -864,7 +919,7 @@ class Page3Activity : BaseActivity() {
             setDouble(et_H11_PG3, values["et_H11_PG3"] ?: 0.0)
             setDouble(et_I11_PG3, values["et_I11_PG3"] ?: 0.0)
             setDouble(et_J11_PG3, values["et_J11_PG3"] ?: 0.0)
-            // Also update XRF row 2
+            /* Also update XRF row 2
             xrfRow2.forEachIndexed { index, et ->
                 val key = when(index) {
                     0 -> "et_K11_PG3"
@@ -880,6 +935,7 @@ class Page3Activity : BaseActivity() {
                 }
                 setDouble(et, values[key] ?: 0.0)
             }
+             */
         }
         setDouble(tv_T11_PG3, values["T11"] ?: 0.0); setDouble(tv_U11_PG3, values["U11"] ?: 0.0); setDouble(tv_V11_PG3, values["V11"] ?: 0.0)
         setDouble(tv_W11_PG3, values["W11"] ?: 0.0); setDouble(tv_X11_PG3, values["X11"] ?: 0.0); setDouble(tv_Y11_PG3, values["Y11"] ?: 0.0)
@@ -889,7 +945,7 @@ class Page3Activity : BaseActivity() {
             setDouble(et_H12_PG3, values["et_H12_PG3"] ?: 0.0)
             setDouble(et_I12_PG3, values["et_I12_PG3"] ?: 0.0)
             setDouble(et_J12_PG3, values["et_J12_PG3"] ?: 0.0)
-            // Also update XRF row 3
+            /* Also update XRF row 3
             xrfRow3.forEachIndexed { index, et ->
                 val key = when(index) {
                     0 -> "et_K12_PG3"
@@ -905,6 +961,7 @@ class Page3Activity : BaseActivity() {
                 }
                 setDouble(et, values[key] ?: 0.0)
             }
+             */
         }
         setDouble(tv_T12_PG3, values["T12"] ?: 0.0); setDouble(tv_U12_PG3, values["U12"] ?: 0.0); setDouble(tv_V12_PG3, values["V12"] ?: 0.0)
         setDouble(tv_W12_PG3, values["W12"] ?: 0.0); setDouble(tv_X12_PG3, values["X12"] ?: 0.0); setDouble(tv_Y12_PG3, values["Y12"] ?: 0.0)
@@ -914,7 +971,7 @@ class Page3Activity : BaseActivity() {
             setDouble(et_H13_PG3, values["et_H13_PG3"] ?: 0.0)
             setDouble(et_I13_PG3, values["et_I13_PG3"] ?: 0.0)
             setDouble(et_J13_PG3, values["et_J13_PG3"] ?: 0.0)
-            // Also update XRF row 4
+            /* Also update XRF row 4
             xrfRow4.forEachIndexed { index, et ->
                 val key = when(index) {
                     0 -> "et_K13_PG3"
@@ -930,6 +987,7 @@ class Page3Activity : BaseActivity() {
                 }
                 setDouble(et, values[key] ?: 0.0)
             }
+             */
         }
         setDouble(tv_T13_PG3, values["T13"] ?: 0.0); setDouble(tv_U13_PG3, values["U13"] ?: 0.0); setDouble(tv_V13_PG3, values["V13"] ?: 0.0)
         setDouble(tv_W13_PG3, values["W13"] ?: 0.0); setDouble(tv_X13_PG3, values["X13"] ?: 0.0); setDouble(tv_Y13_PG3, values["Y13"] ?: 0.0)
@@ -1209,4 +1267,109 @@ class Page3Activity : BaseActivity() {
         }
         customWatchers.clear()
     }
+
+    private fun cachePage3Fields() {
+        val fields = listOf(
+
+            // --- Materials Setting (H10–J14) ---
+            Triple(et_H10_PG3, { Page3DataCache.H10 }, { v: Double -> Page3DataCache.H10 = v }),
+            Triple(et_I10_PG3, { Page3DataCache.I10 }, { v: Double -> Page3DataCache.I10 = v }),
+            Triple(et_J10_PG3, { Page3DataCache.J10 }, { v: Double -> Page3DataCache.J10 = v }),
+            Triple(et_H11_PG3, { Page3DataCache.H11 }, { v: Double -> Page3DataCache.H11 = v }),
+            Triple(et_I11_PG3, { Page3DataCache.I11 }, { v: Double -> Page3DataCache.I11 = v }),
+            Triple(et_J11_PG3, { Page3DataCache.J11 }, { v: Double -> Page3DataCache.J11 = v }),
+            Triple(et_H12_PG3, { Page3DataCache.H12 }, { v: Double -> Page3DataCache.H12 = v }),
+            Triple(et_I12_PG3, { Page3DataCache.I12 }, { v: Double -> Page3DataCache.I12 = v }),
+            Triple(et_J12_PG3, { Page3DataCache.J12 }, { v: Double -> Page3DataCache.J12 = v }),
+            Triple(et_H13_PG3, { Page3DataCache.H13 }, { v: Double -> Page3DataCache.H13 = v }),
+            Triple(et_I13_PG3, { Page3DataCache.I13 }, { v: Double -> Page3DataCache.I13 = v }),
+            Triple(et_J13_PG3, { Page3DataCache.J13 }, { v: Double -> Page3DataCache.J13 = v }),
+            Triple(et_H14_PG3, { Page3DataCache.H14 }, { v: Double -> Page3DataCache.H14 = v }),
+            Triple(et_I14_PG3, { Page3DataCache.I14 }, { v: Double -> Page3DataCache.I14 = v }),
+            Triple(et_J14_PG3, { Page3DataCache.J14 }, { v: Double -> Page3DataCache.J14 = v }),
+
+            // --- Additional Field ---
+            Triple(et_H19_PG3, { Page3DataCache.H19 }, { v: Double -> Page3DataCache.H19 = v }),
+
+            // --- XRF Row 1 (K10–S10) ---
+            Triple(et_K10_PG3, { Page3DataCache.K10 }, { v: Double -> Page3DataCache.K10 = v }),
+            Triple(et_L10_PG3, { Page3DataCache.L10 }, { v: Double -> Page3DataCache.L10 = v }),
+            Triple(et_M10_PG3, { Page3DataCache.M10 }, { v: Double -> Page3DataCache.M10 = v }),
+            Triple(et_N10_PG3, { Page3DataCache.N10 }, { v: Double -> Page3DataCache.N10 = v }),
+            Triple(et_O10_PG3, { Page3DataCache.O10 }, { v: Double -> Page3DataCache.O10 = v }),
+            Triple(et_P10_PG3, { Page3DataCache.P10 }, { v: Double -> Page3DataCache.P10 = v }),
+            Triple(et_Q10_PG3, { Page3DataCache.Q10 }, { v: Double -> Page3DataCache.Q10 = v }),
+            Triple(et_R10_PG3, { Page3DataCache.R10 }, { v: Double -> Page3DataCache.R10 = v }),
+            Triple(et_S10_PG3, { Page3DataCache.S10 }, { v: Double -> Page3DataCache.S10 = v }),
+
+            // --- XRF Row 2 (K11–S11) ---
+            Triple(et_K11_PG3, { Page3DataCache.K11 }, { v: Double -> Page3DataCache.K11 = v }),
+            Triple(et_L11_PG3, { Page3DataCache.L11 }, { v: Double -> Page3DataCache.L11 = v }),
+            Triple(et_M11_PG3, { Page3DataCache.M11 }, { v: Double -> Page3DataCache.M11 = v }),
+            Triple(et_N11_PG3, { Page3DataCache.N11 }, { v: Double -> Page3DataCache.N11 = v }),
+            Triple(et_O11_PG3, { Page3DataCache.O11 }, { v: Double -> Page3DataCache.O11 = v }),
+            Triple(et_P11_PG3, { Page3DataCache.P11 }, { v: Double -> Page3DataCache.P11 = v }),
+            Triple(et_Q11_PG3, { Page3DataCache.Q11 }, { v: Double -> Page3DataCache.Q11 = v }),
+            Triple(et_R11_PG3, { Page3DataCache.R11 }, { v: Double -> Page3DataCache.R11 = v }),
+            Triple(et_S11_PG3, { Page3DataCache.S11 }, { v: Double -> Page3DataCache.S11 = v }),
+
+            // --- XRF Row 3 (K12–S12) ---
+            Triple(et_K12_PG3, { Page3DataCache.K12 }, { v: Double -> Page3DataCache.K12 = v }),
+            Triple(et_L12_PG3, { Page3DataCache.L12 }, { v: Double -> Page3DataCache.L12 = v }),
+            Triple(et_M12_PG3, { Page3DataCache.M12 }, { v: Double -> Page3DataCache.M12 = v }),
+            Triple(et_N12_PG3, { Page3DataCache.N12 }, { v: Double -> Page3DataCache.N12 = v }),
+            Triple(et_O12_PG3, { Page3DataCache.O12 }, { v: Double -> Page3DataCache.O12 = v }),
+            Triple(et_P12_PG3, { Page3DataCache.P12 }, { v: Double -> Page3DataCache.P12 = v }),
+            Triple(et_Q12_PG3, { Page3DataCache.Q12 }, { v: Double -> Page3DataCache.Q12 = v }),
+            Triple(et_R12_PG3, { Page3DataCache.R12 }, { v: Double -> Page3DataCache.R12 = v }),
+            Triple(et_S12_PG3, { Page3DataCache.S12 }, { v: Double -> Page3DataCache.S12 = v }),
+
+            // --- XRF Row 4 (K13–S13) ---
+            Triple(et_K13_PG3, { Page3DataCache.K13 }, { v: Double -> Page3DataCache.K13 = v }),
+            Triple(et_L13_PG3, { Page3DataCache.L13 }, { v: Double -> Page3DataCache.L13 = v }),
+            Triple(et_M13_PG3, { Page3DataCache.M13 }, { v: Double -> Page3DataCache.M13 = v }),
+            Triple(et_N13_PG3, { Page3DataCache.N13 }, { v: Double -> Page3DataCache.N13 = v }),
+            Triple(et_O13_PG3, { Page3DataCache.O13 }, { v: Double -> Page3DataCache.O13 = v }),
+            Triple(et_P13_PG3, { Page3DataCache.P13 }, { v: Double -> Page3DataCache.P13 = v }),
+            Triple(et_Q13_PG3, { Page3DataCache.Q13 }, { v: Double -> Page3DataCache.Q13 = v }),
+            Triple(et_R13_PG3, { Page3DataCache.R13 }, { v: Double -> Page3DataCache.R13 = v }),
+            Triple(et_S13_PG3, { Page3DataCache.S13 }, { v: Double -> Page3DataCache.S13 = v }),
+
+            // --- Coal Ash Composition (K19–T19) ---
+            Triple(et_K19_PG3, { Page3DataCache.K19 }, { v: Double -> Page3DataCache.K19 = v }),
+            Triple(et_L19_PG3, { Page3DataCache.L19 }, { v: Double -> Page3DataCache.L19 = v }),
+            Triple(et_M19_PG3, { Page3DataCache.M19 }, { v: Double -> Page3DataCache.M19 = v }),
+            Triple(et_N19_PG3, { Page3DataCache.N19 }, { v: Double -> Page3DataCache.N19 = v }),
+            Triple(et_O19_PG3, { Page3DataCache.O19 }, { v: Double -> Page3DataCache.O19 = v }),
+            Triple(et_P19_PG3, { Page3DataCache.P19 }, { v: Double -> Page3DataCache.P19 = v }),
+            Triple(et_Q19_PG3, { Page3DataCache.Q19 }, { v: Double -> Page3DataCache.Q19 = v }),
+            Triple(et_R19_PG3, { Page3DataCache.R19 }, { v: Double -> Page3DataCache.R19 = v }),
+            Triple(et_S19_PG3, { Page3DataCache.S19 }, { v: Double -> Page3DataCache.S19 = v }),
+            Triple(et_T19_PG3, { Page3DataCache.T19 }, { v: Double -> Page3DataCache.T19 = v }),
+
+
+            // --- Fuel Section (K25, L25, O25, X25, Y25) ---
+            Triple(et_K25_PG3, { Page3DataCache.K25 }, { v: Double -> Page3DataCache.K25 = v }),
+            Triple(et_L25_PG3, { Page3DataCache.L25 }, { v: Double -> Page3DataCache.L25 = v }),
+            Triple(et_O25_PG3, { Page3DataCache.O25 }, { v: Double -> Page3DataCache.O25 = v }),
+            Triple(et_X25_PG3, { Page3DataCache.X25 }, { v: Double -> Page3DataCache.X25 = v }),
+            Triple(et_Y25_PG3, { Page3DataCache.Y25 }, { v: Double -> Page3DataCache.Y25 = v })
+        )
+
+        fields.forEach { (editText, getter, setter) ->
+            if (editText.text.isNullOrBlank()) {
+                val cachedValue = getter()
+                if (cachedValue != 0.0) editText.setText(cachedValue.toString())
+            }
+
+            editText.addTextChangedListener(object : TextWatcher {
+                override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+                override fun afterTextChanged(s: Editable?) {
+                    setter(s.toString().toDoubleOrNull() ?: 0.0)
+                }
+            })
+        }
+    }
+
 }

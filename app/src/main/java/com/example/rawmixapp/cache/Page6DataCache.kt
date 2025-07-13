@@ -69,4 +69,15 @@ object Page6DataCache {
     var LoiShale = 0.0
     var LoiSand = 0.0
     var LoiIronOre = 0.0
+
+    var Sio2RawMeal = 0.0
+    var Al2o3RawMeal = 0.0
+    var Fe2o3RawMeal = 0.0
+    var CaoRawMeal = 0.0
+    var MgoRawMeal = 0.0
+    var Na2oRawMeal = 0.0
+    var K2oRawMeal = 0.0
+    var So3RawMeal = 0.0
+    var ClRawMeal = 0.0
+    var LoiRawMeal = 0.0
 }
