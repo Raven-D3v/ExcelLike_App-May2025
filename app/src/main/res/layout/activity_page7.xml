@@ -87,7 +87,8 @@
                             android:hint="0.00%"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- 1st-lvm-row2 (I7) -->
                         <EditText
@@ -98,7 +99,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- 1st-lvm-row3 (J7) -->
                         <TextView
@@ -131,7 +133,8 @@
                             android:hint="0.00%"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- 1st-hvm-row2 (I8) -->
                         <EditText
@@ -142,7 +145,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- 1st-hvm-row3 (J8) -->
                         <TextView
@@ -237,7 +241,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- 2nd-lvm-row2 (H11) -->
                         <EditText
@@ -248,7 +253,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- 2nd-lvm-row3 (I11) -->
                         <TextView
@@ -281,7 +287,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- 2nd-hvm-row2 (H12) -->
                         <EditText
@@ -292,7 +299,8 @@
                             android:hint="0.00%"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- 2nd-hvm-row3 (I12) -->
                         <TextView
@@ -365,7 +373,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- 3rd-lvm-row2 (H14) -->
                         <EditText
@@ -376,7 +385,8 @@
                             android:hint="0.00%"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- 3rd-lvm-row3 (I14) -->
                         <TextView
@@ -409,7 +419,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- 3rd-hvm-row2 (H15) -->
                         <EditText
@@ -420,7 +431,8 @@
                             android:hint="0.00%"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- 3rd-hvm-row3 (I15) -->
                         <TextView
@@ -454,7 +466,8 @@
                             android:hint=""
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </TableRow>
 
                     <TableRow>
@@ -500,7 +513,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <TextView
                             android:background="@drawable/white_border_cell"
@@ -521,7 +535,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </TableRow>
 
                     <TableRow>
@@ -567,7 +582,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </TableRow>
 
                     <TableRow>
@@ -590,7 +606,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </TableRow>
 
                     <TableRow>
@@ -613,7 +630,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </TableRow>
 
                     <TableRow>
@@ -636,7 +654,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </TableRow>
 
                     <TableRow>
@@ -659,7 +678,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </TableRow>
 
                     <TableRow>
@@ -682,7 +702,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </TableRow>
 
                     <TableRow>
@@ -705,7 +726,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </TableRow>
 
                     <TableRow>
@@ -786,7 +808,8 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </TableRow>
 
                     <TableRow>
@@ -812,6 +835,7 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi"
                             />
 
                     </TableRow>

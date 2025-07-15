@@ -76,7 +76,8 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textColorHint="#D2B48C"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -110,7 +111,8 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textColorHint="#D2B48C"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -200,7 +202,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- s-column 1 (V12) -->
                     <EditText
@@ -212,7 +215,8 @@
                         android:padding="6dp"
                         android:textColor="#974706"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- io-column 1 (W12) -->
                     <EditText
@@ -224,7 +228,8 @@
                         android:padding="6dp"
                         android:textColor="#000000"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- rm-column 1 (X12) -->
                     <TextView
@@ -257,7 +262,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- s-column 2 (V13) -->
                     <EditText
@@ -269,7 +275,8 @@
                         android:padding="6dp"
                         android:textColor="#974706"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- io-column 2 (W13) -->
                     <EditText
@@ -281,7 +288,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- rm-column 2 (X13) -->
                     <TextView
@@ -314,7 +322,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- s-column 3 (V14) -->
                     <EditText
@@ -326,7 +335,8 @@
                         android:padding="6dp"
                         android:textColor="#974706"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- io-column 3 (W14) -->
                     <EditText
@@ -338,7 +348,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- rm-column 3 (X14) -->
                     <TextView
@@ -371,7 +382,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- s-column 4 (V15) -->
                     <EditText
@@ -383,7 +395,8 @@
                         android:padding="6dp"
                         android:textColor="#974706"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- io-column 4 (W15) -->
                     <EditText
@@ -395,7 +408,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- rm-column 4 (X15) -->
                     <TextView
@@ -428,7 +442,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- s-column 5 (V16) -->
                     <EditText
@@ -440,7 +455,8 @@
                         android:padding="6dp"
                         android:textColor="#974706"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- io-column 5 (W16) -->
                     <EditText
@@ -452,7 +468,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- rm-column 5 (X16) -->
                     <TextView
@@ -486,7 +503,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- s-column 6 (V17) -->
                     <EditText
@@ -499,7 +517,8 @@
                         android:padding="6dp"
                         android:textColor="#974706"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- io-column 6 (W17) -->
                     <EditText
@@ -512,7 +531,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- rm-column 6 (X17) -->
                     <TextView
@@ -547,7 +567,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- s-column 7 (V18) -->
                     <EditText
@@ -560,7 +581,8 @@
                         android:padding="6dp"
                         android:textColor="#974706"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- io-column 7 (W18) -->
                     <EditText
@@ -573,7 +595,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- rm-column 7 (X18) -->
                     <TextView
@@ -608,7 +631,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- s-column 8 (V19) -->
                     <EditText
@@ -621,7 +645,8 @@
                         android:padding="6dp"
                         android:textColor="#974706"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- io-column 8 (W19) -->
                     <EditText
@@ -634,7 +659,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- rm-column 8 (X19) -->
                     <TextView
@@ -669,7 +695,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- s-column 9 (V20) -->
                     <EditText
@@ -682,7 +709,8 @@
                         android:padding="6dp"
                         android:textColor="#974706"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- io-column 9 (W20) -->
                     <EditText
@@ -695,7 +723,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- rm-column 9 (X20) -->
                     <TextView
@@ -732,7 +761,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- s-column 10 (V21) -->
                     <EditText
@@ -746,7 +776,8 @@
                         android:padding="6dp"
                         android:textColor="#974706"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- io-column 10 (W21) -->
                     <EditText
@@ -760,7 +791,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- rm-column 10 (X21) -->
                     <TextView
@@ -799,7 +831,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- s-column 11 (V22) -->
                     <EditText
@@ -813,7 +846,8 @@
                         android:padding="6dp"
                         android:textColor="#974706"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- io-column 11 (W22) -->
                     <EditText
@@ -827,7 +861,8 @@
                         android:padding="6dp"
                         android:textColor="#FFFFFF"
                         android:textColorHint="#D2B48C"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <!-- rm-column 11 (X22) -->
                     <TextView
@@ -1302,7 +1337,8 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textColorHint="#D2B48C"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- h2o-limestone (Y34) -->
                         <EditText
@@ -1314,7 +1350,8 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </TableRow>
 
                     <!-- Shale Row -->
@@ -1349,7 +1386,8 @@
                             android:padding="6dp"
                             android:textColor="#974706"
                             android:textColorHint="#D2B48C"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
 
                         <!-- h2o-shale (Y35) -->
                         <EditText
@@ -1361,7 +1399,8 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:imeOptions="flagNoExtractUi" />
                     </TableRow>
 
                     <!-- Iron Ore Row -->
@@ -1396,7 +1435,8 @@
                                 android:padding="6dp"
                                 android:textColor="#494529"
                                 android:textColorHint="#D2B48C"
-                                android:textSize="12sp" />
+                                android:textSize="12sp"
+                                android:imeOptions="flagNoExtractUi" />
 
                             <!-- h2o-iron-ore (Y36) -->
                             <EditText
@@ -1408,7 +1448,8 @@
                                 android:padding="6dp"
                                 android:textColor="#FFFFFF"
                                 android:textColorHint="#FFFFFF"
-                                android:textSize="12sp" />
+                                android:textSize="12sp"
+                                android:imeOptions="flagNoExtractUi" />
 
                     </TableRow>
                     <TableRow>

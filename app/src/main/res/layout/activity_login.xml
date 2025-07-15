@@ -112,7 +112,8 @@
             android:padding="10dp"
             android:textColor="#FFF"
             android:textColorHint="#CCC"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:imeOptions="flagNoExtractUi" />
 
         <EditText
             android:id="@+id/password"
@@ -126,7 +127,8 @@
             android:padding="10dp"
             android:textColor="#FFF"
             android:textColorHint="#CCC"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:imeOptions="flagNoExtractUi" />
 
         <Button
             android:id="@+id/login"
