@@ -41,12 +41,12 @@
         <item
             android:id="@+id/nav_materials_lsf_sm_am"
             android:icon="@drawable/filter_icons_created_by_freepik_flaticon"
-            android:title="4 Materials LSF, SM &amp; AM" />
+            android:title="4 Materials LSF,SM &amp; AM" />
 
         <item
             android:id="@+id/nav_recipe_lsf_sm_am"
             android:icon="@drawable/control_system_icons_created_by_uniconlabs_flaticon"
-            android:title="Recipe LSF, SM &amp; AM" />
+            android:title="Recipe LSF,SM &amp; AM" />
     </group>
 
     <group

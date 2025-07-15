@@ -86,7 +86,7 @@
                             android:ellipsize="end" />
 
                         <TextView
-                            android:text="XRF Analysis"
+                            android:text="XRF ANALYSIS"
                             android:minHeight="28dp"
                             android:layout_span="9"
                             android:gravity="center"
@@ -131,7 +131,7 @@
                             android:ellipsize="end" />
 
                         <TextView
-                            android:text="Ratio"
+                            android:text="RATIOS"
                             android:layout_span="4"
                             android:minHeight="28dp"
                             android:gravity="center"
@@ -3068,7 +3068,7 @@
                                         style="@style/NewTableEditText"
                                         android:id="@+id/et_M60"
                                         android:layout_width="0dp"
-                                        android:layout_weight="1"
+                                        android:layout_weight="1.001"
                                         android:minWidth="0dp"
                                         android:hint="Cond."
                                         android:inputType="text"

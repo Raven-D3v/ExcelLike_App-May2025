@@ -86,7 +86,7 @@
                             android:ellipsize="end" />
 
                         <TextView
-                            android:text="XRF Analysis"
+                            android:text="XRF ANALYSIS"
                             android:minHeight="28dp"
                             android:layout_span="9"
                             android:gravity="center"
@@ -131,7 +131,7 @@
                             android:ellipsize="end" />
 
                         <TextView
-                            android:text="Ratio"
+                            android:text="RATIOS"
                             android:layout_span="4"
                             android:minHeight="28dp"
                             android:gravity="center"
@@ -772,7 +772,7 @@
                             android:padding="3dp"
                             android:gravity="center"
                             android:textSize="11sp"
-                            android:background="@drawable/light_gray_border"
+                            android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
@@ -1108,7 +1108,7 @@
                             android:padding="3dp"
                             android:gravity="center"
                             android:textSize="11sp"
-                            android:background="@drawable/light_gray_border"
+                            android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
@@ -1385,7 +1385,7 @@
                             android:padding="3dp"
                             android:gravity="center"
                             android:textSize="11sp"
-                            android:background="@drawable/light_beige_border"
+                            android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
@@ -1400,7 +1400,7 @@
                             android:padding="3dp"
                             android:gravity="center"
                             android:textSize="11sp"
-                            android:background="@drawable/limestone_border"
+                            android:background="@drawable/light_beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
@@ -1415,7 +1415,7 @@
                             android:padding="3dp"
                             android:gravity="center"
                             android:textSize="11sp"
-                            android:background="@drawable/light_beige_border"
+                            android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
@@ -1430,7 +1430,7 @@
                             android:padding="3dp"
                             android:gravity="center"
                             android:textSize="11sp"
-                            android:background="@drawable/light_gray_border"
+                            android:background="@drawable/light_beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
@@ -1447,6 +1447,7 @@
                             android:textSize="11sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
+                            android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
                         <!-- am-column 3 (Z12) -->
@@ -1723,7 +1724,7 @@
                             android:padding="3dp"
                             android:gravity="center"
                             android:textSize="11sp"
-                            android:background="@drawable/light_beige_border"
+                            android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
@@ -1738,7 +1739,7 @@
                             android:padding="3dp"
                             android:gravity="center"
                             android:textSize="11sp"
-                            android:background="@drawable/limestone_border"
+                            android:background="@drawable/light_beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
@@ -1753,7 +1754,7 @@
                             android:padding="3dp"
                             android:gravity="center"
                             android:textSize="11sp"
-                            android:background="@drawable/light_beige_border"
+                            android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
@@ -1768,7 +1769,7 @@
                             android:padding="3dp"
                             android:gravity="center"
                             android:textSize="11sp"
-                            android:background="@drawable/light_gray_border"
+                            android:background="@drawable/light_beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
@@ -1785,6 +1786,7 @@
                             android:textSize="11sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
+                            android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp" />
 
                         <!-- am2-column 4 (Z13) -->
@@ -2451,7 +2453,8 @@
                                         android:minWidth="0dp"
                                         android:minHeight="28dp"
                                         android:padding="2dp"
-                                        android:textSize="9sp" />
+                                        android:textSize="9sp"
+                                        android:background="#EEECE1"/>
 
                                     <!-- trc-LSF (W17) -->
                                     <TextView
@@ -2473,7 +2476,8 @@
                                         android:minWidth="0dp"
                                         android:minHeight="28dp"
                                         android:padding="2dp"
-                                        android:textSize="9sp" />
+                                        android:textSize="9sp"
+                                        android:background="#EEECE1"/>
 
                                     <!-- trc-SM (Y17) -->
                                     <TextView
@@ -2770,7 +2774,7 @@
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
-                                        android:layout_weight="1.5"
+                                        android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:text="TOTAL"
                                         android:maxLines="1"
@@ -2910,10 +2914,9 @@
                                         style="@style/NewTableTextView"
                                         android:id="@+id/tv_T22_PG5"
                                         android:layout_width="0dp"
-                                        android:layout_weight="1.5"
+                                        android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:text=""
-                                        android:background="#EEECE1"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -2925,6 +2928,7 @@
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:text=""
+                                        android:background="#EEECE1"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -2959,7 +2963,6 @@
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:text=""
-                                        android:background="#EEECE1"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 

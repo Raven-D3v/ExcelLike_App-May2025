@@ -36,6 +36,7 @@
         <activity android:name=".Page8Activity" android:screenOrientation="landscape"/>
         <activity android:name=".Page9Activity" android:screenOrientation="landscape"/>
         <activity android:name=".Page10Activity" android:screenOrientation="landscape"/>
+        <activity android:name=".ImageViewerActivity" android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

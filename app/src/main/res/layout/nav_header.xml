@@ -28,7 +28,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="By: Franco Bacalando Ortiz"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif-black"
         android:textColor="@color/black"
         android:layout_marginBottom="8dp"/>
 
