@@ -37,17 +37,17 @@
                     android:background="#000000">
 
                     <!-- Header Row 1: Main Categories -->
-                    <TableRow android:background="#DCDCDC">
+                    <TableRow android:background="#000000">
 
                         <TextView
                             android:text=""
                             android:minWidth="85dp"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:gravity="center"
                             android:padding="2dp"
                             android:textStyle="bold"
                             android:textSize="11sp"
-                            android:background="#DCDCDC"
+                            android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
@@ -57,13 +57,13 @@
                         <TextView
                             android:text=""
                             android:minWidth="10dp"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:padding="2dp"
                             android:textStyle="bold"
                             android:textSize="11sp"
-                            android:background="#DCDCDC"
+                            android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
@@ -72,12 +72,11 @@
 
                         <TextView
                             android:text="Material Settings"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:layout_span="3"
                             android:gravity="center"
                             android:padding="2dp"
                             android:textStyle="bold"
-                            android:textSize="11sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -87,8 +86,22 @@
 
                         <TextView
                             android:text="XRF ANALYSIS"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:layout_span="9"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:background="@drawable/gray_border"
+                            android:textColor="#000000"
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:maxLines="1"
+                            android:ellipsize="end" />
+
+                        <TextView
+                            android:text=""
+                            android:minHeight="30dp"
+                            android:layout_height="match_parent"
                             android:gravity="center"
                             android:padding="2dp"
                             android:textStyle="bold"
@@ -102,28 +115,13 @@
 
                         <TextView
                             android:text=""
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:padding="2dp"
                             android:textStyle="bold"
                             android:textSize="11sp"
-                            android:background="#DCDCDC"
-                            android:textColor="#000000"
-                            android:layout_marginEnd="1dp"
-                            android:layout_marginBottom="1dp"
-                            android:maxLines="1"
-                            android:ellipsize="end" />
-
-                        <TextView
-                            android:text=""
-                            android:minHeight="28dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:padding="2dp"
-                            android:textStyle="bold"
-                            android:textSize="11sp"
-                            android:background="#DCDCDC"
+                            android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
@@ -133,11 +131,10 @@
                         <TextView
                             android:text="RATIOS"
                             android:layout_span="4"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:gravity="center"
                             android:padding="2dp"
                             android:textStyle="bold"
-                            android:textSize="11sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginBottom="1dp"
@@ -149,7 +146,7 @@
                     <TableRow android:background="#000000">
                         <TextView
                             android:text="A / M"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -163,7 +160,7 @@
 
                         <TextView
                             android:text="Total"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -177,7 +174,7 @@
 
                         <TextView
                             android:text="LST"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -191,7 +188,7 @@
 
                         <TextView
                             android:text="Shale"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -205,7 +202,7 @@
 
                         <TextView
                             android:text="Iron Ore"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -223,7 +220,7 @@
                             android:layout_marginBottom="1dp"
                             android:background="@drawable/gray_border"
                             android:gravity="center"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:text="SiO2"
                             android:textColor="#000000"
@@ -234,7 +231,7 @@
 
                         <TextView
                             android:text="Al2O3"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -248,7 +245,7 @@
 
                         <TextView
                             android:text="Fe2O3"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -262,7 +259,7 @@
 
                         <TextView
                             android:text="CaO"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -276,7 +273,7 @@
 
                         <TextView
                             android:text="MgO"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -290,7 +287,7 @@
 
                         <TextView
                             android:text="Na2O"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -304,7 +301,7 @@
 
                         <TextView
                             android:text="K2O"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -318,7 +315,7 @@
 
                         <TextView
                             android:text="SO3"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -332,7 +329,7 @@
 
                         <TextView
                             android:text="Cl"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -346,7 +343,7 @@
 
                         <TextView
                             android:text="LOI"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:minWidth="70dp"
                             android:padding="2dp"
                             android:gravity="center"
@@ -361,7 +358,7 @@
 
                         <TextView
                             android:text="Total"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:minWidth="70dp"
                             android:padding="2dp"
                             android:gravity="center"
@@ -377,7 +374,7 @@
                         <!-- Ratio Columns -->
                         <TextView
                             android:text="LSF"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -391,7 +388,7 @@
 
                         <TextView
                             android:text="HM"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -405,7 +402,7 @@
 
                         <TextView
                             android:text="SM"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -419,7 +416,7 @@
 
                         <TextView
                             android:text="AM"
-                            android:minHeight="28dp"
+                            android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -1887,7 +1884,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:layout_marginTop="60dp"
+                            android:layout_marginTop="90dp"
                             android:background="@drawable/dark_gray_border"
                             android:gravity="center"
                             android:padding="3dp"
@@ -2067,13 +2064,13 @@
 
                                 <TextView
                                     android:layout_marginBottom="1dp"
-                                    android:background="#FABF8F"
+                                    android:background="@drawable/dark_serenade_border"
                                     android:gravity="center"
+                                    android:minHeight="30dp"
                                     android:padding="2dp"
                                     android:text="Target Rawmeal Composition"
                                     android:textColor="#000000"
                                     android:textStyle="bold"
-                                    android:textSize="11sp"
                                     android:maxLines="1"
                                     android:ellipsize="end" />
 
@@ -2083,164 +2080,165 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:text="SiO2"
-                                        android:background="#FDE9D9" />
+                                        android:background="@drawable/serenade_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:text="Al2O3"
-                                        android:background="#FDE9D9" />
+                                        android:background="@drawable/serenade_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:text="Fe2O3"
-                                        android:background="#FDE9D9" />
+                                        android:background="@drawable/serenade_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:text="CaO"
-                                        android:background="#FDE9D9" />
+                                        android:background="@drawable/serenade_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:text="MgO"
-                                        android:background="#FDE9D9" />
+                                        android:background="@drawable/serenade_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:text="Na2O"
-                                        android:background="#FDE9D9" />
+                                        android:background="@drawable/serenade_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:text="K2O"
-                                        android:background="#FDE9D9" />
+                                        android:background="@drawable/serenade_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:text="SO3"
-                                        android:background="#FDE9D9" />
+                                        android:background="@drawable/serenade_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:text="Cl"
-                                        android:background="#FDE9D9" />
+                                        android:background="@drawable/serenade_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:text="LOI"
-                                        android:background="#FDE9D9" />
-
+                                        android:background="@drawable/serenade_border" />
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1.2"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:text="TOTAL"
-                                        android:background="#FDE9D9" />
+                                        android:background="@drawable/serenade_border" />
 
                                     <TextView
                                         style="@style/NewTableHeaderBlack"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
-                                        android:text="LSF" />
+                                        android:text="LSF"
+                                        android:background="@drawable/black_border"/>
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:text="HM"
-                                        android:background="#FDE9D9" />
+                                        android:background="@drawable/serenade_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:text="SM"
                                         android:textColor="#FFFFFF"
-                                        android:background="#000000" />
+                                        android:background="@drawable/black_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="24dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
-                                        android:text="AM" />
+                                        android:text="AM"
+                                        android:background="@drawable/serenade_border" />
                                 </TableRow>
 
                                 <TableRow>
@@ -2251,11 +2249,12 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- trc-Al2O3 (L17) -->
                                     <EditText
@@ -2264,11 +2263,12 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- trc-Fe2O3 (M17) -->
                                     <EditText
@@ -2277,11 +2277,12 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- trc-CaO (N17) -->
                                     <EditText
@@ -2290,11 +2291,12 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- trc-MgO (O17) -->
                                     <EditText
@@ -2303,11 +2305,12 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- trc-Na2O (P17) -->
                                     <EditText
@@ -2316,11 +2319,12 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- trc-K2O (Q17) -->
                                     <EditText
@@ -2329,11 +2333,12 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- trc-SO3 (R17) -->
                                     <EditText
@@ -2342,11 +2347,12 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- trc-Cl (S17) -->
                                     <EditText
@@ -2355,11 +2361,12 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- trc-LOI (T17) -->
                                     <EditText
@@ -2368,11 +2375,12 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
                                         android:textSize="9sp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/gray_border"  />
                                     <!-- trc-TOTAL (U17) -->
                                     <TextView
                                         style="@style/NewTableTextView"
@@ -2380,9 +2388,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1.2"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
-                                        android:textSize="9sp" />
+                                        android:textSize="9sp"
+                                        android:background="@drawable/light_beige_border" />
 
                                     <!-- trc-LSF (V17) -->
                                     <TextView
@@ -2391,9 +2400,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
-                                        android:textSize="9sp" />
+                                        android:textSize="9sp"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- trc-SM (W17) -->
                                     <TextView
@@ -2402,9 +2412,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
-                                        android:textSize="9sp" />
+                                        android:textSize="9sp"
+                                        android:background="@drawable/light_beige_border" />
 
                                     <!-- trc-SR (X17) -->
                                     <TextView
@@ -2413,9 +2424,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
-                                        android:textSize="9sp" />
+                                        android:textSize="9sp"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- trc-AM (Y17) -->
                                     <TextView
@@ -2424,9 +2436,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
-                                        android:minHeight="28dp"
+                                        android:minHeight="30dp"
                                         android:padding="2dp"
-                                        android:textSize="9sp" />
+                                        android:textSize="9sp"
+                                        android:background="@drawable/light_beige_border" />
                                 </TableRow>
                             </TableLayout>
 
@@ -2442,9 +2455,10 @@
 
                                 <TextView
                                     android:layout_marginBottom="1dp"
-                                    android:background="#BDB76B"
+                                    android:background="@drawable/dark_beige_border"
                                     android:gravity="center"
-                                    android:padding="8dp"
+                                    android:minHeight="30dp"
+                                    android:padding="2dp"
                                     android:text="Coal Ash Composition"
                                     android:textColor="#000000"
                                     android:textStyle="bold"
@@ -2459,8 +2473,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- cac-Al2O3 2 (L19) -->
                                     <EditText
@@ -2469,8 +2485,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- cac-Fe2O3 3 (M19) -->
                                     <EditText
@@ -2479,8 +2497,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- cac-CaO 4 (N19) -->
                                     <EditText
@@ -2489,8 +2509,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- cac-MgO 5 (O19) -->
                                     <EditText
@@ -2499,8 +2521,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- cac-Na2O 6 (P19) -->
                                     <EditText
@@ -2509,8 +2533,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- cac-K2O 7 (Q19) -->
                                     <EditText
@@ -2519,8 +2545,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- cac-SO3 8 (R19) -->
                                     <EditText
@@ -2529,8 +2557,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
-                                        android:background="#C4BD97"
+                                        android:background="@drawable/light_beige_border"
                                         android:imeOptions="flagNoExtractUi" />
 
                                     <!-- cac-Cl 9 (S19) -->
@@ -2540,8 +2569,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- cac-LOI 10 (T19) -->
                                     <EditText
@@ -2550,8 +2581,10 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- cac-TOTAL 11 (U19) -->
                                     <TextView
@@ -2560,8 +2593,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1.2"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1" />
+                                        android:background="@drawable/light_beige_border" />
 
                                     <!-- cac-LSF 12 (V19) -->
                                     <TextView
@@ -2570,8 +2604,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1" />
+                                        android:background="@drawable/light_beige_border" />
 
                                     <!-- cac-HM 13 (W19) -->
                                     <TextView
@@ -2580,8 +2615,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1" />
+                                        android:background="@drawable/light_beige_border" />
 
                                     <!-- cac-SM 14 (X19) -->
                                     <TextView
@@ -2590,8 +2626,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1" />
+                                        android:background="@drawable/light_beige_border" />
 
                                     <!-- cac-AM 15 (Y19) -->
                                     <TextView
@@ -2600,8 +2637,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1" />
+                                        android:background="@drawable/light_beige_border" />
                                 </TableRow>
                             </TableLayout>
 
@@ -2617,9 +2655,10 @@
 
                                 <TextView
                                     android:layout_marginBottom="1dp"
-                                    android:background="#A9A9A9"
+                                    android:background="@drawable/iron_border"
                                     android:gravity="center"
-                                    android:padding="8dp"
+                                    android:minHeight="30dp"
+                                    android:padding="2dp"
                                     android:text="Potential Clinker Composition"
                                     android:textColor="#000000"
                                     android:textStyle="bold"
@@ -2632,99 +2671,121 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="SiO2"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="Al2O3"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="Fe2O3"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="CaO"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="MgO"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="Na2O"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="K2O"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="SO3"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="Cl"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1.5"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="TOTAL"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeaderBlack"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="LSF"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/black_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
@@ -2732,29 +2793,34 @@
                                         android:layout_weight="1"
                                         android:layout_height="match_parent"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="HM"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="SM"
                                         android:maxLines="1"
                                         android:ellipsize="end"
                                         android:textColor="#FFFFFF"
-                                        android:background="#000000" />
+                                        android:background="@drawable/black_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="AM"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
                                 </TableRow>
 
                                 <TableRow>
@@ -2765,9 +2831,11 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- pcc-row 2 (L22) -->
                                     <TextView
@@ -2776,9 +2844,11 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- pcc-row 3 (M22) -->
                                     <TextView
@@ -2787,9 +2857,11 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- pcc-row 4 (N22) -->
                                     <TextView
@@ -2798,9 +2870,11 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- pcc-row 5 (O22) -->
                                     <TextView
@@ -2809,9 +2883,11 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- pcc-row 6 (P22) -->
                                     <TextView
@@ -2820,9 +2896,11 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- pcc-row 7 (Q22) -->
                                     <TextView
@@ -2831,9 +2909,11 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- pcc-row 8 (R22) -->
                                     <TextView
@@ -2842,9 +2922,11 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- pcc-row 9 (S22) -->
                                     <TextView
@@ -2853,9 +2935,11 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- pcc-row 10 (T22) -->
                                     <TextView
@@ -2864,8 +2948,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1.5"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1"
+                                        android:background="@drawable/light_beige_border"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -2876,9 +2961,11 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- pcc-row 12 (W22) -->
                                     <TextView
@@ -2887,8 +2974,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1"
+                                        android:background="@drawable/light_beige_border"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -2899,8 +2987,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1"
+                                        android:background="@drawable/limestone_border"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -2911,9 +3000,11 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/light_beige_border" />
                                 </TableRow>
                             </TableLayout>
 
@@ -2934,8 +3025,8 @@
                                         android:layout_weight="5"
                                         android:layout_marginEnd="1dp"
                                         android:layout_marginBottom="1dp"
-                                        android:background="#A9A9A9"
-                                        android:padding="8dp"
+                                        android:background="@drawable/dark_gray_border"
+                                        android:padding="4dp"
                                         android:text="" />
 
                                     <TextView
@@ -2943,9 +3034,9 @@
                                         android:layout_weight="4"
                                         android:layout_marginEnd="1dp"
                                         android:layout_marginBottom="1dp"
-                                        android:background="#A9A9A9"
+                                        android:background="@drawable/dark_gray_border"
                                         android:gravity="center"
-                                        android:padding="8dp"
+                                        android:padding="4dp"
                                         android:text="MINERALS"
                                         android:textColor="#000000"
                                         android:textStyle="bold"
@@ -2957,17 +3048,17 @@
                                         android:layout_weight="4"
                                         android:layout_marginEnd="1dp"
                                         android:layout_marginBottom="1dp"
-                                        android:background="#A9A9A9"
-                                        android:padding="8dp"
+                                        android:background="@drawable/dark_gray_border"
+                                        android:padding="4dp"
                                         android:text="" />
 
                                     <TextView
                                         android:layout_width="0dp"
                                         android:layout_weight="2"
                                         android:layout_marginBottom="1dp"
-                                        android:background="#A9A9A9"
+                                        android:background="@drawable/dark_gray_border"
                                         android:gravity="center"
-                                        android:padding="8dp"
+                                        android:padding="4dp"
                                         android:text="Hotmeal"
                                         android:textColor="#000000"
                                         android:textStyle="bold"
@@ -2982,89 +3073,108 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="Ltr. Wt."
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="FCaO"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="Cond"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="DOC"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="KF LOI"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="C3S net"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="C2S"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="C3A"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="C4AF"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="S-Alk Ratio"
-                                        android:background="#EEECE1"
+                                        android:background="@drawable/light_beige_border"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -3073,45 +3183,55 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="Tot Alkali"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="LP @ 1450C"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="COATING INDEX"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="%SO3"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
 
                                     <TextView
                                         style="@style/NewTableHeaderNoMargin"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text="LOI"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/gray_border" />
                                 </TableRow>
 
                                 <TableRow>
@@ -3122,11 +3242,13 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:inputType="numberDecimal"
                                         android:maxLines="1"
                                         android:ellipsize="end"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- FCaO (L25) -->
                                     <EditText
@@ -3135,11 +3257,13 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:inputType="numberDecimal"
                                         android:maxLines="1"
                                         android:ellipsize="end"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- Burning Con (M25) -->
                                     <TextView
@@ -3148,8 +3272,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1"
+                                        android:background="@drawable/limestone_border"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -3160,9 +3285,11 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:ellipsize="end"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- KF LOI (O25) -->
                                     <EditText
@@ -3171,11 +3298,13 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:inputType="numberDecimal"
                                         android:maxLines="1"
                                         android:ellipsize="end"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- C3S net (P25) -->
                                     <TextView
@@ -3184,8 +3313,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1"
+                                        android:background="@drawable/light_beige_border"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -3196,8 +3326,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1"
+                                        android:background="@drawable/light_beige_border"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -3208,8 +3339,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1"
+                                        android:background="@drawable/light_beige_border"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -3220,8 +3352,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1"
+                                        android:background="@drawable/light_beige_border"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -3232,8 +3365,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1"
+                                        android:background="@drawable/light_beige_border"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -3244,8 +3378,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1"
+                                        android:background="@drawable/light_beige_border"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -3256,8 +3391,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1"
+                                        android:background="@drawable/light_beige_border"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -3268,8 +3404,9 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:text=""
-                                        android:background="#EEECE1"
+                                        android:background="@drawable/light_beige_border"
                                         android:maxLines="1"
                                         android:ellipsize="end" />
 
@@ -3280,11 +3417,13 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:inputType="numberDecimal"
                                         android:maxLines="1"
                                         android:ellipsize="end"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
 
                                     <!-- ht-LOI (Y25) -->
                                     <EditText
@@ -3293,11 +3432,13 @@
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
+                                        android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:inputType="numberDecimal"
                                         android:maxLines="1"
                                         android:ellipsize="end"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:background="@drawable/limestone_border" />
                                 </TableRow>
                             </TableLayout>
                         </LinearLayout>

@@ -152,7 +152,7 @@ class Page8Activity : BaseActivity() {
         Page8Cache()
         setupTextWatchers()
         calculateAll()
-        findViewById<Button>(R.id.btn_clear).setOnClickListener { clearAllData() }
+        findViewById<Button>(R.id.btn_clear).setOnClickListener { showClearConfirmationDialog() }
         findViewById<Button>(R.id.btn_save).setOnClickListener { saveCurrentData() }
 
         // Load saved data if present
@@ -774,6 +774,18 @@ class Page8Activity : BaseActivity() {
             e.printStackTrace()
         }
     }
+
+    private fun showClearConfirmationDialog() {
+        AlertDialog.Builder(this)
+            .setTitle("Clear Data")
+            .setMessage("Are you sure you want to clear all data?")
+            .setPositiveButton("Yes") { _, _ ->
+                clearAllData()
+            }
+            .setNegativeButton("No", null)
+            .show()
+    }
+
     private fun Page8Cache() {
         val fields = listOf(
             // IronOre
