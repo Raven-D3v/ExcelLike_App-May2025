@@ -855,7 +855,7 @@ class Page3Activity : BaseActivity() {
         val n25 = (values["N25"] ?: 0.0) / 100.0
         val q19 = values["et_Q19_PG3"] ?: 0.0
         val factorZ = if (1.0 - z17 / 100.0 == 0.0) 0.0 else 1.0 / (1.0 - z17 / 100.0)
-        values["Q22"] = factorZ * q17 * (1.0 - n25) + q19 * n25
+        values["Q22"] = factor1 * (values["et_Q17_PG3"] ?: 0.0) * factor_1_minus_h19 + (values["et_Q19_PG3"] ?: 0.0) * h19
         values["R22"] = factor1 * (values["et_R17_PG3"] ?: 0.0) * factor_1_minus_h19 + (values["et_R19_PG3"] ?: 0.0) * h19
         values["S22"] = factor1 * (values["et_S17_PG3"] ?: 0.0) * factor_1_minus_h19 + (values["et_S19_PG3"] ?: 0.0) * h19
 
