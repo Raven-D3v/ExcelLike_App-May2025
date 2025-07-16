@@ -38,108 +38,34 @@
 
                     <!-- Header Row 1: Main Categories -->
                     <TableRow android:background="#000000">
-
                         <TextView
-                            android:text=""
-                            android:minWidth="85dp"
+                            android:text="Material Proportion"
                             android:minHeight="30dp"
-                            android:translationY="-1dp"
+                            android:layout_span="6"
                             android:gravity="center"
                             android:padding="2dp"
                             android:textStyle="bold"
-                            android:textSize="11sp"
+                            android:textSize="15sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
+                            android:maxLines="1"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:maxLines="1"
                             android:ellipsize="end" />
 
                         <TextView
-                            android:text=""
-                            android:minWidth="10dp"
+                            android:text="Rawmeal Analysis"
                             android:minHeight="30dp"
-                            android:layout_height="match_parent"
+                            android:layout_span="15"
                             android:gravity="center"
                             android:padding="2dp"
                             android:textStyle="bold"
-                            android:textSize="11sp"
+                            android:textSize="15sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
+                            android:maxLines="1"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:maxLines="1"
-                            android:ellipsize="end" />
-
-                        <TextView
-                            android:text="Material Settings"
-                            android:minHeight="30dp"
-                            android:layout_span="4"
-                            android:gravity="center"
-                            android:padding="2dp"
-                            android:textStyle="bold"
-                            android:background="@drawable/gray_border"
-                            android:textColor="#000000"
-                            android:layout_marginEnd="1dp"
-                            android:layout_marginBottom="1dp"
-                            android:maxLines="1"
-                            android:ellipsize="end" />
-
-                        <TextView
-                            android:text="XRF ANALYSIS"
-                            android:minHeight="30dp"
-                            android:layout_span="9"
-                            android:gravity="center"
-                            android:padding="2dp"
-                            android:textStyle="bold"
-                            android:background="@drawable/gray_border"
-                            android:textColor="#000000"
-                            android:layout_marginEnd="1dp"
-                            android:layout_marginBottom="1dp"
-                            android:maxLines="1"
-                            android:ellipsize="end" />
-
-                        <TextView
-                            android:text=""
-                            android:minHeight="30dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:padding="2dp"
-                            android:textStyle="bold"
-                            android:textSize="11sp"
-                            android:background="@drawable/gray_border"
-                            android:textColor="#000000"
-                            android:layout_marginEnd="1dp"
-                            android:layout_marginBottom="1dp"
-                            android:maxLines="1"
-                            android:ellipsize="end" />
-
-                        <TextView
-                            android:text=""
-                            android:minHeight="30dp"
-                            android:layout_height="match_parent"
-                            android:gravity="center"
-                            android:padding="2dp"
-                            android:textStyle="bold"
-                            android:textSize="11sp"
-                            android:background="@drawable/gray_border"
-                            android:textColor="#000000"
-                            android:layout_marginEnd="1dp"
-                            android:layout_marginBottom="1dp"
-                            android:maxLines="1"
-                            android:ellipsize="end" />
-
-                        <TextView
-                            android:text="RATIOS"
-                            android:layout_span="4"
-                            android:minHeight="30dp"
-                            android:gravity="center"
-                            android:padding="2dp"
-                            android:textStyle="bold"
-                            android:background="@drawable/gray_border"
-                            android:textColor="#000000"
-                            android:layout_marginBottom="1dp"
-                            android:maxLines="1"
                             android:ellipsize="end" />
                     </TableRow>
 
@@ -149,7 +75,6 @@
                         <TextView
                             android:text="A / M"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -158,12 +83,14 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="Total"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -172,12 +99,14 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="LST"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -186,12 +115,14 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="Shale"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -200,12 +131,14 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="Sand"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -214,7 +147,10 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="Iron Ore"
@@ -239,30 +175,50 @@
                             android:background="@drawable/gray_border"
                             android:gravity="center"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:text="SiO2"
                             android:textColor="#000000"
                             android:textSize="10sp"
                             android:textStyle="bold"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
-                            android:text="Al2O3"
-                            android:minHeight="30dp"
-                            android:padding="2dp"
-                            android:gravity="center"
-                            android:textStyle="bold"
-                            android:textSize="10sp"
-                            android:background="@drawable/gray_border"
-                            android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
+                            android:background="@drawable/gray_border"
+                            android:gravity="center"
+                            android:minHeight="30dp"
+                            android:text="Al2O3"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
+                            android:layout_marginEnd="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="@drawable/gray_border"
+                            android:gravity="center"
+                            android:minHeight="30dp"
                             android:text="Fe2O3"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:maxLines="1"
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
+
+                        <TextView
+                            android:text="CaO"
                             android:minHeight="30dp"
                             android:gravity="center"
                             android:textStyle="bold"
@@ -278,23 +234,8 @@
                             android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
-                            android:text="CaO"
-                            android:minHeight="30dp"
-                            android:padding="2dp"
-                            android:gravity="center"
-                            android:textStyle="bold"
-                            android:textSize="10sp"
-                            android:background="@drawable/gray_border"
-                            android:textColor="#000000"
-                            android:layout_marginEnd="1dp"
-                            android:layout_marginBottom="1dp"
-                            android:maxLines="1"
-                            android:ellipsize="end" />
-
-                        <TextView
                             android:text="MgO"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -303,26 +244,30 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
-                            android:text="Na2O"
-                            android:minHeight="30dp"
-                            android:padding="2dp"
-                            android:gravity="center"
-                            android:textStyle="bold"
-                            android:textSize="10sp"
-                            android:background="@drawable/gray_border"
-                            android:textColor="#000000"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
+                            android:background="@drawable/gray_border"
+                            android:gravity="center"
+                            android:minHeight="30dp"
+                            android:text="Na2O"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="K2O"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -331,12 +276,14 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="SO3"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -345,12 +292,14 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="Cl"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -359,13 +308,15 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="LOI"
                             android:minHeight="30dp"
                             android:minWidth="70dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -374,13 +325,15 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="Total"
                             android:minHeight="30dp"
                             android:minWidth="70dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -389,13 +342,15 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <!-- Ratio Columns -->
                         <TextView
                             android:text="LSF"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -404,12 +359,14 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="HM"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -418,12 +375,14 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="SM"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -432,12 +391,14 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="AM"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -445,7 +406,10 @@
                             android:textColor="#FFFFFF"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
                     </TableRow>
 
                     <!-- Data Rows with Switch Controls -->
@@ -2006,7 +1970,6 @@
                             android:ellipsize="end" />
 
                         <TableRow android:background="#000000">
-
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="32dp"
@@ -2015,13 +1978,15 @@
                                 android:layout_weight="1"
                                 android:background="@drawable/gray_border"
                                 android:gravity="center"
-                                android:padding="3dp"
                                 android:text="LSF"
                                 android:textColor="#000000"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
                                 android:maxLines="1"
-                                android:ellipsize="end" />
+                                android:padding="0dp"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeMaxTextSize="16sp" />
 
                             <!-- target-LSF (H52) -->
                             <TextView
@@ -2033,15 +1998,16 @@
                                 android:background="@drawable/limestone_border"
                                 android:gravity="center"
                                 android:inputType="numberDecimal"
-                                android:padding="3dp"
                                 android:textColor="#000000"
                                 android:textSize="16sp"
                                 android:maxLines="1"
-                                android:ellipsize="end" />
+                                android:padding="0dp"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeMaxTextSize="16sp" />
                         </TableRow>
 
                         <TableRow android:background="#000000">
-
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="32dp"
@@ -2049,13 +2015,15 @@
                                 android:layout_marginBottom="1dp"
                                 android:background="@drawable/gray_border"
                                 android:gravity="center"
-                                android:padding="3dp"
                                 android:text="SM"
                                 android:textColor="#000000"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
                                 android:maxLines="1"
-                                android:ellipsize="end" />
+                                android:padding="0dp"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeMaxTextSize="16sp" />
 
                             <!-- target-SM -->
                             <TextView
@@ -2067,11 +2035,13 @@
                                 android:background="@drawable/limestone_border"
                                 android:gravity="center"
                                 android:inputType="numberDecimal"
-                                android:padding="3dp"
                                 android:textColor="#000000"
                                 android:textSize="16sp"
                                 android:maxLines="1"
-                                android:ellipsize="end" />
+                                android:padding="0dp"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeMaxTextSize="16sp" />
                         </TableRow>
 
                         <TableRow android:background="#000000">
@@ -2101,15 +2071,16 @@
                                 android:background="@drawable/limestone_border"
                                 android:gravity="center"
                                 android:inputType="numberDecimal"
-                                android:padding="3dp"
                                 android:textColor="#000000"
                                 android:textSize="16sp"
                                 android:maxLines="1"
-                                android:ellipsize="end" />
+                                android:padding="0dp"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeMaxTextSize="16sp" />
                         </TableRow>
 
                         <TableRow android:background="#000000">
-
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="32dp"
@@ -2125,9 +2096,7 @@
                                 android:padding="0dp"
                                 android:autoSizeTextType="uniform"
                                 android:autoSizeMinTextSize="10sp"
-                                android:autoSizeMaxTextSize="16sp"
-                                android:autoSizeStepGranularity="1sp"
-                                android:ellipsize="none" />
+                                android:autoSizeMaxTextSize="16sp" />
 
                             <!-- % Ash Absorbed (H54) -->
                             <EditText
@@ -2139,15 +2108,17 @@
                                 android:gravity="center"
                                 android:hint="0.00"
                                 android:inputType="numberDecimal"
-                                android:padding="3dp"
                                 android:textSize="16sp"
                                 android:maxLines="1"
                                 android:singleLine="true"
-                                android:imeOptions="flagNoExtractUi" />
+                                android:imeOptions="flagNoExtractUi"
+                                android:padding="0dp"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeMaxTextSize="16sp" />
                         </TableRow>
 
                         <TableRow android:background="#000000">
-
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="32dp"
@@ -2162,9 +2133,7 @@
                                 android:padding="0dp"
                                 android:autoSizeTextType="uniform"
                                 android:autoSizeMinTextSize="10sp"
-                                android:autoSizeMaxTextSize="16sp"
-                                android:autoSizeStepGranularity="1sp"
-                                android:ellipsize="none" />
+                                android:autoSizeMaxTextSize="16sp" />
 
                             <!-- Raw mix type (H20) -->
                             <EditText
@@ -2176,12 +2145,15 @@
                                 android:gravity="center"
                                 android:hint="Enter type"
                                 android:inputType="text"
-                                android:padding="3dp"
                                 android:textColor="#000000"
                                 android:textSize="16sp"
                                 android:maxLines="1"
                                 android:singleLine="true"
-                                android:imeOptions="flagNoExtractUi" />
+                                android:imeOptions="flagNoExtractUi"
+                                android:padding="0dp"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeMaxTextSize="16sp" />
 
                         </TableRow>
                     </TableLayout>
@@ -2242,9 +2214,11 @@
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:minHeight="30dp"
-                                        android:padding="2dp"
-                                        android:textSize="9sp"
                                         android:text="Al2O3"
+                                        android:padding="0dp"
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="10sp"
                                         android:background="@drawable/serenade_border" />
 
                                     <TextView
@@ -2253,9 +2227,11 @@
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:minHeight="30dp"
-                                        android:padding="2dp"
-                                        android:textSize="9sp"
                                         android:text="Fe2O3"
+                                        android:padding="0dp"
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="10sp"
                                         android:background="@drawable/serenade_border" />
 
                                     <TextView
@@ -2838,7 +2814,10 @@
                                         android:minHeight="30dp"
                                         android:text="Al2O3"
                                         android:maxLines="1"
-                                        android:ellipsize="end"
+                                        android:padding="0dp"
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="10sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -2849,7 +2828,10 @@
                                         android:minHeight="30dp"
                                         android:text="Fe2O3"
                                         android:maxLines="1"
-                                        android:ellipsize="end"
+                                        android:padding="0dp"
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="10sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -2926,7 +2908,10 @@
                                         android:minHeight="30dp"
                                         android:text="TOTAL"
                                         android:maxLines="1"
-                                        android:ellipsize="end"
+                                        android:padding="0dp"
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="10sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -3179,7 +3164,7 @@
                                         android:layout_marginEnd="1dp"
                                         android:layout_marginBottom="1dp"
                                         android:background="@drawable/dark_gray_border"
-                                        android:padding="8dp"
+                                        android:padding="4dp"
                                         android:text="" />
 
                                     <TextView
@@ -3189,7 +3174,7 @@
                                         android:layout_marginBottom="1dp"
                                         android:background="@drawable/dark_gray_border"
                                         android:gravity="center"
-                                        android:padding="8dp"
+                                        android:padding="4dp"
                                         android:text="MINERALS"
                                         android:textColor="#000000"
                                         android:textStyle="bold"
@@ -3202,7 +3187,7 @@
                                         android:layout_marginEnd="1dp"
                                         android:layout_marginBottom="1dp"
                                         android:background="@drawable/dark_gray_border"
-                                        android:padding="8dp"
+                                        android:padding="4dp"
                                         android:text="" />
 
                                     <TextView
@@ -3211,13 +3196,13 @@
                                         android:layout_marginBottom="1dp"
                                         android:background="@drawable/dark_gray_border"
                                         android:gravity="center"
-                                        android:padding="8dp"
                                         android:text="Hotmeal"
                                         android:textColor="#000000"
                                         android:textStyle="bold"
                                         android:maxLines="1"
+                                        android:padding="4dp"
                                         android:autoSizeTextType="uniform"
-                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMinTextSize="4sp"
                                         android:autoSizeMaxTextSize="20sp" />
                                 </TableRow>
 
@@ -3380,7 +3365,7 @@
                                         android:minWidth="0dp"
                                         android:minHeight="30dp"
                                         android:translationY="-6dp"
-                                        android:text="Coating Index"
+                                        android:text="COATING INDEX"
                                         android:maxLines="2"
                                         android:autoSizeTextType="uniform"
                                         android:autoSizeMinTextSize="1sp"
@@ -3395,7 +3380,10 @@
                                         android:minHeight="30dp"
                                         android:text="%SO3"
                                         android:maxLines="1"
-                                        android:ellipsize="end"
+                                        android:padding="0dp"
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="10sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
