@@ -43,6 +43,7 @@
                             android:text=""
                             android:minWidth="85dp"
                             android:minHeight="30dp"
+                            android:translationY="-1dp"
                             android:gravity="center"
                             android:padding="2dp"
                             android:textStyle="bold"
@@ -218,7 +219,6 @@
                         <TextView
                             android:text="Iron Ore"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -227,7 +227,10 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <!-- XRF Analysis Columns -->
                         <TextView
@@ -261,7 +264,6 @@
                         <TextView
                             android:text="Fe2O3"
                             android:minHeight="30dp"
-                            android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
                             android:textSize="10sp"
@@ -270,7 +272,10 @@
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
-                            android:ellipsize="end" />
+                            android:padding="0dp"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="1sp"
+                            android:autoSizeMaxTextSize="10sp" />
 
                         <TextView
                             android:text="CaO"
@@ -2113,13 +2118,16 @@
                                 android:layout_weight="1"
                                 android:background="@drawable/dark_beige_border"
                                 android:gravity="center"
-                                android:padding="3dp"
                                 android:text="% Ash Absorbed"
                                 android:textColor="#000000"
-                                android:textSize="16sp"
                                 android:textStyle="bold"
                                 android:maxLines="1"
-                                android:ellipsize="end" />
+                                android:padding="0dp"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeMaxTextSize="16sp"
+                                android:autoSizeStepGranularity="1sp"
+                                android:ellipsize="none" />
 
                             <!-- % Ash Absorbed (H54) -->
                             <EditText
@@ -2147,13 +2155,16 @@
                                 android:layout_weight="1"
                                 android:background="@drawable/dark_gray_border"
                                 android:gravity="center"
-                                android:padding="3dp"
                                 android:text="RAWMIX TYPE:"
                                 android:textColor="#FFFFFF"
-                                android:textSize="16sp"
                                 android:textStyle="bold"
                                 android:maxLines="1"
-                                android:ellipsize="end" />
+                                android:padding="0dp"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeMaxTextSize="16sp"
+                                android:autoSizeStepGranularity="1sp"
+                                android:ellipsize="none" />
 
                             <!-- Raw mix type (H20) -->
                             <EditText
@@ -3205,7 +3216,9 @@
                                         android:textColor="#000000"
                                         android:textStyle="bold"
                                         android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="20sp" />
                                 </TableRow>
 
                                 <!-- Column Headers -->
@@ -3216,9 +3229,12 @@
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:minHeight="30dp"
-                                        android:text="Ltr. Wt."
-                                        android:maxLines="1"
-                                        android:ellipsize="end"
+                                        android:translationY="-6dp"
+                                        android:text="LTR. WT."
+                                        android:maxLines="2"
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="10sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -3262,7 +3278,10 @@
                                         android:minHeight="30dp"
                                         android:text="KF LOI"
                                         android:maxLines="1"
-                                        android:ellipsize="end"
+                                        android:padding="0dp"
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="10sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -3271,9 +3290,12 @@
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:minHeight="30dp"
+                                        android:translationY="-6dp"
                                         android:text="C3S net"
-                                        android:maxLines="1"
-                                        android:ellipsize="end"
+                                        android:maxLines="2"
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="10sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -3315,10 +3337,13 @@
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:minHeight="30dp"
+                                        android:translationY="-6dp"
                                         android:text="S-Alk Ratio"
-                                        android:background="@drawable/light_beige_border"
-                                        android:maxLines="1"
-                                        android:ellipsize="end" />
+                                        android:maxLines="2"
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="10sp"
+                                        android:background="@drawable/light_beige_border" />
 
                                     <TextView
                                         style="@style/NewTableHeader"
@@ -3326,9 +3351,12 @@
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:minHeight="30dp"
+                                        android:translationY="-6dp"
                                         android:text="Tot Alkali"
-                                        android:maxLines="1"
-                                        android:ellipsize="end"
+                                        android:maxLines="2"
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="10sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -3337,9 +3365,12 @@
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:minHeight="30dp"
+                                        android:translationY="-6dp"
                                         android:text="LP @ 1450C"
-                                        android:maxLines="1"
-                                        android:ellipsize="end"
+                                        android:maxLines="2"
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="10sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -3348,9 +3379,12 @@
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
                                         android:minHeight="30dp"
-                                        android:text="COATING INDEX"
-                                        android:maxLines="1"
-                                        android:ellipsize="end"
+                                        android:translationY="-6dp"
+                                        android:text="Coating Index"
+                                        android:maxLines="2"
+                                        android:autoSizeTextType="uniform"
+                                        android:autoSizeMinTextSize="1sp"
+                                        android:autoSizeMaxTextSize="10sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
