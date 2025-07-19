@@ -38,7 +38,7 @@ class Page10Activity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.title = "Previous Information Data List"
+        supportActionBar?.title = "Previous Data List"
         requestedOrientation = android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setActivityContent(R.layout.activity_page10)
 

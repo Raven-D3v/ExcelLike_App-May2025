@@ -19,7 +19,7 @@
     <string name="fuel_and_clinker_factor">Fuel &amp; Clinker Factor</string>
     <string name="raw_mix_design">Raw Mix Design</string>
     <string name="graph">Other information</string>
-    <string name="previous_information_data_list">Previous Information Data List</string>
+    <string name="previous_information_data_list">Previous Data List</string>
 <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>
