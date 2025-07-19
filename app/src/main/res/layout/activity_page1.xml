@@ -76,7 +76,7 @@
                             android:minHeight="30dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -85,7 +85,7 @@
                             android:padding="0dp"
                             android:autoSizeTextType="uniform"
                             android:autoSizeMinTextSize="1sp"
-                            android:autoSizeMaxTextSize="10sp" />
+                            android:autoSizeMaxTextSize="9sp" />
 
                         <TextView
                             android:text="Total"
@@ -93,7 +93,7 @@
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -106,7 +106,7 @@
                             android:minHeight="30dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -115,14 +115,14 @@
                             android:padding="0dp"
                             android:autoSizeTextType="uniform"
                             android:autoSizeMinTextSize="1sp"
-                            android:autoSizeMaxTextSize="10sp" />
+                            android:autoSizeMaxTextSize="9sp" />
 
                         <TextView
                             android:text="Shale"
                             android:minHeight="30dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/shale_border"
                             android:textColor="#FFFFFF"
                             android:layout_marginEnd="1dp"
@@ -131,7 +131,7 @@
                             android:padding="0dp"
                             android:autoSizeTextType="uniform"
                             android:autoSizeMinTextSize="1sp"
-                            android:autoSizeMaxTextSize="10sp" />
+                            android:autoSizeMaxTextSize="9sp" />
 
                         <!-- XRF Analysis Columns -->
                         <TextView
@@ -139,7 +139,7 @@
                             android:minHeight="30dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/iron_border"
                             android:textColor="#FFFFFF"
                             android:layout_marginEnd="1dp"
@@ -148,7 +148,7 @@
                             android:padding="0dp"
                             android:autoSizeTextType="uniform"
                             android:autoSizeMinTextSize="1sp"
-                            android:autoSizeMaxTextSize="10sp" />
+                            android:autoSizeMaxTextSize="9sp" />
 
                         <TextView
                             android:layout_marginEnd="1dp"
@@ -159,7 +159,7 @@
                             android:padding="2dp"
                             android:text="SiO2"
                             android:textColor="#000000"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:textStyle="bold"
                             android:maxLines="1"
                             android:ellipsize="end" />
@@ -169,7 +169,7 @@
                             android:minHeight="30dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -178,14 +178,14 @@
                             android:padding="0dp"
                             android:autoSizeTextType="uniform"
                             android:autoSizeMinTextSize="1sp"
-                            android:autoSizeMaxTextSize="10sp" />
+                            android:autoSizeMaxTextSize="9sp" />
 
                         <TextView
                             android:text="Fe2O3"
                             android:minHeight="30dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -194,7 +194,7 @@
                             android:padding="0dp"
                             android:autoSizeTextType="uniform"
                             android:autoSizeMinTextSize="1sp"
-                            android:autoSizeMaxTextSize="10sp" />
+                            android:autoSizeMaxTextSize="9sp" />
 
                         <TextView
                             android:text="CaO"
@@ -202,7 +202,7 @@
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -216,7 +216,7 @@
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -229,7 +229,7 @@
                             android:minHeight="30dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -238,7 +238,7 @@
                             android:padding="0dp"
                             android:autoSizeTextType="uniform"
                             android:autoSizeMinTextSize="1sp"
-                            android:autoSizeMaxTextSize="10sp" />
+                            android:autoSizeMaxTextSize="9sp" />
 
                         <TextView
                             android:text="K2O"
@@ -246,7 +246,7 @@
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -260,7 +260,7 @@
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -274,7 +274,7 @@
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -289,7 +289,7 @@
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -304,7 +304,7 @@
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -319,7 +319,7 @@
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="#000000"
                             android:textColor="#FFFFFF"
                             android:layout_marginEnd="1dp"
@@ -333,7 +333,7 @@
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -347,7 +347,7 @@
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -361,7 +361,7 @@
                             android:padding="2dp"
                             android:gravity="center"
                             android:textStyle="bold"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="#000000"
                             android:textColor="#FFFFFF"
                             android:layout_marginBottom="1dp"
@@ -378,7 +378,7 @@
                             android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -394,7 +394,7 @@
                             android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -410,7 +410,7 @@
                             android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -429,7 +429,7 @@
                             android:layout_height="match_parent"
                             android:padding="2dp"
                             android:gravity="center"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/shale_border"
                             android:textColor="#FFFFFF"
                             android:inputType="numberDecimal"
@@ -447,7 +447,7 @@
                             android:minHeight="30dp"
                             android:padding="2dp"
                             android:gravity="center"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/iron_border"
                             android:textColor="#FFFFFF"
                             android:inputType="numberDecimal"
@@ -466,7 +466,7 @@
                             android:layout_height="match_parent"
                             android:padding="2dp"
                             android:gravity="center"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -485,7 +485,7 @@
                             android:layout_height="match_parent"
                             android:padding="2dp"
                             android:gravity="center"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -504,7 +504,7 @@
                             android:layout_height="match_parent"
                             android:padding="2dp"
                             android:gravity="center"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -523,7 +523,7 @@
                             android:layout_height="match_parent"
                             android:padding="2dp"
                             android:gravity="center"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -542,7 +542,7 @@
                             android:layout_height="match_parent"
                             android:padding="2dp"
                             android:gravity="center"
-                            android:textSize="10sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -561,13 +561,15 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:imeOptions="flagNoExtractUi"
-                            android:layout_marginBottom="1dp" />
+                            android:layout_marginBottom="1dp"
+                            android:maxLines="1"
+                            android:singleLine="true" />
 
                         <!-- K2O-column 1 (Q45) -->
                         <EditText
@@ -578,13 +580,15 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:imeOptions="flagNoExtractUi"
-                            android:layout_marginBottom="1dp" />
+                            android:layout_marginBottom="1dp"
+                            android:maxLines="1"
+                            android:singleLine="true" />
 
                         <!-- SO3-column 1 (R45) -->
                         <EditText
@@ -595,13 +599,15 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:imeOptions="flagNoExtractUi"
-                            android:layout_marginBottom="1dp" />
+                            android:layout_marginBottom="1dp"
+                            android:maxLines="1"
+                            android:singleLine="true" />
 
                         <!-- Cl-column 1 (S45) -->
                         <EditText
@@ -612,13 +618,15 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:imeOptions="flagNoExtractUi"
-                            android:layout_marginBottom="1dp" />
+                            android:layout_marginBottom="1dp"
+                            android:maxLines="1"
+                            android:singleLine="true" />
 
                         <!-- column 1 (T45) -->
                         <TextView
@@ -628,12 +636,13 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
-                            android:layout_marginBottom="1dp" />
+                            android:layout_marginBottom="1dp"
+                            android:maxLines="1" />
 
                         <!-- t2-column 1 (U45) -->
                         <TextView
@@ -644,11 +653,12 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/light_beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
-                            android:layout_marginBottom="1dp" />
+                            android:layout_marginBottom="1dp"
+                            android:maxLines="1" />
 
                         <!-- lsf-column 1 (V45) -->
                         <TextView
@@ -659,11 +669,12 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
-                            android:layout_marginBottom="1dp" />
+                            android:layout_marginBottom="1dp"
+                            android:maxLines="1" />
 
                         <!-- hm-column 1 (W45) -->
                         <TextView
@@ -674,11 +685,12 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/light_beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
-                            android:layout_marginBottom="1dp" />
+                            android:layout_marginBottom="1dp"
+                            android:maxLines="1" />
 
                         <!-- sm-column 1 (X45) -->
                         <TextView
@@ -689,11 +701,12 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/light_gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
-                            android:layout_marginBottom="1dp" />
+                            android:layout_marginBottom="1dp"
+                            android:maxLines="1" />
 
                         <!-- am-column 1 (Y45) -->
                         <TextView
@@ -704,10 +717,11 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
-                            android:layout_marginBottom="1dp" />
+                            android:layout_marginBottom="1dp"
+                            android:maxLines="1" />
                     </TableRow>
 
 
@@ -744,7 +758,7 @@
                             android:padding="3dp"
                             android:text=""
                             android:textColor="#000000"
-                            android:textSize="11sp" />
+                            android:textSize="9sp" />
 
                         <!-- ls-column 2 (H46) -->
                         <EditText
@@ -761,7 +775,7 @@
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
                             android:textColor="#000000"
-                            android:textSize="11sp" />
+                            android:textSize="9sp" />
 
                         <!-- shale-column 2 (I46) -->
                         <EditText
@@ -772,7 +786,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/shale_border"
                             android:textColor="#FFFFFF"
                             android:hint="0.00"
@@ -790,7 +804,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/iron_border"
                             android:textColor="#FFFFFF"
                             android:hint="0.00"
@@ -808,7 +822,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -825,7 +839,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -842,7 +856,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -859,7 +873,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -876,7 +890,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -893,7 +907,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -910,7 +924,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -927,7 +941,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -944,7 +958,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -960,7 +974,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -976,7 +990,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/light_beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -991,7 +1005,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1006,7 +1020,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/light_beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1021,7 +1035,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/light_gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1036,7 +1050,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:layout_marginBottom="1dp" />
@@ -1071,7 +1085,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1086,7 +1100,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:hint="0.00"
@@ -1110,7 +1124,7 @@
                             android:inputType="numberDecimal"
                             android:textColor="#FFFFFF"
                             android:imeOptions="flagNoExtractUi"
-                            android:textSize="11sp" />
+                            android:textSize="9sp" />
 
                         <!-- io-column 3 (J47) -->
                         <EditText
@@ -1121,7 +1135,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/iron_border"
                             android:textColor="#FFFFFF"
                             android:hint="0.00"
@@ -1139,7 +1153,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1156,7 +1170,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1173,7 +1187,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1190,7 +1204,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1207,7 +1221,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1224,7 +1238,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1241,7 +1255,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1258,7 +1272,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1280,7 +1294,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:textColor="#000000"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:imeOptions="flagNoExtractUi"
                             tools:ignore="TouchTargetSizeCheck" />
 
@@ -1292,7 +1306,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1308,7 +1322,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/light_beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1323,7 +1337,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1338,7 +1352,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/light_beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1353,7 +1367,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/light_gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1368,7 +1382,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:layout_marginBottom="1dp" />
@@ -1404,7 +1418,7 @@
                             android:minHeight="30dp"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1419,7 +1433,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:hint="0.00"
@@ -1437,7 +1451,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/shale_border"
                             android:textColor="#FFFFFF"
                             android:hint="0.00"
@@ -1455,7 +1469,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/iron_border"
                             android:textColor="#FFFFFF"
                             android:hint="0.00"
@@ -1473,7 +1487,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1490,7 +1504,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1507,7 +1521,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1524,7 +1538,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1546,7 +1560,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:textColor="#000000"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:imeOptions="flagNoExtractUi"
                             tools:ignore="TouchTargetSizeCheck" />
 
@@ -1559,7 +1573,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1576,7 +1590,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1593,7 +1607,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1610,7 +1624,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1626,7 +1640,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/gray_border"
                             android:textColor="#000000"
                             android:inputType="numberDecimal"
@@ -1642,7 +1656,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/light_beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1657,7 +1671,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1672,7 +1686,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/light_beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1687,7 +1701,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/light_gray_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1702,7 +1716,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:layout_marginBottom="1dp" />
@@ -1737,7 +1751,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/beige_border"
                             android:textColor="#000000"
                             android:layout_marginEnd="1dp"
@@ -1752,7 +1766,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/limestone_border"
                             android:textColor="#000000"
                             android:hint="0.00"
@@ -1770,7 +1784,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/shale_border"
                             android:textColor="#FFFFFF"
                             android:hint="0.00"
@@ -1788,7 +1802,7 @@
                             android:layout_height="match_parent"
                             android:padding="3dp"
                             android:gravity="center"
-                            android:textSize="11sp"
+                            android:textSize="9sp"
                             android:background="@drawable/iron_border"
                             android:textColor="#FFFFFF"
                             android:hint="0.00"
@@ -2048,7 +2062,7 @@
                                         android:padding="0dp"
                                         android:autoSizeTextType="uniform"
                                         android:autoSizeMinTextSize="1sp"
-                                        android:autoSizeMaxTextSize="10sp"
+                                        android:autoSizeMaxTextSize="9sp"
                                         android:background="@drawable/serenade_border" />
 
                                     <TextView
@@ -2061,7 +2075,7 @@
                                         android:padding="0dp"
                                         android:autoSizeTextType="uniform"
                                         android:autoSizeMinTextSize="1sp"
-                                        android:autoSizeMaxTextSize="10sp"
+                                        android:autoSizeMaxTextSize="9sp"
                                         android:background="@drawable/serenade_border" />
 
                                     <TextView
@@ -2645,7 +2659,7 @@
                                         android:padding="0dp"
                                         android:autoSizeTextType="uniform"
                                         android:autoSizeMinTextSize="1sp"
-                                        android:autoSizeMaxTextSize="10sp"
+                                        android:autoSizeMaxTextSize="9sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -2659,7 +2673,7 @@
                                         android:padding="0dp"
                                         android:autoSizeTextType="uniform"
                                         android:autoSizeMinTextSize="1sp"
-                                        android:autoSizeMaxTextSize="10sp"
+                                        android:autoSizeMaxTextSize="9sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -3043,7 +3057,7 @@
                                         android:maxLines="2"
                                         android:autoSizeTextType="uniform"
                                         android:autoSizeMinTextSize="1sp"
-                                        android:autoSizeMaxTextSize="10sp"
+                                        android:autoSizeMaxTextSize="9sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -3090,7 +3104,7 @@
                                         android:padding="0dp"
                                         android:autoSizeTextType="uniform"
                                         android:autoSizeMinTextSize="1sp"
-                                        android:autoSizeMaxTextSize="10sp"
+                                        android:autoSizeMaxTextSize="9sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -3104,7 +3118,7 @@
                                         android:maxLines="2"
                                         android:autoSizeTextType="uniform"
                                         android:autoSizeMinTextSize="1sp"
-                                        android:autoSizeMaxTextSize="10sp"
+                                        android:autoSizeMaxTextSize="9sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -3151,7 +3165,7 @@
                                         android:maxLines="2"
                                         android:autoSizeTextType="uniform"
                                         android:autoSizeMinTextSize="1sp"
-                                        android:autoSizeMaxTextSize="10sp"
+                                        android:autoSizeMaxTextSize="9sp"
                                         android:background="@drawable/light_beige_border" />
 
                                     <TextView
@@ -3165,7 +3179,7 @@
                                         android:maxLines="2"
                                         android:autoSizeTextType="uniform"
                                         android:autoSizeMinTextSize="1sp"
-                                        android:autoSizeMaxTextSize="10sp"
+                                        android:autoSizeMaxTextSize="9sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -3179,7 +3193,7 @@
                                         android:maxLines="2"
                                         android:autoSizeTextType="uniform"
                                         android:autoSizeMinTextSize="1sp"
-                                        android:autoSizeMaxTextSize="10sp"
+                                        android:autoSizeMaxTextSize="9sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -3193,7 +3207,7 @@
                                         android:maxLines="2"
                                         android:autoSizeTextType="uniform"
                                         android:autoSizeMinTextSize="1sp"
-                                        android:autoSizeMaxTextSize="10sp"
+                                        android:autoSizeMaxTextSize="9sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
@@ -3207,7 +3221,7 @@
                                         android:padding="0dp"
                                         android:autoSizeTextType="uniform"
                                         android:autoSizeMinTextSize="1sp"
-                                        android:autoSizeMaxTextSize="10sp"
+                                        android:autoSizeMaxTextSize="9sp"
                                         android:background="@drawable/gray_border" />
 
                                     <TextView
