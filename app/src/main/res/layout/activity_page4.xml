@@ -93,8 +93,8 @@
                             android:backgroundTint="#D3D3D3"
                             android:gravity="center"
                             android:padding="6dp"
-                            android:text="ALUMINA MODULUS"
-                            android:textColor="#FF0000"
+                            android:text="SILICA MODULUS"
+                            android:textColor="#FFFF00"
                             android:textSize="12sp"
                             android:textStyle="bold"/>
 
