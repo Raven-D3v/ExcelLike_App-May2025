@@ -13,12 +13,12 @@
         <item
             android:id="@+id/nav_materials_lsf_am"
             android:icon="@drawable/panel_icons_created_by_arafat_uddin_flaticon"
-            android:title="3 Materials LSF &amp; AM" />
+            android:title="Control 3X (LSF &amp; AM)" />
 
         <item
             android:id="@+id/nav_recipe_lsf_am"
             android:icon="@drawable/capability_icons_created_by_uniconlabs_flaticon"
-            android:title="Recipe LSF &amp; AM" />
+            android:title="Recipe 3X (LSF &amp; AM)" />
     </group>
 
     <group
@@ -27,12 +27,12 @@
         <item
             android:id="@+id/nav_materials_lsf_sm"
             android:icon="@drawable/parameters_icons_created_by_iconic_panda_flaticon"
-            android:title="3 Materials LSF &amp; SM" />
+            android:title="Control 3X (LSF &amp; SM)" />
 
         <item
             android:id="@+id/nav_recipe_lsf_sm"
             android:icon="@drawable/customization_icons_created_by_dewi_sari_flaticon"
-            android:title="Recipe LSF &amp; SM" />
+            android:title="Recipe 3X (LSF &amp; SM)" />
     </group>
 
     <group
@@ -41,12 +41,12 @@
         <item
             android:id="@+id/nav_materials_lsf_sm_am"
             android:icon="@drawable/filter_icons_created_by_freepik_flaticon"
-            android:title="4 Materials LSF,SM &amp; AM" />
+            android:title="Control 4X (LSF,SM &amp; AM)" />
 
         <item
             android:id="@+id/nav_recipe_lsf_sm_am"
             android:icon="@drawable/control_system_icons_created_by_uniconlabs_flaticon"
-            android:title="Recipe LSF,SM &amp; AM" />
+            android:title="Recipe 3X (LSF,SM &amp; AM)" />
     </group>
 
     <group
@@ -63,7 +63,7 @@
         <item
             android:id="@+id/nav_graph"
             android:icon="@drawable/line_graph_icons_created_by_srip_flaticon"
-            android:title="Graph" />
+            android:title="Other information" />
         <item
             android:id="@+id/nav_previous_information_data_list"
             android:icon="@drawable/folder_icons_created_by_freepik_flaticon"
