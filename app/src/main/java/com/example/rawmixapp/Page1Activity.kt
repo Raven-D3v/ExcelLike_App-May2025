@@ -237,7 +237,7 @@ class Page1Activity : BaseActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.title = "3 Materials LSF & AM"
+        supportActionBar?.title = "Control 3X (LSF & AM)"
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setActivityContent(R.layout.activity_page1)
 
