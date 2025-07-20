@@ -269,8 +269,7 @@ class Page1Activity : BaseActivity() {
         I20 =Page2DataCache.so3Rawmeal
         I21 =Page2DataCache.clRawmeal
         I22 =Page2DataCache.loiRawmeal
-        Log.d("Page1Debug", "LOI from Page2 = $I22")
-        Toast.makeText(this, "LOI from Page2 = $I22", Toast.LENGTH_SHORT).show()
+
 
         dbHelper = SavedDataDbHelper(this)
         btnSave = findViewById(R.id.btn_save)
