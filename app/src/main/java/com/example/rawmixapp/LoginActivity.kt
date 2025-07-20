@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
         login.setOnClickListener {
             val user = username.text.toString()
             val pass = password.text.toString()
-            if (user == "franco" && pass == "franco") {
+            if (user == "FrancoBaca" && pass == "landoOrtiz") {
                 Toast.makeText(this, "Login Successful!", Toast.LENGTH_SHORT).show()
                 // Go to main activity or finish
                 val intent = Intent(this, MainActivity::class.java)

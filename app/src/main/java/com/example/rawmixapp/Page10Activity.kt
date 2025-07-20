@@ -25,15 +25,14 @@ class Page10Activity : BaseActivity() {
     private var allEntries: List<SavedDataEntry> = emptyList()
     private val categories = listOf(
         "All Pages",
-        "3 Materials LSF & AM",
-        "Recipe LSF & AM",
-        "3 Materials LSF & SM",
-        "Recipe LSF & SM",
-        "4 Materials LSF, SM & AM",
-        "Recipe LSF, SM & AM",
+        "Control 3X (LSF & AM)",
+        "Recipe 3X (LSF & AM)",
+        "Control 3X (LSF & SM)",
+        "Recipe 3X (LSF & SM)",
+        "Control 4X (LSF,SM & AM)",
+        "Recipe 4X (LSF,SM & AM)",
         "Fuel & Clinker Factor",
-        "Raw Mix Design",
-        "Graph"
+        "Raw Mix Design"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,15 +64,14 @@ class Page10Activity : BaseActivity() {
         
         // Set initial selection based on current page
         val currentPageType = when (supportActionBar?.title) {
-            "3 Materials LSF & AM" -> "3 Materials LSF & AM"
-            "Recipe LSF & AM" -> "Recipe LSF & AM"
-            "3 Materials LSF & SM" -> "3 Materials LSF & SM"
-            "Recipe LSF & SM" -> "Recipe LSF & SM"
-            "4 Materials LSF, SM & AM" -> "4 Materials LSF, SM & AM"
-            "Recipe LSF, SM & AM" -> "Recipe LSF, SM & AM"
+            "Control 3X (LSF & AM)" -> "Control 3X (LSF & AM)"
+            "Recipe 3X (LSF & AM)" -> "Recipe 3X (LSF & AM)"
+            "Control 3X (LSF & SM)" -> "Control 3X (LSF & SM)"
+            "Recipe 3X (LSF & SM)" -> "Recipe 3X (LSF & SM)"
+            "Control 4X (LSF,SM & AM)" -> "Control 4X (LSF,SM & AM)"
+            "Recipe 4X (LSF,SM & AM)" -> "Recipe 4X (LSF,SM & AM)"
             "Fuel & Clinker Factor" -> "Fuel & Clinker Factor"
             "Raw Mix Design" -> "Raw Mix Design"
-            "Graph" -> "Graph"
             else -> "All Pages"
         }
         val initialPosition = categories.indexOf(currentPageType)
@@ -110,15 +108,14 @@ class Page10Activity : BaseActivity() {
     private fun filterEntriesByCategory(category: String) {
         val filtered = when (category) {
             "All Pages" -> allEntries
-            "3 Materials LSF & AM" -> allEntries.filter { it.pageType == 1 }
-            "Recipe LSF & AM" -> allEntries.filter { it.pageType == 2 }
-            "3 Materials LSF & SM" -> allEntries.filter { it.pageType == 3 }
-            "Recipe LSF & SM" -> allEntries.filter { it.pageType == 4 }
-            "4 Materials LSF, SM & AM" -> allEntries.filter { it.pageType == 5 }
-            "Recipe LSF, SM & AM" -> allEntries.filter { it.pageType == 6 }
+            "Control 3X (LSF & AM)" -> allEntries.filter { it.pageType == 1 }
+            "Recipe 3X (LSF & AM)" -> allEntries.filter { it.pageType == 2 }
+            "Control 3X (LSF & SM)" -> allEntries.filter { it.pageType == 3 }
+            "Recipe 3X (LSF & SM)" -> allEntries.filter { it.pageType == 4 }
+            "Control 4X (LSF,SM & AM)" -> allEntries.filter { it.pageType == 5 }
+            "Recipe 4X (LSF,SM & AM)" -> allEntries.filter { it.pageType == 6 }
             "Fuel & Clinker Factor" -> allEntries.filter { it.pageType == 7 }
             "Raw Mix Design" -> allEntries.filter { it.pageType == 8 }
-            "Graph" -> allEntries.filter { it.pageType == 9 }
             else -> allEntries
         }
         adapter.updateEntries(filtered)

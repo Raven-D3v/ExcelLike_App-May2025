@@ -31,15 +31,14 @@ class SavedDataAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val entry = entries[position]
         holder.tvPageType.text = when (entry.pageType) {
-            1 -> "3 Materials LSF & AM"
-            2 -> "Recipe LSF & AM"
-            3 -> "3 Materials LSF & SM"
-            4 -> "Recipe LSF & SM"
-            5 -> "4 Materials LSF, SM & AM"
-            6 -> "Recipe LSF, SM & AM"
+            1 -> "Control 3X (LSF & AM)"
+            2 -> "Recipe 3X (LSF & AM)"
+            3 -> "Control 3X (LSF & SM)"
+            4 -> "Recipe 3X (LSF & SM)"
+            5 -> "Control 4X (LSF,SM & AM)"
+            6 -> "Recipe 4X (LSF,SM & AM)"
             7 -> "Fuel & Clinker Factor"
             8 -> "Raw Mix Design"
-            9 -> "Graph"
             else -> "Unknown Page"
         }
         holder.tvTitle.text = entry.title ?: "Untitled"
