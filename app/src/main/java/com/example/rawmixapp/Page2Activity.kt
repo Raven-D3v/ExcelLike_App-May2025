@@ -160,7 +160,7 @@ class Page2Activity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.title = "Recipe 3X (LSF & AM)"
+        supportActionBar?.title = "Recipe LSF & AM"
         requestedOrientation = android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setActivityContent(R.layout.activity_page2) // Use BaseActivity's content frame
 
@@ -698,22 +698,22 @@ class Page2Activity : BaseActivity() {
         setTextViewValue(tvAmRawmeal, x26)
 
         // Raw Material Percentage Table
-        setTextViewValue(tvDryLimestone, w28_rmp_limestone, decimalPlaces = 1)
-        setTextViewValue(tvDryShale, w29_rmp_shale, decimalPlaces = 1)
-        setTextViewValue(tvDryIronOre, w30_rmp_iron_ore, decimalPlaces = 1)
-        setTextViewValue(tvDryTotal, w31_rmp_total, decimalPlaces = 1)
+        setTextViewValue(tvDryLimestone, w28_rmp_limestone)
+        setTextViewValue(tvDryShale, w29_rmp_shale)
+        setTextViewValue(tvDryIronOre, w30_rmp_iron_ore)
+        setTextViewValue(tvDryTotal, w31_rmp_total)
 
         // Wet Basis Column
-        setTextViewValue(tvWfWetLimestone, u34_wet_ls, decimalPlaces = 1)
-        setTextViewValue(tvWfWetShale, u35_wet_sh, decimalPlaces = 1)
-        setTextViewValue(tvWfWetIronOre, u36_wet_io, decimalPlaces = 1)
-        setTextViewValue(tvWfWetTotal, u37_wet_total, decimalPlaces = 1)
+        setTextViewValue(tvWfWetLimestone, u34_wet_ls)
+        setTextViewValue(tvWfWetShale, u35_wet_sh)
+        setTextViewValue(tvWfWetIronOre, u36_wet_io)
+        setTextViewValue(tvWfWetTotal, u37_wet_total)
 
         // Dry Basis Column (Totals)
         setTextViewValue(tvWfDryTotal, w37_dry_total)
 
         // H2O Column (Totals)
-        setTextViewValue(tvWfH2oTotal, y37_h2o_total, decimalPlaces=1)
+        setTextViewValue(tvWfH2oTotal, y37_h2o_total)
 
         // Coefficients for Mix Calculation Table
         setTextViewValue(tvCoeffA, ab12_cfm_a)

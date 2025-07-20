@@ -330,27 +330,28 @@ class Page8Activity : BaseActivity() {
     }
 
     private fun setTextViewValue(textView: TextView, value: Double, defaultOnError: String = "0.00") {
-        val idName = try {
-            textView.resources.getResourceEntryName(textView.id)
-        } catch (e: Exception) {
-            ""
-        }
+        // val idName = try {
+        //     textView.resources.getResourceEntryName(textView.id)
+        // } catch (e: Exception) {
+        //     ""
+        // }
 
         if (value.isInfinite() || value.isNaN()) {
             textView.text = defaultOnError
         } else {
-            val formattedValue = when (idName) {
-                "lst_dry_basis_p29", "shale_dry_basis_p30","sand_dry_basis_p31","iron_dry_basis_p32","total_dry_basis_p33"
-                    ,"lst_wet_basis_q29","shale_wet_basis_q30","sand_wet_basis_q31","iron_wet_basis_q32","total_wet_basis_q33"->
+            // val formattedValue = when (idName) {
+            //     "lst_dry_basis_p29", "shale_dry_basis_p30", "sand_dry_basis_p31", "iron_dry_basis_p32", "total_dry_basis_p33",
+            //     "lst_wet_basis_q29", "shale_wet_basis_q30", "sand_wet_basis_q31", "iron_wet_basis_q32", "total_wet_basis_q33" ->
+            //         String.format(Locale.US, "%.1f", value)
+            //     else ->
+            //         String.format(Locale.US, "%.2f", value)
+            // }
 
-                    String.format(Locale.US, "%.1f", value)
-                else ->
-                    String.format(Locale.US, "%.2f", value)
-            }
-
+            val formattedValue = String.format(Locale.US, "%.2f", value)  // Always use 2 decimal places for now
             textView.text = formattedValue
         }
     }
+
 
     private fun calculateAll() {
         // --- Read all input values ---

@@ -178,7 +178,7 @@ class Page6Activity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.title = "Recipe 4X (LSF,SM & AM)"
+        supportActionBar?.title = "Recipe LSF, SM & AM"
         requestedOrientation = android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setActivityContent(R.layout.activity_page6)
 
@@ -397,25 +397,26 @@ class Page6Activity : BaseActivity() {
     }
 
     private fun setTextViewValue(textView: TextView, value: Double, defaultOnError: String = "0.00") {
-        val idName = try {
-            textView.resources.getResourceEntryName(textView.id)
-        } catch (e: Exception) {
-            ""
-        }
+        // val idName = try {
+        //     textView.resources.getResourceEntryName(textView.id)
+        // } catch (e: Exception) {
+        //     ""
+        // }
 
         if (value.isInfinite() || value.isNaN()) {
             textView.text = defaultOnError
         } else {
-            val formattedValue = when (idName) {
-                // IDs with 1 decimal place formatting
-                "tv_dry_limestone", "tv_dry_shale", "tv_dry_sand", "tv_dry_ironore", "tv_dry_total",
-                "tv_wf_wet_limestone", "tv_wf_wet_shale", "tv_wf_wet_sand", "tv_wf_wet_ironore", "tv_wf_wet_total",
-                "tv_wf_dry_total", "tv_wf_h2o_total" ->
-                    String.format(Locale.US, "%.1f", value)
-                else ->
-                    String.format(Locale.US, "%.2f", value)
-            }
+            // val formattedValue = when (idName) {
+            //     // IDs with 1 decimal place formatting
+            //     "tv_dry_limestone", "tv_dry_shale", "tv_dry_sand", "tv_dry_ironore", "tv_dry_total",
+            //     "tv_wf_wet_limestone", "tv_wf_wet_shale", "tv_wf_wet_sand", "tv_wf_wet_ironore", "tv_wf_wet_total",
+            //     "tv_wf_dry_total", "tv_wf_h2o_total" ->
+            //         String.format(Locale.US, "%.1f", value)
+            //     else ->
+            //         String.format(Locale.US, "%.2f", value)
+            // }
 
+            val formattedValue = String.format(Locale.US, "%.2f", value)  // Always use 2 decimal places for now
             textView.text = formattedValue
         }
     }

@@ -256,7 +256,7 @@ class Page5Activity : BaseActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.title = "Control 4X (LSF,SM & AM)"
+        supportActionBar?.title = "4 Materials LSF,SM & AM"
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setActivityContent(R.layout.activity_page5)
 
@@ -675,25 +675,25 @@ class Page5Activity : BaseActivity() {
 
 
     // This Function is Modified for G10–G14 row to display 1 decimal point.
+// Currently disabled; all are using 2 decimal points.
     private fun setDouble(view: TextView, value: Double) {
-        val idName = resources.getResourceEntryName(view.id).replace("_PG5", "")
+        // val idName = resources.getResourceEntryName(view.id).replace("_PG5", "")
+        // val useOneDecimal = idName.matches(Regex("tv_G1[0-4]"))
+        // val formatted = if (useOneDecimal) df1.format(value) else df.format(value)
 
-        // Match G10–G14 only (no more "_PG5")
-        val useOneDecimal = idName.matches(Regex("tv_G1[0-4]"))
-
-        val formatted = if (useOneDecimal) df1.format(value) else df.format(value)
+        val formatted = df.format(value)  // Always use 2 decimal places for now
         view.text = formatted
     }
 
 
     // This Function is Modified for H, I, J, K 10–14 to display 1 decimal point only
+// Currently disabled; all EditTexts show 2 decimal points.
     private fun setDouble(view: EditText, value: Double) {
-        val idName = resources.getResourceEntryName(view.id).replace("_PG5", "")
+        // val idName = resources.getResourceEntryName(view.id).replace("_PG5", "")
+        // val useOneDecimal = idName.matches(Regex("et_[HIJK]1[0-4]"))
+        // val formatted = if (useOneDecimal) df1.format(value) else df.format(value)
 
-        // Match H/I/J/K10–14 only (no more "_PG5")
-        val useOneDecimal = idName.matches(Regex("et_[HIJK]1[0-4]"))
-
-        val formatted = if (useOneDecimal) df1.format(value) else df.format(value)
+        val formatted = df.format(value)  // Always use 2 decimal places for now
 
         if (view.text.toString() != formatted) {
             val watcher = customWatchers[view]
@@ -969,12 +969,13 @@ class Page5Activity : BaseActivity() {
         }
 
 
-        // --- LOI (T45–T48) ---
+        // --- LOI (U10–U13) ---
         for (i in 10..13) {
             val o = values["et_O$i"] ?: 0.0
             val p = values["et_P$i"] ?: 0.0
-            values["U$i"] = 0.786 * o + 1.1 * p + 0.2
+            values["U$i"] = if (o == 0.0 && p == 0.0) 0.0 else 0.786 * o + 1.1 * p + 0.2
         }
+
 
         // --- TOTAL2 (V10–V13) ---
         val vKeys = listOf("et_L", "et_M", "et_N", "et_O", "et_P", "et_Q", "et_R", "et_S", "et_T")

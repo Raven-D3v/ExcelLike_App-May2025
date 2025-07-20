@@ -237,7 +237,7 @@ class Page1Activity : BaseActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.title = "Control 3X (LSF & AM)"
+        supportActionBar?.title = "3 Materials LSF & AM"
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setActivityContent(R.layout.activity_page1)
 
@@ -614,22 +614,23 @@ class Page1Activity : BaseActivity() {
         return value
     }
 
+    // For TextView
     private fun setDouble(view: TextView, value: Double) {
-        val idName = resources.getResourceEntryName(view.id)
+        // val idName = resources.getResourceEntryName(view.id)
+        // val useOneDecimal = idName.matches(Regex("tv_G4[5-9]"))
+        // val formatted = if (useOneDecimal) df1.format(value) else df.format(value)
 
-        // Match G10–G14 whether or not "_PG3" is included
-        val useOneDecimal = idName.matches(Regex("tv_G4[5-9]"))
-
-        val formatted = if (useOneDecimal) df1.format(value) else df.format(value)
+        val formatted = df.format(value)  // Always use 2 decimal places for now
         view.text = formatted
     }
+
+    // For EditText
     private fun setDouble(view: EditText, value: Double) {
-        val idName = resources.getResourceEntryName(view.id)
+        // val idName = resources.getResourceEntryName(view.id)
+        // val useOneDecimal = idName.matches(Regex("et_[HIJ]4[5-9]"))
+        // val formatted = if (useOneDecimal) df1.format(value) else df.format(value)
 
-        // Match H/I/J 10–14 with or without _PG3
-        val useOneDecimal = idName.matches(Regex("et_[HIJ]4[5-9]"))
-
-        val formatted = if (useOneDecimal) df1.format(value) else df.format(value)
+        val formatted = df.format(value)  // Always use 2 decimal places for now
 
         if (view.text.toString() != formatted) {
             val watcher = customWatchers[view]
@@ -641,6 +642,7 @@ class Page1Activity : BaseActivity() {
             watcher?.let { view.addTextChangedListener(it) }
         }
     }
+
 
     private fun recalculateAndUpdate() {
         // 1. Gather all user inputs into values map
@@ -844,24 +846,32 @@ class Page1Activity : BaseActivity() {
 
 
 
-        // --- TOTAL1 (G45-G49) ---
-        values["G45"] = (values["et_H45"] ?: 0.0) + (values["et_I45"] ?: 0.0) + (values["et_J45"] ?: 0.0)
-        values["G46"] = (values["et_H46"] ?: 0.0) + (values["et_I46"] ?: 0.0) + (values["et_J46"] ?: 0.0)
-        values["G47"] = (values["et_H47"] ?: 0.0) + (values["et_I47"] ?: 0.0) + (values["et_J47"] ?: 0.0)
-        values["G48"] = (values["et_H48"] ?: 0.0) + (values["et_I48"] ?: 0.0) + (values["et_J48"] ?: 0.0)
-        values["G49"] = (values["et_H49"] ?: 0.0) + (values["et_I49"] ?: 0.0) + (values["et_J49"] ?: 0.0)
+        // --- TOTAL1 (G45–G49) ---
+        for (i in 45..49) {
+            val h = values["et_H$i"] ?: 0.0
+            val ii = values["et_I$i"] ?: 0.0
+            val j = values["et_J$i"] ?: 0.0
+            values["G$i"] = h + ii + j
+        }
 
-        // --- LOI (T45-T48) ---
-        values["T45"] = 0.786 * (values["et_N45"] ?: 0.0) + 1.1 * (values["et_O45"] ?: 0.0) + 0.2
-        values["T46"] = 0.786 * (values["et_N46"] ?: 0.0) + 1.1 * (values["et_O46"] ?: 0.0) + 0.2
-        values["T47"] = 0.786 * (values["et_N47"] ?: 0.0) + 1.1 * (values["et_O47"] ?: 0.0) + 0.2
-        values["T48"] = 0.786 * (values["et_N48"] ?: 0.0) + 1.1 * (values["et_O48"] ?: 0.0) + 0.2
 
-        // --- TOTAL2 (U45-U48) ---
-        values["U45"] = listOf("et_K45","et_L45","et_M45","et_N45","et_O45","et_P45","et_Q45","et_R45","et_S45","T45").sumOf { values[it] ?: 0.0 }
-        values["U46"] = listOf("et_K46","et_L46","et_M46","et_N46","et_O46","et_P46","et_Q46","et_R46","et_S46","T46").sumOf { values[it] ?: 0.0 }
-        values["U47"] = listOf("et_K47","et_L47","et_M47","et_N47","et_O47","et_P47","et_Q47","et_R47","et_S47","T47").sumOf { values[it] ?: 0.0 }
-        values["U48"] = listOf("et_K48","et_L48","et_M48","et_N48","et_O48","et_P48","et_Q48","et_R48","et_S48","T48").sumOf { values[it] ?: 0.0 }
+        // --- LOI (T45–T48) ---
+        for (i in 45..48) {
+            val n = values["et_N$i"] ?: 0.0
+            val o = values["et_O$i"] ?: 0.0
+            values["T$i"] = if (n == 0.0 && o == 0.0) 0.0 else 0.786 * n + 1.1 * o + 0.2
+        }
+
+
+        // --- TOTAL2 (U45–U48) ---
+        for (i in 45..48) {
+            val keys = listOf(
+                "et_K$i", "et_L$i", "et_M$i", "et_N$i",
+                "et_O$i", "et_P$i", "et_Q$i", "et_R$i", "et_S$i",
+                "T$i"
+            )
+            values["U$i"] = keys.sumOf { values[it] ?: 0.0 }
+        }
 
         // --- RATIOS (V45-Y48) ---
         fun lsf(n: Double, k: Double, l: Double, m: Double): Double {

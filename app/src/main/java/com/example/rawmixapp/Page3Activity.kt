@@ -226,7 +226,7 @@ class Page3Activity : BaseActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.title = "Control 3X (LSF & SM)"
+        supportActionBar?.title = "3 Materials LSF & SM"
         requestedOrientation = android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setActivityContent(R.layout.activity_page3) // Use BaseActivity's content frame
         // Add any specific Page3Activity initialization here
@@ -522,27 +522,26 @@ class Page3Activity : BaseActivity() {
         return value
     }
 
-    //This Function is MOdified for G 10-14 row to specifically display 1 decimal point.
+    // This Function is Modified for G 10-14 row to specifically display 1 decimal point.
+    // Currently disabled; all are using 2 decimal points.
     private fun setDouble(view: TextView, value: Double) {
-        val idName = resources.getResourceEntryName(view.id)
+        // val idName = resources.getResourceEntryName(view.id)
+        // val useOneDecimal = idName.matches(Regex("tv_G1[0-4](_PG3)?"))
+        // val formatted = if (useOneDecimal) df1.format(value) else df.format(value)
 
-        // Match G10–G14 whether or not "_PG3" is included
-        val useOneDecimal = idName.matches(Regex("tv_G1[0-4](_PG3)?"))
-
-        val formatted = if (useOneDecimal) df1.format(value) else df.format(value)
+        val formatted = df.format(value)  // Always use 2 decimal places for now
         view.text = formatted
     }
 
 
     // This Function Is Modified For H, I, J 10-14 Row to specifically display 1 decimal point only,
-    // other EditTexts still show 2 decimal points as stated in Excel sheet 3.
+    // Currently disabled; all EditTexts show 2 decimal points.
     private fun setDouble(view: EditText, value: Double) {
-        val idName = resources.getResourceEntryName(view.id)
+        // val idName = resources.getResourceEntryName(view.id)
+        // val useOneDecimal = idName.matches(Regex("et_[HIJ]1[0-4](_PG3)?"))
+        // val formatted = if (useOneDecimal) df1.format(value) else df.format(value)
 
-        // Match H/I/J 10–14 with or without _PG3
-        val useOneDecimal = idName.matches(Regex("et_[HIJ]1[0-4](_PG3)?"))
-
-        val formatted = if (useOneDecimal) df1.format(value) else df.format(value)
+        val formatted = df.format(value)  // Always use 2 decimal places for now
 
         if (view.text.toString() != formatted) {
             val watcher = customWatchers[view]
@@ -554,6 +553,7 @@ class Page3Activity : BaseActivity() {
             watcher?.let { view.addTextChangedListener(it) }
         }
     }
+
 
 
 
@@ -759,24 +759,33 @@ class Page3Activity : BaseActivity() {
             values["et_I14_PG3"] = values["I14"]?:0.0
         }
 
-        // --- TOTAL1 (G10-G14) ---
-        values["G10"] = (values["et_H10_PG3"] ?: 0.0) + (values["et_I10_PG3"] ?: 0.0) + (values["et_J10_PG3"] ?: 0.0)
-        values["G11"] = (values["et_H11_PG3"] ?: 0.0) + (values["et_I11_PG3"] ?: 0.0) + (values["et_J11_PG3"] ?: 0.0)
-        values["G12"] = (values["et_H12_PG3"] ?: 0.0) + (values["et_I12_PG3"] ?: 0.0) + (values["et_J12_PG3"] ?: 0.0)
-        values["G13"] = (values["et_H13_PG3"] ?: 0.0) + (values["et_I13_PG3"] ?: 0.0) + (values["et_J13_PG3"] ?: 0.0)
-        values["G14"] = (values["et_H14_PG3"] ?: 0.0) + (values["et_I14_PG3"] ?: 0.0) + (values["et_J14_PG3"] ?: 0.0)
+    // --- TOTAL1 (G10-G14) ---
+        for (i in 10..14) {
+            val h = values["et_H${i}_PG3"] ?: 0.0
+            val ii = values["et_I${i}_PG3"] ?: 0.0
+            val j = values["et_J${i}_PG3"] ?: 0.0
+            values["G$i"] = h + ii + j
+        }
 
-        // --- LOI (T10-T13) ---
-        values["T10"] = 0.786 * (values["et_N10_PG3"] ?: 0.0) + 1.1 * (values["et_O10_PG3"] ?: 0.0) + 0.2
-        values["T11"] = 0.786 * (values["et_N11_PG3"] ?: 0.0) + 1.1 * (values["et_O11_PG3"] ?: 0.0) + 0.2
-        values["T12"] = 0.786 * (values["et_N12_PG3"] ?: 0.0) + 1.1 * (values["et_O12_PG3"] ?: 0.0) + 0.2
-        values["T13"] = 0.786 * (values["et_N13_PG3"] ?: 0.0) + 1.1 * (values["et_O13_PG3"] ?: 0.0) + 0.2
 
-        // --- TOTAL2 (U10-U13) ---
-        values["U10"] = listOf("et_K10_PG3","et_L10_PG3","et_M10_PG3","et_N10_PG3","et_O10_PG3","et_P10_PG3","et_Q10_PG3","et_R10_PG3","et_S10_PG3","T10").sumOf { values[it] ?: 0.0 }
-        values["U11"] = listOf("et_K11_PG3","et_L11_PG3","et_M11_PG3","et_N11_PG3","et_O11_PG3","et_P11_PG3","et_Q11_PG3","et_R11_PG3","et_S11_PG3","T11").sumOf { values[it] ?: 0.0 }
-        values["U12"] = listOf("et_K12_PG3","et_L12_PG3","et_M12_PG3","et_N12_PG3","et_O12_PG3","et_P12_PG3","et_Q12_PG3","et_R12_PG3","et_S12_PG3","T12").sumOf { values[it] ?: 0.0 }
-        values["U13"] = listOf("et_K13_PG3","et_L13_PG3","et_M13_PG3","et_N13_PG3","et_O13_PG3","et_P13_PG3","et_Q13_PG3","et_R13_PG3","et_S13_PG3","T13").sumOf { values[it] ?: 0.0 }
+    // --- LOI (T10-T13) ---
+        for (i in 10..13) {
+            val n = values["et_N${i}_PG3"] ?: 0.0
+            val o = values["et_O${i}_PG3"] ?: 0.0
+            values["T$i"] = if (n == 0.0 && o == 0.0) 0.0 else 0.786 * n + 1.1 * o + 0.2
+        }
+
+
+    // --- TOTAL2 (U10-U13) ---
+        for (i in 10..13) {
+            val keys = listOf(
+                "et_K${i}_PG3", "et_L${i}_PG3", "et_M${i}_PG3", "et_N${i}_PG3",
+                "et_O${i}_PG3", "et_P${i}_PG3", "et_Q${i}_PG3", "et_R${i}_PG3", "et_S${i}_PG3",
+                "T$i"
+            )
+            values["U$i"] = keys.sumOf { values[it] ?: 0.0 }
+        }
+
 
         // --- RATIOS (V10-Y13) ---
         fun lsf(n: Double, k: Double, l: Double, m: Double): Double {
