@@ -1882,7 +1882,7 @@
                                 android:layout_marginBottom="1dp"
                                 android:background="@drawable/gray_border"
                                 android:gravity="center"
-                                android:text="AM"
+                                android:text="SM"
                                 android:textColor="#000000"
                                 android:textSize="16sp"
                                 android:textStyle="bold"

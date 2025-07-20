@@ -226,7 +226,7 @@ class Page3Activity : BaseActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.title = "3 Materials LSF & SM"
+        supportActionBar?.title = "Control 3X (LSF & SM)"
         requestedOrientation = android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setActivityContent(R.layout.activity_page3) // Use BaseActivity's content frame
         // Add any specific Page3Activity initialization here

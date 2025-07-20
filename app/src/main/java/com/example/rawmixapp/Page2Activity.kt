@@ -160,7 +160,7 @@ class Page2Activity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.title = "Recipe LSF & AM"
+        supportActionBar?.title = "Recipe 3X (LSF & AM)"
         requestedOrientation = android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setActivityContent(R.layout.activity_page2) // Use BaseActivity's content frame
 
