@@ -46,7 +46,7 @@
         <item
             android:id="@+id/nav_recipe_lsf_sm_am"
             android:icon="@drawable/control_system_icons_created_by_uniconlabs_flaticon"
-            android:title="Recipe 3X (LSF,SM &amp; AM)" />
+            android:title="Recipe 4X (LSF,SM &amp; AM)" />
     </group>
 
     <group

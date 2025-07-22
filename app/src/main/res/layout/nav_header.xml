@@ -5,7 +5,6 @@
     android:background="@drawable/nav_header_background"
     android:gravity="bottom"
     android:orientation="vertical"
-    android:padding="10dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <LinearLayout
@@ -16,9 +15,8 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginBottom="16dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/levels_icons_created_by_good_ware_flaticon_black" />
     </LinearLayout>

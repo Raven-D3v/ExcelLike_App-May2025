@@ -9,25 +9,24 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fillViewport="true">
+        android:fillViewport="true" >
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="8dp">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <!-- Section 2: Mix % Table -->
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fillViewport="true"
-                android:layout_marginBottom="16dp">
+                android:layout_marginBottom="16dp" >
 
                 <TableLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:stretchColumns="1,2,3,4,5,6,7,8">
+                    android:stretchColumns="1,2,3,4,5,6,7,8" >
 
 
                     <TextView
@@ -39,7 +38,10 @@
                         android:text="RAW MIX DESIGN  (RM to CKR conversion)"
                         android:textColor="#FFFFFF"
                         android:textSize="20sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="10sp"
+                        android:autoSizeMaxTextSize="20sp" />
                     <!-- Header Row -->
                     <TableRow>
 
@@ -51,7 +53,10 @@
                             android:text="MIX %"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <TextView
                             android:background="@drawable/white_border_cell"
@@ -60,7 +65,10 @@
                             android:text="IRON ORE"
                             android:textColor="#C4BD97"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <TextView
                             android:background="@drawable/white_border_cell"
@@ -69,16 +77,22 @@
                             android:text="SHALE"
                             android:textColor="#974706"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <TextView
                             android:background="@drawable/white_border_cell"
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="SAND"
-                            android:textColor="#E26B0A"
+                            android:textColor="#FF5B00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <TextView
                             android:background="@drawable/white_border_cell"
@@ -87,7 +101,10 @@
                             android:text="LIMESTONE"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <TextView
                             android:background="@drawable/white_border_cell"
@@ -96,7 +113,10 @@
                             android:text="COAL ASH"
                             android:textColor="#76933C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <TextView
                             android:background="@drawable/white_border_cell"
@@ -105,7 +125,10 @@
                             android:text="RAWMEAL"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <TextView
                             android:background="@drawable/white_border_cell"
@@ -114,7 +137,10 @@
                             android:text="CKR-ASH FREE"
                             android:textColor="#FF0000"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <TextView
                             android:background="@drawable/white_border_cell"
@@ -123,7 +149,10 @@
                             android:text="CKR w/ ASH"
                             android:textColor="#FFFF00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -134,7 +163,10 @@
                             android:text="SiO2"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SiO2-iron (P12) -->
                         <EditText
@@ -148,7 +180,10 @@
                             android:textColor="#C4BD97"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SiO2-shale (Q12) -->
                         <EditText
@@ -162,7 +197,10 @@
                             android:textColor="#974706"
                             android:textColorHint="#974706"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SiO2-sand (R12) -->
                         <EditText
@@ -173,10 +211,13 @@
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
                             android:padding="6dp"
-                            android:textColor="#E26B0A"
-                            android:textColorHint="#E26B0A"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SiO2-limestone (S12) -->
                         <EditText
@@ -190,7 +231,10 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SiO2-coal-ash (T12) -->
                         <EditText
@@ -204,7 +248,10 @@
                             android:textColor="#76933C"
                             android:textColorHint="#76933C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SiO2-rawmeal (U12) -->
                         <TextView
@@ -214,7 +261,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FABF8F"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SiO2-ckrashfree (V12) -->
                         <TextView
@@ -224,7 +274,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FF0000"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SiO2-ckwithash (W12) -->
                         <TextView
@@ -234,7 +287,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FFFF00"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -245,7 +301,10 @@
                             android:text="Al2O3"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Al2O3-iron (P13) -->
                         <EditText
@@ -259,7 +318,10 @@
                             android:textColor="#C4BD97"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Al2O3-shale (Q13) -->
                         <EditText
@@ -273,7 +335,10 @@
                             android:textColor="#974706"
                             android:textColorHint="#974706"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Al2O3-sand (R13) -->
                         <EditText
@@ -284,10 +349,13 @@
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
                             android:padding="6dp"
-                            android:textColor="#E26B0A"
-                            android:textColorHint="#E26B0A"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Al2O3-limestone (S13) -->
                         <EditText
@@ -301,7 +369,10 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Al2O3-coal-ash (T13) -->
                         <EditText
@@ -315,7 +386,10 @@
                             android:textColor="#76933C"
                             android:textColorHint="#76933C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Al2O3-rawmeal (U13) -->
                         <TextView
@@ -325,7 +399,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FABF8F"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Al2O3-ckrashfree (V13) -->
                         <TextView
@@ -335,7 +412,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FF0000"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Al2O3-ckwithash (W13) -->
                         <TextView
@@ -345,7 +425,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FFFF00"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -356,7 +439,10 @@
                             android:text="Fe2O3"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Fe2O3-iron (P14) -->
                         <EditText
@@ -370,7 +456,10 @@
                             android:textColor="#C4BD97"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Fe2O3-shale (Q14) -->
                         <EditText
@@ -384,7 +473,10 @@
                             android:textColor="#974706"
                             android:textColorHint="#974706"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Fe2O3-sand (R14) -->
                         <EditText
@@ -395,10 +487,13 @@
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
                             android:padding="6dp"
-                            android:textColor="#E26B0A"
-                            android:textColorHint="#E26B0A"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Fe2O3-limestone (S14) -->
                         <EditText
@@ -412,7 +507,10 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Fe2O3-coal-ash (T14) -->
                         <EditText
@@ -426,7 +524,10 @@
                             android:textColor="#76933C"
                             android:textColorHint="#76933C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Fe2O3-rawmeal (U14) -->
                         <TextView
@@ -436,7 +537,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FABF8F"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Fe2O3-ckrashfree (V14) -->
                         <TextView
@@ -446,7 +550,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FF0000"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Fe2O3-ckwithash (W14) -->
                         <TextView
@@ -456,7 +563,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FFFF00"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -467,7 +577,10 @@
                             android:text="CaO"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- CaO-iron (P15) -->
                         <EditText
@@ -481,7 +594,10 @@
                             android:textColor="#C4BD97"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- CaO-shale (Q15) -->
                         <EditText
@@ -495,7 +611,10 @@
                             android:textColor="#974706"
                             android:textColorHint="#974706"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- CaO-sand (R15) -->
                         <EditText
@@ -506,10 +625,13 @@
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
                             android:padding="6dp"
-                            android:textColor="#E26B0A"
-                            android:textColorHint="#E26B0A"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- CaO-limestone (S15) -->
                         <EditText
@@ -523,7 +645,10 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- CaO-coal-ash (T15) -->
                         <EditText
@@ -537,7 +662,10 @@
                             android:textColor="#76933C"
                             android:textColorHint="#76933C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- CaO-rawmeal (U15) -->
                         <TextView
@@ -547,7 +675,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FABF8F"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- CaO-ckrashfree (V15) -->
                         <TextView
@@ -557,7 +688,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FF0000"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- CaO-ckwithash (W15) -->
                         <TextView
@@ -567,7 +701,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FFFF00"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -578,7 +715,10 @@
                             android:text="MgO"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- MgO-iron (P16) -->
                         <EditText
@@ -592,7 +732,10 @@
                             android:textColor="#C4BD97"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- MgO-shale (Q16) -->
                         <EditText
@@ -606,7 +749,10 @@
                             android:textColor="#974706"
                             android:textColorHint="#974706"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- MgO-sand (R16) -->
                         <EditText
@@ -617,10 +763,13 @@
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
                             android:padding="6dp"
-                            android:textColor="#E26B0A"
-                            android:textColorHint="#E26B0A"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- MgO-limestone (S16) -->
                         <EditText
@@ -634,7 +783,10 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- MgO-coal-ash (T16) -->
                         <EditText
@@ -648,7 +800,10 @@
                             android:textColor="#76933C"
                             android:textColorHint="#76933C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- MgO-rawmeal (U16) -->
                         <TextView
@@ -658,7 +813,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FABF8F"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- MgO-ckrashfree (V16) -->
                         <TextView
@@ -668,7 +826,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FF0000"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- MgO-ckwithash (W16) -->
                         <TextView
@@ -678,7 +839,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FFFF00"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -689,7 +853,10 @@
                             android:text="K2O"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- K2O-iron (P17) -->
                         <EditText
@@ -703,7 +870,10 @@
                             android:textColor="#C4BD97"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- K2O-shale (Q17) -->
                         <EditText
@@ -717,7 +887,10 @@
                             android:textColor="#974706"
                             android:textColorHint="#974706"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- K2O-sand (R17) -->
                         <EditText
@@ -729,10 +902,13 @@
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
                             android:padding="6dp"
-                            android:textColor="#E26B0A"
-                            android:textColorHint="#E26B0A"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- K2O-limestone (S17) -->
                         <EditText
@@ -746,7 +922,10 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- K2O-coal-ash (T17) -->
                         <EditText
@@ -760,7 +939,10 @@
                             android:textColor="#76933C"
                             android:textColorHint="#76933C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- K2O-rawmeal (U17) -->
                         <TextView
@@ -770,7 +952,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FABF8F"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- K2O-ckrashfree (V17) -->
                         <TextView
@@ -780,7 +965,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FF0000"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- K2O-ckwithash (W17) -->
                         <TextView
@@ -790,7 +978,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FFFF00"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -801,7 +992,10 @@
                             android:text="Na2O"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Na2O-iron (P18) -->
                         <EditText
@@ -815,7 +1009,10 @@
                             android:textColor="#C4BD97"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Na2O-shale (Q18) -->
                         <EditText
@@ -829,7 +1026,10 @@
                             android:textColor="#974706"
                             android:textColorHint="#974706"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Na2O-sand (R18) -->
                         <EditText
@@ -840,10 +1040,13 @@
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
                             android:padding="6dp"
-                            android:textColor="#E26B0A"
-                            android:textColorHint="#E26B0A"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Na2O-limestone (S18) -->
                         <EditText
@@ -857,7 +1060,10 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Na2O-coal-ash (T18) -->
                         <EditText
@@ -871,7 +1077,10 @@
                             android:textColor="#76933C"
                             android:textColorHint="#76933C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Na2O-rawmeal (U18) -->
                         <TextView
@@ -881,7 +1090,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FABF8F"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Na2O-ckrashfree (V18) -->
                         <TextView
@@ -891,7 +1103,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FF0000"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Na2O-ckwithash (W18) -->
                         <TextView
@@ -901,7 +1116,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FFFF00"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -912,7 +1130,10 @@
                             android:text="SO3"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SO3-iron (P19) -->
                         <EditText
@@ -926,7 +1147,10 @@
                             android:textColor="#C4BD97"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SO3-shale (Q19) -->
                         <EditText
@@ -940,7 +1164,10 @@
                             android:textColor="#974706"
                             android:textColorHint="#974706"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SO3-sand (R19) -->
                         <EditText
@@ -951,10 +1178,13 @@
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
                             android:padding="6dp"
-                            android:textColor="#E26B0A"
-                            android:textColorHint="#E26B0A"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SO3-limestone (S19) -->
                         <EditText
@@ -968,7 +1198,10 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SO3-coal-ash (T19) -->
                         <EditText
@@ -982,7 +1215,10 @@
                             android:textColor="#76933C"
                             android:textColorHint="#76933C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SO3-rawmeal (U19) -->
                         <TextView
@@ -992,7 +1228,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FABF8F"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SO3-ckrashfree (V19) -->
                         <TextView
@@ -1002,7 +1241,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FF0000"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SO3-ckwithash (W19) -->
                         <TextView
@@ -1012,7 +1254,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FFFF00"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -1023,7 +1268,10 @@
                             android:text="Cl"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Cl-iron (P20) -->
                         <EditText
@@ -1037,7 +1285,10 @@
                             android:textColor="#C4BD97"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Cl-shale (Q20) -->
                         <EditText
@@ -1051,7 +1302,10 @@
                             android:textColor="#974706"
                             android:textColorHint="#974706"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Cl-sand (R20) -->
                         <EditText
@@ -1062,10 +1316,13 @@
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
                             android:padding="6dp"
-                            android:textColor="#E26B0A"
-                            android:textColorHint="#E26B0A"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Cl-limestone (S20) -->
                         <EditText
@@ -1080,7 +1337,10 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Cl-coal-ash (T20) -->
                         <EditText
@@ -1094,7 +1354,10 @@
                             android:textColor="#76933C"
                             android:textColorHint="#76933C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Cl-rawmeal (U20) -->
                         <TextView
@@ -1105,7 +1368,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FABF8F"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Cl-ckrashfree (V20) -->
                         <TextView
@@ -1115,7 +1381,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FF0000"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- Cl-ckwithash (W20) -->
                         <TextView
@@ -1125,7 +1394,10 @@
                             android:padding="6dp"
                             android:textSize="12sp"
                             android:textColor="#FFFF00"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -1133,10 +1405,13 @@
                             android:background="@drawable/white_border"
                             android:gravity="center"
                             android:padding="6dp"
-                            android:text="L.O.I."
+                            android:text="LOI"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- L.O.I.-iron (P21) -->
                         <EditText
@@ -1150,7 +1425,10 @@
                             android:textColor="#C4BD97"
                             android:textColorHint="#D2B48C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- L.O.I.-shale (Q21) -->
                         <EditText
@@ -1164,7 +1442,10 @@
                             android:textColor="#974706"
                             android:textColorHint="#974706"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- L.O.I.-sand (R21) -->
                         <EditText
@@ -1175,10 +1456,13 @@
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
                             android:padding="6dp"
-                            android:textColor="#E26B0A"
-                            android:textColorHint="#E26B0A"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- L.O.I.-limestone (S21) -->
                         <EditText
@@ -1192,7 +1476,10 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- L.O.I.-coal-ash (T21) -->
                         <EditText
@@ -1206,7 +1493,10 @@
                             android:textColor="#76933C"
                             android:textColorHint="#76933C"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- L.O.I.-rawmeal (U21) -->
                         <EditText
@@ -1217,10 +1507,13 @@
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
-                            android:textColor="#FABF8F"
-                            android:textColorHint="#FABF8F"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -1231,12 +1524,16 @@
                             android:text="H2O %"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- H2O %-iron (P22) -->
                         <EditText
                             android:id="@+id/h2o_iron_p22"
-                            android:background="@drawable/blue_shade_border"                            android:gravity="center"
+                            android:background="@drawable/blue_shade_border"
+                            android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
@@ -1244,12 +1541,16 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- H2O %-shale (Q22) -->
                         <EditText
                             android:id="@+id/h2o_shale_q22"
-                            android:background="@drawable/blue_shade_border"                            android:gravity="center"
+                            android:background="@drawable/blue_shade_border"
+                            android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
@@ -1257,12 +1558,16 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- H2O %-sand (R22) -->
                         <EditText
                             android:id="@+id/h2o_sand_r22"
-                            android:background="@drawable/blue_shade_border"                            android:gravity="center"
+                            android:background="@drawable/blue_shade_border"
+                            android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
@@ -1270,12 +1575,16 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- H2O %-limestone (S22) -->
                         <EditText
                             android:id="@+id/h2o_limestone_s22"
-                            android:background="@drawable/blue_shade_border"                            android:gravity="center"
+                            android:background="@drawable/blue_shade_border"
+                            android:gravity="center"
                             android:hint="0.00"
                             android:inputType="numberDecimal"
                             android:imeOptions="flagNoExtractUi"
@@ -1283,7 +1592,10 @@
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- H2O %-coal-ash (T22) -->
                         <EditText
@@ -1297,7 +1609,10 @@
                             android:textColor="#95B3D7"
                             android:textColorHint="#95B3D7"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- H2O %-rawmeal (U22) -->
                         <EditText
@@ -1311,7 +1626,10 @@
                             android:textColor="#95B3D7"
                             android:textColorHint="#95B3D7"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -1322,7 +1640,10 @@
                             android:text="TOTAL"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- TOTAL-iron (P23) -->
                         <TextView
@@ -1333,7 +1654,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- TOTAL-shale (Q23) -->
                         <TextView
@@ -1344,7 +1668,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- TOTAL-sand (R23) -->
                         <TextView
@@ -1355,7 +1682,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- TOTAL-limestone (S23) -->
                         <TextView
@@ -1366,7 +1696,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- TOTAL-coal-ash (T23) -->
                         <TextView
@@ -1377,7 +1710,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- TOTAL-rawmeal (U23) -->
                         <TextView
@@ -1388,7 +1724,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- TOTAL-ckrashfree (V23) -->
                         <TextView
@@ -1399,7 +1738,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- TOTAL-ckwithash (W23) -->
                         <TextView
@@ -1410,7 +1752,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -1421,7 +1766,10 @@
                             android:text="LSF"
                             android:textColor="#FFFF00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- LSF-iron (P24) -->
                         <TextView
@@ -1432,7 +1780,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- LSF-shale (Q24) -->
                         <TextView
@@ -1443,7 +1794,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- LSF-sand (R24) -->
                         <TextView
@@ -1454,7 +1808,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- LSF-limestone (S24) -->
                         <TextView
@@ -1465,7 +1822,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- LSF-coal-ash (T24) -->
                         <TextView
@@ -1476,7 +1836,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- LSF-rawmeal (U24) -->
                         <TextView
@@ -1487,7 +1850,10 @@
                             android:padding="6dp"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- LSF-ckrashfree (V24) -->
                         <TextView
@@ -1498,7 +1864,10 @@
                             android:padding="6dp"
                             android:textColor="#FF0000"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- LSF-ckwithash (W24) -->
                         <TextView
@@ -1509,7 +1878,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFF00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -1520,7 +1892,10 @@
                             android:text="SM"
                             android:textColor="#FFFF00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SM-iron (P25) -->
                         <TextView
@@ -1531,7 +1906,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SM-shale (Q25) -->
                         <TextView
@@ -1542,7 +1920,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SM-sand (R25) -->
                         <TextView
@@ -1553,7 +1934,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SM-limestone (S25) -->
                         <TextView
@@ -1564,7 +1948,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SM-coal-ash (T25) -->
                         <TextView
@@ -1575,7 +1962,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SM-rawmeal (U25) -->
                         <TextView
@@ -1586,7 +1976,10 @@
                             android:padding="6dp"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SM-ckrashfree (V25) -->
                         <TextView
@@ -1597,7 +1990,10 @@
                             android:padding="6dp"
                             android:textColor="#FF0000"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- SM-ckwithash (W25) -->
                         <TextView
@@ -1608,7 +2004,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFF00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
 
                     <TableRow>
@@ -1619,7 +2018,10 @@
                             android:text="AM"
                             android:textColor="#FFFF00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- AM-iron (P26) -->
                         <TextView
@@ -1630,7 +2032,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- AM-shale (Q26) -->
                         <TextView
@@ -1641,7 +2046,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- AM-sand (R26) -->
                         <TextView
@@ -1652,7 +2060,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- AM-limestone (S26) -->
                         <TextView
@@ -1663,7 +2074,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- AM-coal-ash (T26) -->
                         <TextView
@@ -1674,7 +2088,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- AM-rawmeal (U26) -->
                         <TextView
@@ -1685,7 +2102,10 @@
                             android:padding="6dp"
                             android:textColor="#FABF8F"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- AM-ckrashfree (V26) -->
                         <TextView
@@ -1696,7 +2116,10 @@
                             android:padding="6dp"
                             android:textColor="#FF0000"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
 
                         <!-- AM-ckwithash (W26) -->
                         <TextView
@@ -1707,7 +2130,10 @@
                             android:padding="6dp"
                             android:textColor="#FFFF00"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:autoSizeTextType="uniform"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeMaxTextSize="12sp" />
                     </TableRow>
                 </TableLayout>
             </HorizontalScrollView>
@@ -1721,10 +2147,9 @@
             android:baselineAligned="false">
 
             <TableLayout
-                android:layout_width="250dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:stretchColumns="0,1,2"
-                android:layout_marginEnd="20dp">
+                android:layout_marginEnd="10dp">
 
                 <TextView
                     android:background="@drawable/shade_border"
@@ -1733,26 +2158,38 @@
                     android:text="Material Percentage (WEIGH FEEDER)"
                     android:textColor="#00B050"
                     android:textSize="12sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="5sp"
+                    android:autoSizeMaxTextSize="12sp" />
 
                 <TableRow>
 
                 <TextView
                     android:background="@drawable/shade_border"
+                    android:layout_width="wrap_content"
+                    android:width="120dp"
                     android:gravity="center"
                     android:padding="6dp"
                     android:text="MIX %"
                     android:textColor="#00B050"
                     android:textSize="12sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="5sp"
+                    android:autoSizeMaxTextSize="12sp" />
                     <TextView
                         android:background="@drawable/shade_border"
                         android:gravity="center"
+
                         android:padding="6dp"
                         android:text="Dry Basis"
                         android:textColor="#FF0000"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                     <TextView
                         android:background="@drawable/shade_border"
                         android:gravity="center"
@@ -1760,7 +2197,10 @@
                         android:text="Wet Basis"
                         android:textColor="#00B0F0"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -1772,7 +2212,10 @@
                         android:text="LIMESTONE"
                         android:textColor="#000000"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- lst-dry-basis (P29) -->
                     <TextView
@@ -1783,7 +2226,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- lst-wet-basis (Q29) -->
                     <TextView
@@ -1794,7 +2240,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -1806,7 +2255,10 @@
                         android:text="SHALE"
                         android:textColor="#000000"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- shale-dry-basis (P30) -->
                     <TextView
@@ -1817,7 +2269,10 @@
                         android:text=""
                         android:textColor="#974706"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- shale-wet-basis (Q30) -->
                     <TextView
@@ -1828,7 +2283,10 @@
                         android:text=""
                         android:textColor="#974706"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -1840,7 +2298,10 @@
                         android:text="SAND"
                         android:textColor="#000000"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- sand-dry-basis (P31) -->
                     <TextView
@@ -1849,9 +2310,12 @@
                         android:gravity="center"
                         android:padding="6dp"
                         android:text=""
-                        android:textColor="#E26B0A"
+                        android:textColor="#FF5B00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- sand-wet-basis (Q31) -->
                     <TextView
@@ -1860,9 +2324,12 @@
                         android:gravity="center"
                         android:padding="6dp"
                         android:text=""
-                        android:textColor="#E26B0A"
+                        android:textColor="#FF5B00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -1874,7 +2341,10 @@
                         android:text="IRON ORE"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- iron-dry-basis (P32) -->
                     <TextView
@@ -1885,7 +2355,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- iron-wet-basis (Q32) -->
                     <TextView
@@ -1896,7 +2369,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -1908,7 +2384,10 @@
                         android:text="TOTAL"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- total-dry-basis (P33) -->
                     <TextView
@@ -1919,7 +2398,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- total-wet-basis (Q33) -->
                     <TextView
@@ -1930,7 +2412,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TextView
@@ -1941,7 +2426,10 @@
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:layout_marginTop="20dp" />
+                    android:layout_marginTop="20dp"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="10sp"
+                    android:autoSizeMaxTextSize="18sp" />
 
                 <TableRow>
 
@@ -1953,7 +2441,10 @@
                         android:text="LSF"
                         android:textColor="#0070C0"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- lsf-target (P38) -->
                     <EditText
@@ -1967,7 +2458,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -1980,7 +2474,10 @@
                         android:text="SM"
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- sm-target (P39) -->
                     <EditText
@@ -1994,7 +2491,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2007,7 +2507,10 @@
                         android:text="AM"
                         android:textColor="#FF0000"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- am-target (P40) -->
                     <EditText
@@ -2021,7 +2524,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
 
@@ -2031,7 +2537,7 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:stretchColumns="0,1,2"
-                android:layout_marginEnd="20dp" >
+                android:layout_marginEnd="10dp" >
 
                 <TextView
                     android:background="@drawable/white_border_cell"
@@ -2040,7 +2546,10 @@
                     android:text="Control Range"
                     android:textColor="#FFFFFF"
                     android:textSize="12sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="5sp"
+                    android:autoSizeMaxTextSize="12sp" />
 
                 <TableRow>
 
@@ -2051,7 +2560,10 @@
                         android:text="CKR analysis"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                     <TextView
                         android:background="@drawable/white_border_cell"
                         android:layout_width="50dp"
@@ -2060,7 +2572,10 @@
                         android:text="Min"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                     <TextView
                         android:background="@drawable/white_border_cell"
                         android:layout_width="50dp"
@@ -2069,7 +2584,10 @@
                         android:text="Max"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2081,7 +2599,10 @@
                         android:text="C3Sgross"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- min-column1 (S29) -->
                     <EditText
@@ -2095,7 +2616,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- max-column1 (T29) -->
                     <EditText
@@ -2109,7 +2633,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2121,7 +2648,10 @@
                         android:text="C3Snet"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- min-column2 (S30) -->
                     <EditText
@@ -2135,7 +2665,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- max-column2 (T30) -->
                     <EditText
@@ -2149,7 +2682,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2161,7 +2697,10 @@
                         android:text="C2S"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- min-column3 (S31) -->
                     <EditText
@@ -2175,7 +2714,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- max-column3 (T31) -->
                     <EditText
@@ -2189,7 +2731,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2201,7 +2746,10 @@
                         android:text="C3A"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- min-column4 (S32) -->
                     <EditText
@@ -2215,7 +2763,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- max-column4 (T32) -->
                     <EditText
@@ -2229,7 +2780,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2241,7 +2795,10 @@
                         android:text="C4AF"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- min-column5 (S33) -->
                     <EditText
@@ -2255,7 +2812,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- max-column5 (T33) -->
                     <EditText
@@ -2269,7 +2829,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2281,7 +2844,10 @@
                         android:text="Total Alkali"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- min-column6 (S34) -->
                     <EditText
@@ -2295,7 +2861,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- max-column6 (T34) -->
                     <EditText
@@ -2309,7 +2878,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2321,7 +2893,10 @@
                         android:text="LP @ 1450 C "
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- min-column7 (S35) -->
                     <EditText
@@ -2335,7 +2910,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- max-column7 (T35) -->
                     <EditText
@@ -2349,7 +2927,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2361,7 +2942,10 @@
                         android:text="Coating Index"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- min-column8 (S36) -->
                     <EditText
@@ -2375,7 +2959,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- max-column8 (T36) -->
                     <EditText
@@ -2389,7 +2976,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2401,7 +2991,10 @@
                         android:text="Activity Index"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- min-column9 (S37) -->
                     <EditText
@@ -2415,7 +3008,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- max-column9 (T37) -->
                     <EditText
@@ -2429,7 +3025,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2441,7 +3040,10 @@
                         android:text="Burn Factor"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- min-column10 (S38) -->
                     <EditText
@@ -2455,7 +3057,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- max-column10 (T38) -->
                     <EditText
@@ -2469,7 +3074,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2481,7 +3089,10 @@
                         android:text="Burn Index"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- min-column11 (S39) -->
                     <EditText
@@ -2495,7 +3106,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- max-column11 (T39) -->
                     <EditText
@@ -2509,7 +3123,10 @@
                         android:textColor="#FFFFFF"
                         android:textColorHint="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2521,7 +3138,10 @@
                         android:textColor="#FFFF00"
                         android:layout_span="2"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- FCaO Result (T40) -->
                     <EditText
@@ -2533,9 +3153,12 @@
                         android:inputType="numberDecimal"
                         android:imeOptions="flagNoExtractUi"
                         android:textColor="#FFFF00"
-                        android:textColorHint="#FFFFFF"
+                        android:textColorHint="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
             </TableLayout>
 
@@ -2553,7 +3176,10 @@
                     android:text="CLINKER ANALYSIS"
                     android:textColor="#FFFF00"
                     android:textSize="12sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="5sp"
+                    android:autoSizeMaxTextSize="12sp" />
 
                     <TextView
                         android:background="@drawable/white_border_cell"
@@ -2562,7 +3188,10 @@
                         android:text="Remarks"
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                 </TableRow>
 
@@ -2574,7 +3203,10 @@
                         android:text="C3Sgross"
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- clinker-column1 (V28) -->
                     <TextView
@@ -2585,7 +3217,10 @@
                         android:text=""
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- remarks-column1 (W28) -->
                     <TextView
@@ -2596,7 +3231,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2607,7 +3245,10 @@
                         android:text="C3Snet"
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- clinker-column2 (V29) -->
                     <TextView
@@ -2618,7 +3259,10 @@
                         android:text=""
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- remarks-column2 (W29) -->
                     <TextView
@@ -2629,7 +3273,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2640,7 +3287,10 @@
                         android:text="C2S"
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- clinker-column3 (V30) -->
                     <TextView
@@ -2651,7 +3301,10 @@
                         android:text=""
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- remarks-column3 (W30) -->
                     <TextView
@@ -2662,7 +3315,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2673,7 +3329,10 @@
                         android:text="C3A"
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- clinker-column4 (V31) -->
                     <TextView
@@ -2684,7 +3343,10 @@
                         android:text=""
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- remarks-column4 (W31) -->
                     <TextView
@@ -2695,7 +3357,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2706,7 +3371,10 @@
                         android:text="C4AF"
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- clinker-column5 (V32) -->
                     <TextView
@@ -2717,7 +3385,10 @@
                         android:text=""
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- remarks-column5 (W32) -->
                     <TextView
@@ -2728,7 +3399,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2739,7 +3413,10 @@
                         android:text="Total Alkali"
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- clinker-column6 (V33) -->
                     <TextView
@@ -2750,7 +3427,10 @@
                         android:text=""
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- remarks-column6 (W33) -->
                     <TextView
@@ -2761,7 +3441,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2772,7 +3455,10 @@
                         android:text="Liquid Phase @ 1450 C"
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- clinker-column7 (V34) -->
                     <TextView
@@ -2783,7 +3469,10 @@
                         android:text=""
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- remarks-column7 (W34) -->
                     <TextView
@@ -2794,7 +3483,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2805,7 +3497,10 @@
                         android:text="Coating Index"
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- clinker-column8 (V35) -->
                     <TextView
@@ -2816,7 +3511,10 @@
                         android:text=""
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- remarks-column8 (W35) -->
                     <TextView
@@ -2827,7 +3525,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2838,7 +3539,10 @@
                         android:text="Activity Index"
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- clinker-column9 (V36) -->
                     <TextView
@@ -2849,7 +3553,10 @@
                         android:text=""
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- remarks-column9 (W36) -->
                     <TextView
@@ -2860,7 +3567,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2871,7 +3581,10 @@
                         android:text="Burn Factor"
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- clinker-column10 (V37) -->
                     <TextView
@@ -2882,7 +3595,10 @@
                         android:text=""
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- remarks-column10 (W37) -->
                     <TextView
@@ -2893,7 +3609,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2904,7 +3623,10 @@
                         android:text="Burn Index"
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- clinker-column11 (V38) -->
                     <TextView
@@ -2915,7 +3637,10 @@
                         android:text=""
                         android:textColor="#FFFF00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- remarks-column11 (W38) -->
                     <TextView
@@ -2926,7 +3651,10 @@
                         android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2935,10 +3663,13 @@
                         android:gravity="center"
                         android:padding="6dp"
                         android:text="Hotmeal SO3"
-                        android:textColor="#E26B0A"
+                        android:textColor="#FF5B00"
                         android:layout_span="2"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- Hotmeal SO3 (W39) -->
                     <EditText
@@ -2949,10 +3680,13 @@
                         android:hint="0.00"
                         android:inputType="numberDecimal"
                         android:imeOptions="flagNoExtractUi"
-                        android:textColor="#E26B0A"
-                        android:textColorHint="#E26B0A"
+                        android:textColor="#FF5B00"
+                        android:textColorHint="#FF5B00"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
                 <TableRow>
@@ -2964,7 +3698,10 @@
                         android:layout_span="2"
                         android:textColor="#76933C"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
 
                     <!-- % Ash Absorbed (W40) -->
                     <EditText
@@ -2978,7 +3715,10 @@
                         android:textColor="#76933C"
                         android:textColorHint="#76933C"
                         android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="12sp" />
                 </TableRow>
 
 

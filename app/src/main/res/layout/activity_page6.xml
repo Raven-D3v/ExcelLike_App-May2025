@@ -28,7 +28,7 @@
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="86dp"
                     android:layout_weight="0.7"
                     android:background="@drawable/orange_border_cell"
                     android:backgroundTint="#000000"
@@ -61,7 +61,7 @@
                             android:text="LIME SATURATION FACTOR"
                             android:textColor="#0070C0"
                             android:textSize="12sp"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold" />
 
                         <!-- ls-factor (I8) -->
                         <EditText
@@ -76,7 +76,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </LinearLayout>
 
@@ -112,7 +113,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </LinearLayout>
                     <LinearLayout
@@ -146,7 +148,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -201,7 +204,7 @@
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="SAND"
-                            android:textColor="#FFA500"
+                            android:textColor="#FF5B00"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -211,7 +214,7 @@
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="IRON ORE"
-                            android:textColor="#FFFFFF"
+                            android:textColor="#9A9A9A"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -247,7 +250,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- mix-shale (F12) -->
@@ -260,7 +264,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#974706"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- mix-sand (G12) -->
@@ -272,8 +277,9 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFA500"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- mix-iron (H12) -->
@@ -286,7 +292,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#000000"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#000000"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- mix-rawmeal (I12) -->
@@ -296,7 +303,7 @@
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="0.00"
-                            android:textColor="#FCD5B4"
+                            android:textColor="#000000"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -320,7 +327,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- SiO2-shale (F13) -->
@@ -333,7 +341,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#974706"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- SiO2-sand (G13) -->
@@ -345,8 +354,9 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFA500"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- SiO2-iron (H13) -->
@@ -358,8 +368,9 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#9A9A9A"
+                            android:textColorHint="#9A9A9A"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- SiO2-rawmeal (I13) -->
@@ -370,6 +381,7 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#FCD5B4"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -393,7 +405,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- Al2O3-shale (F14) -->
@@ -406,7 +419,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#974706"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- Al2O3-sand (G14) -->
@@ -418,8 +432,9 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFA500"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- Al2O3-iron (H14) -->
@@ -431,8 +446,9 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#9A9A9A"
+                            android:textColorHint="#9A9A9A"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- Al2O3-rawmeal (I14) -->
@@ -443,6 +459,7 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#FCD5B4"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -466,7 +483,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- Fe2O3-shale (F15) -->
@@ -479,7 +497,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#974706"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- Fe2O3-sand (G15) -->
@@ -491,8 +510,9 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFA500"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- Fe2O3-iron (H15) -->
@@ -504,8 +524,9 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#9A9A9A"
+                            android:textColorHint="#9A9A9A"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- Fe2O3-rawmeal (I15) -->
@@ -516,6 +537,7 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#FCD5B4"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -539,7 +561,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- CaO-shale (F16) -->
@@ -552,7 +575,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#974706"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- CaO-sand (G16) -->
@@ -564,8 +588,9 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFA500"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- CaO-iron (H16) -->
@@ -577,8 +602,9 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#9A9A9A"
+                            android:textColorHint="#9A9A9A"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- CaO-rawmeal (I16) -->
@@ -589,6 +615,7 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#FCD5B4"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -613,7 +640,7 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
                             android:textSize="12sp" />
 
                         <!-- MgO-shale (F17) -->
@@ -627,7 +654,7 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#974706"
                             android:textSize="12sp" />
 
                         <!-- MgO-sand (G17) -->
@@ -640,8 +667,8 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFA500"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp" />
 
                         <!-- MgO-iron (H17) -->
@@ -654,8 +681,8 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#9A9A9A"
+                            android:textColorHint="#9A9A9A"
                             android:textSize="12sp" />
 
                         <!-- MgO-rawmeal (I17) -->
@@ -691,7 +718,7 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
                             android:textSize="12sp" />
 
                         <!-- Na2O-shale (F18) -->
@@ -705,7 +732,7 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#974706"
                             android:textSize="12sp" />
 
                         <!-- Na2O-sand (G18) -->
@@ -718,8 +745,8 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFA500"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp" />
 
                         <!-- Na2O-iron (H18) -->
@@ -732,8 +759,8 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#9A9A9A"
+                            android:textColorHint="#9A9A9A"
                             android:textSize="12sp" />
 
                         <!-- Na2O-rawmeal (I18) -->
@@ -769,7 +796,7 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
                             android:textSize="12sp" />
 
                         <!-- K2O-shale (F19) -->
@@ -783,7 +810,7 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#974706"
                             android:textSize="12sp" />
 
                         <!-- K2O-sand (G19) -->
@@ -796,8 +823,8 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFA500"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp" />
 
                         <!-- K2O-iron (H19) -->
@@ -810,8 +837,8 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#9A9A9A"
+                            android:textColorHint="#9A9A9A"
                             android:textSize="12sp" />
 
                         <!-- K2O-rawmeal (I19) -->
@@ -847,7 +874,7 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
                             android:textSize="12sp" />
 
                         <!-- SO3-shale (F20) -->
@@ -861,7 +888,7 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#974706"
                             android:textSize="12sp" />
 
                         <!-- SO3-sand (G20) -->
@@ -874,8 +901,8 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFA500"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp" />
 
                         <!-- SO3-iron (H20) -->
@@ -888,8 +915,8 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#9A9A9A"
+                            android:textColorHint="#9A9A9A"
                             android:textSize="12sp" />
 
                         <!-- SO3-rawmeal (I20) -->
@@ -927,7 +954,7 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
                             android:textSize="12sp" />
 
                         <!-- Cl-shale (F21) -->
@@ -942,7 +969,7 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#974706"
                             android:textSize="12sp" />
 
                         <!-- Cl-sand (G21) -->
@@ -956,8 +983,8 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFA500"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp" />
 
                         <!-- Cl-iron (H21) -->
@@ -971,8 +998,8 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#9A9A9A"
+                            android:textColorHint="#9A9A9A"
                             android:textSize="12sp" />
 
                         <!-- Cl-rawmeal (I21) -->
@@ -1012,7 +1039,7 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
                             android:textSize="12sp" />
 
                         <!-- LOI-shale (F22) -->
@@ -1027,7 +1054,7 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#974706"
                             android:textSize="12sp" />
 
                         <!-- LOI-sand (G22) -->
@@ -1041,8 +1068,8 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFA500"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
                             android:textSize="12sp" />
 
                         <!-- LOI-iron (H22) -->
@@ -1055,8 +1082,8 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#9A9A9A"
+                            android:textColorHint="#9A9A9A"
                             android:textSize="12sp" />
 
                         <!-- LOI-rawmeal (I22) -->
@@ -1082,8 +1109,7 @@
                             android:padding="6dp"
                             android:text="TOTAL"
                             android:textColor="#FFFFFF"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textSize="12sp" />
 
                         <!-- TOTAL-lst (E23) -->
                         <TextView
@@ -1118,7 +1144,7 @@
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="0.00"
-                            android:textColor="#FFA500"
+                            android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
                         <!-- TOTAL-iron (H23) -->
@@ -1144,8 +1170,7 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#FFFFFF"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textSize="12sp" />
                     </TableRow>
 
                     <!-- LSF Row -->
@@ -1190,7 +1215,7 @@
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="0.00"
-                            android:textColor="#FFA500"
+                            android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
                         <!-- LSF-iron (H24) -->
@@ -1213,6 +1238,7 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -1220,8 +1246,7 @@
                     <TableRow>
                         <TextView
                             android:layout_weight="1"
-                            android:background="@drawable/orange_border_cell"
-                            android:backgroundTint="#D3D3D3"
+                            android:background="@drawable/iron_ore_border"
                             android:gravity="start|center_vertical"
                             android:padding="6dp"
                             android:text="SM"
@@ -1233,8 +1258,7 @@
                         <TextView
                             android:id="@+id/tv_sm_limestone"
                             android:layout_weight="1"
-                            android:background="@drawable/orange_border_cell"
-                            android:backgroundTint="#D3D3D3"
+                            android:background="@drawable/iron_ore_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="0.00"
@@ -1245,8 +1269,7 @@
                         <TextView
                             android:id="@+id/tv_sm_shale"
                             android:layout_weight="1"
-                            android:background="@drawable/orange_border_cell"
-                            android:backgroundTint="#D3D3D3"
+                            android:background="@drawable/iron_ore_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="0.00"
@@ -1258,20 +1281,18 @@
                             android:id="@+id/tv_sm_sand"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:background="@drawable/orange_border_cell"
-                            android:backgroundTint="#D3D3D3"
+                            android:background="@drawable/iron_ore_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="0.00"
-                            android:textColor="#FFA500"
+                            android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
                         <!-- SM-iron (H25) -->
                         <TextView
                             android:id="@+id/tv_sm_ironore"
                             android:layout_weight="1"
-                            android:background="@drawable/orange_border_cell"
-                            android:backgroundTint="#D3D3D3"
+                            android:background="@drawable/iron_ore_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="0.00"
@@ -1282,12 +1303,12 @@
                         <TextView
                             android:id="@+id/tv_sm_rawmeal"
                             android:layout_weight="1"
-                            android:background="@drawable/orange_border_cell"
-                            android:backgroundTint="#D3D3D3"
+                            android:background="@drawable/iron_ore_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -1333,7 +1354,7 @@
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="0.00"
-                            android:textColor="#FFA500"
+                            android:textColor="#FFFFFF"
                             android:textSize="12sp" />
 
                         <!-- AM-iron (H26) -->
@@ -1356,6 +1377,7 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -1395,6 +1417,7 @@
                             android:padding="6dp"
                             android:text="LIMESTONE"
                             android:textColor="#000000"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- rmp-limestone (H28) -->
@@ -1406,6 +1429,7 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#000000"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -1417,7 +1441,8 @@
                             android:gravity="start|center_vertical"
                             android:padding="6dp"
                             android:text="SHALE"
-                            android:textColor="#FFFFFF"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- rmp-shale (H29) -->
@@ -1428,7 +1453,8 @@
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="0.00"
-                            android:textColor="#FFFFFF"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -1440,7 +1466,8 @@
                             android:gravity="start|center_vertical"
                             android:padding="6dp"
                             android:text="SAND"
-                            android:textColor="#FFA500"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- rmp-sand (H30) -->
@@ -1451,7 +1478,8 @@
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="0.00"
-                            android:textColor="#FFA500"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -1459,22 +1487,24 @@
                     <TableRow>
                         <TextView
                             android:layout_weight="1"
-                            android:background="@drawable/iron_ore_border"
+                            android:background="@drawable/dark_gray_border"
                             android:gravity="start|center_vertical"
                             android:padding="6dp"
                             android:text="IRON ORE"
-                            android:textColor="#FFFFFF"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- rmp-iron (H31) -->
                         <TextView
                             android:id="@+id/tv_dry_ironore"
                             android:layout_weight="1"
-                            android:background="@drawable/iron_ore_border"
+                            android:background="@drawable/dark_gray_border"
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="0.00"
-                            android:textColor="#FFFFFF"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -1487,8 +1517,7 @@
                             android:padding="6dp"
                             android:text="TOTAL"
                             android:textColor="#FFFFFF"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textSize="12sp" />
 
                         <!-- rmp-total (H32) -->
                         <TextView
@@ -1499,8 +1528,7 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#FFFFFF"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textSize="12sp" />
                     </TableRow>
 
                 </TableLayout>
@@ -1581,7 +1609,7 @@
                             android:text="LIMESTONE"
                             android:textColor="#FFFFFF"
                             android:textSize="12sp"
-                            android:textStyle="bold"/>
+                            android:textStyle="bold" />
 
                         <!-- wet-basis-column1 (E35) -->
                         <TextView
@@ -1592,6 +1620,7 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- dry-basis-column1 (H35) -->
@@ -1604,7 +1633,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- h2o-basis-column1 (J35) -->
@@ -1618,6 +1648,7 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -1642,6 +1673,7 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#974706"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- dry-basis-column2 (H36) -->
@@ -1654,7 +1686,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#974706"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#974706"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- h2o-basis-column2 (J36) -->
@@ -1668,6 +1701,7 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -1679,7 +1713,7 @@
                             android:gravity="start|center_vertical"
                             android:padding="6dp"
                             android:text="SAND"
-                            android:textColor="#FFA500"
+                            android:textColor="#FF5B00"
                             android:textSize="12sp"
                             android:textStyle="bold"/>
 
@@ -1691,7 +1725,8 @@
                             android:gravity="center"
                             android:padding="6dp"
                             android:text="0.00"
-                            android:textColor="#FFA500"
+                            android:textColor="#FF5B00"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- dry-basis-column3 (H37) -->
@@ -1703,8 +1738,9 @@
                             android:imeOptions="flagNoExtractUi"
                             android:inputType="numberDecimal"
                             android:padding="6dp"
-                            android:textColor="#FFA500"
-                            android:textColorHint="#D2B48C"
+                            android:textColor="#FF5B00"
+                            android:textColorHint="#FF5B00"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- h2o-basis-column3 (J37) -->
@@ -1718,6 +1754,7 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
                     </TableRow>
 
@@ -1742,6 +1779,7 @@
                             android:padding="6dp"
                             android:text="0.00"
                             android:textColor="#494529"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- dry-basis-column4 (H38) -->
@@ -1754,7 +1792,8 @@
                             android:inputType="numberDecimal"
                             android:padding="6dp"
                             android:textColor="#494529"
-                            android:textColorHint="#D2B48C"
+                            android:textColorHint="#494529"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                         <!-- h2o-basis-column4 (J38) -->
@@ -1768,6 +1807,7 @@
                             android:padding="6dp"
                             android:textColor="#FFFFFF"
                             android:textColorHint="#FFFFFF"
+                            android:textStyle="bold"
                             android:textSize="12sp" />
 
                     </TableRow>
@@ -1777,7 +1817,6 @@
                             android:padding="6dp"
                             android:gravity="start|center_vertical"
                             android:textSize="12sp"
-                            android:textStyle="bold"
                             android:textColor="#FFFFFF"
                             android:background="@drawable/orange_border_cell"
                             android:backgroundTint="#D3D3D3"/>
@@ -1789,7 +1828,6 @@
                             android:padding="6dp"
                             android:gravity="center"
                             android:textSize="12sp"
-                            android:textStyle="bold"
                             android:textColor="#FFFFFF"
                             android:background="@drawable/orange_border_cell"
                             android:backgroundTint="#D3D3D3"/>
@@ -1801,7 +1839,6 @@
                             android:padding="6dp"
                             android:gravity="center"
                             android:textSize="12sp"
-                            android:textStyle="bold"
                             android:textColor="#FFFFFF"
                             android:background="@drawable/orange_border_cell"
                             android:backgroundTint="#D3D3D3"/>
@@ -1813,7 +1850,6 @@
                             android:padding="6dp"
                             android:gravity="center"
                             android:textSize="12sp"
-                            android:textStyle="bold"
                             android:textColor="#FFFFFF"
                             android:background="@drawable/orange_border_cell"
                             android:backgroundTint="#D3D3D3"/>
