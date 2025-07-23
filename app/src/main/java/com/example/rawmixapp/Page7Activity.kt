@@ -221,25 +221,19 @@ class Page7Activity : BaseActivity() {
     }
 
     private fun setTextViewValue(textView: TextView, value: Double, defaultOnError: String = "0.00") {
-        // val idName = try {
-        //     textView.resources.getResourceEntryName(textView.id)
-        // } catch (e: Exception) {
-        //     ""
-        // }
+        val idName = try {
+            textView.resources.getResourceEntryName(textView.id)
+        } catch (e: Exception) {
+            ""
+        }
 
         if (value.isInfinite() || value.isNaN()) {
             textView.text = defaultOnError
         } else {
-            // val formattedValue = when (idName) {
-            //     "tv_kg_fuel_per_kg_clinker", "tv_clinker_factor", "tv_clinker_factor_2" ->
-            //         String.format(Locale.US, "%.3f", value)
-            //     "tv_clinker_production_tph", "tv_clinker_production_tph_2" ->
-            //         String.format(Locale.US, "%.1f", value)
-            //     else ->
-            //         String.format(Locale.US, "%.2f", value)
-            // }
-
-            val formattedValue = String.format(Locale.US, "%.2f", value)  // Always use 2 decimal places for now
+            val formattedValue = when (idName) {
+                "tv_clinker_factor" -> String.format(Locale.US, "%.3f", value)
+                else -> String.format(Locale.US, "%.2f", value)
+            }
             textView.text = formattedValue
         }
     }
