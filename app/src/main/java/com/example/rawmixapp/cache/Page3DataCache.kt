@@ -12,7 +12,7 @@ object Page3DataCache {
 
     // --- Additional Fields ---
     var H19 = 0.0
-
+    var raw_mix_type = ""
     // --- XRF Row 1 (K10–S10) ---
     var K10 = 0.0; var L10 = 0.0; var M10 = 0.0; var N10 = 0.0; var O10 = 0.0
     var P10 = 0.0; var Q10 = 0.0; var R10 = 0.0; var S10 = 0.0
@@ -36,6 +36,7 @@ object Page3DataCache {
     // --- Fuel Section (K25, L25, O25, X25, Y25) ---
     var K25 = 0.0
     var L25 = 0.0
+    var M25 = ""
     var O25 = 0.0
     var X25 = 0.0
     var Y25 = 0.0

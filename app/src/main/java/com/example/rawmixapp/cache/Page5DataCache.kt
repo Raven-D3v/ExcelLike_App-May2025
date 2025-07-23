@@ -17,13 +17,13 @@ object Page5DataCache {
 
     // --- Target Ratios ---
     var I20 = 0.0
-
+    var raw_mix_type = ""
     // --- Coal Ash Composition (L19–U19) ---
     var L19 = 0.0; var M19 = 0.0; var N19 = 0.0; var O19 = 0.0
     var P19 = 0.0; var Q19 = 0.0; var R19 = 0.0; var S19 = 0.0
     var T19 = 0.0; var U19 = 0.0
 
     // --- Fuel Section (L25–Z25) ---
-    var L25 = 0.0; var M25 = 0.0; var N25 = 0.0; var P25 = 0.0
+    var L25 = 0.0; var M25 = 0.0; var N25 = ""; var P25 = 0.0
     var Y25 = 0.0; var Z25 = 0.0
 }
