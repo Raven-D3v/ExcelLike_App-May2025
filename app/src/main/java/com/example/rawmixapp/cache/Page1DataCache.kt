@@ -11,6 +11,7 @@ object Page1DataCache {
 
     // --- Additional Fields ---
     var H54 = 0.0
+    var raw_mix_type = ""
 
     // --- XRF Row 1 (K45–S45) ---
     var K45 = 0.0; var L45 = 0.0; var M45 = 0.0; var N45 = 0.0; var O45 = 0.0
@@ -35,6 +36,7 @@ object Page1DataCache {
     // --- Fuel Section (K60, L60, O60, X60, Y60) ---
     var K60 = 0.0
     var L60 = 0.0
+    var M60 = ""
     var O60 = 0.0
     var X60 = 0.0
     var Y60 = 0.0
