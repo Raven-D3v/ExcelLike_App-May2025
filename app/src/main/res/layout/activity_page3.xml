@@ -1946,7 +1946,7 @@
 
                             <!-- Raw mix type (H20) -->
                             <EditText
-                                android:id="@+id/raw_mix_type"
+                                android:id="@+id/raw_mix_type_PG3"
                                 android:layout_width="0dp"
                                 android:minHeight="30dp"
                                 android:background="@drawable/gray_border"
@@ -3247,7 +3247,7 @@
                                     <!-- Burning Con (M25) -->
                                     <EditText
                                         style="@style/NewTableTextView"
-                                        android:id="@+id/tv_M25"
+                                        android:id="@+id/et_M25"
                                         android:layout_width="0dp"
                                         android:layout_weight="1"
                                         android:minWidth="0dp"
