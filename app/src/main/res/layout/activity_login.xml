@@ -115,20 +115,30 @@
             android:textSize="14sp"
             android:imeOptions="flagNoExtractUi" />
 
-        <EditText
-            android:id="@+id/password"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_layout"
             android:layout_width="0dp"
-            android:layout_height="45dp"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
-            android:background="@drawable/section_border"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:textColor="#FFF"
-            android:textColorHint="#CCC"
-            android:textSize="14sp"
-            android:imeOptions="flagNoExtractUi" />
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@android:color/white"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/section_border"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="#FFF"
+                android:textColorHint="#CCC"
+                android:textSize="14sp"
+                android:imeOptions="flagNoExtractUi" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/login"
