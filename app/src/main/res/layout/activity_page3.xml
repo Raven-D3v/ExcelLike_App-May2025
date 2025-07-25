@@ -420,7 +420,8 @@
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
                             android:singleLine="true"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- shale-column 1 (I45) -->
                         <EditText
@@ -439,7 +440,8 @@
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
                             android:singleLine="true"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- io-column 1 (J45) -->
                         <EditText
@@ -457,7 +459,8 @@
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
                             android:singleLine="true"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- SiO2-column 1 (K45) -->
                         <EditText
@@ -476,7 +479,8 @@
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
                             android:singleLine="true"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Al2O3-column 1 (L45) -->
                         <EditText
@@ -495,7 +499,8 @@
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
                             android:singleLine="true"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Fe2O3-column 1 (M45) -->
                         <EditText
@@ -514,7 +519,8 @@
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
                             android:singleLine="true"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- CaO-column 1 (N45) -->
                         <EditText
@@ -533,7 +539,8 @@
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
                             android:singleLine="true"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- MgO-column 1 (O45) -->
                         <EditText
@@ -552,7 +559,8 @@
                             android:layout_marginBottom="1dp"
                             android:maxLines="1"
                             android:singleLine="true"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Na2O-column 1 (P45) -->
                         <EditText
@@ -569,7 +577,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- K2O-column 1 (Q45) -->
                         <EditText
@@ -586,7 +595,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- SO3-column 1 (R45) -->
                         <EditText
@@ -603,7 +613,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Cl-column 1 (S45) -->
                         <EditText
@@ -620,7 +631,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- column 1 (T45) -->
                         <TextView
@@ -763,7 +775,8 @@
                             android:inputType="numberDecimal"
                             android:textColor="#000000"
                             android:textSize="9sp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- shale-column 2 (I46) -->
                         <EditText
@@ -781,7 +794,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- io-column 2 (J46) -->
                         <EditText
@@ -799,7 +813,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- SiO2-column 2 (K46) -->
                         <EditText
@@ -816,7 +831,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Al2O3-column 2 (L46) -->
                         <EditText
@@ -833,7 +849,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Fe2O3-column 2 (M46) -->
                         <EditText
@@ -850,7 +867,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- CaO-column 2 (N46) -->
                         <EditText
@@ -867,7 +885,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- MgO-column 2 (O46) -->
                         <EditText
@@ -884,7 +903,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Na2O-column 2 (P46) -->
                         <EditText
@@ -901,7 +921,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- K2O-column 2 (Q46) -->
                         <EditText
@@ -918,7 +939,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- SO3-column 2 (R46) -->
                         <EditText
@@ -935,7 +957,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Cl-column 2 (S46) -->
                         <EditText
@@ -952,7 +975,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- column 2 (T11) -->
                         <TextView
@@ -1095,7 +1119,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- shale-column 3 (I12) -->
                         <EditText
@@ -1112,7 +1137,8 @@
                             android:inputType="numberDecimal"
                             android:textColor="#FFFFFF"
                             android:textSize="9sp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- io-column 3 (J12) -->
                         <EditText
@@ -1130,7 +1156,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- SiO2-column 3 (K12) -->
                         <EditText
@@ -1147,7 +1174,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Al2O3-column 3 (L12) -->
                         <EditText
@@ -1164,7 +1192,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Fe2O3-column 3 (M12) -->
                         <EditText
@@ -1181,7 +1210,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- CaO-column 3 (N12) -->
                         <EditText
@@ -1198,7 +1228,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- MgO-column 3 (O12) -->
                         <EditText
@@ -1215,7 +1246,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Na2O-column 3 (P12) -->
                         <EditText
@@ -1232,7 +1264,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- K2O-column 3 (Q12) -->
                         <EditText
@@ -1249,7 +1282,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- SO3-column 3 (R12) -->
                         <EditText
@@ -1266,7 +1300,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Cl-column 3 (S12) -->
                         <EditText
@@ -1284,7 +1319,8 @@
                             android:textColor="#000000"
                             android:textSize="9sp"
                             tools:ignore="TouchTargetSizeCheck"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- column 3 (T12) -->
                         <TextView
@@ -1429,7 +1465,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- shale-column 4 (I13) -->
                         <EditText
@@ -1447,7 +1484,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- io-column 4 (J13) -->
                         <EditText
@@ -1465,7 +1503,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- SiO2-column 4 (K13) -->
                         <EditText
@@ -1482,7 +1521,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Al2O3-column 4 (L13) -->
                         <EditText
@@ -1499,7 +1539,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Fe2O3-column 4 (M13) -->
                         <EditText
@@ -1516,7 +1557,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- CaO-column 4 (N13) -->
                         <EditText
@@ -1533,7 +1575,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- MgO-column 4 (O13) -->
                         <EditText
@@ -1551,7 +1594,8 @@
                             android:textColor="#000000"
                             android:textSize="9sp"
                             tools:ignore="TouchTargetSizeCheck"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Na2O-column 4 (P13) -->
                         <EditText
@@ -1568,7 +1612,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- K2O-column 4 (Q13) -->
                         <EditText
@@ -1585,7 +1630,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- SO3-column 4 (R13) -->
                         <EditText
@@ -1602,7 +1648,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- Cl-column 4 (S13) -->
                         <EditText
@@ -1619,7 +1666,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- column 4 (T13) -->
                         <TextView
@@ -1762,7 +1810,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- shale-column 5 (I14) -->
                         <EditText
@@ -1780,7 +1829,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
 
                         <!-- io-column 5 (J14) -->
                         <EditText
@@ -1798,7 +1848,8 @@
                             android:inputType="numberDecimal"
                             android:layout_marginEnd="1dp"
                             android:layout_marginBottom="1dp"
-                            android:imeOptions="flagNoExtractUi" />
+                            android:imeOptions="flagNoExtractUi"
+                            android:textColorHint="#9A9A9A" />
                     </TableRow>
 
                     <!-- Additional identical M/A rows can be added here -->
@@ -1926,7 +1977,9 @@
                                 android:inputType="numberDecimal"
                                 android:maxLines="1"
                                 android:textSize="11sp"
-                                android:imeOptions="flagNoExtractUi" />
+                                android:imeOptions="flagNoExtractUi"
+                                android:textColor="#000000"
+                                android:textColorHint="#9A9A9A" />
                         </TableRow>
 
                         <TableRow android:background="#000000">
@@ -1956,7 +2009,8 @@
                                 android:textSize="11sp"
                                 android:textColor="#000000"
                                 android:maxLines="1"
-                                android:imeOptions="flagNoExtractUi" />
+                                android:imeOptions="flagNoExtractUi"
+                                android:textColorHint="#9A9A9A" />
 
                         </TableRow>
                     </TableLayout>
@@ -2183,7 +2237,8 @@
                                         android:textSize="9sp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- trc-Al2O3 (L17) -->
                                     <EditText
@@ -2197,7 +2252,8 @@
                                         android:textSize="9sp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- trc-Fe2O3 (M17) -->
                                     <EditText
@@ -2211,7 +2267,8 @@
                                         android:textSize="9sp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- trc-CaO (N17) -->
                                     <EditText
@@ -2225,7 +2282,8 @@
                                         android:textSize="9sp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- trc-MgO (O17) -->
                                     <EditText
@@ -2239,7 +2297,8 @@
                                         android:textSize="9sp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- trc-Na2O (P17) -->
                                     <EditText
@@ -2253,7 +2312,8 @@
                                         android:textSize="9sp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- trc-K2O (Q17) -->
                                     <EditText
@@ -2267,7 +2327,8 @@
                                         android:textSize="9sp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- trc-SO3 (R17) -->
                                     <EditText
@@ -2281,7 +2342,8 @@
                                         android:textSize="9sp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- trc-Cl (S17) -->
                                     <EditText
@@ -2295,7 +2357,8 @@
                                         android:textSize="9sp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- trc-LOI (T17) -->
                                     <EditText
@@ -2309,7 +2372,8 @@
                                         android:textSize="9sp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/gray_border"  />
+                                        android:background="@drawable/gray_border"
+                                        android:textColorHint="#9A9A9A" />
                                     <!-- trc-TOTAL (U17) -->
                                     <TextView
                                         style="@style/NewTableTextView"
@@ -2405,7 +2469,8 @@
                                         android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- cac-Al2O3 2 (L19) -->
                                     <EditText
@@ -2417,7 +2482,8 @@
                                         android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- cac-Fe2O3 3 (M19) -->
                                     <EditText
@@ -2429,7 +2495,8 @@
                                         android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- cac-CaO 4 (N19) -->
                                     <EditText
@@ -2441,7 +2508,8 @@
                                         android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- cac-MgO 5 (O19) -->
                                     <EditText
@@ -2453,7 +2521,8 @@
                                         android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- cac-Na2O 6 (P19) -->
                                     <EditText
@@ -2465,7 +2534,8 @@
                                         android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- cac-K2O 7 (Q19) -->
                                     <EditText
@@ -2477,7 +2547,8 @@
                                         android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- cac-SO3 8 (R19) -->
                                     <EditText
@@ -2489,7 +2560,8 @@
                                         android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:background="@drawable/light_beige_border"
-                                        android:imeOptions="flagNoExtractUi" />
+                                        android:imeOptions="flagNoExtractUi"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- cac-Cl 9 (S19) -->
                                     <EditText
@@ -2501,7 +2573,8 @@
                                         android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- cac-LOI 10 (T19) -->
                                     <EditText
@@ -2513,7 +2586,8 @@
                                         android:minHeight="30dp"
                                         android:hint="0.00"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- cac-TOTAL 11 (U19) -->
                                     <TextView
@@ -3227,7 +3301,8 @@
                                         android:maxLines="1"
                                         android:ellipsize="end"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- FCaO (L25) -->
                                     <EditText
@@ -3242,7 +3317,8 @@
                                         android:maxLines="1"
                                         android:ellipsize="end"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- Burning Con (M25) -->
                                     <EditText
@@ -3257,7 +3333,8 @@
                                         android:maxLines="1"
                                         android:imeOptions="flagNoExtractUi"
                                         android:ellipsize="end"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- DOC (N25) -->
                                     <TextView
@@ -3285,7 +3362,8 @@
                                         android:maxLines="1"
                                         android:ellipsize="end"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- C3S net (P25) -->
                                     <TextView
@@ -3404,7 +3482,8 @@
                                         android:maxLines="1"
                                         android:ellipsize="end"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
 
                                     <!-- ht-LOI (Y25) -->
                                     <EditText
@@ -3419,7 +3498,8 @@
                                         android:maxLines="1"
                                         android:ellipsize="end"
                                         android:imeOptions="flagNoExtractUi"
-                                        android:background="@drawable/limestone_border" />
+                                        android:background="@drawable/limestone_border"
+                                        android:textColorHint="#9A9A9A" />
                                 </TableRow>
                             </TableLayout>
                         </LinearLayout>
