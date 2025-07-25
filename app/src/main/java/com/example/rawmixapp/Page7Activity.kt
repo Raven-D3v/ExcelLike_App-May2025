@@ -231,7 +231,7 @@ class Page7Activity : BaseActivity() {
             textView.text = defaultOnError
         } else {
             val formattedValue = when (idName) {
-                "tv_clinker_factor" -> String.format(Locale.US, "%.3f", value)
+                "tv_clinker_factor", "tv_kg_fuel_per_kg_clinker" -> String.format(Locale.US, "%.3f", value)
                 else -> String.format(Locale.US, "%.2f", value)
             }
             textView.text = formattedValue
