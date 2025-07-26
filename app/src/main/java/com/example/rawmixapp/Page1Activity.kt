@@ -719,13 +719,16 @@ class Page1Activity : BaseActivity() {
         val N32 = if (N31 < 0) 0.0 else N31
 
         val total = K32 + M32 + N32
-        val I46 = if (total != 0.0) (K32 / total) * 100 else 0.0 //K33
-        val H46 = if (total != 0.0) (N32 / total) * 100 else 0.0 //N33
-        val J46 = 100 - I46 - H46
 
-        values["I46"] = round2(I46)
-        values["J46"] = round2(J46)
-        values["H46"] = round2(H46)
+        val I46 = if (total != 0.0) round2((K32 / total) * 100) else 0.0 //K33
+        val H46 = if (total != 0.0) round2((N32 / total) * 100) else 0.0 //N33
+        val J46 = round2(100.0 - I46 - H46)
+
+        values["I46"] = I46
+        values["H46"] = H46
+        values["J46"] = J46
+
+
 
         if (!switch_row2.isChecked) {
             values["et_H46"] = values["H46"] ?: 0.0
@@ -767,13 +770,15 @@ class Page1Activity : BaseActivity() {
         val R32 = if (R31 < 0) 0.0 else R31
 
         val total2 = O32 + Q32 + R32
-        val I47 = if (total2 != 0.0) (O32 / total2) * 100 else 0.0 //O33
-        val H47 = if (total2 != 0.0) (R32 / total2) * 100 else 0.0 //R33
-        val J47 = 100 - I47 - H47
 
-        values["I47"] = round2(I47)
-        values["J47"] = round2(J47)
-        values["H47"] = round2(H47)
+        val I47 = if (total2 != 0.0) round2((O32 / total2) * 100) else 0.0 //O33
+        val H47 = if (total2 != 0.0) round2((R32 / total2) * 100) else 0.0 //R33
+        val J47 = round2(100.0 - I47 - H47)
+
+        values["I47"] = I47
+        values["H47"] = H47
+        values["J47"] = J47
+
 
         if (!switch_row3.isChecked) {
             values["et_H47"] = values["H47"] ?: 0.0
@@ -804,13 +809,16 @@ class Page1Activity : BaseActivity() {
         val V32 = if (V31 < 0) 0.0 else V31
 
         val total3 = S32 + U32 + V32
-        val I48 = if (total3 != 0.0) (S32 / total3) * 100 else 0.0 //S33
-        val H48 = if (total3 != 0.0) (V32 / total3) * 100 else 0.0 //V33
-        val J48 = 100 - I48 - H48
 
-        values["I48"] = round2(I48)
-        values["J48"] = round2(J48)
-        values["H48"] = round2(H48)
+        val I48 = if (total3 != 0.0) round2((S32 / total3) * 100) else 0.0  // S33
+        val H48 = if (total3 != 0.0) round2((V32 / total3) * 100) else 0.0  // V33
+        val J48 = round2(100.0 - I48 - H48)
+
+        values["I48"] = I48
+        values["H48"] = H48
+        values["J48"] = J48
+
+
 
         if (!switch_row4.isChecked) {
             values["et_H48"] = values["H48"] ?: 0.0
@@ -841,13 +849,15 @@ class Page1Activity : BaseActivity() {
         val Z32 = if (Z31 < 0) 0.0 else Z31
 
         val total4 = W32 + Y32 + Z32
-        val I49 = if (total4 != 0.0) (W32 / total4) * 100 else 0.0 //W33
-        val H49 = if (total4 != 0.0) (Z32 / total4) * 100 else 0.0 //Z33
-        val J49 = 100 - I49 - H49
 
-        values["I49"] = round2(I49)
-        values["J49"] = round2(J49)
-        values["H49"] = round2(H49)
+        val I49 = if (total4 != 0.0) round2((W32 / total4) * 100) else 0.0 //W33
+        val H49 = if (total4 != 0.0) round2((Z32 / total4) * 100) else 0.0 //Z33
+        val J49 = round2(100.0 - I49 - H49)
+
+        values["I49"] = I49
+        values["H49"] = H49
+        values["J49"] = J49
+
 
         if (!switch_row5.isChecked) {
             values["et_H49"] = values["H49"] ?: 0.0
